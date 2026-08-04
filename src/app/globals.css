@@ -1,26 +1,170 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* ============================================================
+     NEBULA THEME — dark multi-accent palette (site-wide default)
+     Design system only; colors/tokens adapted to Staller Stack.
+     ============================================================ */
+  --ss-base: #0a121c;       /* page background */
+  --ss-surface: #16222f;    /* card/panel surface */
+  --ss-surface-2: #111c28;  /* raised surface (footer, alt sections) */
+  --ss-teal-deep: #14b8a6;  /* deep teal, gradients/borders */
+  --ss-teal: #2dd4bf;       /* primary accent */
+  --ss-mint: #5eead4;       /* bright highlight/glow accent */
+  --ss-cyan: #22d3ee;
+  --ss-indigo: #6366f1;
+  --ss-amber: #f5a524;
+  --ss-blue: #5b8def;       /* third stop of the signature heading gradient */
+  --ss-text: #ffffff;
+  --ss-muted: #a9bacb;
+  --ss-border: #25353f;
+
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-io: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --background: var(--ss-base);
+  --foreground: var(--ss-text);
+}
+
+/* ============================================================
+   HEADER FREEZE
+   The <header> element carries this class so it keeps its
+   original pre-Nebula look (colors + fonts) even though every
+   other component reads the same token names — CSS custom
+   properties resolve per-subtree, so this scope simply shadows
+   the root values for anything nested inside it.
+   ============================================================ */
+.header-legacy {
+  --ss-base: #0c1e21;
+  --ss-surface: #18292c;
+  --ss-surface-2: #12181b;
+  --ss-teal-deep: #0d5555;
+  --ss-teal: #1e8a8a;
+  --ss-mint: #00ffc2;
+  --ss-cyan: #22d3ee;
+  --ss-indigo: #6366f1;
+  --ss-amber: #f5a524;
+  --ss-blue: #1e8a8a;
+  --ss-text: #f4f6f5;
+  --ss-muted: #93a3a1;
+  --ss-border: #22383c;
+
+  --font-sans: var(--font-manrope);
+  --font-display: var(--font-space-grotesk);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --color-ss-base: var(--ss-base);
+  --color-ss-surface: var(--ss-surface);
+  --color-ss-surface-2: var(--ss-surface-2);
+  --color-ss-teal-deep: var(--ss-teal-deep);
+  --color-ss-teal: var(--ss-teal);
+  --color-ss-mint: var(--ss-mint);
+  --color-ss-text: var(--ss-text);
+  --color-ss-muted: var(--ss-muted);
+  --color-ss-border: var(--ss-border);
+  --color-ss-cyan: var(--ss-cyan);
+  --color-ss-indigo: var(--ss-indigo);
+  --color-ss-amber: var(--ss-amber);
+  --color-ss-blue: var(--ss-blue);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-inter-tight);
+  --font-mono: var(--font-jetbrains-mono);
+
+  --animate-marquee: marquee 28s linear infinite;
+  --animate-marquee-reverse: marquee-reverse 32s linear infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes marquee {
+  from {
+    transform: translateX(0);
   }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Signature move: 1-2 words inside a heading painted with the brand
+   gradient (teal → cyan → blue) while the rest stays plain text. */
+.text-gradient {
+  background: linear-gradient(95deg, var(--ss-teal) 0%, var(--ss-cyan) 42%, var(--ss-blue) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes drift {
+  to {
+    transform: translate(60px, 40px) scale(1.15);
+  }
+}
+
+@keyframes grid-pan {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 64px 64px;
+  }
+}
+
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -16;
+  }
+}
+
+.animate-dash-flow {
+  animation: dash-flow 1.4s linear infinite;
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 40s linear infinite;
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+.bg-grid-animate {
+  background-image: linear-gradient(rgba(94, 234, 212, 0.14) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(94, 234, 212, 0.14) 1px, transparent 1px);
+  background-size: 64px 64px;
+  animation: grid-pan 14s linear infinite;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: var(--ss-teal);
+  color: var(--ss-base);
 }

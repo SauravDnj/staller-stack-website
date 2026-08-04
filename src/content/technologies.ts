@@ -1,0 +1,18 @@
+export const technologies = [
+  { name: "React", icon: "react" },
+  { name: "Next.js", icon: "nextdotjs" },
+  { name: "Node.js", icon: "nodedotjs" },
+  { name: "TypeScript", icon: "typescript" },
+  { name: "Python", icon: "python" },
+  { name: "AWS", icon: "amazonaws" },
+  { name: "Azure", icon: "microsoftazure" },
+  { name: "Google Cloud", icon: "googlecloud" },
+  { name: "Docker", icon: "docker" },
+  { name: "Kubernetes", icon: "kubernetes" },
+  { name: "TensorFlow", icon: "tensorflow" },
+  { name: "GraphQL", icon: "graphql" },
+  { name: "PostgreSQL", icon: "postgresql" },
+  { name: "Terraform", icon: "terraform" },
+  { name: "Flutter", icon: "flutter" },
+  { name: "React Native", icon: "react" },
+] as const;

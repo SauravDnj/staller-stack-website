@@ -1,0 +1,1495 @@
+{
+  "site": "https://technoyuga.com",
+  "scraped_at": "2026-07-31T16:58:00",
+  "scraper": "technoyuga_scraper.py v1.0",
+  "note": "SAMPLE OUTPUT - homepage only. Run technoyuga_scraper.py locally to generate all 168+ pages in this same schema.",
+  "total_pages_scraped": 1,
+  "pages": [
+    {
+      "status_code": 200,
+      "final_url": "https://technoyuga.com/",
+      "url": "https://technoyuga.com/",
+      "slug": "home",
+      "title": "Transform Ideas into Digital Success with TechnoYuga",
+      "title_length": 51,
+      "meta_description": "TechnoYuga is an AI-first mobile app & software development company delivering smart, scalable, and future-ready solutions powered by AI.",
+      "meta_description_length": 135,
+      "meta_robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "canonical": "https://technoyuga.com/",
+      "language": "en-US",
+      "last_modified": "2026-07-30T18:25:02+00:00",
+      "generator": "Elementor 4.1.4 / WordPress",
+      "open_graph": {
+        "og_title": "Transform Ideas into Digital Success with TechnoYuga",
+        "og_description": "TechnoYuga is an AI-first mobile app & software development company delivering smart, scalable, and future-ready solutions powered by AI.",
+        "og_image": "https://technoyuga.com/wp-content/uploads/2026/04/Home-page-og.webp",
+        "og_type": "website",
+        "og_url": "https://technoyuga.com/",
+        "og_locale": "en_US",
+        "og_site_name": "TechnoYuga"
+      },
+      "twitter_card": "summary_large_image",
+      "h1_count": 0,
+      "section_count": 16,
+      "site_header": {
+        "logo": "https://technoyuga.com/wp-content/uploads/2025/12/technoyuga-logo-dark-1.png",
+        "primary_nav": [
+          {
+            "label": "Home",
+            "href": "https://technoyuga.com/",
+            "has_megamenu": false
+          },
+          {
+            "label": "Build With AI",
+            "href": "#",
+            "has_megamenu": true,
+            "megamenu_title": "AI Center of Excellence",
+            "tabs": [
+              "AI Services",
+              "AI Solutions",
+              "Hire AI Talent"
+            ]
+          },
+          {
+            "label": "Services",
+            "href": "#",
+            "has_megamenu": true,
+            "megamenu_title": "Our Services",
+            "tabs": [
+              "Application Development",
+              "Software Development",
+              "Digital Transformation",
+              "Solutions",
+              "Hire Developers",
+              "Locations"
+            ]
+          },
+          {
+            "label": "Industry",
+            "href": "#",
+            "has_megamenu": true,
+            "megamenu_title": "Industries We Empower",
+            "tabs": []
+          },
+          {
+            "label": "About Us",
+            "href": "#",
+            "has_megamenu": true,
+            "tabs": []
+          },
+          {
+            "label": "Portfolio",
+            "href": "https://technoyuga.com/portfolio/",
+            "has_megamenu": false
+          },
+          {
+            "label": "Blogs",
+            "href": "https://technoyuga.com/blog",
+            "has_megamenu": false
+          }
+        ],
+        "header_cta": {
+          "text": "Contact Us",
+          "href": "https://technoyuga.com/contact-us/"
+        },
+        "contact_block": {
+          "phone": "+91-99102 74736",
+          "email": "hello@technoyuga.com",
+          "address": "4th Floor 411, Akshar Square, Dabholi, Surat, Gujarat 395004",
+          "social": {
+            "linkedin": "https://www.linkedin.com/company/technoyuga-pvt-ltd",
+            "instagram": "https://instagram.com/techno_yuga",
+            "youtube": "https://youtube.com/@technoyugapvt.ltd.3854",
+            "dribbble": "https://dribbble.com/Technoyugasoft"
+          }
+        }
+      },
+      "sections": [
+        {
+          "section_index": 1,
+          "section_name": "hero_slider",
+          "header": "",
+          "header_tag": "",
+          "sub_headers": [
+            {
+              "tag": "eyebrow",
+              "text": "AI Transformation"
+            },
+            {
+              "tag": "eyebrow",
+              "text": "Digital Transformation"
+            },
+            {
+              "tag": "eyebrow",
+              "text": "Software Product Engineering"
+            }
+          ],
+          "slides": [
+            {
+              "eyebrow": "AI Transformation",
+              "heading": "Replacing Manual Operations with AI Agents",
+              "body": "Turn repetitive tasks into automated workflows that actually save time and let your team focus on what matters."
+            },
+            {
+              "eyebrow": "Digital Transformation",
+              "heading": "Next-Gen Digital Systems, Building with AI",
+              "body": "Modern digital systems that work smarter, not harder, connect your data, streamline operations, and help you make better decisions faster."
+            },
+            {
+              "eyebrow": "Software Product Engineering",
+              "heading": "Engineering the Experience-Rich Mobile Apps and Software Products",
+              "body": "We design and engineer high-performance mobile apps and software products that deliver seamless user experiences and long-term business value."
+            }
+          ],
+          "buttons": [
+            {
+              "text": "Explore our Work",
+              "href": "#case-study"
+            },
+            {
+              "text": "Begin Your Transformation",
+              "href": "popup:9751"
+            }
+          ]
+        },
+        {
+          "section_index": 2,
+          "section_name": "client_logos",
+          "header": "Honored to Partner With Visionary Clients",
+          "header_tag": "h3",
+          "sub_headers": [],
+          "logos": [
+            "Decathlon",
+            "GFacility",
+            "Akasha",
+            "Samsung",
+            "TanggoPay",
+            "Justlife",
+            "AmalfiJets",
+            "Adonis",
+            "MFin",
+            "European Union",
+            "Vibes-Only",
+            "Toyota",
+            "Yes Bank",
+            "Porsche"
+          ],
+          "paragraphs": [
+            "As a Digital Transformation Firm with proven expertise and a strong delivery record, We Deliver Full-Cycle Mobile and Digital Solutions Engineered for Scale, Security, and Sustained Growth."
+          ]
+        },
+        {
+          "section_index": 3,
+          "section_name": "about_company",
+          "header": "We are Technoyuga",
+          "header_tag": "h2",
+          "sub_headers": [
+            {
+              "tag": "h3",
+              "text": "Team of excellence and precision"
+            }
+          ],
+          "paragraphs": [
+            "Technoyuga, an AI-native digital transformation, mobile app, product and software development company, was established to support enterprises in crafting, launching, and growing intelligence at all levels. By fusing AI-first ideas with profound engineering skills, Technoyuga aims to enhance the sophistication of business products."
+          ],
+          "stats": [
+            {
+              "value": "97%",
+              "label": "Proven Delivery at Scale"
+            },
+            {
+              "value": "35+",
+              "label": "Industries Transformed"
+            },
+            {
+              "value": "25+",
+              "label": "Recognized Excellence in AI Innovation"
+            },
+            {
+              "value": "75+",
+              "label": "Elite AI Talent Driving Every Project"
+            },
+            {
+              "value": "250M+",
+              "label": "Powering Business Growth & Capital Value"
+            }
+          ]
+        },
+        {
+          "section_index": 4,
+          "section_name": "global_transformation",
+          "header": "Driving Global Business Transformation with Platform-Agnostic AI Innovation",
+          "header_tag": "h2",
+          "sub_headers": [
+            {
+              "tag": "eyebrow",
+              "text": "Cognitively Engineered"
+            }
+          ],
+          "paragraphs": [
+            "AI is reshaping how businesses operate, and Technoyuga is at the forefront of this shift. Through years of experience in AI-driven application development and implementation, Technoyuga empowers organizations to build intelligent platforms that accelerate growth and compete in the digital economy."
+          ],
+          "stats": [
+            {
+              "value": "500+",
+              "label": "AI-Powered Impact, Delivered",
+              "desc": "Successfully executed AI-powered digital solutions across industries, helping businesses innovate and scale globally."
+            },
+            {
+              "value": "5+",
+              "label": "Years of Excellence"
+            },
+            {
+              "value": "97%",
+              "label": "Client Retention",
+              "desc": "Long-term partnerships built on trust, measurable results, and seamless collaboration."
+            }
+          ],
+          "certifications": [
+            "Trusted ISO Certified Company",
+            "Incredible workplaces Certified",
+            "CMMI level 3 Company"
+          ],
+          "team_names": [
+            "Mrugesh",
+            "Nihar",
+            "Bhavesh",
+            "Gautam",
+            "Harsh",
+            "Priyank",
+            "Alpa",
+            "Mahesh",
+            "Siddharth",
+            "Dhaval",
+            "Mahesh",
+            "Nilesh",
+            "Sagar",
+            "Naman",
+            "Rinkita"
+          ]
+        },
+        {
+          "section_index": 5,
+          "section_name": "testimonials",
+          "header": "Insights From Our Partners",
+          "header_tag": "h2",
+          "sub_headers": [
+            {
+              "tag": "eyebrow",
+              "text": "Testimonials"
+            }
+          ],
+          "paragraphs": [
+            "Client success fuels our purpose. From intelligent products to seamless execution, we empower businesses to innovate and lead in an AI-driven world."
+          ],
+          "testimonials": [
+            {
+              "name": "Paul van Alfen",
+              "role": "MD, Up in the Air",
+              "country": "USA",
+              "verified_by": "Clutch",
+              "quote": "TechnoYuga Soft Pvt. Ltd. has delivered a functional platform that reduces manual reporting time and boosts data accuracy for the client. The team's project management is organized, communicative, and flexible."
+            },
+            {
+              "name": "Fernando Mendieta",
+              "role": "CEO & Co-Founder, Escores LLC",
+              "country": "",
+              "verified_by": "Clutch",
+              "quote": "TechnoYuga Soft Pvt. Ltd. has launched an app that has received positive client and customer feedback. The team has followed a structured sprint-based approach and updated the client through regular calls and Slack."
+            },
+            {
+              "name": "Luis Saavedra",
+              "role": "Founder & CEO, Ordeno.app",
+              "country": "Spain",
+              "verified_by": "Clutch",
+              "quote": "Technoyuga's team maintained excellent communication throughout the project. They provided regular updates, held weekly meetings, and used Trello to track progress and manage tasks effectively."
+            },
+            {
+              "name": "Ashish Karamchandani",
+              "role": "Senior Manager, Lancesoft Inc.",
+              "country": "USA",
+              "verified_by": "Clutch",
+              "quote": "They communicated clearly, set realistic timelines, and stuck to them throughout the project. Their technical depth, speed of execution, and willingness to act as a strategic partner instead of just a vendor."
+            },
+            {
+              "name": "Othniel Tucker",
+              "role": "CTO, Interp Global Inc",
+              "country": "Georgia, USA",
+              "verified_by": "Clutch",
+              "quote": "Technoyuga's project management was excellent. All project milestones were delivered on time or earlier, and they were very accommodating whenever we requested changes."
+            },
+            {
+              "name": "Welington Pires",
+              "role": "Representative for TOYOTA Mobility",
+              "country": "Brazil",
+              "verified_by": "Clutch",
+              "quote": "TechnoYuga built a complete retail management system for us, including modules for inventory tracking, order management, sales reporting, and staff administration."
+            }
+          ],
+          "video_testimonials": [
+            {
+              "name": "Bobby",
+              "role": "Founder - Adonis"
+            },
+            {
+              "name": "Pink",
+              "role": "Co-foudner - PBD"
+            },
+            {
+              "name": "Gabriel",
+              "role": "Founder - Catholic Networker"
+            }
+          ]
+        },
+        {
+          "section_index": 6,
+          "section_name": "transformation_route",
+          "header": "Map Your Transformation Route",
+          "header_tag": "h2",
+          "sub_headers": [
+            {
+              "tag": "eyebrow",
+              "text": "AI-Powered"
+            }
+          ],
+          "paragraphs": [
+            "Chart a path toward an AI-driven and intelligent enterprise by developing a strategy aligning technology with business objectives and implementing the strategy effectively for long-lasting, transformative effect."
+          ],
+          "cards": [
+            {
+              "eyebrow": "AI-Driven Product Innovation",
+              "heading": "Intelligent Products That Scale",
+              "body": "Through AI-Powered product development solutions by Technoyuga, companies can innovate more quickly and generate measurable ROI.",
+              "bullets": [
+                "Build scalable, AI-native products with faster time-to-market",
+                "Convert prototypes into ROI-driven production solutions",
+                "Continuously optimize using AI analytics and real user feedback"
+              ]
+            },
+            {
+              "eyebrow": "Strategic Team Augmentation",
+              "heading": "Expert Teams on Demand",
+              "body": "Our AI, machine learning, and cloud engineering practitioners can help you expand your workforce to meet growing demand for specialized skills.",
+              "bullets": [
+                "Access certified AI/ML engineers, data scientists, and cloud architects.",
+                "Scale teams on-demand for agile and high-impact execution.",
+                "Improve project velocity and delivery quality with minimal ramp-up."
+              ]
+            },
+            {
+              "eyebrow": "Intelligent Modernization & Transformation",
+              "heading": "Future-Ready Enterprise Transformation",
+              "body": "Using cloud technologies, automation and AI-powered solutions, we upgrade existing operating models, including processes and legacy systems.",
+              "bullets": [
+                "Migrate legacy systems to AI-powered, cloud-native platform",
+                "Automate workflows to improve operational efficiency",
+                "Apply AI insights for smarter planning and performance"
+              ]
+            },
+            {
+              "heading": "Modernizing Legacy Systems",
+              "body": "Modernize legacy platforms with new solutions that are simpler to run, integrate, and scale over time.",
+              "bullets": [
+                "Eliminate old systems without impacting core operations",
+                "Enhance maintainability, long-term, and flexibility",
+                "Establish a more robust basis for future AI adoption"
+              ]
+            },
+            {
+              "heading": "Intelligent Automation System",
+              "body": "Automate routine decisions and repetitive work to allow your teams to work faster and spend time on more valuable work.",
+              "bullets": [
+                "Minimize human work in the business processes",
+                "Accelerate processes through AI-powered automationv",
+                "Enhance uniformity and operational productivity"
+              ]
+            },
+            {
+              "heading": "Deep Integration into Workflows",
+              "body": "Integrate AI into your current tools and processes to make adoption seem natural, beneficial, and more scalable.",
+              "bullets": [
+                "Integrate AI with existing systems that your teams utilize",
+                "Minimize the tension among tools, teams, and processes",
+                "Get implementation more practical and adoption-ready"
+              ]
+            },
+            {
+              "heading": "Rapid Solution Delivery",
+              "body": "Bring good ideas into working solutions fast with a focused build strategy that saves time and maintains a high momentum.",
+              "bullets": [
+                "Go from idea to action in weeks and not months",
+                "Quickly test ideas through lean development cycles",
+                "Start with simplicity, velocity, and space to expand"
+              ]
+            },
+            {
+              "heading": "Strategic Team Augmentation",
+              "body": "Enhance your in-house team with highly skilled professionals who will assist in delivery, fill skill gaps, and keep projects on course.",
+              "bullets": [
+                "On-demand AI, data, and engineering talent",
+                "Deliver scale capacity without lengthy recruitment processes",
+                "Make execution better with rapidly plugging teams"
+              ]
+            },
+            {
+              "heading": "Data Intelligence & AI Analytics",
+              "body": "Using cloud technologies, automation and AI-powered solutions, we upgrade existing operating models, including processes and legacy systems.",
+              "bullets": [
+                "Transform raw data into meaningful, easy-to-use data",
+                "Make better plans through smarter analysis and forecasting",
+                "Facilitate improved cross-team and cross-functional decision-making"
+              ]
+            }
+          ]
+        },
+        {
+          "section_index": 7,
+          "section_name": "core_services",
+          "header": "Core Service We Deliver",
+          "header_tag": "h2",
+          "sub_headers": [
+            {
+              "tag": "eyebrow",
+              "text": "Ai Powered"
+            }
+          ],
+          "cards": [
+            {
+              "heading": "AI & Agentic Automation",
+              "body": "AI agents and intelligent automation will transform the way your organization operates. We develop solutions that use AI chatbots to help customers receive assistance from an agent and optimize workflows, and predictive analytics to anticipate and make rapid decisions.",
+              "cta": {
+                "text": "Explore Service",
+                "href": "https://technoyuga.com/agentic-ai-development-services/"
+              }
+            },
+            {
+              "heading": "Staffing & Talent Augmentation",
+              "body": "By providing your organization with the talent and specialty to grow your project team, we have a diverse ecosystem of experts in both AI and technology. We have trained AI and ML engineers to ensure your company has the skills needed to innovate and execute quickly.",
+              "cta": {
+                "text": "Explore Service",
+                "href": "https://technoyuga.com/hire-developers/"
+              }
+            },
+            {
+              "heading": "Blockchain Solutions",
+              "body": "By combining blockchain with artificial intelligence, we transform your company with secure, scalable, and intelligent blockchain applications, including intelligent contracts, decentralized applications, tokenisation, and enterprise-grade blockchain implementations.",
+              "cta": {
+                "text": "Explore Service",
+                "href": "https://technoyuga.com/services/blockchain-app-development/"
+              }
+            },
+            {
+              "heading": "Digital Transformation Solutions",
+              "body": "Using an AI-first strategy by updating your existing enterprise systems can create new opportunities for your company. By combining cloud-based technology with your existing enterprise systems, we can create a more scalable and future-ready digital ecosystem.",
+              "cta": {
+                "text": "Explore Service",
+                "href": "https://technoyuga.com/services/mobile-app-development/"
+              }
+            },
+            {
+              "heading": "AI-Enhanced DevOps",
+              "body": "Integrate AI tools into your DevOps process to improve CI/CD pipeline quality, automate cloud CI/CD activities, enhance predictive monitoring, and strengthen security-first DevOps practices, accelerating your release cycle.",
+              "cta": {
+                "text": "Explore Service",
+                "href": "https://technoyuga.com/hire-developers/devops-engineers/"
+              }
+            },
+            {
+              "heading": "Mobile Product Development",
+              "body": "To bring your dream to life with our products, we develop mobile applications that help you engage your customers and deliver measurable results. We design cross-platform mobile apps, provide AI-powered analytics for your app users, and implement secure architecture.",
+              "cta": {
+                "text": "Explore Service",
+                "href": "https://technoyuga.com/mobile-app-development-services/"
+              }
+            },
+            {
+              "heading": "IoT Development",
+              "body": "Through IoT, devices can communicate with one another and autonomously create an integrated environment that provides real-time information, ultimately improving business decision-making through AI.",
+              "cta": {
+                "text": "Explore Service",
+                "href": "https://technoyuga.com/iot-app-development-services/"
+              }
+            },
+            {
+              "heading": "Software Development",
+              "body": "Our focus is on providing our clients with high-performance AI-based software that enables them to create new products and services and achieve measurable business success. We provide secure software solutions for enterprise service providers and SaaS companies.",
+              "cta": {
+                "text": "Explore Service",
+                "href": "https://technoyuga.com/services/software-development/"
+              }
+            },
+            {
+              "heading": "Data Analytics",
+              "body": "We engineer intelligent analytics ecosystems that fuse AI, predictive models, and real-time intelligence. The result: autonomous insights, sharper foresight, and faster, high-confidence decisions driven by governed, always-on data.",
+              "cta": {
+                "text": "Explore Service",
+                "href": "https://technoyuga.com/predictive-analytics-services/"
+              }
+            }
+          ]
+        },
+        {
+          "section_index": 8,
+          "section_name": "case_studies",
+          "header": "Explore Our Digital Footprint: Where Vision Meets Innovation",
+          "header_tag": "h2",
+          "sub_headers": [
+            {
+              "tag": "eyebrow",
+              "text": "Case Study"
+            }
+          ],
+          "paragraphs": [
+            "From shaping new digital products to scaling engineering capabilities or transforming existing systems, Technoyuga partners with you at every stage of your technology journey."
+          ],
+          "case_studies": [
+            {
+              "category": "Smart Mobility",
+              "client": "Toyota",
+              "title": "AI-Powered Sales Operations & Dealer Performance Platform",
+              "tags": [
+                "AI Analytics",
+                "Mobile App",
+                "Product Design-Enterprise",
+                "Platform-Data Analytics"
+              ],
+              "description": "Designed a secure mobile-first platform that enables dealerships to track leads, inventory, and regional performance with AI-driven sales forecasting and intelligent reporting automation.",
+              "metrics": [
+                {
+                  "value": "28%",
+                  "label": "Faster Sales Reporting Turnaround"
+                },
+                {
+                  "value": "35%",
+                  "label": "Better Regional Performance Visibility"
+                }
+              ],
+              "cta": {
+                "text": "View Case Study",
+                "href": "https://technoyuga.com/case-studies/toyota-mobile-app-solution/"
+              }
+            },
+            {
+              "category": "Business Banking",
+              "client": "Yesbank",
+              "title": "Business Banking Mobile Application for Enterprise Banking",
+              "tags": [
+                "Product Design",
+                "Mobile App",
+                "Fintech Integration",
+                "Secure Payments"
+              ],
+              "description": "Developed a secure, mobile-first business banking platform that allows businesses to handle bulk payments, payroll processing, approvals and trade finance transactions with real-time visibility and enterprise-level security.",
+              "metrics": [
+                {
+                  "value": "40%",
+                  "label": "Faster Transaction Processing"
+                },
+                {
+                  "value": "60%",
+                  "label": "Faster Bulk Payout Execution"
+                }
+              ],
+              "cta": {
+                "text": "View Case Study",
+                "href": "https://technoyuga.com/case-studies/yes-bank-mobile-banking-app/"
+              }
+            },
+            {
+              "category": "Mobile Commerce",
+              "client": "Decathlon",
+              "title": "Retail Commerce Mobile App Development with Omnichannel Integration",
+              "tags": [
+                "AI Recommendations",
+                "Product Design",
+                "Mobile App",
+                "E-commerce Integration",
+                "Retail Technology"
+              ],
+              "description": "Developed a mobile commerce platform that provides AI-based product recommendations, personalised shopping journeys, and smart in-store navigation.",
+              "metrics": [
+                {
+                  "value": "10M+",
+                  "label": "Mobile App Downloads"
+                },
+                {
+                  "value": "60+",
+                  "label": "Sports Categories Available"
+                }
+              ],
+              "cta": {
+                "text": "View Case Study",
+                "href": "#"
+              }
+            },
+            {
+              "category": "Automotive App",
+              "client": "My Porsche",
+              "title": "My Porsche Mobile App: Connected Vehicle Experience",
+              "tags": [
+                "IoT Integration",
+                "Product Design",
+                "Mobile App",
+                "Automotive Integration"
+              ],
+              "description": "Designed an exclusive mobile application which allows owners of Porsche to remotely monitor their vehicles, control charging, use navigation applications and book services based on one digital platform.",
+              "metrics": [
+                {
+                  "value": "500K+",
+                  "label": "Connected Vehicle Interactions"
+                },
+                {
+                  "value": "120K+",
+                  "label": "Active Mobile App Users"
+                }
+              ],
+              "cta": {
+                "text": "View Case Study",
+                "href": "https://technoyuga.com/case-studies/porsche-app-development/"
+              }
+            },
+            {
+              "category": "Investment Platform",
+              "client": "Vestrado",
+              "title": "Online Trading and Investment platform.",
+              "tags": [
+                "Product Design",
+                "Mobile App",
+                "Fintech Platform",
+                "Trading Integration"
+              ],
+              "description": "Developed a digital trading platform enabling users to access global financial markets, trade multiple instruments, and manage investments through a secure and user-friendly interface.",
+              "metrics": [
+                {
+                  "value": "600K+",
+                  "label": "Global Traders Supported"
+                },
+                {
+                  "value": "150+",
+                  "label": "Trading Instruments Available"
+                }
+              ],
+              "cta": {
+                "text": "Let's Connect",
+                "href": "popup:9751"
+              }
+            },
+            {
+              "category": "Luxury Travel",
+              "client": "AmalfiJets",
+              "title": "Luxury Private Jet Charter and Travel Experience Platform",
+              "tags": [
+                "Product Design",
+                "Mobile App",
+                "Travel Platform",
+                "Secure Payments"
+              ],
+              "description": "Developed a luxury travel management platform that allows customers to book charters on a private jet, reserve black cars, manage itinerates, and access exclusive lifestyle experiences via one mobile app.",
+              "metrics": [
+                {
+                  "value": "3,500+",
+                  "label": "Aircraft Across"
+                },
+                {
+                  "value": "170+",
+                  "label": "Countries"
+                },
+                {
+                  "value": "1M+",
+                  "label": "Bookings Handled"
+                }
+              ],
+              "cta": {
+                "text": "Let's Connect",
+                "href": "popup:9751"
+              }
+            },
+            {
+              "category": "Fitness Marketplace",
+              "client": "Adonis",
+              "title": "AI-Driven Fitness Marketplace & Coaching Platform",
+              "tags": [
+                "AI Matching",
+                "Product Design",
+                "Mobile App",
+                "Marketplace Platform",
+                "Real-Time Messaging"
+              ],
+              "description": "Created a digital fitness marketplace platform with AI-based trainer matching, personalised workout recommendations, and performance tracking for optimised user outcomes.",
+              "metrics": [
+                {
+                  "value": "10K+",
+                  "label": "App Downloads After Launch"
+                },
+                {
+                  "value": "1,000+",
+                  "label": "Certified Trainers Onboarded"
+                }
+              ],
+              "cta": {
+                "text": "View Case Study",
+                "href": "https://technoyuga.com/case-studies/adonis-personal-fitness-training-app/"
+              }
+            },
+            {
+              "category": "AI",
+              "client": "Samsung AI Space Intelligence",
+              "title": "AI-Powered Room Scanning & Smart Product Fit System",
+              "tags": [
+                "Computer Vision",
+                "Depth Estimation",
+                "AI Recommendations",
+                "Retail Innovation"
+              ],
+              "description": "Developed an AI-driven proof-of-concept that enables customers to scan their physical space using a smartphone camera and receive intelligent product fit recommendations.",
+              "metrics": [],
+              "bullets": [
+                "Image-based contextual understanding",
+                "Python-based processing pipeline",
+                "Computer Vision + Monocular Depth Estimation",
+                "AI reasoning for spatial-product mapping"
+              ],
+              "cta": {
+                "text": "Let's Connect",
+                "href": "popup:9751"
+              }
+            }
+          ],
+          "buttons": [
+            {
+              "text": "See Our Case Studies",
+              "href": "https://technoyuga.com/portfolio/"
+            }
+          ]
+        },
+        {
+          "section_index": 9,
+          "section_name": "tech_foundation",
+          "header": "Our AI-First Technology Foundation",
+          "header_tag": "h2",
+          "sub_headers": [
+            {
+              "tag": "eyebrow",
+              "text": "Technologies"
+            }
+          ],
+          "paragraphs": [
+            "With an AI-first approach at our core, we create intelligent ecosystems that are adaptable, scalable, and learnable, ultimately delivering measurable value in complex enterprise environments."
+          ],
+          "cards": [
+            {
+              "heading": "Artificial Intelligence",
+              "tagline": "Intelligence at the core",
+              "body": "We embed AI into digital ecosystems to automate intelligence and drive continuous enterprise evolution.",
+              "bullets": [
+                "Smarter systems that think and adapt",
+                "Automation powered by real intelligence",
+                "AI engineered for scalable impact"
+              ],
+              "footer": "Intelligence. Built. Delivered."
+            },
+            {
+              "heading": "Generative AI",
+              "tagline": "Creating Intelligence, Not Just Content",
+              "body": "Our GenAI solutions unlock rapid creation, knowledge synthesis, and enterprise productivity at scale.",
+              "bullets": [
+                "Generate content and insights instantly",
+                "Accelerate innovation across teams",
+                "Secure, enterprise-ready GenAI systems"
+              ],
+              "footer": "Ideas. Engineered. Activated."
+            },
+            {
+              "heading": "Agentic AI",
+              "tagline": "Autonomous Intelligence in Motion",
+              "body": "We build AI agents that reason, plan, and act independently to execute complex workflows end-to-end.",
+              "bullets": [
+                "Self-directed AI systems",
+                "Reduced human dependency",
+                "Continuous autonomous optimisation"
+              ],
+              "footer": "AI That Delivers."
+            },
+            {
+              "heading": "Machine Learning (ML)",
+              "tagline": "Systems That Learn and Improve",
+              "body": "Our ML models convert data into predictive intelligence that evolves with your business.",
+              "bullets": [
+                "Predict outcomes with precision",
+                "Optimize processes continuously",
+                "Models trained for real ROI"
+              ],
+              "footer": "Learning That Scales."
+            },
+            {
+              "heading": "Computer Vision",
+              "tagline": "Visual Intelligence at Scale",
+              "body": "We enable machines to interpret visual data for automation, accuracy, and faster decision-making.",
+              "bullets": [
+                "Image and video intelligence",
+                "Real-time visual insights",
+                "High-precision recognition systems"
+              ],
+              "footer": "Vision Into Intelligence."
+            },
+            {
+              "heading": "Cloud",
+              "tagline": "Built for Scale, Security, and Speed",
+              "body": "Cloud-native architectures are designed to support enterprise growth, resilience, and performance.",
+              "bullets": [
+                "Elastic and scalable infrastructure",
+                "Secure, cloud-first systems",
+                "High availability by design"
+              ],
+              "footer": "Cloud Without Limits."
+            },
+            {
+              "heading": "Data & Analytics",
+              "tagline": "Intelligence Hidden in Data, Revealed",
+              "body": "We transform complex data into actionable insights that drive smarter enterprise decisions.",
+              "bullets": [
+                "Advanced analytics and reporting",
+                "Predictive and prescriptive insights",
+                "Data clarity across operations"
+              ],
+              "footer": "Data To Decisions."
+            },
+            {
+              "heading": "IOT",
+              "tagline": "Intelligent Connectivity Everywhere",
+              "body": "Smart IoT ecosystems that connect devices, systems, and data for real-time control and optimization.",
+              "bullets": [
+                "Real-time monitoring",
+                "Predictive maintenance",
+                "Intelligent edge solutions"
+              ],
+              "footer": "Devices That Decide."
+            },
+            {
+              "heading": "AR/VR & Metaverse",
+              "tagline": "Experience the Future Digitally",
+              "body": "Immersive technologies that redefine training, collaboration, and customer engagement.",
+              "bullets": [
+                "Interactive digital experiences",
+                "Immersive enterprise simulations",
+                "Enhanced user engagement"
+              ],
+              "footer": "Reality. Reimagined. Intelligently."
+            },
+            {
+              "heading": "Blockchain",
+              "tagline": "Trust Engineered into Systems",
+              "body": "Decentralized technologies that deliver transparency, security, and immutable trust.",
+              "bullets": [
+                "Secure distributed ledgers",
+                "Transparent transactions",
+                "Tamper-proof architectures"
+              ],
+              "footer": "Trust. Engineered. Secure."
+            },
+            {
+              "heading": "Business Intelligence",
+              "tagline": "Intelligence for Confident Decisions",
+              "body": "BI platforms that provide real-time insights, performance visibility, and strategic clarity.",
+              "bullets": [
+                "Real-time dashboards",
+                "KPI-driven insights",
+                "Executive-ready reporting"
+              ],
+              "footer": "Clarity-Driven Decisions"
+            }
+          ]
+        },
+        {
+          "section_index": 10,
+          "section_name": "tech_stack",
+          "header": "Cutting Edge Technologies We Excel In",
+          "header_tag": "h2",
+          "paragraphs": [
+            "At TechnoYuga, we specialise in cutting-edge technologies to craft AI-powered solutions, scalable web apps, innovative mobile applications, and enterprise-grade software. By combining modern frameworks with deep expertise, we deliver secure, high-performing, and future-ready digital products that drive business success."
+          ],
+          "tabs": {
+            "Artificial Intelligence": [
+              "Open AI",
+              "Azure OpenAI",
+              "Google Gemini",
+              "Meta LLaMA",
+              "Mistral AI",
+              "Anthropic Claude",
+              "Anthropic Claude (Hugging Face - MISLABELLED)",
+              "LangChain",
+              "LangGraph",
+              "LlamaIndex",
+              "AutoGen",
+              "CrewAI"
+            ],
+            "Mobile App": [
+              "Flutter",
+              "React Native",
+              "Swift",
+              "Kotlin"
+            ],
+            "Backend Programming Languages": [
+              "Python",
+              "Node.js",
+              "Java",
+              ".NET",
+              "Go",
+              "FastAPI",
+              "Spring Boot",
+              "NestJS"
+            ],
+            "Frontend Programming Languages": [
+              "React",
+              "Next.js",
+              "Angular",
+              "Vue.js",
+              "Tailwind CSS"
+            ],
+            "Databases": [
+              "PostgreSQL",
+              "MySQL",
+              "MongoDB",
+              "Redis",
+              "Cassandra"
+            ],
+            "Cloud DB and Warehouses": [
+              "AWS",
+              "Microsoft Azure",
+              "Google Cloud",
+              "Snowflake",
+              "BigQuery",
+              "Redshift",
+              "Azure Synapse"
+            ],
+            "DevOps": [
+              "Docker",
+              "Kubernetes",
+              "Terraform",
+              "Jenkins",
+              "GitHub Actions"
+            ],
+            "Architecture Designs and Patterns": [
+              "Microservices",
+              "Event-Driven Architecture",
+              "Serverless",
+              "Hexagonal Architecture",
+              "Domain-Driven Design"
+            ]
+          }
+        },
+        {
+          "section_index": 11,
+          "section_name": "process",
+          "header": "The AI-Native Path We Follow to Transform Vision into Impact",
+          "header_tag": "h2",
+          "sub_headers": [
+            {
+              "tag": "eyebrow",
+              "text": "Our Process"
+            }
+          ],
+          "paragraphs": [
+            "We follow a simple, practical process that helps turn ideas into real AI solutions that work in the real world."
+          ],
+          "steps": [
+            {
+              "step": "Discover",
+              "heading": "Problem First, Not Model First",
+              "body": "We start by understanding the real business problem before choosing any AI solution. This helps us build something useful, focused, and worth the effort."
+            },
+            {
+              "step": "Design",
+              "heading": "Data & Context Layer Design",
+              "body": "Good AI needs the right data and the right context. We organize both carefully so the system can give better and more reliable results."
+            },
+            {
+              "step": "Build",
+              "heading": "AI Architecture, Not Just APIs",
+              "body": "We do more than connect tools, we design AI systems that can actually support your goals. That means building with structure, scale, and long-term use in mind."
+            },
+            {
+              "step": "Integrate",
+              "heading": "Rapid AI Prototyping & Validation",
+              "body": "We build quick prototypes to test ideas early and see what works best. This saves time, reduces risk, and helps us move in the right direction faster."
+            },
+            {
+              "step": "Optimize",
+              "heading": "Production-Ready AI Systems",
+              "body": "Once the idea is proven, we turn it into a stable system ready for real use. We focus on security, performance, and easy adoption from the start."
+            },
+            {
+              "step": "Scale",
+              "heading": "Continuous Learning & Optimization",
+              "body": "AI systems should keep improving after launch. We monitor, learn, and refine them so they stay useful as your business grows."
+            }
+          ]
+        },
+        {
+          "section_index": 12,
+          "section_name": "industry_verticals",
+          "header": "Delivering Smart IT Services Across Industry Verticals",
+          "header_tag": "h2",
+          "sub_headers": [
+            {
+              "tag": "eyebrow",
+              "text": "Domains we work for"
+            }
+          ],
+          "paragraphs": [
+            "We provide sector-specific, scalable IT solutions that combine AI, automation, and cloud-native technologies for lasting results."
+          ],
+          "industries": [
+            {
+              "name": "FinTech",
+              "href": "https://technoyuga.com/solution/fintech-app-development/",
+              "body": "Our technology enables financial institutions to perform payment processing, and evaluate financial data by using AI-powered applications. Leveraging predictive credit scoring and real-time fraud detection, our customers benefit from business decisions and efficiency."
+            },
+            {
+              "name": "Healthcare",
+              "href": "https://technoyuga.com/solution/healthcare-app-development/",
+              "body": "AI-powered diagnostic tools, predictive analytics, and monitoring tools are changing how we deliver health care. The solutions we provide incorporate LLM's framework to provide natural language understanding and a vector database to enable secure access to patient records."
+            },
+            {
+              "name": "Retail & E-Commerce",
+              "href": "https://technoyuga.com/blog/category/ecommerce-app-development/",
+              "body": "We are automating both customer engagement and decision-making processes via MLOps powered by a combination of Machine Learning (ML) technology and our operations."
+            },
+            {
+              "name": "Logistics & Supply Chain",
+              "href": "",
+              "body": "By leveraging predictive analytics and AI-driven demand forecasting, we are creating a strong, adaptive, and efficient supply chain."
+            },
+            {
+              "name": "Real Estate & Construction",
+              "href": "",
+              "body": "The solutions we offer include predictive construction analytics, AI-aided project management services, digital twin simulations, utilizing a vector database, and LLMs' contribution to optimize planning, mitigate risks, and accelerate speed to market."
+            },
+            {
+              "name": "Travel & Hospitality",
+              "href": "https://technoyuga.com/solution/transport-app-development/",
+              "body": "Enhancing guest experience through AI-powered booking engines, dynamic pricing, and automated operations."
+            },
+            {
+              "name": "EdTech",
+              "href": "",
+              "body": "Personalized learning paths, intelligent assessments, and AI-powered content delivery improve engagement and outcomes."
+            },
+            {
+              "name": "Manufacturing",
+              "href": "",
+              "body": "Predictive maintenance, automated production lines, and AI-driven quality assurance enhance efficiency and reduce downtime."
+            },
+            {
+              "name": "Media & Entertainment",
+              "href": "",
+              "body": "We create a framework that allows for hyper-personalized content creation, augmented and virtual reality experiences, and artificial intelligence-powered audience analytics."
+            },
+            {
+              "name": "Insurance",
+              "href": "",
+              "body": "We leverage AI-first underwriting, automated claims processing, and proactive fraud detection."
+            },
+            {
+              "name": "Banking",
+              "href": "",
+              "body": "We enable banks to gain insight into their customers, secure their operations, and offer digital services through the application of AI-driven models and methods."
+            }
+          ]
+        },
+        {
+          "section_index": 13,
+          "section_name": "business_impact",
+          "header": "The Business Impact of Intelligent Systems",
+          "header_tag": "h2",
+          "cards": [
+            {
+              "eyebrow": "Operational Excellence",
+              "heading": "Autonomous Workflows",
+              "body": "Reduce manual effort and operating overhead by up to 35% through AI-powered process orchestration."
+            },
+            {
+              "eyebrow": "Revenue Acceleration",
+              "heading": "Intelligent Engagement",
+              "body": "Boost conversion rates and customer lifetime value by 20-30% using real-time AI personalization engines."
+            },
+            {
+              "eyebrow": "Faster Innovation",
+              "heading": "AI-Led Experimentation",
+              "body": "Shorten product development by up to 50% with Generative AI-driven prototyping and simulation."
+            }
+          ],
+          "buttons": [
+            {
+              "text": "Activate Your AI Advantage",
+              "href": "popup:9751"
+            }
+          ]
+        },
+        {
+          "section_index": 14,
+          "section_name": "awards",
+          "header": "Accolades That Reflect Our Impact in Digital & AI Innovation",
+          "header_tag": "h2",
+          "paragraphs": [
+            "Our evolution as a digital and AI-driven technology company has been recognized with multiple industry awards and distinctions."
+          ],
+          "awards": [
+            "Top Artificial Intelligence Company",
+            "Best App Development Agency",
+            "Sports Technology Awards",
+            "Best Design Award Designrush, 2026",
+            "Clutch Global Spring 2025",
+            "Top App Development Company 2024",
+            "Best Top Firm in Artificial Intelligence",
+            "Top Software development Company For Startup (GoodFirms)",
+            "Top mobile app development companies",
+            "Top rated Web app development agency",
+            "Top AI Agents Company 2025 (Clutch)",
+            "Top Mobile App Developers 2024"
+          ]
+        },
+        {
+          "section_index": 15,
+          "section_name": "why_choose_us",
+          "header": "Why Businesses Choose TechnoYuga for AI-Led Innovation",
+          "header_tag": "h2",
+          "sub_headers": [
+            {
+              "tag": "eyebrow",
+              "text": "Why TechnoYuga"
+            }
+          ],
+          "paragraphs": [
+            "Designed to turn complex ideas into simple, effective solutions."
+          ],
+          "note": "NOTE: this card set is duplicated twice in the DOM (carousel loop)",
+          "cards": [
+            {
+              "heading": "AI-Native Thinking",
+              "body": "We don't treat AI as an add-on. We build with AI in mind from the start, so the final solution feels smarter, faster, and more useful for real business needs."
+            },
+            {
+              "heading": "Agentic Automation Expertise",
+              "body": "Our team knows how to design AI agents and automation workflows that reduce manual work and help businesses run more efficiently."
+            },
+            {
+              "heading": "Rapid Prototyping with AI",
+              "body": "We move quickly from idea to working prototype, which helps you test concepts early, make better decisions, and save time during development."
+            },
+            {
+              "heading": "Up to 40% Lower Development Cost",
+              "body": "By using AI where it actually adds value, we can reduce build time and cut unnecessary effort, which often leads to lower overall development cost."
+            },
+            {
+              "heading": "Continuous Optimization and Iteration",
+              "body": "We don't stop after launch. We keep improving the product based on feedback, performance, and changing business needs."
+            },
+            {
+              "heading": "Security and Compliance",
+              "body": "We build with security, privacy, and compliance in mind, so your solution is ready for real business use and long-term trust."
+            }
+          ]
+        },
+        {
+          "section_index": 16,
+          "section_name": "blog_feed",
+          "header": "Explore Our Intelligence Hub",
+          "header_tag": "h2",
+          "posts": [
+            {
+              "title": "Travel & Hospitality Software: Booking Engines, PMS & Guest Experience Tools",
+              "href": "https://technoyuga.com/blog/travel-hospitality-software-management-systems/",
+              "category": "Healthcare App Development, Software Development",
+              "read_time": "14 min read",
+              "date": "March 11, 2026",
+              "excerpt": "With the way technology has changed how travel and lodging interact,..."
+            },
+            {
+              "title": "Why Custom Real Estate Software Development Is Transforming Property Management & CRM Systems",
+              "href": "https://technoyuga.com/blog/real-estate-software-development/",
+              "category": "Software Development",
+              "read_time": "12 min Read",
+              "date": "March 4, 2026",
+              "excerpt": "The rapid rise of digitalization in real estate has led to..."
+            },
+            {
+              "title": "Education Software Development: LMS, eLearning Portals & Virtual Classrooms",
+              "href": "https://technoyuga.com/blog/education-software-development/",
+              "category": "Mobile App Development",
+              "read_time": "13 min Read",
+              "date": "February 26, 2026",
+              "excerpt": "We are a part of a generation where the Education Software..."
+            }
+          ],
+          "buttons": [
+            {
+              "text": "View Blogs",
+              "href": "https://technoyuga.com/blog"
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does it cost to build an app for a business?",
+          "answer": "The cost depends on scope, features, technology stack, and level of intelligence required. At TechnoYuga, we design solutions around business outcomes, not just features, ensuring you invest only in what drives ROI. We offer flexible engagement models to align with your budget and growth goals."
+        },
+        {
+          "question": "How does TechnoYuga ensure project success?",
+          "answer": "We follow an AI-first, outcome-driven delivery approach combining strategic discovery, agile execution, and continuous optimization. Clear milestones, transparent communication, and performance metrics ensure every project delivers measurable value."
+        },
+        {
+          "question": "Does TechnoYuga provide support for post-project completion?",
+          "answer": "Yes, we offer ongoing support, optimization, and scaling services to ensure your product evolves with user needs, market changes, and emerging technologies. Our relationship doesn't end at launch; it grows with your success."
+        },
+        {
+          "question": "What makes TechnoYuga an AI-first development partner?",
+          "answer": "We design digital products with AI at the core, so solutions are built to automate work, improve decisions, and create long-term business value."
+        },
+        {
+          "question": "Why should I hire an app development company?",
+          "answer": "A specialized app development company brings deep technical expertise, proven processes, and faster time-to-market. With TechnoYuga, you gain a strategic technology partner, not just developers focused on scalability, performance, and long-term growth."
+        },
+        {
+          "question": "What industries does TechnoYuga specialize in?",
+          "answer": "We work across FinTech, Healthcare, Retail & E-Commerce, Logistics, Manufacturing, Real Estate, EdTech, Travel, Media, Insurance, and Banking. Our industry-specific AI solutions are designed to solve real operational and business challenges."
+        },
+        {
+          "question": "Does TechnoYuga build custom LLM and RAG solutions?",
+          "answer": "Yes, we create secure and practical LLM and RAG solutions that connect AI with your business data for more accurate results."
+        },
+        {
+          "question": "How long does it take to develop an app?",
+          "answer": "Timelines vary based on complexity and features. Typically, MVPs take 8-12 weeks, while enterprise-grade platforms follow phased releases. Our agile approach ensures faster launches without compromising quality or scalability."
+        },
+        {
+          "question": "Why do people trust TechnoYuga?",
+          "answer": "Clients trust us for our transparency, technical excellence, and consistent delivery of results. Our portfolio, long-term partnerships, and industry recognition reflect our commitment to building intelligent, reliable, and scalable solutions."
+        },
+        {
+          "question": "How does TechnoYuga build AI-powered apps and custom LLM solutions?",
+          "answer": "We use a modern AI stack including LLM frameworks, vector databases, MLOps pipelines, APIs, and SpeechTech. Our solutions are designed to be secure, explainable, and production-ready-built to deliver real business intelligence, not experiments."
+        },
+        {
+          "question": "What is the process TechnoYuga follows to build mobile and web apps?",
+          "answer": "Our process includes discovery, intelligent design, agile development, seamless integration, continuous optimization, and scalable deployment. Each phase is guided by data, AI insights, and business objectives to ensure impact."
+        },
+        {
+          "question": "Can TechnoYuga help modernize legacy systems using cloud-native solutions?",
+          "answer": "Absolutely. We modernize legacy systems using cloud-native architectures, microservices, APIs, and AI-driven automation, enhancing performance, security, and scalability while reducing operational complexity."
+        },
+        {
+          "question": "Does TechnoYuga offer team augmentation or managed engineering services?",
+          "answer": "Yes we provide flexible team augmentation and fully managed engineering services, allowing you to scale expertise on demand while maintaining full control, transparency, and delivery excellence."
+        },
+        {
+          "question": "How to choose a mobile app development company?",
+          "answer": "Look for proven experience, industry expertise, scalable architecture, post-launch support, and a clear focus on business outcomes. TechnoYuga stands out by combining AI-first engineering with strategic thinking and measurable results."
+        },
+        {
+          "question": "Can TechnoYuga integrate AI into existing systems?",
+          "answer": "Yes, we integrate AI into legacy and modern systems without disrupting your current operations."
+        }
+      ],
+      "forms": [
+        {
+          "form_name": "Contact / Project Enquiry (WPForms)",
+          "heading": "Do You Have Project in Mind ?",
+          "sub_heading": "Not sure where to start?",
+          "intro": "Are you looking for a top mobile app development company? If yes, you've come to the right place! We can fulfill all your mobile app development project requirements with expertise in cutting edge technologies like AI.",
+          "fields": [
+            {
+              "label": "Full Name",
+              "type": "text",
+              "required": true
+            },
+            {
+              "label": "Email",
+              "type": "email",
+              "required": true
+            },
+            {
+              "label": "Phone Number",
+              "type": "tel",
+              "required": false
+            },
+            {
+              "label": "Your Budget?",
+              "type": "radio",
+              "required": false,
+              "options": [
+                "$10K - $25K",
+                "$25K - $50K",
+                "$50K - $75K",
+                "Above $75K"
+              ]
+            },
+            {
+              "label": "Project Brief",
+              "type": "textarea",
+              "required": true
+            },
+            {
+              "label": "File Upload",
+              "type": "file",
+              "required": false,
+              "note": "You can upload up to 10 files."
+            },
+            {
+              "label": "Send me a copy of NDA",
+              "type": "checkbox",
+              "required": false
+            }
+          ],
+          "submit_text": "SEND MESSAGE",
+          "trust_note": "Your ideas are fully protected under our Non-Disclosure Agreement."
+        }
+      ],
+      "popups": [
+        {
+          "popup_id": "9751",
+          "heading": "Tell Us What You're Building",
+          "sub_heading": "We'll Make It Smarter",
+          "bullets": [
+            "Expect a response from us within 24 hours",
+            "We can sign an NDA before we discussing your project",
+            "A custom plan with timeline, budget & solutions - free"
+          ],
+          "email": "hello@technoyuga.com"
+        }
+      ],
+      "site_footer": {
+        "tagline": "Right Technology Partner can change everything",
+        "columns": {
+          "Services": [
+            {
+              "text": "Mobile App Development",
+              "href": "https://technoyuga.com/services/mobile-app-development/"
+            },
+            {
+              "text": "AI Development Services",
+              "href": "https://technoyuga.com/ai-development-services/"
+            },
+            {
+              "text": "Software Development",
+              "href": "https://technoyuga.com/services/software-development/"
+            },
+            {
+              "text": "UI-UX App Development",
+              "href": "https://technoyuga.com/services/ui-ux-design/"
+            },
+            {
+              "text": "MVP Development",
+              "href": "https://technoyuga.com/services/mvp-development/"
+            }
+          ],
+          "Hire Developers": [
+            {
+              "text": "Hire Full Stack Developer",
+              "href": "https://technoyuga.com/hire-developers/full-stack/"
+            },
+            {
+              "text": "Hire MERN Stack Developers",
+              "href": "https://technoyuga.com/mern-stack-developer/"
+            },
+            {
+              "text": "Hire React Native Developers",
+              "href": "https://technoyuga.com/hire-developers/react-native/"
+            },
+            {
+              "text": "Hire Dedicated Developers",
+              "href": "https://technoyuga.com/hire-developers/"
+            },
+            {
+              "text": "Hire AI Developers",
+              "href": "https://technoyuga.com/hire-developers/ai/"
+            },
+            {
+              "text": "Hire Flutter Developer",
+              "href": "https://technoyuga.com/hire-developers/flutter/"
+            }
+          ],
+          "Help & Support": [
+            {
+              "text": "Portfolio",
+              "href": "https://technoyuga.com/portfolio/"
+            },
+            {
+              "text": "About Us",
+              "href": "https://technoyuga.com/about-us/"
+            },
+            {
+              "text": "Career",
+              "href": "https://technoyuga.com/career/"
+            },
+            {
+              "text": "Old-Contact Us",
+              "href": "https://technoyuga.com/?page_id=2997"
+            },
+            {
+              "text": "Blog",
+              "href": "https://technoyuga.com/blog"
+            }
+          ],
+          "Solutions": [
+            {
+              "text": "AI Fintech Solution",
+              "href": "https://technoyuga.com/?page_id=537"
+            },
+            {
+              "text": "Sports Fantasy Solution",
+              "href": "https://technoyuga.com/solution/fantasy-app-development/"
+            },
+            {
+              "text": "Stock Trading Solution",
+              "href": "https://technoyuga.com/solution/stock-trading-app-development/"
+            },
+            {
+              "text": "Health Care Solution",
+              "href": "https://technoyuga.com/solution/healthcare-app-development/"
+            },
+            {
+              "text": "Video Streaming Solution",
+              "href": "https://technoyuga.com/solution/video-streaming-app-development/"
+            }
+          ]
+        },
+        "offices": [
+          {
+            "country": "India",
+            "address": "C58 Sainik Nagar, New Delhi 110059, India."
+          },
+          {
+            "country": "USA",
+            "address": "8735 DUNWOODY PLACE STE R, ATLANTA, GA, 30350, USA"
+          },
+          {
+            "country": "UAE",
+            "address": "Damas Building, 16-2 Office no.206, Al Maktoum road, Dubai UAE."
+          }
+        ],
+        "email": "hello@technoyuga.com",
+        "phone": "+91 9910274736",
+        "copyright": "Copyright © 2026 Technoyuga Soft Pvt Ltd. All rights reserved."
+      },
+      "issues": [
+        "no_h1",
+        "placeholder_text: 'Uses digital twins & IoMT for personalized treatment' appears on both 'Dedicated Development Team' and 'Hire Dedicated Developers' menu cards",
+        "mislabelled_logo: Hugging Face icon labelled 'Anthropic Claude'",
+        "duplicate_menu_item: Singapore listed twice under Locations",
+        "broken_menu_links: About Us -> /software-development-services/, Awards -> /enterprise-software-development/, Career -> /software-consulting-services/",
+        "malformed_mailto: 'https://hello@technoyuga.com' should be 'mailto:hello@technoyuga.com'",
+        "dead_anchor_links: UI/UX Design, AR/VR, Malaysia, Restaurant Food Ordering, Hire AI Engineers, Decathlon case study",
+        "url_encoding_error: customer-support-ai-agent-development/%20",
+        "wrong_target: 'AI Workflow Automation' -> ai-support-maintenance-services",
+        "typo: Developemnt / Develooment / automationv / itinerates / Co-foudner / OFFICE rendered as 'OƯice'",
+        "blog_category_mismatch: Travel article tagged 'Healthcare App Development'",
+        "stat_conflict: '5+ Years of Excellence' vs About text '7 years'",
+        "address_conflict: header shows Surat office, footer does not list it",
+        "duplicate_dom: 'Why TechnoYuga' 6-card set repeated twice"
+      ],
+      "word_count": 3480
+    }
+  ]
+}

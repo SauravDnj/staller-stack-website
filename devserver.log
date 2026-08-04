@@ -1,0 +1,33 @@
+
+> staller-stack-website@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.12 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://172.29.144.1:3000
+✓ Ready in 4.1s
+⚠ Slow filesystem detected. The benchmark took 666ms. If G:\Saurav\Free\Code Base\Code\staller-stack-website\.next/dev is a network drive, consider moving it to a local folder.
+See more: https://nextjs.org/docs/app/guides/local-development
+
+○ Compiling / ...
+ GET / 200 in 46s (next.js: 28.8s, application-code: 17.2s)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+ GET /services/web-app-development 200 in 2.9min (next.js: 2.2min, generate-params: 2.0min, application-code: 45s)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+ GET /industries/healthcare 200 in 86s (next.js: 86s, generate-params: 72s, application-code: 665ms)
+ GET / 200 in 624ms (next.js: 51ms, application-code: 573ms)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+○ Compiling /_not-found/page ...
+ GET / 200 in 14.0s (next.js: 3.1s, application-code: 10.9s)
+ GET / 200 in 3.1s (next.js: 22ms, application-code: 3.1s)
+ GET / 200 in 738ms (next.js: 142ms, application-code: 595ms)
+ POST /graphql?op=InstanceWarningQuery 404 in 3.7min (next.js: 3.6min, application-code: 1556ms)
+ POST /graphql?op=AssetGraphLiveQuery 404 in 3.7min (next.js: 3.6min, application-code: 2.1s)
+ POST /graphql?op=AssetAutomationQuery 404 in 3.7min (next.js: 3.6min, application-code: 1309ms)
+ POST /graphql?op=AssetsFreshnessInfoQuery 404 in 3.7min (next.js: 3.6min, application-code: 1690ms)
+ POST /graphql?op=AssetStaleStatusDataQuery 404 in 3.7min (next.js: 3.6min, application-code: 1435ms)
+ POST /graphql?op=CodeLocationStatusQuery 404 in 3.7min (next.js: 3.7min, application-code: 481ms)
+ POST /graphql?op=AssetStaleStatusDataQuery 404 in 139ms (next.js: 38ms, application-code: 101ms)
+ POST /graphql?op=AssetRecordsQuery 404 in 769ms (next.js: 321ms, application-code: 448ms)
+ GET /assets 404 in 964ms (next.js: 54ms, application-code: 910ms)
+ GET / 200 in 1572ms (next.js: 776ms, application-code: 796ms)

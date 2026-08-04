@@ -1,0 +1,1103 @@
+{
+  "logo": {
+    "dark": "https://technoyuga.com/wp-content/uploads/2025/12/technoyuga-logo-dark-1.png",
+    "light": "https://technoyuga.com/wp-content/uploads/2025/11/technoyuga-logo-light.svg",
+    "href": "https://technoyuga.com/"
+  },
+  "header_cta": {
+    "label": "Contact Us",
+    "href": "https://technoyuga.com/contact-us/"
+  },
+  "primary_menu": [
+    {
+      "label": "Home",
+      "href": "https://technoyuga.com/",
+      "type": "link",
+      "megamenu": null
+    },
+    {
+      "label": "Build With AI",
+      "href": "#",
+      "type": "megamenu",
+      "megamenu_title": "AI Center of Excellence",
+      "tabs": [
+        {
+          "tab_name": "AI Services",
+          "items": [
+            {
+              "label": "Artificial Intelligence",
+              "href": "https://technoyuga.com/ai-development-services/",
+              "description": "Intelligent AI solutions built for automation, insights, and business growth."
+            },
+            {
+              "label": "Agentic AI",
+              "href": "https://technoyuga.com/agentic-ai-development-services/",
+              "description": "Autonomous AI systems designed to plan, decide, and execute tasks."
+            },
+            {
+              "label": "Generative AI",
+              "href": "https://technoyuga.com/generative-ai-development-services/",
+              "description": "Generative AI solutions for content creation, automation, and smarter workflows."
+            },
+            {
+              "label": "Computer Vision",
+              "href": "https://technoyuga.com/computer-vision-development-services/",
+              "description": "AI vision systems for image, video, and object analysis."
+            },
+            {
+              "label": "NLP Development",
+              "href": "https://technoyuga.com/nlp-development-services/",
+              "description": "Language AI solutions for text analysis, chat, and speech understanding."
+            },
+            {
+              "label": "AI Chatbot",
+              "href": "https://technoyuga.com/ai-chatbot-development-company/",
+              "description": "Smart AI chatbots for customer support, sales, and user engagement."
+            },
+            {
+              "label": "AI Consulting",
+              "href": "https://technoyuga.com/ai-consulting-services/",
+              "description": "Expert AI consulting to plan, validate, and implement AI solutions."
+            },
+            {
+              "label": "Predictive Analytics",
+              "href": "https://technoyuga.com/predictive-analytics-services/",
+              "description": "Data-driven analytics solutions for forecasting, trends, and business decisions."
+            },
+            {
+              "label": "AI Agents",
+              "href": "https://technoyuga.com/ai-agent-development-services/",
+              "description": "Custom AI agents that automate tasks and improve business productivity."
+            },
+            {
+              "label": "AI Maintenance & Support",
+              "href": "https://technoyuga.com/ai-support-maintenance-services/",
+              "description": "Reliable AI support to monitor, improve, and maintain AI systems."
+            },
+            {
+              "label": "AI App Development",
+              "href": "https://technoyuga.com/ai-app-development-services/",
+              "description": "AI-powered apps built for smarter user experiences and automation."
+            },
+            {
+              "label": "AI Model Fine-Tuning",
+              "href": "https://technoyuga.com/ai-model-fine-tuning-services/",
+              "description": "Fine-tuned AI models customized for your business data and needs."
+            },
+            {
+              "label": "AI Integration",
+              "href": "https://technoyuga.com/ai-integration-services/",
+              "description": "Seamless AI integration into existing tools, platforms, and workflows."
+            },
+            {
+              "label": "LLM Development",
+              "href": "https://technoyuga.com/custom-llm-development-services/",
+              "description": "Custom LLM solutions for chat, search, automation, and knowledge systems."
+            },
+            {
+              "label": "RAG Solutions",
+              "href": "https://technoyuga.com/rag-development-services/",
+              "description": "RAG-based solutions for accurate answers from business knowledge sources."
+            },
+            {
+              "label": "Edge AI",
+              "href": "https://technoyuga.com/edge-ai-development-services/",
+              "description": "Edge AI solutions for real-time intelligence on devices and systems."
+            },
+            {
+              "label": "AI Workflow Automation",
+              "href": "https://technoyuga.com/ai-workflow-automation-services/",
+              "description": "AI automation solutions that reduce manual work and improve efficiency."
+            },
+            {
+              "label": "Enterprise AI",
+              "href": "https://technoyuga.com/enterprise-ai-development-services/",
+              "description": "Enterprise AI solutions built for scalability, security, and operations."
+            },
+            {
+              "label": "AI Product",
+              "href": "https://technoyuga.com/ai-product-development-services/",
+              "description": "AI product development from strategy and design to final launch."
+            },
+            {
+              "label": "AI POC",
+              "href": "https://technoyuga.com/ai-poc-development-services/",
+              "description": "AI proof-of-concepts to validate ideas before full-scale development."
+            },
+            {
+              "label": "Machine Learning",
+              "href": "https://technoyuga.com/machine-learning-development-services/",
+              "description": "Machine learning solutions for prediction, personalization, and intelligent decisions."
+            }
+          ]
+        },
+        {
+          "tab_name": "AI Solutions",
+          "items": [
+            {
+              "label": "AI Healthcare",
+              "href": "https://technoyuga.com/ai-solutions/ai-solutions-for-healthcare/",
+              "description": "AI healthcare solutions for smarter care, diagnosis, and patient management."
+            },
+            {
+              "label": "AI E-Commerce",
+              "href": "https://technoyuga.com/ai-solutions/ecommerce/",
+              "description": "AI-powered e-commerce solutions for personalization, automation, and customer growth."
+            },
+            {
+              "label": "Agentic AI in HR",
+              "href": "https://technoyuga.com/ai-solutions/agentic-ai-solutions-for-hr/",
+              "description": "Agentic AI solutions for recruitment, employee support, and HR automation."
+            },
+            {
+              "label": "Enterprise AI Agent",
+              "href": "https://technoyuga.com/ai-solutions/enterprise-ai-agent-development/",
+              "description": "Enterprise AI agents for automating complex workflows and business operations."
+            },
+            {
+              "label": "AI Banking",
+              "href": "https://technoyuga.com/ai-solutions/ai-powered-banking-software/",
+              "description": "AI banking solutions for fraud detection, automation, and customer support."
+            },
+            {
+              "label": "AI Threat Detection",
+              "href": "https://technoyuga.com/ai-solutions/threat-detection-solution-development/",
+              "description": "Detect security threats, risks, and unusual activities with AI."
+            },
+            {
+              "label": "AI Behaviour Detection",
+              "href": "https://technoyuga.com/ai-solutions/behaviour-detection-solution-development/",
+              "description": "Detect user behavior patterns with intelligent AI-based monitoring systems."
+            },
+            {
+              "label": "AI Object Detection",
+              "href": "https://technoyuga.com/ai-solutions/object-detection-software-development/",
+              "description": "Identify, track, and analyze objects using advanced computer vision models."
+            },
+            {
+              "label": "Theft Detection System",
+              "href": "https://technoyuga.com/ai-solutions/theft-detection-system-development/",
+              "description": "Smart theft detection systems for real-time alerts and security monitoring."
+            },
+            {
+              "label": "Logistic AI Agent",
+              "href": "https://technoyuga.com/ai-solutions/ai-agent-development-for-logistics/",
+              "description": "AI logistics agents for route planning, delivery tracking, and operations."
+            },
+            {
+              "label": "Customer Support AI Agent",
+              "href": "https://technoyuga.com/ai-solutions/customer-support-ai-agent-development/%20",
+              "description": "AI support agents for faster responses and better customer service."
+            },
+            {
+              "label": "Retail AI Agent",
+              "href": "https://technoyuga.com/ai-solutions/retail-ai-agent-development/",
+              "description": "Retail AI agents for customer engagement, inventory, and sales support."
+            },
+            {
+              "label": "AI Agent Orchestrator",
+              "href": "https://technoyuga.com/ai-solutions/ai-agent-orchestration/",
+              "description": "Manage multiple AI agents through smart orchestration and workflow control."
+            },
+            {
+              "label": "AI Sales Agent",
+              "href": "https://technoyuga.com/ai-solutions/sales-agent-development/",
+              "description": "AI sales agents for lead engagement, follow-ups, and sales automation."
+            },
+            {
+              "label": "AI Voice Agent",
+              "href": "https://technoyuga.com/ai-solutions/voice-agent-development/",
+              "description": "AI voice agents for calls, customer support, and business communication."
+            },
+            {
+              "label": "AI-Based Video Analysis",
+              "href": "https://technoyuga.com/ai-solutions/video-analytics/",
+              "description": "Analyze video data with AI for insights, safety, and monitoring."
+            },
+            {
+              "label": "CCTV Security",
+              "href": "https://technoyuga.com/ai-solutions/cctv-security-solutions-technoyuga/",
+              "description": "AI-powered CCTV security for real-time monitoring and threat detection."
+            },
+            {
+              "label": "AI Based Recommendation",
+              "href": "https://technoyuga.com/ai-solutions/recommendation-engine-development/",
+              "description": "Personalized AI recommendations for products, content, and user experiences."
+            }
+          ]
+        },
+        {
+          "tab_name": "Hire AI Talent",
+          "items": [
+            {
+              "label": "Hire AI Engineers",
+              "href": "https://technoyuga.com//hire-developers/ai/",
+              "description": "Our AI engineers build intelligent solutions for automation, insights, and growth."
+            },
+            {
+              "label": "Hire Machine Learning Engineers",
+              "href": "https://technoyuga.com/hire-developers/ai/machine-learning/",
+              "description": "Hire ML engineers to create predictive models and smart data systems."
+            },
+            {
+              "label": "Hire LLM Engineers",
+              "href": "https://technoyuga.com/hire-developers/ai/llm/",
+              "description": "Our LLM engineers develop AI solutions for chat, search, and automation."
+            },
+            {
+              "label": "Hire Generative AI Developers",
+              "href": "https://technoyuga.com/hire-developers/ai/generative-ai/",
+              "description": "Hire generative AI developers to build content and workflow automation tools."
+            },
+            {
+              "label": "Hire Chatbot Developers",
+              "href": "https://technoyuga.com/hire-developers/ai/chatbot/",
+              "description": "Hire chatbot developers to create smart bots for sales and customer support."
+            },
+            {
+              "label": "Hire Agentic AI Developers",
+              "href": "https://technoyuga.com/hire-developers/ai/agentic-ai/",
+              "description": "Hire agentic AI developers to build autonomous systems for complex workflows."
+            },
+            {
+              "label": "Hire AI Agent Developers",
+              "href": "https://technoyuga.com/hire-developers/ai/ai-agent/",
+              "description": "Our AI agent developers create smart agents for support and task automation."
+            },
+            {
+              "label": "Hire NLP Engineers",
+              "href": "https://technoyuga.com/hire-developers/ai/nlp/",
+              "description": "Hire NLP engineers to build language-based AI tools for text and speech."
+            },
+            {
+              "label": "Hire Computer Vision Developers",
+              "href": "https://technoyuga.com/hire-developers/ai/computer-vision/",
+              "description": "Our computer vision developers build AI systems for image and video analysis."
+            },
+            {
+              "label": "Hire AI Product Managers",
+              "href": "https://technoyuga.com/hire-developers/ai/ai-product-managers/",
+              "description": "Our AI product managers guide AI products from planning to launch."
+            }
+          ]
+        }
+      ],
+      "promo_block": {
+        "badge": "Awarded as Best Top Firm in Artificial Intelligence",
+        "heading": "Our Thoughts on AI",
+        "link": {
+          "label": "Read All Articles",
+          "href": "#"
+        },
+        "featured_post": {
+          "category": "AI App Development",
+          "title": "Top Challenges in AI Adoption and How to Overcome Them",
+          "excerpt": "We've witnessed how quickly AI is..."
+        },
+        "cta": {
+          "label": "Start Your AI Project Today",
+          "href": "popup:9751"
+        }
+      }
+    },
+    {
+      "label": "Services",
+      "href": "#",
+      "type": "megamenu",
+      "megamenu_title": "Our Services",
+      "tabs": [
+        {
+          "tab_name": "Application Development",
+          "items": [
+            {
+              "label": "Mobile App Development",
+              "href": "https://technoyuga.com/mobile-app-development-services/",
+              "description": ""
+            },
+            {
+              "label": "iOS App Development",
+              "href": "https://technoyuga.com/ios-app-development-services/",
+              "description": ""
+            },
+            {
+              "label": "Android App Development",
+              "href": "https://technoyuga.com/android-app-development-services/",
+              "description": ""
+            },
+            {
+              "label": "Wearable App Development",
+              "href": "https://technoyuga.com/wearable-app-development-services/",
+              "description": ""
+            },
+            {
+              "label": "Cross Platforms App Development",
+              "href": "https://technoyuga.com/cross-platform-app-development-services/",
+              "description": ""
+            },
+            {
+              "label": "Startups App Development",
+              "href": "https://technoyuga.com/startups-mobile-app-development-services/",
+              "description": ""
+            },
+            {
+              "label": "Enterprise App Development",
+              "href": "https://technoyuga.com/enterprise-mobile-app-development-services/",
+              "description": ""
+            },
+            {
+              "label": "OTT App Development",
+              "href": "https://technoyuga.com/ott-app-development-services/",
+              "description": ""
+            },
+            {
+              "label": "Flutter App Development",
+              "href": "https://technoyuga.com/flutter-app-development-services/",
+              "description": ""
+            },
+            {
+              "label": "React Native App Development",
+              "href": "https://technoyuga.com/react-native-app-development-services/",
+              "description": ""
+            },
+            {
+              "label": "Hybrid App Development",
+              "href": "https://technoyuga.com/hybrid-app-development-services/",
+              "description": ""
+            },
+            {
+              "label": "Native App Development",
+              "href": "https://technoyuga.com/native-app-development-services/",
+              "description": ""
+            }
+          ],
+          "sub_block": {
+            "title": "Technologies",
+            "groups": {
+              "Frontend": [
+                "Flutter",
+                "React Native",
+                "Kotlin",
+                "Swift"
+              ],
+              "Frameworks": [
+                "Angular",
+                "Vue.js",
+                "React",
+                "Express.js"
+              ],
+              "Backend": [
+                "Nodejs",
+                "Python",
+                ".NET",
+                "PHP"
+              ],
+              "Quality Assurance": [
+                "Selenium",
+                "Appium",
+                "SonarQube",
+                "JMeter"
+              ]
+            }
+          }
+        },
+        {
+          "tab_name": "Software Development",
+          "items": [
+            {
+              "label": "Software Development Services",
+              "href": "https://technoyuga.com/software-development-services/",
+              "description": ""
+            },
+            {
+              "label": "Enterprise Software Development",
+              "href": "https://technoyuga.com/enterprise-software-development/",
+              "description": ""
+            },
+            {
+              "label": "Software Consulting Services",
+              "href": "https://technoyuga.com/software-consulting-services/",
+              "description": ""
+            },
+            {
+              "label": "Software Product Development Services",
+              "href": "https://technoyuga.com/software-product-development-services/",
+              "description": ""
+            },
+            {
+              "label": "Software Development Outsourcing Services",
+              "href": "https://technoyuga.com/software-development-outsourcing-services/",
+              "description": ""
+            },
+            {
+              "label": "Offshore Software Development Services",
+              "href": "https://technoyuga.com/offshore-software-development-services/",
+              "description": ""
+            },
+            {
+              "label": "Offshore Development Center",
+              "href": "https://technoyuga.com/offshore-development-center/",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "tab_name": "Digital Transformation",
+          "items": [
+            {
+              "label": "MVP Development",
+              "href": "https://technoyuga.com/services/mvp-development/",
+              "description": ""
+            },
+            {
+              "label": "UI/UX Design",
+              "href": "https://technoyuga.com/services/ui-ux-design/",
+              "description": ""
+            },
+            {
+              "label": "App Maintenance",
+              "href": "https://technoyuga.com/services/app-maintenance/",
+              "description": ""
+            },
+            {
+              "label": "IoT Development",
+              "href": "https://technoyuga.com/services/iot-development/",
+              "description": ""
+            },
+            {
+              "label": "AR/VR Development",
+              "href": "https://technoyuga.com/services/ar-vr-development/",
+              "description": ""
+            },
+            {
+              "label": "ChatGPT Development",
+              "href": "https://technoyuga.com/services/chatgpt-development/",
+              "description": ""
+            },
+            {
+              "label": "Blockchain App Development",
+              "href": "https://technoyuga.com/services/blockchain-app-development/",
+              "description": ""
+            },
+            {
+              "label": "Web App Development",
+              "href": "https://technoyuga.com/services/web-app-development/",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "tab_name": "Solutions",
+          "items": [
+            {
+              "label": "Fintech App Development",
+              "href": "https://technoyuga.com/solution/fintech-app-development/",
+              "description": ""
+            },
+            {
+              "label": "Restaurant Food Ordering App",
+              "href": "https://technoyuga.com/solution/restaurant-food-ordering-app-development/",
+              "description": ""
+            },
+            {
+              "label": "Healthcare App Development",
+              "href": "https://technoyuga.com/solution/healthcare-app-development/",
+              "description": ""
+            },
+            {
+              "label": "QR Code-Based Food Ordering",
+              "href": "https://technoyuga.com/solution/qr-code-based-food-ordering/",
+              "description": ""
+            },
+            {
+              "label": "On-Demand App Development",
+              "href": "https://technoyuga.com/solution/on-demand-app-development/",
+              "description": ""
+            },
+            {
+              "label": "Fitness App Development",
+              "href": "https://technoyuga.com/solution/fitness-app-development/",
+              "description": ""
+            },
+            {
+              "label": "Fantasy App Development",
+              "href": "https://technoyuga.com/solution/fantasy-app-development/",
+              "description": ""
+            },
+            {
+              "label": "Transport Industry App Development",
+              "href": "https://technoyuga.com/solution/transport-app-development/",
+              "description": ""
+            },
+            {
+              "label": "Taxi Booking App Development",
+              "href": "https://technoyuga.com/solution/taxi-booking-app-development/",
+              "description": ""
+            },
+            {
+              "label": "Dating App Development",
+              "href": "https://technoyuga.com/solution/dating-app-development/",
+              "description": ""
+            },
+            {
+              "label": "Grocery Delivery App Developemnt",
+              "href": "https://technoyuga.com/solution/grocery-delivery-app-development/",
+              "description": ""
+            },
+            {
+              "label": "Social Media App Development",
+              "href": "https://technoyuga.com/solution/social-media-app-development/",
+              "description": ""
+            },
+            {
+              "label": "Sports Betting App",
+              "href": "https://technoyuga.com/solution/sports-betting-app-development/",
+              "description": ""
+            },
+            {
+              "label": "Stock Trading App Development",
+              "href": "https://technoyuga.com/solution/stock-trading-app-development/",
+              "description": ""
+            },
+            {
+              "label": "Video Streaming App Development",
+              "href": "https://technoyuga.com/solution/video-streaming-app-development/",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "tab_name": "Hire Developers",
+          "groups": [
+            {
+              "group": "AI & Emerging Technologies",
+              "items": [
+                {
+                  "label": "Hire AI Engineers",
+                  "href": "https://technoyuga.com/hire-developers/ai/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire Machine Learning Engineers",
+                  "href": "https://technoyuga.com/hire-developers/ai/machine-learning/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire LLM Engineers",
+                  "href": "https://technoyuga.com/hire-developers/ai/llm/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire Generative AI Developers",
+                  "href": "https://technoyuga.com/hire-developers/ai/generative-ai/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire Agentic AI Developers",
+                  "href": "https://technoyuga.com/hire-developers/ai/agentic-ai/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire AI Agent Developers",
+                  "href": "https://technoyuga.com/hire-developers/ai/ai-agent/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire NLP Engineers",
+                  "href": "https://technoyuga.com/hire-developers/ai/nlp/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire Computer Vision Developers",
+                  "href": "https://technoyuga.com/hire-developers/ai/computer-vision/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire Chatbot Developers",
+                  "href": "https://technoyuga.com/hire-developers/ai/chatbot/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire AI Product Managers",
+                  "href": "https://technoyuga.com/hire-developers/ai/ai-product-managers/",
+                  "description": ""
+                }
+              ]
+            },
+            {
+              "group": "Data & Automation",
+              "items": [
+                {
+                  "label": "Hire Data Scientists",
+                  "href": "https://technoyuga.com/hire-developers/data-scientists/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire Data Developers",
+                  "href": "https://technoyuga.com/hire-developers/data-engineers/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire RPA Developers",
+                  "href": "https://technoyuga.com/hire-developers/rpa/",
+                  "description": ""
+                }
+              ]
+            },
+            {
+              "group": "Web & Software Development",
+              "items": [
+                {
+                  "label": "Hire Full Stack Developers",
+                  "href": "https://technoyuga.com/hire/full-stack-developer/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire Software Developers",
+                  "href": "https://technoyuga.com/hire-developers/software/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire Dedicated Developers",
+                  "href": "https://technoyuga.com/hire-developers/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire Dedicated Development Team",
+                  "href": "https://technoyuga.com/hire-developers/dedicated-team/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire Remote Developers",
+                  "href": "https://technoyuga.com/hire-developers/remote/",
+                  "description": ""
+                }
+              ]
+            },
+            {
+              "group": "Mobile App Development",
+              "items": [
+                {
+                  "label": "Hire Android App Developers",
+                  "href": "https://technoyuga.com/hire-developers/android/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire iOS App Developers",
+                  "href": "https://technoyuga.com/hire-developers/ios/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire React Native Developers",
+                  "href": "https://technoyuga.com/hire-developers/react-native/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire Flutter Developers",
+                  "href": "https://technoyuga.com/hire-developers/flutter/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire App Developers in India",
+                  "href": "https://technoyuga.com/hire-developers/mobile-app/",
+                  "description": ""
+                }
+              ]
+            },
+            {
+              "group": "Frontend & Backend Technologies",
+              "items": [
+                {
+                  "label": "Hire Node.js Developers",
+                  "href": "https://technoyuga.com/hire-developers/nodejs/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire Vue.js Developers",
+                  "href": "https://technoyuga.com/hire-developers/vuejs/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire .NET Developers",
+                  "href": "https://technoyuga.com/hire-developers/dotnet/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire PHP Developers",
+                  "href": "https://technoyuga.com/hire-developers/php/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire Java Developers",
+                  "href": "https://technoyuga.com/hire-developers/java/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire Golang Developers",
+                  "href": "https://technoyuga.com/hire-developers/golang/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire Python Developers",
+                  "href": "https://technoyuga.com/hire-developers/python/",
+                  "description": ""
+                }
+              ]
+            },
+            {
+              "group": "Cloud & DevOps",
+              "items": [
+                {
+                  "label": "Hire AWS Developers",
+                  "href": "https://technoyuga.com/hire-developers/aws/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire Azure Developers",
+                  "href": "https://technoyuga.com/hire-developers/azure/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire GCP Developers",
+                  "href": "https://technoyuga.com/hire-developers/gcp/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire Cloud Engineers",
+                  "href": "https://technoyuga.com/hire-developers/cloud-engineers/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire DevOps Engineers",
+                  "href": "https://technoyuga.com/hire-developers/devops-engineers/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire Kubernetes Developers",
+                  "href": "https://technoyuga.com/hire-developers/kubernetes/",
+                  "description": ""
+                }
+              ]
+            },
+            {
+              "group": "Game & Immersive Tech",
+              "items": [
+                {
+                  "label": "Hire Unity 3D Developers",
+                  "href": "https://technoyuga.com/hire-developers/unity/",
+                  "description": ""
+                },
+                {
+                  "label": "Hire AR/VR Developers",
+                  "href": "https://technoyuga.com/hire-developers/ar-vr/",
+                  "description": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tab_name": "Locations",
+          "items": [
+            {
+              "label": "USA",
+              "href": "https://technoyuga.com/mobile-app-development-company-in-usa/",
+              "description": ""
+            },
+            {
+              "label": "UAE",
+              "href": "https://technoyuga.com/mobile-app-development-company-in-uae/",
+              "description": ""
+            },
+            {
+              "label": "UK",
+              "href": "https://technoyuga.com/mobile-app-development-company-in-uk/",
+              "description": ""
+            },
+            {
+              "label": "Singapore",
+              "href": "https://technoyuga.com/mobile-app-development-company-in-singapore/",
+              "description": ""
+            },
+            {
+              "label": "Malaysia",
+              "href": "https://technoyuga.com/mobile-app-development-company-in-malaysia/",
+              "description": ""
+            },
+            {
+              "label": "Singapore",
+              "href": "https://technoyuga.com/mobile-app-development-company-in-singapore/",
+              "description": ""
+            },
+            {
+              "label": "Germany",
+              "href": "https://technoyuga.com/mobile-app-development-company-in-germany/",
+              "description": ""
+            },
+            {
+              "label": "Saudi",
+              "href": "https://technoyuga.com/mobile-app-development-company-saudi/",
+              "description": ""
+            },
+            {
+              "label": "France",
+              "href": "https://technoyuga.com/mobile-app-development-company-france/",
+              "description": ""
+            }
+          ]
+        }
+      ],
+      "promo_cards": [
+        {
+          "title": "Dedicated Development Team",
+          "text": "Uses digital twins & IoMT for personalized treatment"
+        },
+        {
+          "title": "Hire Dedicated Developers",
+          "text": "Uses digital twins & IoMT for personalized treatment"
+        }
+      ],
+      "promo_cta": {
+        "label": "Start Your Project",
+        "href": "popup:3131"
+      }
+    },
+    {
+      "label": "Industry",
+      "href": "#",
+      "type": "megamenu",
+      "megamenu_title": "Industries We Empower",
+      "items": [
+        {
+          "label": "Banking",
+          "href": "https://technoyuga.com/banking-software-development-services/",
+          "description": "We build banking software for secure transactions and account management."
+        },
+        {
+          "label": "Aviation",
+          "href": "https://technoyuga.com/aviation-software-development-services/",
+          "description": "We deliver aviation software for operations, booking, and passenger management."
+        },
+        {
+          "label": "Insurtech",
+          "href": "https://technoyuga.com/insurtech-software-development-services/",
+          "description": "We build insurance software for policy handling and faster claim processing."
+        },
+        {
+          "label": "Manufacturing",
+          "href": "https://technoyuga.com/manufacturing-software-development-services/",
+          "description": "We deliver manufacturing software for production tracking and process automation."
+        },
+        {
+          "label": "Healthcare",
+          "href": "https://technoyuga.com/healthcare-software-development-services/",
+          "description": "We build healthcare software for patient care and digital medical workflows."
+        },
+        {
+          "label": "Fintech",
+          "href": "https://technoyuga.com/fintech-software-development-services/",
+          "description": "We deliver fintech software for payments, lending, and financial operations."
+        },
+        {
+          "label": "Education",
+          "href": "https://technoyuga.com/education-software-development-services/",
+          "description": "We build education software for online learning and student management."
+        },
+        {
+          "label": "Travel & Hospitality",
+          "href": "https://technoyuga.com/travel-hospitality-software-development/",
+          "description": "We deliver travel software for bookings, itineraries, and guest experiences."
+        },
+        {
+          "label": "OTT",
+          "href": "https://technoyuga.com/ott-platform-development-services/",
+          "description": "We build OTT software for streaming, subscriptions, and content management."
+        },
+        {
+          "label": "Logistics & Supply Chain",
+          "href": "https://technoyuga.com/logistics-software-development-services/",
+          "description": "We deliver logistics software for shipment tracking and fleet management."
+        },
+        {
+          "label": "Payment",
+          "href": "https://technoyuga.com/payment-software-development-services/",
+          "description": "We build payment software for secure transactions and seamless checkout."
+        },
+        {
+          "label": "Telecom",
+          "href": "https://technoyuga.com/telecom-software-development-services/",
+          "description": "We deliver telecom software for billing, customer support, and service management."
+        },
+        {
+          "label": "Startups",
+          "href": "https://technoyuga.com/startups-software-development-services/",
+          "description": "We build startup software for MVP launch and product validation."
+        },
+        {
+          "label": "Oil & Gas",
+          "href": "https://technoyuga.com/oil-and-gas-software-development/",
+          "description": "We deliver oil and gas software for asset tracking and field operations."
+        },
+        {
+          "label": "Construction",
+          "href": "https://technoyuga.com/construction-software-development-services/",
+          "description": "We build construction software for project tracking and team collaboration."
+        },
+        {
+          "label": "CSR",
+          "href": "https://technoyuga.com/csr-software-development-services/",
+          "description": "We deliver CSR software for donation tracking and impact management."
+        },
+        {
+          "label": "Automotive & EV",
+          "href": "https://technoyuga.com/automotive-software-development-services/",
+          "description": "We build automotive software for EV charging, fleet, and mobility management."
+        },
+        {
+          "label": "SaaS",
+          "href": "https://technoyuga.com/saas-software-development-services/",
+          "description": "We deliver SaaS software for workflow automation and subscription management."
+        }
+      ],
+      "promo_block": {
+        "heading": "Let's Get Connected",
+        "text": "Innovation in Action — Browse through the products and platforms we've built, each crafted to deliver performance, clarity, and measurable results.",
+        "cta": {
+          "label": "Explore all case studies",
+          "href": "popup:3131"
+        }
+      }
+    },
+    {
+      "label": "About Us",
+      "href": "#",
+      "type": "megamenu",
+      "megamenu_title": "About Us",
+      "intro": {
+        "heading": "Shaping the future of creative Innovation",
+        "text": "We are firm believers that the best software comes from small, agile, highly skilled teams. After working in the IT industry for more than 7 years for multiple companies our founder experienced that most of the agencies don't care about client's success and the hard earned money they put in the product development and at the end client only struggled with the missed deadlines, No accountability, Zero Transparency and Failed Product."
+      },
+      "items_correct": [
+        {
+          "label": "About Us",
+          "href": "https://technoyuga.com/about-us/",
+          "description": ""
+        },
+        {
+          "label": "Awards",
+          "href": "https://technoyuga.com/awards/",
+          "description": ""
+        },
+        {
+          "label": "Career",
+          "href": "https://technoyuga.com/career/",
+          "description": ""
+        },
+        {
+          "label": "Our Team",
+          "href": "https://technoyuga.com/team/",
+          "description": ""
+        },
+        {
+          "label": "Client Testimonial",
+          "href": "https://technoyuga.com/client-testimonials/",
+          "description": ""
+        }
+      ],
+      "items_broken": [
+        {
+          "label": "About Us",
+          "href": "https://technoyuga.com/software-development-services/",
+          "description": ""
+        },
+        {
+          "label": "Awards",
+          "href": "https://technoyuga.com/enterprise-software-development/",
+          "description": ""
+        },
+        {
+          "label": "Career",
+          "href": "https://technoyuga.com/software-consulting-services/",
+          "description": ""
+        }
+      ],
+      "team_block": {
+        "title": "Our Team",
+        "members": [
+          "Mrugesh",
+          "Nihar",
+          "Bhavesh",
+          "Gautam",
+          "Harsh",
+          "Priyank",
+          "Alpa",
+          "Mahesh",
+          "Siddharth",
+          "Dhaval",
+          "Mahesh",
+          "Nilesh",
+          "Sagar",
+          "Naman",
+          "Rinkita"
+        ]
+      },
+      "badge": "We are now featured in best company to work",
+      "contact_block": {
+        "heading": "Let's Get Connected",
+        "call_us": "+91-99102 74736",
+        "mail_us": "hello@technoyuga.com",
+        "reach_us": "4th Floor 411, Akshar Square, Dabholi, Surat, Gujarat 395004",
+        "follow_us": {
+          "linkedin": "https://www.linkedin.com/company/technoyuga-pvt-ltd",
+          "instagram": "https://instagram.com/techno_yuga",
+          "youtube": "https://youtube.com/@technoyugapvt.ltd.3854",
+          "dribbble": "https://dribbble.com/Technoyugasoft"
+        }
+      }
+    },
+    {
+      "label": "Portfolio",
+      "href": "https://technoyuga.com/portfolio/",
+      "type": "link",
+      "megamenu": null
+    },
+    {
+      "label": "Blogs",
+      "href": "https://technoyuga.com/blog",
+      "type": "link",
+      "megamenu": null
+    }
+  ],
+  "mobile_menu_differences": [
+    "Mobile menu adds a top-level 'Industries' (plural) item; desktop uses 'Industry' (singular)",
+    "Mobile menu adds a top-level 'Solutions' item that desktop nests under Services",
+    "Mobile 'Digital Transformation' adds 'POC Development' -> /ai-poc-development-services/ (absent on desktop)",
+    "Mobile 'UI/UX Design' and 'AR/VR Development' point to '#' while desktop points to real URLs",
+    "Mobile 'Hire AI Engineers' points to '#' while desktop points to /hire-developers/ai/",
+    "Mobile 'Restaurant Food Ordering App' points to '#' while desktop has the real URL",
+    "Mobile 'Malaysia' points to '#' while desktop has the real URL",
+    "Mobile 'Construction' -> /construction-software-development/ but desktop -> /construction-software-development-services/",
+    "Mobile 'AI Workflow Automation' -> /ai-support-maintenance-services/ (wrong target)",
+    "Mobile 'Customer Support AI Agent' has clean URL; desktop version has trailing %20",
+    "Mobile 'About Us' submenu is correct; desktop 'About Us' submenu has 3 wrong links"
+  ],
+  "navigation_issues": [
+    "Singapore appears TWICE in the Locations tab",
+    "Desktop About Us submenu: About Us/Awards/Career all point to service pages instead of the real pages",
+    "Both Services promo cards share identical placeholder text: 'Uses digital twins & IoMT for personalized treatment' (healthcare copy left in)",
+    "'Hire AI Engineers' href has a double slash: technoyuga.com//hire-developers/ai/",
+    "'Customer Support AI Agent' href ends with an encoded space (%20)",
+    "Typos in menu labels: 'Grocery Delivery App Developemnt', 'Wearable App Develooment', 'Cross Platforms App Develooment', 'Ai Agent Orchestrator'",
+    "Desktop and mobile menus are maintained separately and have drifted out of sync (11 differences logged above)",
+    "Top-level 'Build With AI', 'Services', 'Industry', 'About Us' all use href='#' (not keyboard/SEO friendly)"
+  ],
+  "link_counts": {
+    "Home": 0,
+    "Build With AI": 49,
+    "Services": 89,
+    "Industry": 18,
+    "About Us": 0,
+    "Portfolio": 0,
+    "Blogs": 0
+  },
+  "total_menu_links": 156
+}

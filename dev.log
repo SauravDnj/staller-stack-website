@@ -1,0 +1,2817 @@
+
+> staller-stack-website@0.1.0 dev
+> next dev
+
+⚠ Port 3000 is in use by process 9736, using available port 3003 instead.
+▲ Next.js 16.2.12 (Turbopack)
+- Local:         http://localhost:3003
+- Network:       http://172.29.144.1:3003
+✓ Ready in 1927ms
+⚠ Slow filesystem detected. The benchmark took 1071ms. If G:\Saurav\Free\Code Base\Code\staller-stack-website\.next/dev is a network drive, consider moving it to a local folder.
+See more: https://nextjs.org/docs/app/guides/local-development
+
+○ Compiling / ...
+ GET / 200 in 97s (next.js: 94s, application-code: 3.2s)
+ GET / 200 in 410ms (next.js: 42ms, application-code: 368ms)
+ GET / 200 in 578ms (next.js: 33ms, application-code: 545ms)
+[browser] Image with src "/images/logos/logo-light-text.webp" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+✓ Finished filesystem cache database compaction in 14.1s
+✓ Compiled in 1420ms
+ GET / 200 in 1305ms (next.js: 1140ms, application-code: 165ms)
+ GET / 200 in 1500ms (next.js: 45ms, application-code: 1455ms)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] Image with src "/images/logos/logo-light-text.webp" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+✓ Compiled in 278ms
+✓ Compiled in 128ms
+✓ Compiled in 164ms
+✓ Compiled in 242ms
+ GET / 200 in 383ms (next.js: 158ms, application-code: 225ms)
+ GET / 200 in 1386ms (next.js: 16ms, application-code: 1370ms)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] Image with src "/images/logos/logo-light-text.webp" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] Image with src "/images/stallerstack/portfolio/secure-banking.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] Image with src "/images/stallerstack/portfolio/fraud-detection.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] Image with src "/images/stallerstack/portfolio/cloud-migration.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+✓ Compiled in 722ms
+✓ Compiled in 163ms
+✓ Compiled in 282ms
+✓ Compiled in 184ms
+✓ Compiled in 156ms
+✓ Compiled in 752ms
+⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 200 in 1226ms (next.js: 193ms, application-code: 1033ms)
+ GET / 200 in 2.2s (next.js: 710ms, application-code: 1469ms)
+ GET / 200 in 903ms (next.js: 123ms, application-code: 780ms)
+ GET / 200 in 948ms (next.js: 662ms, application-code: 287ms)
+ GET / 200 in 969ms (next.js: 253ms, application-code: 716ms)
+ GET / 200 in 1234ms (next.js: 12ms, application-code: 1221ms)
+○ Compiling /about ...
+ GET /about 200 in 4.2s (next.js: 3.7s, application-code: 502ms)
+[browser] Image with src "https://randomuser.me/api/portraits/men/75.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] Image with src "https://randomuser.me/api/portraits/women/65.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] Image with src "https://randomuser.me/api/portraits/women/45.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] Image with src "https://randomuser.me/api/portraits/men/32.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+ GET /about 200 in 576ms (next.js: 432ms, application-code: 144ms)
+⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /about 200 in 803ms (next.js: 52ms, application-code: 751ms)
+ GET /about 200 in 578ms (next.js: 386ms, application-code: 193ms)
+ GET /about 200 in 311ms (next.js: 204ms, application-code: 107ms)
+ GET /about 200 in 358ms (next.js: 74ms, application-code: 283ms)
+ GET /about 200 in 355ms (next.js: 149ms, application-code: 205ms)
+ GET /about 200 in 969ms (next.js: 46ms, application-code: 923ms)
+⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /about 200 in 408ms (next.js: 209ms, application-code: 199ms)
+ GET /about 200 in 408ms (next.js: 311ms, application-code: 97ms)
+ GET /about 200 in 1733ms (next.js: 596ms, application-code: 1137ms)
+ GET /about 200 in 948ms (next.js: 116ms, application-code: 832ms)
+ GET /about 200 in 961ms (next.js: 35ms, application-code: 926ms)
+ GET /services 200 in 2.3s (next.js: 1858ms, application-code: 438ms)
+✓ Finished filesystem cache database compaction in 10.2s
+ GET /services/web-app-development 200 in 23.8s (next.js: 23.6s, generate-params: 21.7s, application-code: 210ms)
+ GET /services/web-app-development 200 in 114ms (next.js: 29ms, generate-params: 15ms, application-code: 85ms)
+✓ Compiled in 365ms
+⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /services/web-app-development 200 in 1988ms (next.js: 1678ms, generate-params: 14ms, application-code: 310ms)
+ GET /services/web-app-development 200 in 1710ms (next.js: 23ms, generate-params: 50µs, application-code: 1687ms)
+ GET /services/web-app-development 200 in 2.0s (next.js: 134ms, generate-params: 60µs, application-code: 1878ms)
+○ Compiling /portfolio ...
+ GET /portfolio 200 in 7.8s (next.js: 7.1s, application-code: 695ms)
+[browser] Image with src "/images/stallerstack/portfolio/cloud-migration.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] Image with src "/images/stallerstack/portfolio/fraud-detection.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] Image with src "/images/stallerstack/portfolio/secure-banking.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] Image with src "/images/stallerstack/portfolio/cloud-migration.webp" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+✓ Compiled in 339ms
+✓ Compiled in 619ms
+⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /portfolio 200 in 672ms (next.js: 293ms, application-code: 379ms)
+ GET /portfolio 200 in 1904ms (next.js: 476ms, application-code: 1428ms)
+ GET /portfolio 200 in 427ms (next.js: 207ms, application-code: 220ms)
+ GET /portfolio 200 in 438ms (next.js: 115ms, application-code: 322ms)
+ GET /portfolio 200 in 1467ms (next.js: 161ms, application-code: 1306ms)
+ GET /portfolio 200 in 259ms (next.js: 141ms, application-code: 117ms)
+ GET /portfolio 200 in 289ms (next.js: 42ms, application-code: 248ms)
+ GET /portfolio 200 in 1216ms (next.js: 11ms, application-code: 1204ms)
+ GET /contact 200 in 3.7s (next.js: 3.3s, application-code: 379ms)
+✓ Finished filesystem cache database compaction in 17.8s
+ GET / 200 in 1618ms (next.js: 707ms, application-code: 911ms)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] Image with src "/images/logos/logo-light-text.webp" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+✓ Compiled in 353ms
+ GET / 200 in 1327ms (next.js: 955ms, application-code: 372ms)
+✓ Compiled in 179ms
+ GET / 200 in 337ms (next.js: 151ms, application-code: 186ms)
+✓ Compiled in 313ms
+ GET / 200 in 379ms (next.js: 111ms, application-code: 268ms)
+ GET / 200 in 1244ms (next.js: 11ms, application-code: 1232ms)
+[browser] Image with src "/images/logos/logo-light-text.webp" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] Image with src "/images/stallerstack/portfolio/cloud-migration.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] Image with src "/images/stallerstack/portfolio/fraud-detection.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] Image with src "/images/stallerstack/portfolio/secure-banking.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+✓ Finished filesystem cache database compaction in 29.1s
+✓ Compiled in 1299ms
+ GET / 200 in 2.2s (next.js: 352ms, application-code: 1865ms)
+ GET / 200 in 2.1s (next.js: 21ms, application-code: 2.0s)
+ GET / 200 in 1920ms (next.js: 204ms, application-code: 1716ms)
+ GET / 200 in 1924ms (next.js: 20ms, application-code: 1904ms)
+ GET / 200 in 1932ms (next.js: 343ms, application-code: 1588ms)
+ GET / 200 in 1936ms (next.js: 584ms, application-code: 1352ms)
+ GET / 200 in 2.0s (next.js: 51ms, application-code: 1963ms)
+ GET / 200 in 2.1s (next.js: 56ms, application-code: 2.0s)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+ GET / 200 in 1789ms (next.js: 638ms, application-code: 1152ms)
+ GET / 200 in 1845ms (next.js: 80ms, application-code: 1765ms)
+ GET / 200 in 1899ms (next.js: 418ms, application-code: 1482ms)
+ GET / 200 in 1850ms (next.js: 809ms, application-code: 1042ms)
+ GET / 200 in 1461ms (next.js: 20ms, application-code: 1441ms)
+ GET / 200 in 815ms (next.js: 56ms, application-code: 759ms)
+○ Compiling / ...
+✓ Compiled in 13.2s
+ GET / 200 in 885ms (next.js: 606ms, application-code: 280ms)
+ GET / 200 in 16.7s (next.js: 7.6s, application-code: 9.0s)
+ GET / 200 in 15.3s (next.js: 8.2s, application-code: 7.1s)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+ GET / 200 in 1305ms (next.js: 29ms, application-code: 1276ms)
+ GET / 200 in 3.5s (next.js: 41ms, application-code: 3.4s)
+ GET / 200 in 10.4s (next.js: 2.7s, application-code: 7.8s)
+ GET / 200 in 2.9s (next.js: 1244ms, application-code: 1684ms)
+ GET / 200 in 6.8s (next.js: 133ms, application-code: 6.7s)
+ GET / 200 in 2.9s (next.js: 223ms, application-code: 2.7s)
+ GET / 200 in 3.1s (next.js: 2.1s, application-code: 912ms)
+ GET / 200 in 9.1s (next.js: 1233ms, application-code: 7.9s)
+✓ Compiled in 1807ms
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+○ Compiling /_error ...
+✓ Compiled in 14.6s
+[browser] ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+  4 | import { TiltCard } from "@/components/ui/TiltCard";
+> 5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+  8 | import { services } from "@/content/services";
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14014:21)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14014:21)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+  4 | import { TiltCard } from "@/components/ui/TiltCard";
+> 5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+  8 | import { services } from "@/content/services";
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14014:21)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14014:21)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[browser] ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+  4 | import { TiltCard } from "@/components/ui/TiltCard";
+> 5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+  8 | import { services } from "@/content/services";
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14014:21)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+  4 | import { TiltCard } from "@/components/ui/TiltCard";
+> 5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+  8 | import { services } from "@/content/services";
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14014:21)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14014:21)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14014:21)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+ GET / 500 in 39.3s (next.js: 31.3s, application-code: 8.0s)
+ GET / 500 in 39.4s (next.js: 37.2s, application-code: 2.3s)
+ GET / 500 in 19.4s (next.js: 17.6s, application-code: 1775ms)
+ GET / 500 in 16.6s (next.js: 15.1s, application-code: 1476ms)
+ GET / 500 in 15.4s (next.js: 14.4s, application-code: 1042ms)
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[browser] ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+  4 | import { TiltCard } from "@/components/ui/TiltCard";
+> 5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+  8 | import { services } from "@/content/services";
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14014:21)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14014:21)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+  4 | import { TiltCard } from "@/components/ui/TiltCard";
+> 5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+  8 | import { services } from "@/content/services";
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14014:21)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14014:21)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET / 500 in 3.2s (next.js: 2.3s, application-code: 969ms)
+[browser] ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+  4 | import { TiltCard } from "@/components/ui/TiltCard";
+> 5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+  8 | import { services } from "@/content/services";
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14014:21)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14014:21)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+ GET / 500 in 4.4s (next.js: 1851ms, application-code: 2.5s)
+ GET / 500 in 4.4s (next.js: 2.3s, application-code: 2.0s)
+ GET / 500 in 4.4s (next.js: 2.9s, application-code: 1464ms)
+[browser] ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+  4 | import { TiltCard } from "@/components/ui/TiltCard";
+> 5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+  8 | import { services } from "@/content/services";
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14014:21)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14014:21)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET / 500 in 542ms (next.js: 385ms, application-code: 157ms)
+[browser] Uncaught Error: ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+  4 | import { TiltCard } from "@/components/ui/TiltCard";
+> 5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+  8 | import { services } from "@/content/services";
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/components/sections/ServicesGrid.tsx:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./src/components/sections/ServicesGrid.tsx:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+  4 | import { TiltCard } from "@/components/ui/TiltCard";
+> 5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+  8 | import { services } from "@/content/services";
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+  4 | import { TiltCard } from "@/components/ui/TiltCard";
+> 5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+  8 | import { services } from "@/content/services";
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+  4 | import { TiltCard } from "@/components/ui/TiltCard";
+> 5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+  8 | import { services } from "@/content/services";
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+  4 | import { TiltCard } from "@/components/ui/TiltCard";
+> 5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+  8 | import { services } from "@/content/services";
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+⨯ ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+  [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+  [90m8 |[0m [36mimport[0m { services } [36mfrom[0m [32m"@/content/services"[0m;
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET / 500 in 72ms (next.js: 37ms, application-code: 35ms)
+[browser] ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+  4 | import { TiltCard } from "@/components/ui/TiltCard";
+> 5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+  8 | import { services } from "@/content/services";
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] Uncaught Error: ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+  4 | import { TiltCard } from "@/components/ui/TiltCard";
+> 5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+  8 | import { services } from "@/content/services";
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/components/sections/ServicesGrid.tsx:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./src/components/sections/ServicesGrid.tsx:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+  4 | import { TiltCard } from "@/components/ui/TiltCard";
+> 5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+  8 | import { services } from "@/content/services";
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:5:1
+Module not found: Can't resolve '@/components/three/ServiceIcon3D'
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+  4 | import { TiltCard } from "@/components/ui/TiltCard";
+> 5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+  8 | import { services } from "@/content/services";
+
+Import map: aliased to relative './src/components/three/ServiceIcon3D' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+ GET / 500 in 284ms (next.js: 246ms, application-code: 38ms)
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+⨯ ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  [90m2 |[0m [36mimport[0m { [33mContainer[0m } [36mfrom[0m [32m"@/components/ui/Container"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/ui/SectionHeading"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mTiltCard[0m } [36mfrom[0m [32m"@/components/ui/TiltCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mServiceIcon3D[0m } [36mfrom[0m [32m"@/components/three/ServiceIcon3D"[0m;
+  [90m6 |[0m [36mimport[0m { [33mReveal[0m } [36mfrom[0m [32m"@/components/ui/Reveal"[0m;
+  [90m7 |[0m [36mimport[0m { [33mRevealGroup[0m, [33mRevealItem[0m } [36mfrom[0m [32m"@/components/ui/RevealGroup"[0m;
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET / 500 in 184ms (next.js: 114ms, application-code: 70ms)
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] Uncaught Error: ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/components/sections/ServicesGrid.tsx:4:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./src/components/sections/ServicesGrid.tsx:4:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] Uncaught Error: ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/components/sections/ServicesGrid.tsx:4:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./src/components/sections/ServicesGrid.tsx:4:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/components/sections/ServicesGrid.tsx:4:1
+Module not found: Can't resolve '@/components/ui/TiltCard'
+  2 | import { Container } from "@/components/ui/Container";
+  3 | import { SectionHeading } from "@/components/ui/SectionHeading";
+> 4 | import { TiltCard } from "@/components/ui/TiltCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ServiceIcon3D } from "@/components/three/ServiceIcon3D";
+  6 | import { Reveal } from "@/components/ui/Reveal";
+  7 | import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+
+Import map: aliased to relative './src/components/ui/TiltCard' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/sections/ServicesGrid.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+✓ Finished filesystem cache database compaction in 15.3s
+ GET / 200 in 3.3s (next.js: 1317ms, application-code: 2.0s)
+ GET / 200 in 3.0s (next.js: 37ms, application-code: 3.0s)
+ GET / 200 in 2.9s (next.js: 89ms, application-code: 2.8s)
+ GET / 200 in 2.2s (next.js: 72ms, application-code: 2.1s)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] Image with src "/images/stallerstack/portfolio/secure-banking.webp" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] Image with src "/images/stallerstack/portfolio/cloud-migration.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] Image with src "/images/stallerstack/portfolio/fraud-detection.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] Image with src "/images/stallerstack/portfolio/secure-banking.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+✓ Compiled in 939ms
+ GET / 200 in 1809ms (next.js: 661ms, application-code: 1148ms)
+ GET / 200 in 7.1s (next.js: 50ms, application-code: 7.0s)
+ GET / 200 in 8.0s (next.js: 223ms, application-code: 7.8s)
+[browser] Image with src "/images/stallerstack/about/team-collaboration-wide.webp" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+✓ Compiled in 1727ms
+✓ Compiled in 924ms
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 4.9s (next.js: 746ms, application-code: 4.2s)
+✓ Compiled in 7.3s
+ GET / 200 in 9.0s (next.js: 2.8s, application-code: 6.2s)
+ GET / 200 in 757ms (next.js: 34ms, application-code: 722ms)
+ GET / 200 in 9.6s (next.js: 2.2s, application-code: 7.4s)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+ GET / 200 in 1067ms (next.js: 22ms, application-code: 1046ms)
+ GET / 200 in 13.4s (next.js: 1011ms, application-code: 12.4s)
+ GET / 200 in 11.2s (next.js: 947ms, application-code: 10.3s)
+ GET / 200 in 9.2s (next.js: 3.6s, application-code: 5.5s)
+ GET / 200 in 9.2s (next.js: 218ms, application-code: 9.0s)
+ GET / 200 in 9.2s (next.js: 5.2s, application-code: 4.0s)
+ GET / 200 in 9.2s (next.js: 6.5s, application-code: 2.6s)
+✓ Finished filesystem cache database compaction in 20.5s
+✓ Compiled in 13.9s
+✓ Finished writing to filesystem cache in 10.7s
+ GET / 200 in 25.0s (next.js: 11.2s, application-code: 13.7s)
+ GET / 200 in 863ms (next.js: 666ms, application-code: 198ms)
+ GET / 200 in 910ms (next.js: 477ms, application-code: 433ms)
+ GET / 200 in 22.6s (next.js: 11.0s, application-code: 11.6s)
+ GET / 200 in 18.3s (next.js: 9.2s, application-code: 9.1s)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. (file://G:/Saurav/Free/Code Base/Code/staller-stack-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+ GET / 200 in 24.6s (next.js: 63ms, application-code: 24.5s)
+ GET / 200 in 20.9s (next.js: 729ms, application-code: 20.2s)
+ GET / 200 in 8.8s (next.js: 906ms, application-code: 7.9s)
+ GET / 200 in 8.8s (next.js: 3.2s, application-code: 5.6s)
+ GET / 200 in 8.8s (next.js: 5.8s, application-code: 3.1s)
+ GET / 200 in 30.3s (next.js: 3.8s, application-code: 26.5s)
+ GET / 200 in 9.1s (next.js: 1218ms, application-code: 7.8s)
+ GET / 200 in 9.2s (next.js: 49ms, application-code: 9.1s)

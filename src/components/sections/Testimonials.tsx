@@ -1,0 +1,52 @@
+import Image from "next/image";
+import { Container } from "@/components/ui/Container";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { TiltCard } from "@/components/ui/TiltCard";
+import { Reveal } from "@/components/ui/Reveal";
+import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+import { testimonials } from "@/content/testimonials";
+
+export function Testimonials() {
+  return (
+    <section className="border-y border-ss-border bg-ss-surface-2/40 py-24 sm:py-32">
+      <Container>
+        <Reveal>
+          <SectionHeading
+            eyebrow="4.9 ★★★★★ · 80+ Client Reviews"
+            title="Hear from Our Customers."
+            align="center"
+          />
+        </Reveal>
+
+        <RevealGroup className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-3">
+          {testimonials.map((testimonial) => (
+            <RevealItem key={testimonial.name}>
+              <TiltCard strength={5}>
+                <p className="text-sm text-ss-muted">
+                  &ldquo;{testimonial.quote}&rdquo;
+                </p>
+                <div className="mt-6 flex items-center gap-3">
+                  <Image
+                    src={testimonial.avatar}
+                    alt={testimonial.name}
+                    width={44}
+                    height={44}
+                    className="rounded-full border border-ss-border"
+                  />
+                  <div>
+                    <p className="font-display text-sm font-semibold text-ss-text">
+                      {testimonial.name}
+                    </p>
+                    <p className="text-xs text-ss-muted">
+                      {testimonial.title}
+                    </p>
+                  </div>
+                </div>
+              </TiltCard>
+            </RevealItem>
+          ))}
+        </RevealGroup>
+      </Container>
+    </section>
+  );
+}
