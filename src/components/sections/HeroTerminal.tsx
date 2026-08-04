@@ -81,7 +81,7 @@ export function HeroTerminal() {
       <TechTag label={heroTerminal.tags[2]} className="absolute -left-4 top-[68%] sm:-left-8" />
 
       <Terminal title={heroTerminal.title} className="relative">
-        <div className="h-[340px] overflow-hidden whitespace-pre font-mono text-base leading-relaxed sm:h-[420px] sm:text-lg">
+        <div className="h-[260px] overflow-hidden whitespace-pre font-mono text-xs leading-relaxed sm:h-[320px] sm:text-sm lg:h-[330px] xl:h-[360px] xl:text-base 2xl:h-[420px] 2xl:text-lg">
           {shownCompleted.map((line, i) => (
             <div key={i}>{renderTerminalLine(line.text)}</div>
           ))}

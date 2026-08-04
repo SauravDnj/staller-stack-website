@@ -61,7 +61,7 @@ export function Hero() {
         }}
       />
 
-      <Container className="relative grid items-center gap-16 lg:grid-cols-[0.7fr_1.3fr]">
+      <Container className="relative grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 xl:grid-cols-[1fr_1.1fr] xl:gap-16 2xl:grid-cols-[0.8fr_1.2fr]">
         <motion.div
           initial="hidden"
           animate="visible"
