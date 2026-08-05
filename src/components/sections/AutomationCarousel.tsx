@@ -154,7 +154,7 @@ export function AutomationCarousel() {
           </div>
         </Reveal>
 
-        <div className="mt-8 flex items-center justify-center gap-2">
+        <div className="mt-8 flex items-center justify-center gap-1">
           {cases.map((useCase, i) => (
             <button
               key={useCase.title}
@@ -162,10 +162,14 @@ export function AutomationCarousel() {
               aria-label={`Go to ${useCase.title}`}
               aria-current={i === active}
               onClick={() => setActive(i)}
-              className={`h-1.5 rounded-full transition-all duration-300 ${
-                i === active ? "w-6 bg-ss-teal" : "w-1.5 bg-ss-border hover:bg-ss-muted"
-              }`}
-            />
+              className="flex h-10 w-10 items-center justify-center"
+            >
+              <span
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  i === active ? "w-6 bg-ss-teal" : "w-1.5 bg-ss-border"
+                }`}
+              />
+            </button>
           ))}
         </div>
 

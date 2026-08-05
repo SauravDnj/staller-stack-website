@@ -115,7 +115,7 @@ export function PlaybookGenerator() {
                         setActiveCategory(category);
                         setExampleIndex(0);
                       }}
-                      className={`rounded-full transition-transform duration-300 ${isActive ? "scale-110" : "opacity-60 hover:opacity-100"}`}
+                      className={`rounded-full p-1 transition-transform duration-300 ${isActive ? "scale-110" : "opacity-60 hover:opacity-100"}`}
                     >
                       <IconTile color={category.color as IconTileColor} size="sm">
                         <Icon className="h-4 w-4" />
