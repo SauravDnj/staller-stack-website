@@ -73,7 +73,7 @@ export default async function CaseStudyDetailPage({
           </Reveal>
 
           <Reveal delay={0.1}>
-            <div className="mt-10 grid grid-cols-2 gap-6 rounded-2xl border border-ss-border bg-ss-surface/60 p-8 sm:grid-cols-4">
+            <div className="mt-10 grid grid-cols-2 gap-4 rounded-2xl border border-ss-border bg-ss-surface/60 p-5 sm:gap-6 sm:p-8 sm:grid-cols-4">
               <div>
                 <p className="font-mono text-xs uppercase tracking-wider text-ss-teal">
                   Client

@@ -67,6 +67,12 @@ function PipelineStages() {
   );
 }
 
+/** Command/result lines are highlighted; plain output stays muted — based on content, not position, since the log keeps scrolling and repeating. */
+function lineTextClass(text: string) {
+  if (text.startsWith("$ ") || text.startsWith("→ ")) return "text-ss-text";
+  return "";
+}
+
 function ConsoleLog() {
   const reducedMotion = useReducedMotion();
   const { completedLines, activeLine, activeText, activeComplete } = useTypewriter(
@@ -80,10 +86,15 @@ function ConsoleLog() {
   const shownActiveComplete = reducedMotion ? true : activeComplete;
 
   return (
-    <div className="min-h-[60px] font-mono text-[13px] leading-relaxed">
-      {shownCompleted.map((line, i) => (
-        <div key={i} className="flex flex-wrap items-center justify-between gap-2 text-ss-muted">
-          <span className={i === 0 ? "text-ss-text" : ""}>{line.text}</span>
+    <div className="flex h-[220px] min-w-0 flex-col justify-end gap-1.5 overflow-hidden font-mono text-[13px] leading-relaxed sm:h-[260px]">
+      {shownCompleted.map((line) => (
+        <div
+          key={"id" in line ? line.id : line.text}
+          className={`flex min-w-0 flex-wrap items-center justify-between gap-2 text-ss-muted ${
+            reducedMotion ? "" : "animate-[line-in_0.4s_ease-out]"
+          }`}
+        >
+          <span className={lineTextClass(line.text)}>{line.text}</span>
           {line.suffix && (
             <span className="font-mono text-[11px] text-ss-teal">{line.suffix}</span>
           )}
@@ -91,8 +102,8 @@ function ConsoleLog() {
       ))}
 
       {shownActive && (
-        <div className="flex flex-wrap items-center justify-between gap-2 text-ss-muted">
-          <span className={shownCompleted.length === 0 ? "text-ss-text" : ""}>
+        <div className="flex min-w-0 flex-wrap items-center justify-between gap-2 text-ss-muted">
+          <span className={lineTextClass(shownActive.text)}>
             {shownActiveText}
             <span
               aria-hidden
@@ -112,7 +123,7 @@ function ConsoleLog() {
 
 export function LiveConsole() {
   return (
-    <section className="py-24 sm:py-32">
+    <section id="console" className="py-24 sm:py-32">
       <Container>
         <Reveal>
           <SectionHeading eyebrow={liveConsole.eyebrow} title={liveConsole.heading} />

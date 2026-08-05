@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Terminal } from "@/components/ui/Terminal";
-import { useTypewriter } from "@/lib/useTypewriter";
+import { useTypewriter, type CommittedLine, type TypedLine } from "@/lib/useTypewriter";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 import { heroTerminal } from "@/content/home";
 
@@ -38,13 +38,17 @@ function renderTerminalLine(text: string) {
     return <span className="font-semibold text-ss-mint">{text}</span>;
   }
 
+  if (text.startsWith("✓")) {
+    return <span className="text-ss-mint">{text}</span>;
+  }
+
   return <span className="text-ss-muted">{text}</span>;
 }
 
 function TechTag({ label, className }: { label: string; className: string }) {
   return (
     <span
-      className={`${className} z-10 rounded-full border border-ss-border bg-ss-surface px-4 py-2 font-mono text-xs text-ss-text shadow-lg`}
+      className={`${className} z-20 rounded-full border border-ss-border bg-ss-surface px-4 py-2 font-mono text-xs text-ss-text shadow-lg`}
     >
       {label}
     </span>
@@ -58,7 +62,11 @@ export function HeroTerminal() {
     !reducedMotion
   );
 
-  const shownCompleted = reducedMotion ? heroTerminal.lines.slice(0, -1) : completedLines;
+  const staticCompleted: CommittedLine[] = heroTerminal.lines
+    .slice(0, -1)
+    .map((line: TypedLine, i: number) => ({ ...line, id: i }));
+
+  const shownCompleted = reducedMotion ? staticCompleted : completedLines;
   const shownActive = reducedMotion ? heroTerminal.lines[heroTerminal.lines.length - 1] : activeLine;
   const shownActiveText = reducedMotion ? shownActive?.text ?? "" : activeText;
 
@@ -67,7 +75,7 @@ export function HeroTerminal() {
       initial={{ opacity: 0, y: 24 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
-      className="relative w-full max-w-4xl"
+      className="relative w-full max-w-3xl lg:max-w-none"
     >
       <div
         className="pointer-events-none absolute -inset-10 rounded-[2rem] opacity-60 blur-2xl"
@@ -76,27 +84,34 @@ export function HeroTerminal() {
         }}
       />
 
-      <TechTag label={heroTerminal.tags[0]} className="absolute -left-4 -top-4 sm:-left-6 sm:-top-5" />
-      <TechTag label={heroTerminal.tags[1]} className="absolute -right-4 -top-4 sm:-right-6 sm:-top-5" />
-      <TechTag label={heroTerminal.tags[2]} className="absolute -left-4 top-[68%] sm:-left-8" />
+      <div className="relative">
+        <TechTag label={heroTerminal.tags[0]} className="absolute -left-4 -top-4 sm:-left-6 sm:-top-5" />
+        <TechTag label={heroTerminal.tags[1]} className="absolute -right-4 -top-4 sm:-right-6 sm:-top-5" />
+        <TechTag label={heroTerminal.tags[2]} className="absolute -left-4 -bottom-4 sm:-left-8 sm:-bottom-5" />
 
-      <Terminal title={heroTerminal.title} className="relative">
-        <div className="h-[260px] overflow-hidden whitespace-pre font-mono text-xs leading-relaxed sm:h-[320px] sm:text-sm lg:h-[330px] xl:h-[360px] xl:text-base 2xl:h-[420px] 2xl:text-lg">
-          {shownCompleted.map((line, i) => (
-            <div key={i}>{renderTerminalLine(line.text)}</div>
-          ))}
+        <Terminal title={heroTerminal.title} className="relative" bodyClassName="p-5 sm:p-6">
+          <div className="flex h-[360px] min-w-0 flex-col justify-end gap-1.5 overflow-hidden whitespace-pre-wrap font-mono text-sm leading-relaxed sm:h-[420px] sm:text-base">
+            {shownCompleted.map((line) => (
+              <div
+                key={line.id}
+                className={`min-w-0 ${reducedMotion ? "" : "animate-[line-in_0.4s_ease-out]"}`}
+              >
+                {renderTerminalLine(line.text)}
+              </div>
+            ))}
 
-          {shownActive && (
-            <div className="text-ss-text">
-              {shownActiveText}
-              <span
-                aria-hidden
-                className="ml-0.5 inline-block h-4 w-2 translate-y-[3px] animate-[pulse-soft_1s_step-end_infinite] bg-ss-teal align-middle"
-              />
-            </div>
-          )}
-        </div>
-      </Terminal>
+            {shownActive && (
+              <div className="min-w-0 text-ss-text">
+                {shownActiveText}
+                <span
+                  aria-hidden
+                  className="ml-0.5 inline-block h-4 w-2 translate-y-[3px] animate-[pulse-soft_1s_step-end_infinite] bg-ss-teal align-middle"
+                />
+              </div>
+            )}
+          </div>
+        </Terminal>
+      </div>
 
       <motion.div
         initial={{ opacity: 0, y: 10 }}

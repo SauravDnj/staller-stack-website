@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export type TypedLine = {
   text: string;
@@ -10,22 +10,29 @@ export type TypedLine = {
   holdMs?: number;
 };
 
+export type CommittedLine = TypedLine & { id: number };
+
 const CHAR_MS = 18;
 const LINE_GAP_MS = 260;
 const LOOP_HOLD_MS = 1800;
+/** Cap on remembered lines so the scrollback never grows unbounded. */
+const HISTORY_LIMIT = 60;
 
 /**
- * Types out `lines` one at a time, looping forever. Returns the lines
- * fully committed so far plus the in-progress text of the active line,
- * so callers can render completed lines statically and only animate the tail.
+ * Types out `lines` one at a time, looping forever. Committed lines are
+ * appended to a running history (capped, never reset to empty) so the
+ * terminal reads like real scrollback instead of wiping on every loop —
+ * only the oldest lines fall off once the cap is hit.
  */
 export function useTypewriter(lines: TypedLine[], enabled = true) {
-  const [lineIndex, setLineIndex] = useState(0);
+  const [scriptIndex, setScriptIndex] = useState(0);
   const [charCount, setCharCount] = useState(0);
+  const [history, setHistory] = useState<CommittedLine[]>([]);
+  const nextId = useRef(0);
 
   useEffect(() => {
     if (!enabled) return;
-    const current = lines[lineIndex];
+    const current = lines[scriptIndex];
     if (!current) return;
 
     if (charCount < current.text.length) {
@@ -33,19 +40,23 @@ export function useTypewriter(lines: TypedLine[], enabled = true) {
       return () => clearTimeout(id);
     }
 
-    const isLast = lineIndex === lines.length - 1;
+    const isLast = scriptIndex === lines.length - 1;
     const gap = current.holdMs ?? (isLast ? LOOP_HOLD_MS : LINE_GAP_MS);
     const id = setTimeout(() => {
-      setLineIndex(isLast ? 0 : lineIndex + 1);
+      const committedId = nextId.current++;
+      setHistory((h) => {
+        const next = [...h, { ...current, id: committedId }];
+        return next.length > HISTORY_LIMIT ? next.slice(next.length - HISTORY_LIMIT) : next;
+      });
+      setScriptIndex(isLast ? 0 : scriptIndex + 1);
       setCharCount(0);
     }, gap);
     return () => clearTimeout(id);
-  }, [charCount, lineIndex, lines, enabled]);
+  }, [charCount, scriptIndex, lines, enabled]);
 
-  const completedLines = lines.slice(0, lineIndex);
-  const activeLine = lines[lineIndex];
+  const activeLine = lines[scriptIndex];
   const activeText = enabled ? activeLine?.text.slice(0, charCount) ?? "" : "";
   const activeComplete = activeLine ? charCount >= activeLine.text.length : false;
 
-  return { completedLines, activeLine, activeText, activeComplete };
+  return { completedLines: history, activeLine, activeText, activeComplete };
 }

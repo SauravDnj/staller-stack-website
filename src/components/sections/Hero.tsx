@@ -78,7 +78,7 @@ export function Hero() {
           >
             <span className="block">Building the Future with</span>
             <span className="relative block min-h-[1.1em] w-full overflow-hidden">
-              <AnimatePresence mode="wait">
+              <AnimatePresence mode="wait" initial={false}>
                 <motion.span
                   key={wordIndex}
                   initial={{ y: reducedMotion ? 0 : 28, opacity: 0 }}
@@ -111,7 +111,7 @@ export function Hero() {
           </motion.div>
         </motion.div>
 
-        <div className="flex justify-center lg:justify-self-end">
+        <div className="flex justify-center lg:justify-end">
           <HeroTerminal />
         </div>
       </Container>

@@ -2,11 +2,53 @@
 
 import { useState, type ReactNode } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import type { IconType } from "react-icons";
+import {
+  SiReact,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiGraphql,
+  SiPostgresql,
+  SiTypescript,
+  SiPython,
+  SiTensorflow,
+  SiDocker,
+  SiGithubactions,
+  SiJenkins,
+  SiTerraform,
+  SiKubernetes,
+  SiGooglecloud,
+  SiRedis,
+  SiPrometheus,
+  SiGrafana,
+} from "react-icons/si";
+import { FaAws } from "react-icons/fa6";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { IconTile, type IconTileColor } from "@/components/ui/IconTile";
-import { approachTabs, orbitNodes, type ApproachTab } from "@/content/approach";
+import { approachTabs, orbitNodesByTab, type ApproachTab } from "@/content/approach";
+
+const NODE_ICONS: Record<string, IconType> = {
+  react: SiReact,
+  nextdotjs: SiNextdotjs,
+  nodedotjs: SiNodedotjs,
+  graphql: SiGraphql,
+  postgresql: SiPostgresql,
+  typescript: SiTypescript,
+  python: SiPython,
+  tensorflow: SiTensorflow,
+  docker: SiDocker,
+  githubactions: SiGithubactions,
+  jenkins: SiJenkins,
+  terraform: SiTerraform,
+  kubernetes: SiKubernetes,
+  amazonaws: FaAws,
+  googlecloud: SiGooglecloud,
+  redis: SiRedis,
+  prometheus: SiPrometheus,
+  grafana: SiGrafana,
+};
 
 const tabColor: Record<ApproachTab["key"], IconTileColor> = {
   unify: "teal",
@@ -62,7 +104,14 @@ function nodePosition(index: number, total: number) {
 
 function OrbitalDiagram({ activeKey }: { activeKey: ApproachTab["key"] }) {
   const [hovered, setHovered] = useState<number | null>(null);
+  const [prevActiveKey, setPrevActiveKey] = useState(activeKey);
   const accent = tabAccentVar[activeKey];
+  const nodes = orbitNodesByTab[activeKey];
+
+  if (prevActiveKey !== activeKey) {
+    setPrevActiveKey(activeKey);
+    setHovered(null);
+  }
 
   return (
     <div className="relative mx-auto aspect-square w-full max-w-md">
@@ -82,24 +131,30 @@ function OrbitalDiagram({ activeKey }: { activeKey: ApproachTab["key"] }) {
           strokeDasharray="1 2.4"
           className="animate-spin-slow origin-center"
         />
-        {orbitNodes.map((node, i) => {
-          const { x, y } = nodePosition(i, orbitNodes.length);
-          const isHovered = hovered === i;
-          return (
-            <line
-              key={node.name}
-              x1={50}
-              y1={50}
-              x2={x}
-              y2={y}
-              stroke={isHovered ? accent : "var(--ss-border)"}
-              strokeWidth={isHovered ? 0.7 : 0.35}
-              strokeDasharray="2 2"
-              strokeLinecap="round"
-              className="animate-dash-flow transition-[stroke,stroke-width] duration-300"
-            />
-          );
-        })}
+        <AnimatePresence>
+          {nodes.map((node, i) => {
+            const { x, y } = nodePosition(i, nodes.length);
+            const isHovered = hovered === i;
+            return (
+              <motion.line
+                key={`${activeKey}-${node.name}`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                x1={50}
+                y1={50}
+                x2={x}
+                y2={y}
+                stroke={isHovered ? accent : "var(--ss-border)"}
+                strokeWidth={isHovered ? 0.7 : 0.35}
+                strokeDasharray="2 2"
+                strokeLinecap="round"
+                className="animate-dash-flow transition-[stroke,stroke-width] duration-300"
+              />
+            );
+          })}
+        </AnimatePresence>
       </svg>
 
       {/* Hub */}
@@ -115,31 +170,37 @@ function OrbitalDiagram({ activeKey }: { activeKey: ApproachTab["key"] }) {
         </div>
       </div>
 
-      {orbitNodes.map((node, i) => {
-        const { x, y } = nodePosition(i, orbitNodes.length);
-        const isHovered = hovered === i;
-        return (
-          <div
-            key={node.name}
-            style={{ left: `${x}%`, top: `${y}%` }}
-            className="absolute -translate-x-1/2 -translate-y-1/2"
-            onMouseEnter={() => setHovered(i)}
-            onMouseLeave={() => setHovered(null)}
-          >
+      <AnimatePresence>
+        {nodes.map((node, i) => {
+          const { x, y } = nodePosition(i, nodes.length);
+          const isHovered = hovered === i;
+          const Icon = NODE_ICONS[node.icon];
+          return (
             <motion.div
-              animate={{ scale: isHovered ? 1.12 : 1 }}
-              transition={{ duration: 0.25 }}
-              style={{ borderColor: isHovered ? accent : undefined }}
-              className="flex h-14 w-14 cursor-default items-center justify-center rounded-full border border-ss-border bg-ss-base px-1 text-center font-mono text-[10px] text-ss-muted transition-colors"
+              key={`${activeKey}-${node.name}`}
+              initial={{ opacity: 0, scale: 0.4 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.4 }}
+              transition={{ duration: 0.35, delay: i * 0.04, ease: "easeOut" }}
+              style={{ left: `${x}%`, top: `${y}%` }}
+              className="absolute -translate-x-1/2 -translate-y-1/2"
+              onMouseEnter={() => setHovered(i)}
+              onMouseLeave={() => setHovered(null)}
             >
-              {node.name}
-            </motion.div>
+              <motion.div
+                animate={{ scale: isHovered ? 1.15 : 1 }}
+                transition={{ duration: 0.25 }}
+                style={{ borderColor: isHovered ? accent : undefined, color: isHovered ? accent : undefined }}
+                className="flex h-14 w-14 cursor-default items-center justify-center rounded-full border border-ss-border bg-ss-base text-ss-muted transition-colors"
+              >
+                {Icon && <Icon className="h-6 w-6" aria-hidden />}
+              </motion.div>
 
-            <AnimatePresence>
-              {isHovered && (
-                <motion.div
-                  initial={{ opacity: 0, y: 6, scale: 0.92 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
+              <AnimatePresence>
+                {isHovered && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 6, scale: 0.92 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 6, scale: 0.92 }}
                   transition={{ duration: 0.18 }}
                   style={{ borderColor: accent }}
@@ -148,15 +209,16 @@ function OrbitalDiagram({ activeKey }: { activeKey: ApproachTab["key"] }) {
                   <p className="font-display text-xs font-semibold text-ss-text">
                     {node.name}
                   </p>
-                  <p className="mt-0.5 font-mono text-[10px] text-ss-muted">
-                    {node.role}
-                  </p>
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
-        );
-      })}
+                    <p className="mt-0.5 font-mono text-[10px] text-ss-muted">
+                      {node.role}
+                    </p>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
+          );
+        })}
+      </AnimatePresence>
     </div>
   );
 }

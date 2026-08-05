@@ -161,17 +161,21 @@ export function PortfolioPreview() {
       </div>
 
       <Container>
-        <div className="mt-2 flex justify-center gap-2">
+        <div className="mt-2 flex justify-center gap-1">
           {projects.map((project, index) => (
             <button
               key={project.slug}
               type="button"
               aria-label={`Go to ${project.title}`}
               onClick={() => scrollToIndex(index)}
-              className={`h-1.5 rounded-full transition-all duration-300 ${
-                index === activeIndex ? "w-8 bg-ss-teal" : "w-1.5 bg-ss-border"
-              }`}
-            />
+              className="flex h-10 w-10 items-center justify-center"
+            >
+              <span
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  index === activeIndex ? "w-8 bg-ss-teal" : "w-1.5 bg-ss-border"
+                }`}
+              />
+            </button>
           ))}
         </div>
       </Container>

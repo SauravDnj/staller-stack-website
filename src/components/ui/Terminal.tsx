@@ -5,10 +5,12 @@ export function Terminal({
   title,
   children,
   className = "",
+  bodyClassName = "p-7",
 }: {
   title: string;
   children: ReactNode;
   className?: string;
+  bodyClassName?: string;
 }) {
   return (
     <div
@@ -20,7 +22,7 @@ export function Terminal({
         <span className="h-3.5 w-3.5 rounded-full bg-[#28c840]" />
         <span className="ml-3 font-mono text-sm text-ss-muted">{title}</span>
       </div>
-      <div className="p-7">{children}</div>
+      <div className={bodyClassName}>{children}</div>
     </div>
   );
 }

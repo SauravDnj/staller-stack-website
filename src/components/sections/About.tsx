@@ -8,7 +8,7 @@ import { aboutStats } from "@/content/home";
 
 export function About() {
   return (
-    <section className="py-24 sm:py-32">
+    <section id="about" className="py-24 sm:py-32">
       <Container className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
         <Reveal>
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-ss-teal">

@@ -49,13 +49,32 @@ export const approachTabs: ApproachTab[] = [
   },
 ];
 
-export const orbitNodes = [
-  { name: "React", role: "Frontend Framework" },
-  { name: "Next.js", role: "Full-Stack React" },
-  { name: "AWS", role: "Cloud Infrastructure" },
-  { name: "Docker", role: "Containerization" },
-  { name: "K8s", role: "Orchestration" },
-  { name: "Python", role: "AI & Backend" },
-  { name: "GraphQL", role: "API Layer" },
-  { name: "Terraform", role: "Infrastructure as Code" },
-];
+export type OrbitNode = { name: string; role: string; icon: string };
+
+/** Each tab drives its own ring of technologies, so the diagram actually changes with the selected approach. */
+export const orbitNodesByTab: Record<ApproachTab["key"], OrbitNode[]> = {
+  unify: [
+    { name: "React", role: "Frontend Framework", icon: "react" },
+    { name: "Next.js", role: "Full-Stack Framework", icon: "nextdotjs" },
+    { name: "Node.js", role: "Backend Runtime", icon: "nodedotjs" },
+    { name: "GraphQL", role: "Unified API Layer", icon: "graphql" },
+    { name: "PostgreSQL", role: "Single Source of Truth", icon: "postgresql" },
+    { name: "TypeScript", role: "Shared Type Safety", icon: "typescript" },
+  ],
+  automate: [
+    { name: "Python", role: "AI & ML Pipelines", icon: "python" },
+    { name: "TensorFlow", role: "Model Training", icon: "tensorflow" },
+    { name: "Docker", role: "Containerized Builds", icon: "docker" },
+    { name: "GitHub Actions", role: "CI/CD Pipelines", icon: "githubactions" },
+    { name: "Jenkins", role: "Workflow Orchestration", icon: "jenkins" },
+    { name: "Terraform", role: "Infrastructure as Code", icon: "terraform" },
+  ],
+  scale: [
+    { name: "Kubernetes", role: "Auto-Scaling Orchestration", icon: "kubernetes" },
+    { name: "AWS", role: "Global Cloud Infrastructure", icon: "amazonaws" },
+    { name: "Google Cloud", role: "Multi-Cloud Resilience", icon: "googlecloud" },
+    { name: "Redis", role: "High-Speed Caching", icon: "redis" },
+    { name: "Prometheus", role: "Real-Time Monitoring", icon: "prometheus" },
+    { name: "Grafana", role: "24/7 Observability", icon: "grafana" },
+  ],
+};

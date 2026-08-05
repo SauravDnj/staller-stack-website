@@ -52,7 +52,7 @@ export function RoiComparison() {
         </Reveal>
 
         <div className="mt-14 grid grid-cols-1 gap-8 lg:grid-cols-2">
-          <Reveal className="rounded-2xl border border-ss-border bg-ss-surface p-8">
+          <Reveal className="rounded-2xl border border-ss-border bg-ss-surface p-6 sm:p-8">
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-ss-muted">
               {roiSavings.label}
             </p>
@@ -65,39 +65,41 @@ export function RoiComparison() {
               />
             </p>
 
-            <table className="mt-8 w-full border-collapse text-sm">
-              <thead>
-                <tr>
-                  <th className="pb-3 text-left font-mono text-[11px] uppercase tracking-wider text-ss-muted">
-                    Category
-                  </th>
-                  <th className="pb-3 text-center font-mono text-[11px] uppercase tracking-wider text-ss-muted">
-                    Typical Approach
-                  </th>
-                  <th className="pb-3 text-center font-mono text-[11px] uppercase tracking-wider text-ss-muted">
-                    Staller Stack
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {roiComparison.map((row, index) => (
-                  <tr
-                    key={row.category}
-                    className={`transition-colors duration-500 ${
-                      index === activeRow ? "bg-ss-base/80" : ""
-                    }`}
-                  >
-                    <td className="rounded-l-lg p-3 text-ss-muted">{row.category}</td>
-                    <td className="p-3 text-center text-red-400/80 line-through decoration-red-400/50">
-                      {row.before}
-                    </td>
-                    <td className="rounded-r-lg p-3 text-center font-semibold text-ss-teal">
-                      {row.after}
-                    </td>
+            <div className="mt-8 overflow-x-auto">
+              <table className="w-full min-w-[420px] border-collapse text-sm">
+                <thead>
+                  <tr>
+                    <th className="whitespace-nowrap pb-3 text-left font-mono text-[11px] uppercase tracking-wider text-ss-muted">
+                      Category
+                    </th>
+                    <th className="whitespace-nowrap pb-3 text-center font-mono text-[11px] uppercase tracking-wider text-ss-muted">
+                      Typical Approach
+                    </th>
+                    <th className="whitespace-nowrap pb-3 text-center font-mono text-[11px] uppercase tracking-wider text-ss-muted">
+                      Staller Stack
+                    </th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {roiComparison.map((row, index) => (
+                    <tr
+                      key={row.category}
+                      className={`transition-colors duration-500 ${
+                        index === activeRow ? "bg-ss-base/80" : ""
+                      }`}
+                    >
+                      <td className="rounded-l-lg p-3 text-ss-muted">{row.category}</td>
+                      <td className="whitespace-nowrap p-3 text-center text-red-400/80 line-through decoration-red-400/50">
+                        {row.before}
+                      </td>
+                      <td className="whitespace-nowrap rounded-r-lg p-3 text-center font-semibold text-ss-teal">
+                        {row.after}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </Reveal>
 
           <Reveal delay={0.1} className="flex flex-col gap-4">

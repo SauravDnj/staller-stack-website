@@ -3,6 +3,9 @@ import { TrustBar } from "@/components/sections/TrustBar";
 import { About } from "@/components/sections/About";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { TechMarquee } from "@/components/sections/TechMarquee";
+import { PlaybookGenerator } from "@/components/sections/PlaybookGenerator";
+import { ManagedMode } from "@/components/sections/ManagedMode";
+import { AutomationCarousel } from "@/components/sections/AutomationCarousel";
 import { OrbitApproach } from "@/components/sections/OrbitApproach";
 import { ImpactMetrics } from "@/components/sections/ImpactMetrics";
 import { RoiComparison } from "@/components/sections/RoiComparison";
@@ -22,6 +25,9 @@ export default function Home() {
       <About />
       <ServicesGrid />
       <TechMarquee />
+      <PlaybookGenerator />
+      <ManagedMode />
+      <AutomationCarousel />
       <OrbitApproach />
       <ImpactMetrics />
       <RoiComparison />
