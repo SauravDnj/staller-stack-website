@@ -74,7 +74,7 @@ export function Hero() {
 
           <motion.h1
             variants={itemVariants}
-            className="mt-6 font-display text-4xl font-semibold leading-[1.1] text-ss-text sm:text-5xl lg:text-6xl"
+            className="mt-6 font-display text-3xl font-semibold leading-[1.15] text-ss-text sm:text-4xl md:text-5xl xl:text-6xl"
           >
             <span className="block">Building the Future with</span>
             <span className="relative block min-h-[1.1em] w-full overflow-hidden">
@@ -95,7 +95,7 @@ export function Hero() {
 
           <motion.p
             variants={itemVariants}
-            className="mt-6 max-w-xl text-lg text-ss-muted"
+            className="mt-6 max-w-xl text-base text-ss-muted sm:text-lg"
           >
             {heroContent.subtext}
           </motion.p>
