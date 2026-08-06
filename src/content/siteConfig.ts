@@ -19,7 +19,7 @@ export type NavItem = {
   href: string;
 };
 
-export type MegaMenuKey = "services" | "industry" | "about";
+export type MegaMenuKey = "services" | "industry" | "buildWithAi" | "about";
 
 export type PrimaryNavEntry =
   | { type: "link"; label: string; href: string }
@@ -29,6 +29,7 @@ export const primaryNav: PrimaryNavEntry[] = [
   { type: "link", label: "Home", href: "/" },
   { type: "mega", label: "Services", key: "services" },
   { type: "mega", label: "Industry", key: "industry" },
+  { type: "mega", label: "Build With AI", key: "buildWithAi" },
   { type: "mega", label: "About Us", key: "about" },
   { type: "link", label: "Portfolio", href: "/portfolio" },
 ];

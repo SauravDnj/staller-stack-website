@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import dynamic from "next/dynamic";
+import { useLenis } from "lenis/react";
 import { AnimatePresence, motion, type Variants } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
@@ -10,6 +12,11 @@ import { HeroTerminal } from "@/components/sections/HeroTerminal";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 import { heroContent } from "@/content/home";
 import { marqueeKeywords } from "@/content/siteConfig";
+
+const HeroParticles = dynamic(
+  () => import("@/components/three/HeroParticles").then((mod) => mod.HeroParticles),
+  { ssr: false }
+);
 
 const ROTATE_INTERVAL = 2600;
 
@@ -27,6 +34,8 @@ export function Hero() {
   const heroRef = useRef<HTMLElement | null>(null);
   const reducedMotion = useReducedMotion();
   const [wordIndex, setWordIndex] = useState(0);
+  const [heroInView, setHeroInView] = useState(true);
+  const lenis = useLenis();
 
   useEffect(() => {
     if (reducedMotion) return;
@@ -35,6 +44,17 @@ export function Hero() {
     }, ROTATE_INTERVAL);
     return () => clearInterval(id);
   }, [reducedMotion]);
+
+  useEffect(() => {
+    const el = heroRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setHeroInView(entry.isIntersecting),
+      { threshold: 0 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <section
@@ -52,6 +72,11 @@ export function Hero() {
             "radial-gradient(ellipse 80% 60% at 60% 40%, black 10%, transparent 75%)",
         }}
       />
+      {!reducedMotion && heroInView && (
+        <div className="pointer-events-none absolute inset-0 opacity-70">
+          <HeroParticles />
+        </div>
+      )}
       <AmbientGlow />
       <div
         className="pointer-events-none absolute -bottom-24 right-1/4 h-[380px] w-[380px] rounded-full opacity-[0.14] blur-[100px]"
@@ -138,9 +163,7 @@ export function Hero() {
         <motion.button
           type="button"
           aria-label="Scroll to explore"
-          onClick={() =>
-            window.scrollTo({ top: window.innerHeight, behavior: "smooth" })
-          }
+          onClick={() => lenis?.scrollTo(window.innerHeight)}
           animate={reducedMotion ? {} : { y: [0, 8, 0] }}
           transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
           className="flex h-12 w-12 items-center justify-center rounded-full border border-ss-border bg-ss-surface/60 text-ss-teal backdrop-blur transition-colors hover:border-ss-teal hover:text-ss-mint"

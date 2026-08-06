@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import {
   headerCta,
   primaryNav,
@@ -16,10 +17,12 @@ import {
 import { MegaMenuPanel } from "@/components/layout/header/MegaMenuPanel";
 import { ServicesMegaMenu } from "@/components/layout/header/ServicesMegaMenu";
 import { IndustryMegaMenu } from "@/components/layout/header/IndustryMegaMenu";
+import { BuildWithAiMegaMenu } from "@/components/layout/header/BuildWithAiMegaMenu";
 import { AboutMegaMenu } from "@/components/layout/header/AboutMegaMenu";
 import { MobileMegaSection } from "@/components/layout/header/MobileMegaSection";
 import { services } from "@/content/services";
 import { industries } from "@/content/industries";
+import { aiServices, aiSolutions } from "@/content/aiOfferings";
 
 const CLOSE_DELAY = 150;
 
@@ -151,36 +154,40 @@ export function Header() {
           })}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden items-center gap-4 lg:flex">
+          <ThemeToggle />
           <Button href={headerCta.href}>
             {headerCta.label}
             <span aria-hidden>→</span>
           </Button>
         </div>
 
-        <button
-          type="button"
-          aria-label="Toggle menu"
-          aria-expanded={isMobileOpen}
-          onClick={() => setIsMobileOpen((v) => !v)}
-          className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden"
-        >
-          <span
-            className={`h-0.5 w-6 bg-ss-text transition-transform ${
-              isMobileOpen ? "translate-y-2 rotate-45" : ""
-            }`}
-          />
-          <span
-            className={`h-0.5 w-6 bg-ss-text transition-opacity ${
-              isMobileOpen ? "opacity-0" : "opacity-100"
-            }`}
-          />
-          <span
-            className={`h-0.5 w-6 bg-ss-text transition-transform ${
-              isMobileOpen ? "-translate-y-2 -rotate-45" : ""
-            }`}
-          />
-        </button>
+        <div className="flex items-center gap-2 lg:hidden">
+          <ThemeToggle />
+          <button
+            type="button"
+            aria-label="Toggle menu"
+            aria-expanded={isMobileOpen}
+            onClick={() => setIsMobileOpen((v) => !v)}
+            className="flex h-10 w-10 flex-col items-center justify-center gap-1.5"
+          >
+            <span
+              className={`h-0.5 w-6 bg-ss-text transition-transform ${
+                isMobileOpen ? "translate-y-2 rotate-45" : ""
+              }`}
+            />
+            <span
+              className={`h-0.5 w-6 bg-ss-text transition-opacity ${
+                isMobileOpen ? "opacity-0" : "opacity-100"
+              }`}
+            />
+            <span
+              className={`h-0.5 w-6 bg-ss-text transition-transform ${
+                isMobileOpen ? "-translate-y-2 -rotate-45" : ""
+              }`}
+            />
+          </button>
+        </div>
       </Container>
 
       {/* Desktop mega menus */}
@@ -194,6 +201,9 @@ export function Header() {
         </MegaMenuPanel>
         <MegaMenuPanel isOpen={openMenu === "industry"}>
           <IndustryMegaMenu onNavigate={closeAll} />
+        </MegaMenuPanel>
+        <MegaMenuPanel isOpen={openMenu === "buildWithAi"}>
+          <BuildWithAiMegaMenu onNavigate={closeAll} />
         </MegaMenuPanel>
         <MegaMenuPanel isOpen={openMenu === "about"}>
           <AboutMegaMenu onNavigate={closeAll} />
@@ -267,6 +277,43 @@ export function Header() {
                         className="rounded-lg px-3 py-2 text-sm text-ss-teal"
                       >
                         View All Industries →
+                      </Link>
+                    </MobileMegaSection>
+                  );
+                }
+
+                if (item.key === "buildWithAi") {
+                  return (
+                    <MobileMegaSection key={item.key} label={item.label}>
+                      <p className="px-3 pt-1 font-mono text-xs uppercase tracking-[0.2em] text-ss-teal">
+                        AI Services
+                      </p>
+                      {aiServices.map((offering) => (
+                        <Link
+                          key={offering.slug}
+                          href={`/build-with-ai/${offering.slug}`}
+                          className="rounded-lg px-3 py-2 text-sm text-ss-muted hover:text-ss-mint"
+                        >
+                          {offering.name}
+                        </Link>
+                      ))}
+                      <p className="px-3 pt-3 font-mono text-xs uppercase tracking-[0.2em] text-ss-teal">
+                        AI Solutions
+                      </p>
+                      {aiSolutions.map((offering) => (
+                        <Link
+                          key={offering.slug}
+                          href={`/build-with-ai/${offering.slug}`}
+                          className="rounded-lg px-3 py-2 text-sm text-ss-muted hover:text-ss-mint"
+                        >
+                          {offering.name}
+                        </Link>
+                      ))}
+                      <Link
+                        href="/build-with-ai"
+                        className="rounded-lg px-3 py-2 text-sm text-ss-teal"
+                      >
+                        View All Build With AI →
                       </Link>
                     </MobileMegaSection>
                   );

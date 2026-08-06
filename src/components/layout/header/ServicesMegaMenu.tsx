@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { ServiceIcon } from "@/components/ui/ServiceIcon";
 import { SpinningIcon } from "@/components/ui/SpinningIcon";
+import { TechIcon } from "@/components/ui/TechIcon";
 import { services } from "@/content/services";
 
 export function ServicesMegaMenu({ onNavigate }: { onNavigate: () => void }) {
@@ -85,6 +86,20 @@ export function ServicesMegaMenu({ onNavigate }: { onNavigate: () => void }) {
             </li>
           ))}
         </ul>
+        <div className="mt-6 flex flex-wrap gap-2">
+          {active.techStack
+            .flatMap((group) => group.items)
+            .slice(0, 8)
+            .map((tech) => (
+              <span
+                key={tech}
+                className="flex items-center gap-1.5 rounded-full border border-ss-border bg-ss-base px-3 py-1.5 font-mono text-xs text-ss-text"
+              >
+                <TechIcon name={tech} className="h-3.5 w-3.5 text-ss-teal" />
+                {tech}
+              </span>
+            ))}
+        </div>
         <Link
           href={`/services/${active.slug}`}
           onClick={onNavigate}

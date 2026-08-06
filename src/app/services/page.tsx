@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { TiltCard } from "@/components/ui/TiltCard";
 import { ServiceIcon } from "@/components/ui/ServiceIcon";
 import { SpinningIcon } from "@/components/ui/SpinningIcon";
+import { TechIcon } from "@/components/ui/TechIcon";
 import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
 import { PageHeader } from "@/components/sections/PageHeader";
 import { CtaBanner } from "@/components/sections/CtaBanner";
@@ -42,6 +43,20 @@ export default function ServicesPage() {
                     <p className="mt-3 text-sm text-ss-muted">
                       {service.description}
                     </p>
+                    <div className="mt-6 flex flex-wrap gap-2">
+                      {service.techStack
+                        .flatMap((group) => group.items)
+                        .slice(0, 8)
+                        .map((tech) => (
+                          <span
+                            key={tech}
+                            className="flex items-center gap-1.5 rounded-full border border-ss-border bg-ss-surface px-3 py-1.5 font-mono text-xs text-ss-text"
+                          >
+                            <TechIcon name={tech} className="h-3.5 w-3.5 text-ss-teal" />
+                            {tech}
+                          </span>
+                        ))}
+                    </div>
                     <span className="mt-6 inline-block font-display text-sm text-ss-teal">
                       Learn more →
                     </span>

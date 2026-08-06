@@ -4,6 +4,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { TiltCard } from "@/components/ui/TiltCard";
 import { ServiceIcon } from "@/components/ui/ServiceIcon";
 import { SpinningIcon } from "@/components/ui/SpinningIcon";
+import { TechIcon } from "@/components/ui/TechIcon";
 import { Reveal } from "@/components/ui/Reveal";
 import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
 import { services } from "@/content/services";
@@ -54,6 +55,20 @@ export function ServicesGrid() {
                       </li>
                     ))}
                   </ul>
+                  <div className="mt-6 flex flex-wrap gap-2 border-t border-ss-border pt-5">
+                    {service.techStack
+                      .flatMap((group) => group.items)
+                      .slice(0, 6)
+                      .map((tech) => (
+                        <span
+                          key={tech}
+                          className="flex items-center gap-1.5 rounded-full border border-ss-border bg-ss-base px-3 py-1.5 font-mono text-xs text-ss-text"
+                        >
+                          <TechIcon name={tech} className="h-3.5 w-3.5 text-ss-teal" />
+                          {tech}
+                        </span>
+                      ))}
+                  </div>
                 </TiltCard>
               </Link>
             </RevealItem>

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/ui/Container";
-import { Card } from "@/components/ui/Card";
 import { ServiceIcon } from "@/components/ui/ServiceIcon";
 import { SpinningIcon } from "@/components/ui/SpinningIcon";
 import { TechIcon } from "@/components/ui/TechIcon";
@@ -67,14 +66,18 @@ export default async function ServiceDetailPage({
               What&apos;s Included
             </h2>
           </Reveal>
-          <RevealGroup className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <RevealGroup className="mt-6 grid grid-cols-1 divide-y divide-ss-border overflow-hidden rounded-2xl border border-ss-border sm:grid-cols-3 sm:divide-x sm:divide-y-0">
             {service.bullets.map((bullet) => (
-              <RevealItem key={bullet}>
-                <Card>
-                  <p className="font-display text-sm font-medium text-ss-text">
-                    {bullet}
-                  </p>
-                </Card>
+              <RevealItem
+                key={bullet}
+                className="flex items-start gap-3 bg-ss-surface/60 p-6 transition-colors duration-300 hover:bg-ss-surface"
+              >
+                <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-ss-teal/15 text-xs text-ss-teal">
+                  ✓
+                </span>
+                <p className="font-display text-sm font-medium text-ss-text">
+                  {bullet}
+                </p>
               </RevealItem>
             ))}
           </RevealGroup>
@@ -135,29 +138,29 @@ export default async function ServiceDetailPage({
               The tools and platforms our {service.title} team works in day to day.
             </p>
           </Reveal>
-          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <RevealGroup className="mt-10 flex flex-col gap-10">
             {service.techStack.map((group) => (
               <RevealItem key={group.category}>
-                <div className="h-full rounded-2xl border border-ss-border bg-ss-surface/60 p-6 transition-colors duration-300 hover:border-ss-teal/60">
-                  <p className="font-mono text-xs uppercase tracking-[0.2em] text-ss-teal">
-                    {group.category}
-                  </p>
-                  <div className="mt-4 flex flex-col gap-3">
-                    {group.items.map((item) => (
-                      <div
-                        key={item}
-                        className="group flex items-center gap-3 text-sm text-ss-text"
-                      >
-                        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-ss-border bg-ss-base text-ss-teal transition-colors duration-300 group-hover:border-ss-teal group-hover:text-ss-mint">
-                          <TechIcon
-                            name={item}
-                            className="h-4 w-4 transition-transform duration-300 group-hover:scale-110"
-                          />
-                        </span>
+                <p className="font-mono text-xs uppercase tracking-[0.25em] text-ss-teal">
+                  {group.category}
+                </p>
+                <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
+                  {group.items.map((item) => (
+                    <div
+                      key={item}
+                      className="group flex flex-col items-center gap-3 rounded-xl border border-ss-border bg-ss-surface/60 px-4 py-6 text-center transition-colors duration-300 hover:border-ss-teal hover:bg-ss-surface"
+                    >
+                      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-ss-border bg-ss-base text-ss-teal transition-colors duration-300 group-hover:border-ss-teal group-hover:text-ss-mint">
+                        <TechIcon
+                          name={item}
+                          className="h-5 w-5 transition-transform duration-300 group-hover:scale-110"
+                        />
+                      </span>
+                      <span className="font-display text-sm font-medium text-ss-text">
                         {item}
-                      </div>
-                    ))}
-                  </div>
+                      </span>
+                    </div>
+                  ))}
                 </div>
               </RevealItem>
             ))}

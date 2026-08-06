@@ -3,6 +3,7 @@ import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { PageHeader } from "@/components/sections/PageHeader";
 import { ContactForm } from "@/components/sections/ContactForm";
+import { ProjectCta } from "@/components/sections/ProjectCta";
 import { siteConfig, socialLinks } from "@/content/siteConfig";
 
 export const metadata: Metadata = {
@@ -58,6 +59,8 @@ export default function ContactPage() {
           </Reveal>
         </Container>
       </section>
+
+      <ProjectCta />
     </>
   );
 }

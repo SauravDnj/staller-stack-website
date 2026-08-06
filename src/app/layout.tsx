@@ -7,6 +7,7 @@ import {
   Inter_Tight,
 } from "next/font/google";
 import { ReactLenis } from "lenis/react";
+import { ThemeProvider } from "next-themes";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { LenisScrollSync } from "@/components/LenisScrollSync";
@@ -55,16 +56,19 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${inter.variable} ${interTight.variable} ${jetbrainsMono.variable} ${manrope.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-ss-base text-ss-text">
-        <ReactLenis root options={{ duration: 1.1, smoothWheel: true }}>
-          <LenisScrollSync />
-          <ScrollProgressBar />
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </ReactLenis>
+        <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem={false}>
+          <ReactLenis root options={{ duration: 1.1, smoothWheel: true }}>
+            <LenisScrollSync />
+            <ScrollProgressBar />
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </ReactLenis>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -52,10 +52,10 @@ export const services: Service[] = [
       "Technical handover documentation",
     ],
     techStack: [
-      { category: "Languages", items: ["Python", "Jupyter"] },
-      { category: "ML Frameworks", items: ["TensorFlow", "PyTorch", "Scikit-learn"] },
-      { category: "MLOps & Deployment", items: ["MLflow", "AWS SageMaker", "Docker"] },
-      { category: "Data & Pipelines", items: ["Apache Kafka", "PostgreSQL"] },
+      { category: "Languages & Libraries", items: ["Python", "Jupyter", "NumPy", "Pandas"] },
+      { category: "ML Frameworks", items: ["TensorFlow", "PyTorch", "Scikit-learn", "Keras", "ONNX"] },
+      { category: "MLOps & Deployment", items: ["MLflow", "AWS SageMaker", "Docker", "Weights & Biases", "Kubernetes"] },
+      { category: "Data & Pipelines", items: ["Apache Kafka", "PostgreSQL", "Apache Airflow", "Apache Spark"] },
     ],
     faqs: [
       {
@@ -116,10 +116,10 @@ export const services: Service[] = [
       "Deployment and monitoring runbook",
     ],
     techStack: [
-      { category: "Languages", items: ["Python"] },
-      { category: "Agent Frameworks", items: ["LangChain", "LangGraph", "LlamaIndex"] },
-      { category: "Models & Vector Stores", items: ["OpenAI API", "Anthropic API", "Pinecone", "Hugging Face"] },
-      { category: "Evaluation & Tooling", items: ["MLflow", "Docker"] },
+      { category: "Languages", items: ["Python", "TypeScript"] },
+      { category: "Agent Frameworks", items: ["LangChain", "LangGraph", "LlamaIndex", "n8n"] },
+      { category: "Models & Vector Stores", items: ["OpenAI API", "Anthropic API", "Pinecone", "Hugging Face", "ONNX"] },
+      { category: "Evaluation & Tooling", items: ["MLflow", "Docker", "Jupyter", "Weights & Biases"] },
     ],
     faqs: [
       {
@@ -181,8 +181,8 @@ export const services: Service[] = [
     ],
     techStack: [
       { category: "Frontend", items: ["Flutter", "React Native", "Kotlin", "Swift"] },
-      { category: "Platform & Tooling", items: ["Expo", "Firebase", "Fastlane"] },
-      { category: "Quality Assurance", items: ["Appium", "Selenium"] },
+      { category: "Platform & Tooling", items: ["Expo", "Firebase", "Fastlane", "GitHub Actions", "Figma"] },
+      { category: "Quality Assurance", items: ["Appium", "Selenium", "Postman", "Jest"] },
     ],
     faqs: [
       {
@@ -243,10 +243,10 @@ export const services: Service[] = [
       "30-day post-launch support window",
     ],
     techStack: [
-      { category: "Frontend", items: ["React", "Next.js", "TypeScript"] },
-      { category: "Frameworks", items: ["Angular", "Vue.js", "Express.js"] },
+      { category: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vite"] },
+      { category: "Frameworks", items: ["Angular", "Vue.js", "Express.js", "GraphQL"] },
       { category: "Backend", items: ["Node.js", "Python", "PHP", ".NET"] },
-      { category: "Quality Assurance", items: ["Selenium", "SonarQube", "JMeter"] },
+      { category: "Quality Assurance", items: ["Selenium", "SonarQube", "JMeter", "Cypress", "Jest"] },
     ],
     faqs: [
       {
@@ -307,10 +307,10 @@ export const services: Service[] = [
       "Cost-optimization report",
     ],
     techStack: [
-      { category: "Cloud Platforms", items: ["AWS", "Azure", "Google Cloud"] },
-      { category: "Containers & IaC", items: ["Docker", "Kubernetes", "Terraform"] },
-      { category: "CI/CD & Automation", items: ["GitHub Actions", "Jenkins", "Ansible"] },
-      { category: "Monitoring", items: ["Prometheus", "Grafana"] },
+      { category: "Cloud Platforms", items: ["AWS", "Azure", "Google Cloud", "DigitalOcean", "Cloudflare"] },
+      { category: "Containers & IaC", items: ["Docker", "Kubernetes", "Terraform", "Nginx"] },
+      { category: "CI/CD & Automation", items: ["GitHub Actions", "Jenkins", "Ansible", "GitLab", "CircleCI"] },
+      { category: "Monitoring", items: ["Prometheus", "Grafana", "Elasticsearch"] },
     ],
     faqs: [
       {
@@ -372,8 +372,8 @@ export const services: Service[] = [
     ],
     techStack: [
       { category: "Backend", items: ["Node.js", "Python", ".NET", "Express.js"] },
-      { category: "Database & Caching", items: ["PostgreSQL", "Redis"] },
-      { category: "DevOps & Delivery", items: ["Docker", "GitHub Actions"] },
+      { category: "Database & Caching", items: ["PostgreSQL", "Redis", "MongoDB", "MySQL"] },
+      { category: "DevOps & Delivery", items: ["Docker", "GitHub Actions", "Postman", "Jest"] },
     ],
     faqs: [
       {
@@ -434,10 +434,10 @@ export const services: Service[] = [
       "Admin and end-user training documentation",
     ],
     techStack: [
-      { category: "Backend", items: ["Node.js", ".NET"] },
-      { category: "Database & Reporting", items: ["PostgreSQL", "Power BI"] },
-      { category: "ERP Platforms", items: ["Odoo"] },
-      { category: "Quality Assurance", items: ["SonarQube", "JMeter"] },
+      { category: "Backend", items: ["Node.js", ".NET", "Python"] },
+      { category: "Database & Reporting", items: ["PostgreSQL", "Power BI", "MySQL"] },
+      { category: "ERP Platforms", items: ["Odoo", "SAP"] },
+      { category: "Quality Assurance", items: ["SonarQube", "JMeter", "Postman"] },
     ],
     faqs: [
       {
@@ -498,10 +498,10 @@ export const services: Service[] = [
       "Team onboarding and admin documentation",
     ],
     techStack: [
-      { category: "Frontend", items: ["React"] },
-      { category: "Backend", items: ["Node.js"] },
-      { category: "Database", items: ["PostgreSQL"] },
-      { category: "Integrations", items: ["Twilio", "SendGrid"] },
+      { category: "Frontend", items: ["React", "TypeScript", "Next.js"] },
+      { category: "Backend", items: ["Node.js", "Express.js"] },
+      { category: "Database", items: ["PostgreSQL", "Redis"] },
+      { category: "Integrations", items: ["Twilio", "SendGrid", "Zendesk", "Mailchimp"] },
     ],
     faqs: [
       {
@@ -562,9 +562,9 @@ export const services: Service[] = [
       "Quarterly security review",
     ],
     techStack: [
-      { category: "Testing Tools", items: ["Burp Suite", "OWASP ZAP"] },
-      { category: "Cloud Security", items: ["AWS GuardDuty", "HashiCorp Vault"] },
-      { category: "Code & Dependency Security", items: ["Snyk", "SonarQube"] },
+      { category: "Testing Tools", items: ["Burp Suite", "OWASP ZAP", "Postman"] },
+      { category: "Cloud Security", items: ["AWS GuardDuty", "HashiCorp Vault", "Cloudflare"] },
+      { category: "Code & Dependency Security", items: ["Snyk", "SonarQube", "GitHub Actions"] },
     ],
     faqs: [
       {
