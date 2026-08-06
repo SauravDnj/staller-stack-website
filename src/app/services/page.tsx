@@ -12,7 +12,7 @@ import { services } from "@/content/services";
 export const metadata: Metadata = {
   title: "Services | Staller Stack",
   description:
-    "Web & app development, cloud & DevOps, cybersecurity, and AI & ML solutions — tailored technology services from Staller Stack.",
+    "Web & app development, cloud & DevOps, security & compliance, and AI & ML solutions — tailored technology services from Staller Stack.",
 };
 
 export default function ServicesPage() {
@@ -21,7 +21,7 @@ export default function ServicesPage() {
       <PageHeader
         eyebrow="Our Solutions"
         heading="Tailored Technology Solutions for Modern Businesses."
-        subtext="Four core disciplines, one accountable team — from first architecture diagram to production support."
+        subtext="Nine disciplines, one accountable team — from first architecture diagram to production support."
       />
 
       <section className="pb-24 sm:pb-32">

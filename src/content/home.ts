@@ -28,7 +28,7 @@ export const heroTerminal = {
     { text: '  "status": "online"' },
     { text: "}" },
     { text: "$ ls ~/services" },
-    { text: "web-dev  cloud-infra  ai-automation  cybersecurity  devops" },
+    { text: "web-dev  cloud-infra  ai-automation  security  devops" },
     { text: "$ npm run deploy" },
     { text: "Building AI Core v4.2..." },
     { text: "Deploying to 12 edge regions..." },
@@ -49,7 +49,7 @@ export const trustBar = {
     "CloudAxis",
     "DataForge",
     "NetShield",
-    "CyberPulse",
+    "SecurePulse",
     "AppVault",
     "InnoStack",
     "ScaleOps",
@@ -60,7 +60,7 @@ export const aboutStats = {
   eyebrow: "Get to Know Us",
   heading: "Driving Excellence & Innovation: Your Trusted Technology Partner.",
   paragraph:
-    "Staller Stack is a full-service IT solutions company helping startups, SMBs, and enterprises transform their digital landscape. With deep expertise across web development, cloud architecture, cybersecurity, and artificial intelligence, we don't just build software — we engineer growth. Founded with a mission to make enterprise-grade technology accessible, our team of 50+ engineers, architects, and strategists has delivered 500+ successful projects across 15 countries.",
+    "Staller Stack is a full-service IT solutions company helping startups, SMBs, and enterprises transform their digital landscape. With deep expertise across web development, cloud architecture, security & compliance, and artificial intelligence, we don't just build software — we engineer growth. Founded with a mission to make enterprise-grade technology accessible, our team of 50+ engineers, architects, and strategists has delivered 500+ successful projects across 15 countries.",
   stats: [
     { value: 500, suffix: "+", label: "Projects Completed" },
     { value: 50, suffix: "M", label: "Reach Worldwide" },
@@ -144,8 +144,8 @@ export const playbookGenerator = {
       ],
     },
     {
-      key: "cybersecurity",
-      label: "Cybersecurity",
+      key: "security",
+      label: "Security & Compliance",
       color: "amber" as const,
       examples: [
         "I need to automate incident response for phishing emails detected in our organization.",
@@ -299,7 +299,7 @@ export const automationUseCases = {
       bullets: ["Smart classification", "Auto-routing", "Priority scoring"],
     },
   ],
-  cta: { label: "Explore All Automation Use Cases", href: "/services/cybersecurity" },
+  cta: { label: "Explore All Automation Use Cases", href: "/services/security-compliance" },
 };
 
 export const ctaBanner = {

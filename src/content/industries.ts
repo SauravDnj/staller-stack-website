@@ -34,7 +34,7 @@ export const industries: Industry[] = [
       "EHR integration layers (HL7/FHIR-compatible APIs) that connect old and new systems",
       "AI-assisted triage and documentation tools that reduce clinician workload",
     ],
-    relatedServiceSlugs: ["cybersecurity", "cloud-devops", "ai-ml-solutions", "web-app-development"],
+    relatedServiceSlugs: ["security-compliance", "cloud-devops", "ai-ml-solutions", "web-development"],
   },
   {
     slug: "fintech-banking",
@@ -52,7 +52,7 @@ export const industries: Industry[] = [
       "Zero-trust security design for transaction and account-management systems",
       "Cloud-native migration paths for legacy core banking infrastructure",
     ],
-    relatedServiceSlugs: ["cybersecurity", "ai-ml-solutions", "cloud-devops", "web-app-development"],
+    relatedServiceSlugs: ["security-compliance", "ai-ml-solutions", "cloud-devops", "web-development"],
   },
   {
     slug: "ecommerce-retail",
@@ -70,7 +70,7 @@ export const industries: Industry[] = [
       "Headless commerce storefronts for fast, flexible frontends",
       "Real-time inventory sync APIs across every sales channel",
     ],
-    relatedServiceSlugs: ["web-app-development", "cloud-devops", "ai-ml-solutions"],
+    relatedServiceSlugs: ["web-development", "cloud-devops", "ai-ml-solutions"],
   },
   {
     slug: "education",
@@ -88,7 +88,7 @@ export const industries: Industry[] = [
       "Scalable video and livestream infrastructure for classes at any size",
       "LMS integrations that connect existing tools with new experiences",
     ],
-    relatedServiceSlugs: ["web-app-development", "cloud-devops", "cybersecurity"],
+    relatedServiceSlugs: ["web-development", "cloud-devops", "security-compliance"],
   },
   {
     slug: "real-estate",
@@ -106,7 +106,7 @@ export const industries: Industry[] = [
       "CDN-backed media pipelines for photos, video, and floor plans",
       "Listing-sync APIs that keep every channel accurate in real time",
     ],
-    relatedServiceSlugs: ["web-app-development", "cloud-devops"],
+    relatedServiceSlugs: ["web-development", "cloud-devops"],
   },
   {
     slug: "logistics-supply-chain",
@@ -124,7 +124,7 @@ export const industries: Industry[] = [
       "Cloud data pipelines connecting warehouses, carriers, and customers",
       "Mobile driver apps for proof-of-delivery and real-time updates",
     ],
-    relatedServiceSlugs: ["ai-ml-solutions", "cloud-devops", "web-app-development"],
+    relatedServiceSlugs: ["ai-ml-solutions", "cloud-devops", "web-development"],
   },
   {
     slug: "manufacturing",
@@ -142,7 +142,7 @@ export const industries: Industry[] = [
       "Secure OT/IT network segmentation for shop-floor systems",
       "Production tracking systems that integrate with existing equipment",
     ],
-    relatedServiceSlugs: ["ai-ml-solutions", "cloud-devops", "cybersecurity"],
+    relatedServiceSlugs: ["ai-ml-solutions", "cloud-devops", "security-compliance"],
   },
   {
     slug: "travel-hospitality",
@@ -160,7 +160,7 @@ export const industries: Industry[] = [
       "AI-personalized guest experiences from booking through checkout",
       "PCI-compliant payment flows for multi-currency transactions",
     ],
-    relatedServiceSlugs: ["web-app-development", "cloud-devops", "cybersecurity"],
+    relatedServiceSlugs: ["web-development", "cloud-devops", "security-compliance"],
   },
   {
     slug: "saas-startups",
@@ -178,7 +178,7 @@ export const industries: Industry[] = [
       "SOC 2-ready security baselines built in from the first sprint",
       "Embedded analytics and AI features that become product differentiators",
     ],
-    relatedServiceSlugs: ["web-app-development", "cloud-devops", "ai-ml-solutions"],
+    relatedServiceSlugs: ["web-development", "cloud-devops", "ai-ml-solutions"],
   },
 ];
 

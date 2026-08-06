@@ -9,7 +9,7 @@ import { aboutPage } from "@/content/about";
 export const metadata: Metadata = {
   title: "About Us | Staller Stack",
   description:
-    "Staller Stack is a full-service IT company helping startups, SMBs, and enterprises transform their digital landscape through web, cloud, cybersecurity, and AI expertise.",
+    "Staller Stack is a full-service IT company helping startups, SMBs, and enterprises transform their digital landscape through web, cloud, security, and AI expertise.",
 };
 
 export default function AboutPage() {

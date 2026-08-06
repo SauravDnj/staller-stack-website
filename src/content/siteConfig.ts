@@ -1,9 +1,11 @@
+import { services } from "./services";
+
 export const siteConfig = {
   name: "Staller Stack",
   tagline: "Business Solutions",
   shortPitch: "Smart Tech. Solid Stack.",
   description:
-    "Staller Stack is a full-service IT company delivering world-class web development, cloud solutions, cybersecurity, and AI innovation to businesses worldwide.",
+    "Staller Stack is a full-service IT company delivering world-class web development, cloud solutions, security & compliance, and AI innovation to businesses worldwide.",
   url: "https://stallerstack.com",
   email: "hello@stallerstack.com",
   phone: "+91 (22) 4856-7890",
@@ -33,12 +35,10 @@ export const primaryNav: PrimaryNavEntry[] = [
 
 export const headerCta: NavItem = { label: "Let's Talk", href: "/contact" };
 
-export const footerServiceLinks: NavItem[] = [
-  { label: "Web & App Development", href: "/services/web-app-development" },
-  { label: "Cloud & DevOps", href: "/services/cloud-devops" },
-  { label: "Cybersecurity", href: "/services/cybersecurity" },
-  { label: "AI & ML Solutions", href: "/services/ai-ml-solutions" },
-];
+export const footerServiceLinks: NavItem[] = services.map((service) => ({
+  label: service.title,
+  href: `/services/${service.slug}`,
+}));
 
 export const footerCompanyLinks: NavItem[] = [
   { label: "About Us", href: "/about" },

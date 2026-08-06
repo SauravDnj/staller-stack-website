@@ -42,9 +42,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Staller Stack — AI-First IT Solutions | Web, Cloud, AI & Cybersecurity",
+  title: "Staller Stack — AI-First IT Solutions | Web, Cloud, AI & Security",
   description:
-    "Staller Stack delivers cutting-edge IT solutions — web & app development, cloud & DevOps, cybersecurity, and AI/ML — to help businesses scale, secure, and innovate.",
+    "Staller Stack delivers cutting-edge IT solutions — web & app development, cloud & DevOps, security & compliance, and AI/ML — to help businesses scale, secure, and innovate.",
 };
 
 export default function RootLayout({

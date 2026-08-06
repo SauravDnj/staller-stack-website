@@ -22,7 +22,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "After a security breach at our previous vendor, we needed a partner we could trust. Staller Stack's cybersecurity team conducted a thorough audit, implemented zero-trust architecture, and now monitors our systems around the clock. We sleep better at night.",
+      "After a security breach at our previous vendor, we needed a partner we could trust. Staller Stack's security team conducted a thorough audit, implemented zero-trust architecture, and now monitors our systems around the clock. We sleep better at night.",
     name: "Aditya Rao",
     title: "CEO, MediVault Health",
     avatar: "https://randomuser.me/api/portraits/men/22.jpg",

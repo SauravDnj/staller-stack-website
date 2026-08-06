@@ -60,7 +60,7 @@ export const projects: Project[] = [
   },
   {
     slug: "secure-banking-mobile-app",
-    category: "Cybersecurity",
+    category: "Security & Compliance",
     title: "Secure Banking Mobile App",
     description:
       "Developed a PCI-DSS compliant mobile banking application with biometric authentication, end-to-end encryption, and real-time threat monitoring for 500K+ users.",

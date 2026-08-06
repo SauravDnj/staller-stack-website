@@ -6,7 +6,7 @@ export const aboutPage = {
   storyHeading: "How We Got Here",
   storyParagraphs: [
     "Staller Stack was founded on a simple belief: the best software comes from small, agile, highly skilled teams who actually care whether your product succeeds. After years working across the IT industry for multiple companies, our founders kept seeing the same pattern — agencies that treated client budgets as a finish line instead of a starting point.",
-    "So we built something different. Today, Staller Stack is a full-service technology partner helping startups, SMBs, and enterprises transform their digital landscape — with deep expertise spanning web development, cloud architecture, cybersecurity, and artificial intelligence. We don't just ship code; we engineer growth.",
+    "So we built something different. Today, Staller Stack is a full-service technology partner helping startups, SMBs, and enterprises transform their digital landscape — with deep expertise spanning web development, cloud architecture, security & compliance, and artificial intelligence. We don't just ship code; we engineer growth.",
   ],
   values: [
     {

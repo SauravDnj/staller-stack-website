@@ -19,7 +19,7 @@ export function ServicesMegaMenu({ onNavigate }: { onNavigate: () => void }) {
         <p className="px-3 font-mono text-xs uppercase tracking-[0.25em] text-ss-teal">
           Our Solutions
         </p>
-        <div className="mt-4 flex flex-col gap-1">
+        <div className="mt-4 flex max-h-[26rem] flex-col gap-1 overflow-y-auto pr-1">
           {services.map((service) => {
             const isActive = service.slug === activeSlug;
             return (

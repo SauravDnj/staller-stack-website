@@ -11,7 +11,7 @@ import { playbookGenerator } from "@/content/home";
 
 const categoryIcons: Record<string, React.ComponentType<{ className?: string }>> = {
   "ai-ml": FiCpu,
-  cybersecurity: FiShield,
+  security: FiShield,
   "cloud-devops": FiCloud,
   "web-app": FiCode,
 };

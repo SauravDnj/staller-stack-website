@@ -48,7 +48,7 @@ function renderTerminalLine(text: string) {
 function TechTag({ label, className }: { label: string; className: string }) {
   return (
     <span
-      className={`${className} z-20 rounded-full border border-ss-border bg-ss-surface px-3 py-1.5 font-mono text-[11px] text-ss-text shadow-lg`}
+      className={`${className} z-20 rounded-full border border-ss-border bg-ss-surface px-3.5 py-2 font-mono text-xs text-ss-text shadow-lg`}
     >
       {label}
     </span>
@@ -75,7 +75,7 @@ export function HeroTerminal() {
       initial={{ opacity: 0, y: 24 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
-      className="relative w-full max-w-xl sm:max-w-2xl lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl"
+      className="relative w-full max-w-2xl lg:max-w-2xl xl:max-w-3xl"
     >
       <div
         className="pointer-events-none absolute -inset-10 rounded-[2rem] opacity-60 blur-2xl"
@@ -89,8 +89,8 @@ export function HeroTerminal() {
         <TechTag label={heroTerminal.tags[1]} className="absolute -right-4 -top-4 sm:-right-6 sm:-top-5" />
         <TechTag label={heroTerminal.tags[2]} className="absolute -left-4 -bottom-4 sm:-left-8 sm:-bottom-5" />
 
-        <Terminal title={heroTerminal.title} className="relative" bodyClassName="p-4 sm:p-5">
-          <div className="flex h-[260px] min-w-0 flex-col justify-end gap-1.5 overflow-hidden whitespace-pre-wrap font-mono text-xs leading-relaxed sm:h-[320px] sm:text-sm lg:h-[340px]">
+        <Terminal title={heroTerminal.title} className="relative" bodyClassName="p-5 sm:p-6">
+          <div className="flex h-[320px] min-w-0 flex-col justify-end gap-1.5 overflow-hidden whitespace-pre-wrap font-mono text-sm leading-relaxed sm:h-[380px] sm:text-base lg:h-[400px]">
             {shownCompleted.map((line) => (
               <div
                 key={line.id}
@@ -117,21 +117,21 @@ export function HeroTerminal() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.6 }}
-        className="relative z-10 -mt-6 ml-6 mr-6 flex items-center justify-between gap-3 rounded-xl border border-ss-border bg-ss-surface px-4 py-3 shadow-xl sm:ml-10 sm:mr-10 sm:px-5 sm:py-3.5"
+        className="relative z-10 -mt-7 ml-7 mr-7 flex items-center justify-between gap-4 rounded-xl border border-ss-border bg-ss-surface px-5 py-3.5 shadow-xl sm:ml-11 sm:mr-11 sm:px-6 sm:py-4"
       >
         <div className="flex items-center gap-3">
-          <span className="relative flex h-2.5 w-2.5 shrink-0">
+          <span className="relative flex h-3 w-3 shrink-0">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-ss-mint opacity-60" />
-            <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-ss-mint" />
+            <span className="relative inline-flex h-3 w-3 rounded-full bg-ss-mint" />
           </span>
           <div>
-            <p className="font-display text-sm font-semibold text-ss-text">
+            <p className="font-display text-base font-semibold text-ss-text">
               {heroTerminal.status.title}
             </p>
-            <p className="text-xs text-ss-muted">{heroTerminal.status.subtitle}</p>
+            <p className="text-sm text-ss-muted">{heroTerminal.status.subtitle}</p>
           </div>
         </div>
-        <span className="shrink-0 rounded-full border border-ss-border bg-ss-base px-3 py-1 font-mono text-xs text-ss-teal">
+        <span className="shrink-0 rounded-full border border-ss-border bg-ss-base px-3.5 py-1.5 font-mono text-xs text-ss-teal">
           {heroTerminal.status.badge}
         </span>
       </motion.div>

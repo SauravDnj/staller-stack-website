@@ -8,7 +8,7 @@ import { siteConfig, socialLinks } from "@/content/siteConfig";
 export const metadata: Metadata = {
   title: "Contact Us | Staller Stack",
   description:
-    "Get in touch with Staller Stack for a free consultation on your next web, cloud, cybersecurity, or AI project.",
+    "Get in touch with Staller Stack for a free consultation on your next web, cloud, security, or AI project.",
 };
 
 export default function ContactPage() {

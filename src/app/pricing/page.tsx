@@ -11,7 +11,7 @@ import { pricingFaqs } from "@/content/pricing";
 export const metadata: Metadata = {
   title: "Pricing | Staller Stack",
   description:
-    "Simple, transparent plans for web development, cloud, cybersecurity, and AI engagements — or a custom scope built around your project.",
+    "Simple, transparent plans for web development, cloud, security, and AI engagements — or a custom scope built around your project.",
 };
 
 export default function PricingPage() {

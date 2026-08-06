@@ -3,7 +3,7 @@ export type Service = {
   title: string;
   description: string;
   bullets: string[];
-  icon: "code" | "cloud" | "shield" | "brain";
+  icon: "code" | "cloud" | "shield" | "brain" | "cpu" | "smartphone" | "layers" | "database" | "users";
   process: { title: string; description: string }[];
   deliverables: string[];
   techStack: string[];
@@ -12,14 +12,191 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    slug: "web-app-development",
-    title: "Web & App Development",
+    slug: "ai-ml-solutions",
+    title: "AI & ML Solutions",
     description:
-      "Custom web applications, responsive websites, and cross-platform mobile apps — built with modern frameworks, pixel-perfect design, and performance at the core.",
+      "Intelligent automation, predictive analytics, and custom machine learning models designed to transform raw data into strategic business advantages.",
+    bullets: [
+      "Predictive Analytics & Forecasting",
+      "NLP & Computer Vision Models",
+      "MLOps Pipeline Deployment",
+    ],
+    icon: "brain",
+    process: [
+      {
+        title: "Data Assessment",
+        description:
+          "We audit your data sources, quality, and volume to scope what's realistically achievable.",
+      },
+      {
+        title: "Model Prototyping",
+        description:
+          "Rapid prototypes trained on real data to validate the approach before full investment.",
+      },
+      {
+        title: "Production Engineering",
+        description:
+          "Models wrapped in production-grade APIs with monitoring for drift and performance.",
+      },
+      {
+        title: "MLOps & Iteration",
+        description:
+          "Continuous retraining pipelines so the model keeps improving as new data arrives.",
+      },
+    ],
+    deliverables: [
+      "Trained model(s) with documented performance benchmarks",
+      "Production API endpoints",
+      "MLOps pipeline for retraining",
+      "Monitoring dashboard for drift and accuracy",
+      "Technical handover documentation",
+    ],
+    techStack: ["Python", "TensorFlow", "PyTorch", "AWS SageMaker", "Kafka", "MLflow"],
+    faqs: [
+      {
+        question: "Do we need a large dataset to get started?",
+        answer:
+          "Not always — we can often start with a proof-of-concept on your existing data and identify gaps to close before scaling.",
+      },
+      {
+        question: "How do you prevent model performance from degrading over time?",
+        answer:
+          "We build drift-monitoring and retraining pipelines into every production deployment, not just the initial model.",
+      },
+      {
+        question: "Can this integrate with our existing systems?",
+        answer:
+          "Yes — models are delivered as API endpoints designed to slot into your current application stack.",
+      },
+    ],
+  },
+  {
+    slug: "ai-agent-model-training",
+    title: "AI Agent & Model Training",
+    description:
+      "Custom AI agents, fine-tuned LLMs, and end-to-end model training pipelines — built to automate real workflows and reason over your own data, not just answer generic prompts.",
+    bullets: [
+      "Custom LLM Fine-Tuning & RAG",
+      "Autonomous Agent Workflows",
+      "Evaluation, Guardrails & Monitoring",
+    ],
+    icon: "cpu",
+    process: [
+      {
+        title: "Use-Case Scoping",
+        description:
+          "We identify the workflows worth automating and the guardrails an agent needs before writing any training code.",
+      },
+      {
+        title: "Data Curation & Fine-Tuning",
+        description:
+          "Domain data cleaned, labeled, and used to fine-tune or RAG-ground the base model for your context.",
+      },
+      {
+        title: "Agent Orchestration",
+        description:
+          "Tools, memory, and multi-step reasoning wired together so the agent can take action, not just respond.",
+      },
+      {
+        title: "Evaluation & Guardrails",
+        description:
+          "Automated eval suites and human-in-the-loop review gates before anything runs unsupervised.",
+      },
+    ],
+    deliverables: [
+      "Fine-tuned or RAG-grounded model",
+      "Agent orchestration layer with scoped tool access",
+      "Evaluation harness with benchmark scores",
+      "Guardrail and escalation-rule documentation",
+      "Deployment and monitoring runbook",
+    ],
+    techStack: ["Python", "LangChain", "LangGraph", "OpenAI / Anthropic APIs", "Pinecone", "Hugging Face", "LlamaIndex"],
+    faqs: [
+      {
+        question: "Do you train models from scratch or fine-tune existing ones?",
+        answer:
+          "Almost always fine-tuning or RAG on top of a strong foundation model — training from scratch rarely makes economic sense outside highly specialized domains.",
+      },
+      {
+        question: "How do you keep an autonomous agent from doing something wrong?",
+        answer:
+          "Every agent ships with scoped tool permissions, confidence thresholds, and human-approval checkpoints for high-risk actions.",
+      },
+      {
+        question: "Can this work with our existing data and tools?",
+        answer:
+          "Yes — agents are built to call your existing APIs and internal tools rather than replace them.",
+      },
+    ],
+  },
+  {
+    slug: "mobile-app-development",
+    title: "Mobile Application Development & Maintenance",
+    description:
+      "Native and cross-platform mobile apps designed for app-store-quality polish — built, shipped, and kept running with ongoing updates as OS versions and user needs evolve.",
+    bullets: [
+      "iOS, Android & React Native",
+      "App Store & Play Store Launch Support",
+      "Ongoing OS & Dependency Maintenance",
+    ],
+    icon: "smartphone",
+    process: [
+      {
+        title: "Product & Platform Scoping",
+        description:
+          "Native vs. cross-platform trade-offs decided upfront based on your budget, timeline, and target devices.",
+      },
+      {
+        title: "UI/UX & Prototyping",
+        description:
+          "Interactive prototypes tested on real devices before development begins, so navigation and gestures feel native.",
+      },
+      {
+        title: "Build & Sprint Reviews",
+        description:
+          "Two-week sprints with installable builds you can test on your own device, not just a staging link.",
+      },
+      {
+        title: "Launch & Maintenance",
+        description:
+          "Store submission handled end-to-end, then ongoing patches for OS updates, crashes, and store policy changes.",
+      },
+    ],
+    deliverables: [
+      "Published iOS and/or Android application",
+      "Source code and CI build pipeline",
+      "App Store / Play Store listing assets",
+      "Crash reporting and analytics integration",
+      "Maintenance retainer for OS and dependency updates",
+    ],
+    techStack: ["React Native", "Swift", "Kotlin", "Expo", "Firebase", "Fastlane"],
+    faqs: [
+      {
+        question: "Should we build native or cross-platform?",
+        answer:
+          "Cross-platform (React Native) covers most business apps well; we recommend native only when you need deep hardware access or platform-specific performance.",
+      },
+      {
+        question: "Who handles App Store and Play Store submission?",
+        answer:
+          "We do — including store listing copy, screenshots, and responding to review rejections.",
+      },
+      {
+        question: "What happens when iOS or Android release a new OS version?",
+        answer:
+          "Maintenance retainers include compatibility testing and patches ahead of major OS releases, not after something breaks.",
+      },
+    ],
+  },
+  {
+    slug: "web-development",
+    title: "Web Development & Maintenance",
+    description:
+      "Custom web applications and marketing sites — built with modern frameworks, pixel-perfect design, and performance at the core, then kept fast and secure long after launch.",
     bullets: [
       "React, Next.js & Node.js",
       "Mobile-First Responsive Design",
-      "REST & GraphQL API Integration",
+      "Ongoing Performance & Security Patching",
     ],
     icon: "code",
     process: [
@@ -41,32 +218,32 @@ export const services: Service[] = [
       {
         title: "QA, Launch & Handover",
         description:
-          "Cross-browser/device testing, staged rollout, and full documentation handover to your team.",
+          "Cross-browser testing, staged rollout, and full documentation handover to your team.",
       },
     ],
     deliverables: [
-      "Production-ready web or mobile application",
+      "Production-ready web application",
       "Component library and design system",
       "API documentation",
       "Deployment runbooks",
       "30-day post-launch support window",
     ],
-    techStack: ["React", "Next.js", "Node.js", "TypeScript", "GraphQL", "PostgreSQL", "React Native"],
+    techStack: ["React", "Next.js", "Node.js", "TypeScript", "GraphQL", "PostgreSQL"],
     faqs: [
       {
-        question: "How long does a typical web or app build take?",
+        question: "How long does a typical website or web app build take?",
         answer:
           "Most engagements run 8–16 weeks depending on scope, with a working prototype ready in the first 2–3 weeks.",
       },
       {
-        question: "Do you build both web and mobile from one codebase?",
-        answer:
-          "Where it makes sense — React Native lets us share logic across iOS, Android, and often the web, cutting build time without compromising native feel.",
-      },
-      {
-        question: "What happens after launch?",
+        question: "Do you handle ongoing maintenance after launch?",
         answer:
           "Every project includes a 30-day support window, and we offer ongoing maintenance retainers after that.",
+      },
+      {
+        question: "Can you take over an existing codebase?",
+        answer:
+          "Yes — we start with a codebase audit to flag risk areas before committing to a timeline.",
       },
     ],
   },
@@ -130,8 +307,185 @@ export const services: Service[] = [
     ],
   },
   {
-    slug: "cybersecurity",
-    title: "Cybersecurity",
+    slug: "software-development",
+    title: "Software Development",
+    description:
+      "Custom software engineering for internal tools, platforms, and products that off-the-shelf software can't handle — architected to fit how your business actually works.",
+    bullets: [
+      "Custom Platforms & Internal Tools",
+      "API & Systems Integration",
+      "Legacy System Modernization",
+    ],
+    icon: "layers",
+    process: [
+      {
+        title: "Requirements & Systems Mapping",
+        description:
+          "We map existing systems, data flows, and integration points before proposing an architecture.",
+      },
+      {
+        title: "Architecture & Tech Selection",
+        description:
+          "A stack chosen for your team's ability to maintain it, not just what's trending.",
+      },
+      {
+        title: "Iterative Build",
+        description:
+          "Working software delivered in increments, with real users testing along the way.",
+      },
+      {
+        title: "Handover & Documentation",
+        description:
+          "Full technical documentation and knowledge transfer so your team isn't locked into ours.",
+      },
+    ],
+    deliverables: [
+      "Production-ready custom software platform",
+      "System architecture documentation",
+      "Integration APIs for existing tools",
+      "Automated test suite",
+      "Technical handover and training session",
+    ],
+    techStack: ["Node.js", "Python", ".NET", "PostgreSQL", "Redis", "Docker"],
+    faqs: [
+      {
+        question: "When does custom software make more sense than off-the-shelf?",
+        answer:
+          "When your workflow doesn't fit existing tools without heavy workarounds, or when licensing costs scale faster than the value you get.",
+      },
+      {
+        question: "Can you integrate with our existing legacy systems?",
+        answer:
+          "Yes — legacy integration is one of the most common reasons clients come to us; we build adapters rather than forcing a rip-and-replace.",
+      },
+      {
+        question: "How do you handle scope changes mid-project?",
+        answer:
+          "Two-week sprints mean scope changes get absorbed at sprint boundaries instead of derailing the whole timeline.",
+      },
+    ],
+  },
+  {
+    slug: "erp-custom-software",
+    title: "ERP Custom Software",
+    description:
+      "Tailored enterprise resource planning systems that unify finance, inventory, procurement, and operations into one system built around your actual processes, not a generic template.",
+    bullets: [
+      "Modular Finance, Inventory & HR",
+      "Legacy ERP Migration & Data Cleanup",
+      "Custom Reporting & Approval Workflows",
+    ],
+    icon: "database",
+    process: [
+      {
+        title: "Process Discovery",
+        description:
+          "We map your existing operational processes across departments before designing a single module.",
+      },
+      {
+        title: "Module Architecture",
+        description:
+          "Finance, inventory, procurement, and HR modules scoped and sequenced around your highest-impact processes first.",
+      },
+      {
+        title: "Data Migration & Integration",
+        description:
+          "Historical data cleaned and migrated, integrated with your existing accounting and operational tools.",
+      },
+      {
+        title: "Rollout & Training",
+        description:
+          "Phased department-by-department rollout with hands-on training, not a single risky go-live.",
+      },
+    ],
+    deliverables: [
+      "Production ERP system with core modules",
+      "Data migration from legacy systems",
+      "Role-based access and approval workflows",
+      "Custom reporting dashboards",
+      "Admin and end-user training documentation",
+    ],
+    techStack: ["Node.js", ".NET", "PostgreSQL", "Odoo", "Power BI"],
+    faqs: [
+      {
+        question: "Can you migrate data from our existing ERP or spreadsheets?",
+        answer:
+          "Yes — data migration and cleanup is typically the first phase, before any new module goes live.",
+      },
+      {
+        question: "Do we need to roll out every module at once?",
+        answer:
+          "No — we sequence modules by impact, so you see value from finance or inventory before HR or procurement is even built.",
+      },
+      {
+        question: "Can it integrate with our existing accounting software?",
+        answer:
+          "Yes, ERP builds are designed with integration APIs for your existing accounting, payroll, and CRM tools.",
+      },
+    ],
+  },
+  {
+    slug: "crm-custom-software",
+    title: "CRM Custom Software",
+    description:
+      "Custom-built CRM platforms that match your actual sales and support process — pipeline stages, automations, and reporting shaped around how your team really sells.",
+    bullets: [
+      "Custom Pipeline & Lead Scoring",
+      "Sales & Support Automation",
+      "Email, Calendar & VoIP Integrations",
+    ],
+    icon: "users",
+    process: [
+      {
+        title: "Sales Process Mapping",
+        description:
+          "Your actual pipeline stages, hand-off points, and reporting needs mapped before any screen is designed.",
+      },
+      {
+        title: "Core CRM Build",
+        description:
+          "Contact, deal, and pipeline management built around your process, not a generic out-of-the-box template.",
+      },
+      {
+        title: "Automation & Integrations",
+        description:
+          "Email, calendar, and VoIP integrations plus automated follow-ups and lead scoring.",
+      },
+      {
+        title: "Rollout & Adoption",
+        description:
+          "Team onboarding and iteration based on real usage in the first weeks, not just a training deck.",
+      },
+    ],
+    deliverables: [
+      "Production-ready CRM platform",
+      "Custom pipeline and reporting dashboards",
+      "Email, calendar & VoIP integrations",
+      "Automated workflow and lead-scoring rules",
+      "Team onboarding and admin documentation",
+    ],
+    techStack: ["React", "Node.js", "PostgreSQL", "Twilio", "SendGrid"],
+    faqs: [
+      {
+        question: "How is this different from using Salesforce or HubSpot?",
+        answer:
+          "Off-the-shelf CRMs are great until your process doesn't fit their model — custom CRM makes sense when you're paying for workarounds instead of features.",
+      },
+      {
+        question: "Can it integrate with our existing email and calendar?",
+        answer:
+          "Yes — integrations with Gmail/Outlook, calendar, and VoIP providers are standard on every build.",
+      },
+      {
+        question: "What if our sales process changes later?",
+        answer:
+          "Since it's your codebase, pipeline stages and automation rules can evolve with your process instead of being locked to a vendor's roadmap.",
+      },
+    ],
+  },
+  {
+    slug: "security-compliance",
+    title: "Security & Compliance",
     description:
       "Comprehensive security assessments, penetration testing, and compliance implementation to safeguard your digital assets against evolving threats.",
     bullets: [
@@ -185,65 +539,6 @@ export const services: Service[] = [
         question: "What if you find a critical vulnerability?",
         answer:
           "We flag it immediately, outside the standard reporting cycle, with a same-week remediation plan.",
-      },
-    ],
-  },
-  {
-    slug: "ai-ml-solutions",
-    title: "AI & ML Solutions",
-    description:
-      "Intelligent automation, predictive analytics, and custom machine learning models designed to transform raw data into strategic business advantages.",
-    bullets: [
-      "Predictive Analytics & Forecasting",
-      "NLP & Computer Vision Models",
-      "MLOps Pipeline Deployment",
-    ],
-    icon: "brain",
-    process: [
-      {
-        title: "Data Assessment",
-        description:
-          "We audit your data sources, quality, and volume to scope what's realistically achievable.",
-      },
-      {
-        title: "Model Prototyping",
-        description:
-          "Rapid prototypes trained on real data to validate the approach before full investment.",
-      },
-      {
-        title: "Production Engineering",
-        description:
-          "Models wrapped in production-grade APIs with monitoring for drift and performance.",
-      },
-      {
-        title: "MLOps & Iteration",
-        description:
-          "Continuous retraining pipelines so the model keeps improving as new data arrives.",
-      },
-    ],
-    deliverables: [
-      "Trained model(s) with documented performance benchmarks",
-      "Production API endpoints",
-      "MLOps pipeline for retraining",
-      "Monitoring dashboard for drift and accuracy",
-      "Technical handover documentation",
-    ],
-    techStack: ["Python", "TensorFlow", "PyTorch", "AWS SageMaker", "Kafka", "MLflow"],
-    faqs: [
-      {
-        question: "Do we need a large dataset to get started?",
-        answer:
-          "Not always — we can often start with a proof-of-concept on your existing data and identify gaps to close before scaling.",
-      },
-      {
-        question: "How do you prevent model performance from degrading over time?",
-        answer:
-          "We build drift-monitoring and retraining pipelines into every production deployment, not just the initial model.",
-      },
-      {
-        question: "Can this integrate with our existing systems?",
-        answer:
-          "Yes — models are delivered as API endpoints designed to slot into your current application stack.",
       },
     ],
   },

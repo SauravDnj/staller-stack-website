@@ -2,7 +2,7 @@ export const generalFaqs = [
   {
     question: "What services does Staller Stack offer?",
     answer:
-      "Four core disciplines: Web & App Development, Cloud & DevOps, Cybersecurity, and AI & ML Solutions. Most engagements combine two or more — for example, a new app built on cloud infrastructure with security baked in from day one.",
+      "Nine disciplines: AI & ML Solutions, AI Agent & Model Training, Mobile App Development, Web Development, Cloud & DevOps, Software Development, ERP Custom Software, CRM Custom Software, and Security & Compliance. Most engagements combine two or more — for example, a new app built on cloud infrastructure with security baked in from day one.",
   },
   {
     question: "How do I get started with a project?",
