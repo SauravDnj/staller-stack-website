@@ -19,7 +19,7 @@ export function ServicesMegaMenu({ onNavigate }: { onNavigate: () => void }) {
         <p className="px-3 font-mono text-xs uppercase tracking-[0.25em] text-ss-teal">
           Our Solutions
         </p>
-        <div className="mt-4 flex max-h-[26rem] flex-col gap-1 overflow-y-auto pr-1">
+        <div className="mt-4 flex flex-col gap-1">
           {services.map((service) => {
             const isActive = service.slug === activeSlug;
             return (
@@ -29,13 +29,13 @@ export function ServicesMegaMenu({ onNavigate }: { onNavigate: () => void }) {
                 onMouseEnter={() => setActiveSlug(service.slug)}
                 onClick={() => setActiveSlug(service.slug)}
                 aria-pressed={isActive}
-                className={`flex items-center justify-between gap-3 rounded-xl px-3 py-3 text-left transition-colors ${
+                className={`flex items-center justify-between gap-3 rounded-xl px-3 py-2 text-left transition-colors ${
                   isActive ? "bg-ss-teal text-ss-base" : "text-ss-text hover:bg-ss-base"
                 }`}
               >
                 <span className="flex items-center gap-3">
                   <span
-                    className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border ${
+                    className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border ${
                       isActive
                         ? "border-ss-base/30 bg-ss-base/10"
                         : "border-ss-border bg-ss-base"
@@ -43,7 +43,7 @@ export function ServicesMegaMenu({ onNavigate }: { onNavigate: () => void }) {
                   >
                     <ServiceIcon icon={service.icon} />
                   </span>
-                  <span className="font-display text-sm font-semibold">
+                  <span className="font-display text-xs font-semibold leading-tight sm:text-sm">
                     {service.title}
                   </span>
                 </span>

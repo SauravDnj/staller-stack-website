@@ -1,9 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { aboutPage } from "@/content/about";
-import { teamMembers } from "@/content/team";
 import { siteConfig, socialLinks } from "@/content/siteConfig";
 
 export function AboutMegaMenu({ onNavigate }: { onNavigate: () => void }) {
@@ -19,28 +17,6 @@ export function AboutMegaMenu({ onNavigate }: { onNavigate: () => void }) {
         <p className="mt-3 max-w-xl text-sm text-ss-muted">
           {aboutPage.subtext}
         </p>
-
-        <div className="mt-8">
-          <p className="font-display text-xs uppercase tracking-[0.2em] text-ss-muted">
-            Our Team
-          </p>
-          <div className="mt-4 flex flex-wrap items-center gap-4">
-            {teamMembers.map((member) => (
-              <div key={member.name} className="flex items-center gap-2">
-                <div className="relative h-10 w-10 overflow-hidden rounded-full border border-ss-border">
-                  <Image
-                    src={member.photo}
-                    alt={member.name}
-                    fill
-                    sizes="40px"
-                    className="object-cover"
-                  />
-                </div>
-                <span className="text-xs text-ss-muted">{member.name}</span>
-              </div>
-            ))}
-          </div>
-        </div>
 
         <div className="mt-8 flex flex-wrap gap-3">
           <Button href="/about" onClick={onNavigate} variant="outline">

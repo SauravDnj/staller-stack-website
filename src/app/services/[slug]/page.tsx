@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { Card } from "@/components/ui/Card";
 import { ServiceIcon } from "@/components/ui/ServiceIcon";
 import { SpinningIcon } from "@/components/ui/SpinningIcon";
+import { TechIcon } from "@/components/ui/TechIcon";
 import { Reveal } from "@/components/ui/Reveal";
 import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
 import { PageHeader } from "@/components/sections/PageHeader";
@@ -104,7 +105,7 @@ export default async function ServiceDetailPage({
       </section>
 
       <section className="border-t border-ss-border py-24 sm:py-32">
-        <Container className="grid grid-cols-1 gap-10 lg:grid-cols-2">
+        <Container className="max-w-2xl">
           <Reveal>
             <h2 className="font-display text-2xl font-semibold text-ss-text">
               What You&apos;ll Receive
@@ -121,21 +122,46 @@ export default async function ServiceDetailPage({
               ))}
             </ul>
           </Reveal>
-          <Reveal delay={0.1}>
+        </Container>
+      </section>
+
+      <section className="border-t border-ss-border py-24 sm:py-32">
+        <Container>
+          <Reveal>
             <h2 className="font-display text-2xl font-semibold text-ss-text">
-              Tech Stack
+              Technologies We Use
             </h2>
-            <div className="mt-6 flex flex-wrap gap-2">
-              {service.techStack.map((tech) => (
-                <span
-                  key={tech}
-                  className="rounded-full border border-ss-border bg-ss-surface/60 px-4 py-1.5 font-mono text-xs uppercase tracking-wider text-ss-muted"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
+            <p className="mt-3 max-w-2xl text-sm text-ss-muted">
+              The tools and platforms our {service.title} team works in day to day.
+            </p>
           </Reveal>
+          <RevealGroup className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {service.techStack.map((group) => (
+              <RevealItem key={group.category}>
+                <div className="h-full rounded-2xl border border-ss-border bg-ss-surface/60 p-6 transition-colors duration-300 hover:border-ss-teal/60">
+                  <p className="font-mono text-xs uppercase tracking-[0.2em] text-ss-teal">
+                    {group.category}
+                  </p>
+                  <div className="mt-4 flex flex-col gap-3">
+                    {group.items.map((item) => (
+                      <div
+                        key={item}
+                        className="group flex items-center gap-3 text-sm text-ss-text"
+                      >
+                        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-ss-border bg-ss-base text-ss-teal transition-colors duration-300 group-hover:border-ss-teal group-hover:text-ss-mint">
+                          <TechIcon
+                            name={item}
+                            className="h-4 w-4 transition-transform duration-300 group-hover:scale-110"
+                          />
+                        </span>
+                        {item}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </RevealItem>
+            ))}
+          </RevealGroup>
         </Container>
       </section>
 

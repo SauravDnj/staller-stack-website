@@ -20,7 +20,7 @@ export default function IndustriesPage() {
       <PageHeader
         eyebrow="Industries We Empower"
         heading="Technology Built Around Your Industry's Reality."
-        subtext="Every industry has its own compliance requirements, scale demands, and legacy constraints. We've shipped production systems across all nine of these — here's what that looks like."
+        subtext="Every industry has its own compliance requirements, scale demands, and legacy constraints. We've shipped production systems across all of these — here's what that looks like."
       />
 
       <section className="pb-24 sm:pb-32">

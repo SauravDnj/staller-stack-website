@@ -6,7 +6,7 @@ export type Service = {
   icon: "code" | "cloud" | "shield" | "brain" | "cpu" | "smartphone" | "layers" | "database" | "users";
   process: { title: string; description: string }[];
   deliverables: string[];
-  techStack: string[];
+  techStack: { category: string; items: string[] }[];
   faqs: { question: string; answer: string }[];
 };
 
@@ -51,7 +51,12 @@ export const services: Service[] = [
       "Monitoring dashboard for drift and accuracy",
       "Technical handover documentation",
     ],
-    techStack: ["Python", "TensorFlow", "PyTorch", "AWS SageMaker", "Kafka", "MLflow"],
+    techStack: [
+      { category: "Languages", items: ["Python", "Jupyter"] },
+      { category: "ML Frameworks", items: ["TensorFlow", "PyTorch", "Scikit-learn"] },
+      { category: "MLOps & Deployment", items: ["MLflow", "AWS SageMaker", "Docker"] },
+      { category: "Data & Pipelines", items: ["Apache Kafka", "PostgreSQL"] },
+    ],
     faqs: [
       {
         question: "Do we need a large dataset to get started?",
@@ -110,7 +115,12 @@ export const services: Service[] = [
       "Guardrail and escalation-rule documentation",
       "Deployment and monitoring runbook",
     ],
-    techStack: ["Python", "LangChain", "LangGraph", "OpenAI / Anthropic APIs", "Pinecone", "Hugging Face", "LlamaIndex"],
+    techStack: [
+      { category: "Languages", items: ["Python"] },
+      { category: "Agent Frameworks", items: ["LangChain", "LangGraph", "LlamaIndex"] },
+      { category: "Models & Vector Stores", items: ["OpenAI API", "Anthropic API", "Pinecone", "Hugging Face"] },
+      { category: "Evaluation & Tooling", items: ["MLflow", "Docker"] },
+    ],
     faqs: [
       {
         question: "Do you train models from scratch or fine-tune existing ones?",
@@ -169,7 +179,11 @@ export const services: Service[] = [
       "Crash reporting and analytics integration",
       "Maintenance retainer for OS and dependency updates",
     ],
-    techStack: ["React Native", "Swift", "Kotlin", "Expo", "Firebase", "Fastlane"],
+    techStack: [
+      { category: "Frontend", items: ["Flutter", "React Native", "Kotlin", "Swift"] },
+      { category: "Platform & Tooling", items: ["Expo", "Firebase", "Fastlane"] },
+      { category: "Quality Assurance", items: ["Appium", "Selenium"] },
+    ],
     faqs: [
       {
         question: "Should we build native or cross-platform?",
@@ -228,7 +242,12 @@ export const services: Service[] = [
       "Deployment runbooks",
       "30-day post-launch support window",
     ],
-    techStack: ["React", "Next.js", "Node.js", "TypeScript", "GraphQL", "PostgreSQL"],
+    techStack: [
+      { category: "Frontend", items: ["React", "Next.js", "TypeScript"] },
+      { category: "Frameworks", items: ["Angular", "Vue.js", "Express.js"] },
+      { category: "Backend", items: ["Node.js", "Python", "PHP", ".NET"] },
+      { category: "Quality Assurance", items: ["Selenium", "SonarQube", "JMeter"] },
+    ],
     faqs: [
       {
         question: "How long does a typical website or web app build take?",
@@ -287,7 +306,12 @@ export const services: Service[] = [
       "Disaster-recovery runbook",
       "Cost-optimization report",
     ],
-    techStack: ["AWS", "Azure", "Google Cloud", "Kubernetes", "Docker", "Terraform", "GitHub Actions"],
+    techStack: [
+      { category: "Cloud Platforms", items: ["AWS", "Azure", "Google Cloud"] },
+      { category: "Containers & IaC", items: ["Docker", "Kubernetes", "Terraform"] },
+      { category: "CI/CD & Automation", items: ["GitHub Actions", "Jenkins", "Ansible"] },
+      { category: "Monitoring", items: ["Prometheus", "Grafana"] },
+    ],
     faqs: [
       {
         question: "Will we experience downtime during migration?",
@@ -346,7 +370,11 @@ export const services: Service[] = [
       "Automated test suite",
       "Technical handover and training session",
     ],
-    techStack: ["Node.js", "Python", ".NET", "PostgreSQL", "Redis", "Docker"],
+    techStack: [
+      { category: "Backend", items: ["Node.js", "Python", ".NET", "Express.js"] },
+      { category: "Database & Caching", items: ["PostgreSQL", "Redis"] },
+      { category: "DevOps & Delivery", items: ["Docker", "GitHub Actions"] },
+    ],
     faqs: [
       {
         question: "When does custom software make more sense than off-the-shelf?",
@@ -405,7 +433,12 @@ export const services: Service[] = [
       "Custom reporting dashboards",
       "Admin and end-user training documentation",
     ],
-    techStack: ["Node.js", ".NET", "PostgreSQL", "Odoo", "Power BI"],
+    techStack: [
+      { category: "Backend", items: ["Node.js", ".NET"] },
+      { category: "Database & Reporting", items: ["PostgreSQL", "Power BI"] },
+      { category: "ERP Platforms", items: ["Odoo"] },
+      { category: "Quality Assurance", items: ["SonarQube", "JMeter"] },
+    ],
     faqs: [
       {
         question: "Can you migrate data from our existing ERP or spreadsheets?",
@@ -464,7 +497,12 @@ export const services: Service[] = [
       "Automated workflow and lead-scoring rules",
       "Team onboarding and admin documentation",
     ],
-    techStack: ["React", "Node.js", "PostgreSQL", "Twilio", "SendGrid"],
+    techStack: [
+      { category: "Frontend", items: ["React"] },
+      { category: "Backend", items: ["Node.js"] },
+      { category: "Database", items: ["PostgreSQL"] },
+      { category: "Integrations", items: ["Twilio", "SendGrid"] },
+    ],
     faqs: [
       {
         question: "How is this different from using Salesforce or HubSpot?",
@@ -523,7 +561,11 @@ export const services: Service[] = [
       "Incident-response runbook",
       "Quarterly security review",
     ],
-    techStack: ["Burp Suite", "OWASP ZAP", "AWS GuardDuty", "Snyk", "HashiCorp Vault"],
+    techStack: [
+      { category: "Testing Tools", items: ["Burp Suite", "OWASP ZAP"] },
+      { category: "Cloud Security", items: ["AWS GuardDuty", "HashiCorp Vault"] },
+      { category: "Code & Dependency Security", items: ["Snyk", "SonarQube"] },
+    ],
     faqs: [
       {
         question: "How often should we run a penetration test?",

@@ -3,6 +3,8 @@ export type Industry = {
   name: string;
   description: string;
   icon:
+    | "ai"
+    | "automation"
     | "healthcare"
     | "fintech"
     | "ecommerce"
@@ -11,13 +13,54 @@ export type Industry = {
     | "logistics"
     | "manufacturing"
     | "travel"
-    | "saas";
+    | "saas"
+    | "insurance"
+    | "legal"
+    | "media"
+    | "telecom"
+    | "government";
   challenges: string[];
   solutions: string[];
   relatedServiceSlugs: string[];
 };
 
 export const industries: Industry[] = [
+  {
+    slug: "artificial-intelligence-ml",
+    name: "Artificial Intelligence & Machine Learning",
+    description: "AI product teams building predictive, generative, and automation features into their platforms.",
+    icon: "ai",
+    challenges: [
+      "Turning a promising model prototype into a reliable production system",
+      "Keeping inference costs and latency under control as usage scales",
+      "Maintaining model accuracy as real-world data drifts from training data",
+    ],
+    solutions: [
+      "Production-grade MLOps pipelines with automated retraining and drift monitoring",
+      "Cost-optimized inference architecture across cloud and edge deployment",
+      "Data pipeline engineering that keeps training data representative over time",
+      "A/B testing infrastructure to validate model improvements before full rollout",
+    ],
+    relatedServiceSlugs: ["ai-ml-solutions", "ai-agent-model-training", "cloud-devops"],
+  },
+  {
+    slug: "ai-agents-automation",
+    name: "AI Agents & Automation",
+    description: "Teams automating workflows with autonomous agents instead of static scripts or manual review.",
+    icon: "automation",
+    challenges: [
+      "Agents that hallucinate or take unintended actions in production",
+      "Integrating agents with existing internal tools and legacy APIs",
+      "Proving ROI and safety before expanding an agent's scope of authority",
+    ],
+    solutions: [
+      "Fine-tuned or RAG-grounded agents scoped to well-defined, auditable tasks",
+      "Tool-calling integrations that connect agents to your existing systems",
+      "Evaluation harnesses and human-approval checkpoints for high-risk actions",
+      "Phased rollout from human-in-the-loop to increasing autonomy as trust builds",
+    ],
+    relatedServiceSlugs: ["ai-agent-model-training", "ai-ml-solutions", "software-development"],
+  },
   {
     slug: "healthcare",
     name: "Healthcare",
@@ -70,7 +113,7 @@ export const industries: Industry[] = [
       "Headless commerce storefronts for fast, flexible frontends",
       "Real-time inventory sync APIs across every sales channel",
     ],
-    relatedServiceSlugs: ["web-development", "cloud-devops", "ai-ml-solutions"],
+    relatedServiceSlugs: ["web-development", "mobile-app-development", "cloud-devops", "ai-ml-solutions"],
   },
   {
     slug: "education",
@@ -106,7 +149,7 @@ export const industries: Industry[] = [
       "CDN-backed media pipelines for photos, video, and floor plans",
       "Listing-sync APIs that keep every channel accurate in real time",
     ],
-    relatedServiceSlugs: ["web-development", "cloud-devops"],
+    relatedServiceSlugs: ["web-development", "crm-custom-software", "cloud-devops"],
   },
   {
     slug: "logistics-supply-chain",
@@ -124,7 +167,7 @@ export const industries: Industry[] = [
       "Cloud data pipelines connecting warehouses, carriers, and customers",
       "Mobile driver apps for proof-of-delivery and real-time updates",
     ],
-    relatedServiceSlugs: ["ai-ml-solutions", "cloud-devops", "web-development"],
+    relatedServiceSlugs: ["ai-ml-solutions", "cloud-devops", "mobile-app-development"],
   },
   {
     slug: "manufacturing",
@@ -178,7 +221,97 @@ export const industries: Industry[] = [
       "SOC 2-ready security baselines built in from the first sprint",
       "Embedded analytics and AI features that become product differentiators",
     ],
-    relatedServiceSlugs: ["web-development", "cloud-devops", "ai-ml-solutions"],
+    relatedServiceSlugs: ["web-development", "cloud-devops", "ai-ml-solutions", "software-development"],
+  },
+  {
+    slug: "insurance",
+    name: "Insurance",
+    description: "Claims automation, underwriting platforms, and digital-first policy management.",
+    icon: "insurance",
+    challenges: [
+      "Manual claims processing that slows payouts and frustrates policyholders",
+      "Underwriting models that don't reflect real-time risk signals",
+      "Legacy policy administration systems that resist integration with modern tools",
+    ],
+    solutions: [
+      "AI-assisted claims triage and fraud detection that speeds up legitimate payouts",
+      "ML-based underwriting models trained on real risk and claims data",
+      "API layers that connect legacy policy systems to modern customer portals",
+      "Self-service policyholder portals for quotes, claims, and renewals",
+    ],
+    relatedServiceSlugs: ["ai-ml-solutions", "software-development", "security-compliance"],
+  },
+  {
+    slug: "legal-tech",
+    name: "Legal Tech",
+    description: "Document automation, case management, and AI-assisted research platforms for legal teams.",
+    icon: "legal",
+    challenges: [
+      "Hours spent on manual document review and contract analysis",
+      "Case and matter data scattered across disconnected tools",
+      "Meeting strict confidentiality and data-handling requirements",
+    ],
+    solutions: [
+      "AI-assisted contract review and clause extraction that cuts review time",
+      "Centralized case management platforms with role-based access control",
+      "Encrypted document workflows that meet client confidentiality standards",
+      "Custom research and precedent-search tools built on your firm's own data",
+    ],
+    relatedServiceSlugs: ["ai-agent-model-training", "software-development", "security-compliance"],
+  },
+  {
+    slug: "media-entertainment",
+    name: "Media & Entertainment",
+    description: "Streaming platforms, content management, and audience engagement at scale.",
+    icon: "media",
+    challenges: [
+      "Delivering high-quality video to a global audience without buffering",
+      "Personalizing content recommendations as the catalog and audience grow",
+      "Managing rights, licensing, and content metadata across platforms",
+    ],
+    solutions: [
+      "CDN-backed streaming architecture built for global, low-latency delivery",
+      "AI-driven recommendation engines that personalize content discovery",
+      "Content management systems that keep metadata and rights data in sync",
+      "Auto-scaling infrastructure that handles traffic spikes around major releases",
+    ],
+    relatedServiceSlugs: ["cloud-devops", "ai-ml-solutions", "web-development"],
+  },
+  {
+    slug: "telecommunications",
+    name: "Telecommunications",
+    description: "Network operations platforms, customer self-service, and usage analytics for telecom providers.",
+    icon: "telecom",
+    challenges: [
+      "Legacy OSS/BSS systems that slow down new product launches",
+      "Predicting and preventing network outages before customers notice",
+      "Reducing churn in a market where switching providers is easy",
+    ],
+    solutions: [
+      "Modernized OSS/BSS layers that plug into existing carrier infrastructure",
+      "Predictive maintenance models trained on network performance data",
+      "Churn-prediction and retention automation built on usage analytics",
+      "Self-service customer portals for billing, plans, and support",
+    ],
+    relatedServiceSlugs: ["cloud-devops", "ai-ml-solutions", "software-development"],
+  },
+  {
+    slug: "government-public-sector",
+    name: "Government & Public Sector",
+    description: "Citizen-facing digital services and secure, compliant public-sector systems.",
+    icon: "government",
+    challenges: [
+      "Legacy systems that weren't designed for modern citizen expectations",
+      "Meeting strict accessibility, security, and compliance requirements",
+      "Delivering services reliably during high-demand enrollment periods",
+    ],
+    solutions: [
+      "Accessible, standards-compliant citizen portals for permits, filings, and requests",
+      "Security-hardened architecture that meets public-sector compliance standards",
+      "Auto-scaling infrastructure that holds up during peak filing or enrollment periods",
+      "Legacy system integration that modernizes services without a risky rip-and-replace",
+    ],
+    relatedServiceSlugs: ["security-compliance", "cloud-devops", "software-development"],
   },
 ];
 
