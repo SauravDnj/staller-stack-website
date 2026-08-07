@@ -8,7 +8,7 @@ import { siteConfig } from "@/content/siteConfig";
 export function CtaBanner() {
   return (
     <section className="relative overflow-hidden py-24 sm:py-32">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(0,255,194,0.14),_transparent_65%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_color-mix(in_srgb,var(--ss-mint)_14%,transparent),_transparent_65%)]" />
       <AmbientGlow />
       <Container className="relative text-center">
         <Reveal>

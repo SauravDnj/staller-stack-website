@@ -62,7 +62,7 @@ export function Hero() {
       ref={heroRef}
       className="relative isolate flex min-h-screen items-start overflow-hidden bg-ss-base pt-28 sm:pt-32 lg:pt-24"
     >
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(30,138,138,0.22),_transparent_60%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_color-mix(in_srgb,var(--ss-teal)_22%,transparent),_transparent_60%)]" />
       <div
         className="bg-grid-animate pointer-events-none absolute inset-0 opacity-70"
         style={{

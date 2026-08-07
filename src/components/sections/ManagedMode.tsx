@@ -165,7 +165,10 @@ function ConsoleMockup() {
     <div className="relative">
       <div
         className="pointer-events-none absolute -inset-8 -z-10 rounded-[3rem] opacity-40 blur-3xl"
-        style={{ background: "radial-gradient(circle, rgba(99,102,241,0.2), transparent 70%)" }}
+        style={{
+          background:
+            "radial-gradient(circle, color-mix(in srgb, var(--ss-indigo) 20%, transparent), transparent 70%)",
+        }}
       />
 
       <div className="overflow-hidden rounded-2xl border border-ss-border bg-ss-surface-2/90 shadow-2xl shadow-black/40 backdrop-blur">

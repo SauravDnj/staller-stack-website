@@ -3,13 +3,18 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+import { ACCENT_CLASSES } from "@/lib/accentTheme";
+import type { AccentKey } from "@/content/services";
 
 export function FaqAccordion({
   items,
+  accent = "teal",
 }: {
   items: { question: string; answer: string }[];
+  accent?: AccentKey;
 }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const accentText = ACCENT_CLASSES[accent].text;
 
   return (
     <RevealGroup className="flex flex-col gap-3">
@@ -30,7 +35,7 @@ export function FaqAccordion({
                 <motion.span
                   animate={{ rotate: isOpen ? 45 : 0 }}
                   transition={{ duration: 0.2 }}
-                  className="shrink-0 text-xl text-ss-teal"
+                  className={`shrink-0 text-xl ${accentText}`}
                   aria-hidden
                 >
                   +

@@ -6,6 +6,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import { IconTile } from "@/components/ui/IconTile";
+import { AmbientVisual } from "@/components/ui/AmbientVisual";
 import { roiComparison, roiSavings } from "@/content/roi";
 
 const whyItWorks: { title: string; description: string; color: "teal" | "cyan" | "amber" }[] = [
@@ -37,8 +38,13 @@ export function RoiComparison() {
   }, []);
 
   return (
-    <section className="border-y border-ss-border bg-ss-surface-2/40 py-24 sm:py-32">
-      <Container>
+    <section className="relative overflow-hidden border-y border-ss-border bg-ss-surface-2/40 py-24 sm:py-32">
+      <AmbientVisual
+        visual="mesh"
+        color="var(--ss-indigo)"
+        className="left-[-70px] bottom-0 hidden h-80 w-80 opacity-[0.28] lg:block"
+      />
+      <Container className="relative">
         <Reveal>
           <SectionHeading
             eyebrow="Business Value"

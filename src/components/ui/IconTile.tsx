@@ -12,11 +12,11 @@ const gradients: Record<IconTileColor, string> = {
 };
 
 const glows: Record<IconTileColor, string> = {
-  teal: "rgba(30,138,138,.55)",
-  mint: "rgba(0,255,194,.45)",
-  cyan: "rgba(34,211,238,.5)",
-  indigo: "rgba(99,102,241,.5)",
-  amber: "rgba(245,165,36,.5)",
+  teal: "color-mix(in srgb, var(--ss-teal) 55%, transparent)",
+  mint: "color-mix(in srgb, var(--ss-mint) 45%, transparent)",
+  cyan: "color-mix(in srgb, var(--ss-cyan) 50%, transparent)",
+  indigo: "color-mix(in srgb, var(--ss-indigo) 50%, transparent)",
+  amber: "color-mix(in srgb, var(--ss-amber) 50%, transparent)",
 };
 
 const sizes: Record<IconTileSize, string> = {

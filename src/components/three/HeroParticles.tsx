@@ -1,8 +1,11 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
+import { useTheme } from "next-themes";
 import * as THREE from "three";
+
+const PARTICLE_COLOR = { dark: "#2dd4bf", light: "#0c7a7a" };
 
 const PARTICLE_COUNT = 260;
 const FIELD_RADIUS = 9;
@@ -24,7 +27,7 @@ function createFieldPositions() {
 
 const fieldPositions = createFieldPositions();
 
-function ParticleField({ paused }: { paused: boolean }) {
+function ParticleField({ paused, color }: { paused: boolean; color: string }) {
   const pointsRef = useRef<THREE.Points>(null);
 
   useFrame((state, delta) => {
@@ -44,7 +47,7 @@ function ParticleField({ paused }: { paused: boolean }) {
       </bufferGeometry>
       <pointsMaterial
         size={0.045}
-        color="#2dd4bf"
+        color={color}
         transparent
         opacity={0.55}
         sizeAttenuation
@@ -56,6 +59,16 @@ function ParticleField({ paused }: { paused: boolean }) {
 
 /** Subtle animated particle field behind the Hero content — purely decorative. */
 export function HeroParticles({ paused = false }: { paused?: boolean }) {
+  const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setMounted(true);
+  }, []);
+
+  const color = mounted && resolvedTheme === "light" ? PARTICLE_COLOR.light : PARTICLE_COLOR.dark;
+
   return (
     <Canvas
       camera={{ position: [0, 0, 8], fov: 45 }}
@@ -63,7 +76,7 @@ export function HeroParticles({ paused = false }: { paused?: boolean }) {
       gl={{ alpha: true, antialias: false, powerPreference: "low-power" }}
       className="!absolute !inset-0"
     >
-      <ParticleField paused={paused} />
+      <ParticleField paused={paused} color={color} />
     </Canvas>
   );
 }

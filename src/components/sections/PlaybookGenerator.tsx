@@ -48,7 +48,8 @@ export function PlaybookGenerator() {
           <div
             className="pointer-events-none absolute -inset-10 -z-10 rounded-[3rem] opacity-50 blur-3xl"
             style={{
-              background: "radial-gradient(circle, rgba(45,212,191,0.18), transparent 70%)",
+              background:
+                "radial-gradient(circle, color-mix(in srgb, var(--ss-teal) 18%, transparent), transparent 70%)",
             }}
           />
 

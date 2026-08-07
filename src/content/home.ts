@@ -42,20 +42,6 @@ export const heroTerminal = {
   },
 };
 
-export const trustBar = {
-  heading: "Join Over 1000+ Companies with Staller Stack Here",
-  logos: [
-    "TechNova",
-    "CloudAxis",
-    "DataForge",
-    "NetShield",
-    "SecurePulse",
-    "AppVault",
-    "InnoStack",
-    "ScaleOps",
-  ],
-};
-
 export const aboutStats = {
   eyebrow: "Get to Know Us",
   heading: "Driving Excellence & Innovation: Your Trusted Technology Partner.",

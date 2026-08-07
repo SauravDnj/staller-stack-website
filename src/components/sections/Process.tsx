@@ -3,12 +3,18 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+import { AmbientVisual } from "@/components/ui/AmbientVisual";
 import { process } from "@/content/home";
 
 export function Process() {
   return (
-    <section id="process" className="border-y border-ss-border bg-ss-surface-2/40 py-24 sm:py-32">
-      <Container>
+    <section id="process" className="relative overflow-hidden border-y border-ss-border bg-ss-surface-2/40 py-24 sm:py-32">
+      <AmbientVisual
+        visual="wave"
+        color="var(--ss-amber)"
+        className="right-[-80px] top-1/2 hidden h-72 w-72 -translate-y-1/2 opacity-[0.28] lg:block"
+      />
+      <Container className="relative">
         <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <Reveal>
             <SectionHeading

@@ -31,7 +31,7 @@ export default function ServicesPage() {
             {services.map((service) => (
               <RevealItem key={service.slug}>
                 <Link href={`/services/${service.slug}`}>
-                  <TiltCard className="h-full">
+                  <TiltCard className="h-full" accent={service.theme.accent}>
                     <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-ss-border bg-ss-base">
                       <SpinningIcon>
                         <ServiceIcon icon={service.icon} />

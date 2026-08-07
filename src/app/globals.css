@@ -133,6 +133,44 @@
   --ss-border: #d5e3e1;
 }
 
+/* ============================================================
+   FOOTER BRAND
+   Mirrors .header-legacy so the header and footer read as one
+   unified brand band — same accent teal in both themes, anchored
+   on #0c7a7a for light mode.
+   ============================================================ */
+.footer-brand {
+  --ss-base: #0c1e21;
+  --ss-surface: #18292c;
+  --ss-surface-2: #12181b;
+  --ss-teal-deep: #0d5555;
+  --ss-teal: #1e8a8a;
+  --ss-mint: #00ffc2;
+  --ss-cyan: #22d3ee;
+  --ss-indigo: #6366f1;
+  --ss-amber: #f5a524;
+  --ss-blue: #1e8a8a;
+  --ss-text: #f4f6f5;
+  --ss-muted: #93a3a1;
+  --ss-border: #22383c;
+}
+
+:root[data-theme="light"] .footer-brand {
+  --ss-base: #eef6f5;
+  --ss-surface: #ffffff;
+  --ss-surface-2: #e3efee;
+  --ss-teal-deep: #0f766e;
+  --ss-teal: #0c7a7a;
+  --ss-mint: #0a8f6f;
+  --ss-cyan: #0891b2;
+  --ss-indigo: #4f46e5;
+  --ss-amber: #d97706;
+  --ss-blue: #0c7a7a;
+  --ss-text: #0d1b1c;
+  --ss-muted: #4d605e;
+  --ss-border: #d5e3e1;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -268,10 +306,19 @@
 }
 
 .bg-grid-animate {
-  background-image: linear-gradient(rgba(94, 234, 212, 0.14) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(94, 234, 212, 0.14) 1px, transparent 1px);
+  background-image: linear-gradient(
+      color-mix(in srgb, var(--ss-teal) 16%, transparent) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--ss-teal) 16%, transparent) 1px,
+      transparent 1px
+    );
   background-size: 64px 64px;
-  animation: grid-pan 14s linear infinite;
+  animation:
+    grid-pan 14s linear infinite,
+    pulse-soft 8s var(--ease-io) infinite;
 }
 
 @keyframes line-in {

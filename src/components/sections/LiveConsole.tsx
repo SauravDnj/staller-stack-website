@@ -152,7 +152,7 @@ export function LiveConsole() {
                 className="pointer-events-none absolute -inset-8 rounded-[2rem] opacity-40 blur-3xl"
                 style={{
                   background:
-                    "radial-gradient(circle, rgba(45,212,191,0.2), transparent 70%)",
+                    "radial-gradient(circle, color-mix(in srgb, var(--ss-teal) 20%, transparent), transparent 70%)",
                 }}
               />
               <Terminal title="ci — production" className="relative">

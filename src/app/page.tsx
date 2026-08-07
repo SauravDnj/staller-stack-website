@@ -1,8 +1,8 @@
 import { Hero } from "@/components/sections/Hero";
-import { TrustBar } from "@/components/sections/TrustBar";
 import { About } from "@/components/sections/About";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { TechMarquee } from "@/components/sections/TechMarquee";
+import { AiGuideSection } from "@/components/sections/AiGuideSection";
 import { PlaybookGenerator } from "@/components/sections/PlaybookGenerator";
 import { ManagedMode } from "@/components/sections/ManagedMode";
 import { AutomationCarousel } from "@/components/sections/AutomationCarousel";
@@ -22,10 +22,10 @@ export default function Home() {
     <>
       <SectionNavDock />
       <Hero />
-      <TrustBar />
       <About />
       <ServicesGrid />
       <TechMarquee />
+      <AiGuideSection />
       <PlaybookGenerator />
       <ManagedMode />
       <AutomationCarousel />

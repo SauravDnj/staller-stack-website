@@ -2,16 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/ui/Container";
-import { ServiceIcon } from "@/components/ui/ServiceIcon";
-import { SpinningIcon } from "@/components/ui/SpinningIcon";
 import { TechIcon } from "@/components/ui/TechIcon";
 import { Reveal } from "@/components/ui/Reveal";
 import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
-import { PageHeader } from "@/components/sections/PageHeader";
+import { ServiceHero } from "@/components/sections/ServiceHero";
+import { StatsStrip } from "@/components/sections/StatsStrip";
+import { EngagementModel } from "@/components/sections/EngagementModel";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { FaqAccordion } from "@/components/sections/FaqAccordion";
 import { getServiceBySlug, services } from "@/content/services";
 import { industries } from "@/content/industries";
+import { siteConfig } from "@/content/siteConfig";
+import { ACCENT_CLASSES } from "@/lib/accentTheme";
 
 export function generateStaticParams() {
   return services.map((service) => ({ slug: service.slug }));
@@ -26,9 +28,20 @@ export async function generateMetadata({
   const service = getServiceBySlug(slug);
   if (!service) return {};
 
+  const title = service.seo.metaTitle;
+  const description = service.seo.metaDescription;
+  const url = `${siteConfig.url}/services/${service.slug}`;
+
   return {
-    title: `${service.title} | Staller Stack`,
-    description: service.description,
+    title,
+    description,
+    keywords: service.seo.keywords,
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "website",
+    },
   };
 }
 
@@ -41,28 +54,41 @@ export default async function ServiceDetailPage({
   const service = getServiceBySlug(slug);
   if (!service) notFound();
 
+  const accentClasses = ACCENT_CLASSES[service.theme.accent];
   const relatedServices = services.filter((s) => s.slug !== service.slug);
   const relatedIndustries = industries.filter((industry) =>
     industry.relatedServiceSlugs.includes(service.slug)
   );
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: service.title,
+    description: service.seo.metaDescription,
+    provider: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+    areaServed: "Worldwide",
+    url: `${siteConfig.url}/services/${service.slug}`,
+  };
+
   return (
     <>
-      <PageHeader
-        eyebrow="Our Solutions"
-        heading={service.title}
-        subtext={service.description}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <section className="pb-24 sm:pb-32">
+      <ServiceHero service={service} />
+
+      <StatsStrip stats={service.stats} accent={service.theme.accent} />
+
+      <section className="py-24 sm:py-32">
         <Container>
           <Reveal>
-            <div className="flex h-14 w-14 items-center justify-center rounded-xl border border-ss-border bg-ss-surface">
-              <SpinningIcon>
-                <ServiceIcon icon={service.icon} />
-              </SpinningIcon>
-            </div>
-            <h2 className="mt-8 font-display text-2xl font-semibold text-ss-text">
+            <h2 className="font-display text-2xl font-semibold text-ss-text">
               What&apos;s Included
             </h2>
           </Reveal>
@@ -72,12 +98,12 @@ export default async function ServiceDetailPage({
                 key={bullet}
                 className="flex items-start gap-3 bg-ss-surface/60 p-6 transition-colors duration-300 hover:bg-ss-surface"
               >
-                <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-ss-teal/15 text-xs text-ss-teal">
+                <span
+                  className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs ${accentClasses.bgSoft} ${accentClasses.text}`}
+                >
                   ✓
                 </span>
-                <p className="font-display text-sm font-medium text-ss-text">
-                  {bullet}
-                </p>
+                <p className="font-display text-sm font-medium text-ss-text">{bullet}</p>
               </RevealItem>
             ))}
           </RevealGroup>
@@ -87,23 +113,27 @@ export default async function ServiceDetailPage({
       <section className="border-t border-ss-border py-24 sm:py-32">
         <Container>
           <Reveal>
-            <h2 className="font-display text-2xl font-semibold text-ss-text">
-              How We Work
-            </h2>
+            <h2 className="font-display text-2xl font-semibold text-ss-text">How We Work</h2>
           </Reveal>
-          <RevealGroup className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {service.process.map((step, index) => (
-              <RevealItem key={step.title}>
-                <p className="font-display text-3xl font-semibold text-ss-border">
-                  {String(index + 1).padStart(2, "0")}
-                </p>
-                <h3 className="mt-2 font-display text-base font-semibold text-ss-text">
-                  {step.title}
-                </h3>
-                <p className="mt-2 text-sm text-ss-muted">{step.description}</p>
-              </RevealItem>
-            ))}
-          </RevealGroup>
+          <div className="relative mt-10">
+            <div
+              className="pointer-events-none absolute left-0 right-0 top-4 hidden h-px lg:block"
+              style={{ backgroundColor: "var(--ss-border)" }}
+            />
+            <RevealGroup className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {service.process.map((step, index) => (
+                <RevealItem key={step.title} className="relative">
+                  <p className={`font-display text-3xl font-semibold ${accentClasses.text}`}>
+                    {String(index + 1).padStart(2, "0")}
+                  </p>
+                  <h3 className="mt-2 font-display text-base font-semibold text-ss-text">
+                    {step.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-ss-muted">{step.description}</p>
+                </RevealItem>
+              ))}
+            </RevealGroup>
+          </div>
         </Container>
       </section>
 
@@ -115,11 +145,8 @@ export default async function ServiceDetailPage({
             </h2>
             <ul className="mt-6 flex flex-col gap-3">
               {service.deliverables.map((deliverable) => (
-                <li
-                  key={deliverable}
-                  className="flex items-start gap-3 text-sm text-ss-text"
-                >
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-ss-teal" />
+                <li key={deliverable} className="flex items-start gap-3 text-sm text-ss-text">
+                  <span className={`mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full ${accentClasses.dot}`} />
                   {deliverable}
                 </li>
               ))}
@@ -127,6 +154,8 @@ export default async function ServiceDetailPage({
           </Reveal>
         </Container>
       </section>
+
+      <EngagementModel items={service.engagementModel} accent={service.theme.accent} />
 
       <section className="border-t border-ss-border py-24 sm:py-32">
         <Container>
@@ -141,24 +170,24 @@ export default async function ServiceDetailPage({
           <RevealGroup className="mt-10 flex flex-col gap-10">
             {service.techStack.map((group) => (
               <RevealItem key={group.category}>
-                <p className="font-mono text-xs uppercase tracking-[0.25em] text-ss-teal">
+                <p className={`font-mono text-xs uppercase tracking-[0.25em] ${accentClasses.text}`}>
                   {group.category}
                 </p>
                 <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
                   {group.items.map((item) => (
                     <div
                       key={item}
-                      className="group flex flex-col items-center gap-3 rounded-xl border border-ss-border bg-ss-surface/60 px-4 py-6 text-center transition-colors duration-300 hover:border-ss-teal hover:bg-ss-surface"
+                      className={`group flex flex-col items-center gap-3 rounded-xl border border-ss-border bg-ss-surface/60 px-4 py-6 text-center transition-colors duration-300 hover:bg-ss-surface ${accentClasses.hoverBorder}`}
                     >
-                      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-ss-border bg-ss-base text-ss-teal transition-colors duration-300 group-hover:border-ss-teal group-hover:text-ss-mint">
+                      <span
+                        className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-ss-border bg-ss-base transition-colors duration-300 ${accentClasses.text}`}
+                      >
                         <TechIcon
                           name={item}
                           className="h-5 w-5 transition-transform duration-300 group-hover:scale-110"
                         />
                       </span>
-                      <span className="font-display text-sm font-medium text-ss-text">
-                        {item}
-                      </span>
+                      <span className="font-display text-sm font-medium text-ss-text">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -181,7 +210,7 @@ export default async function ServiceDetailPage({
                 <RevealItem key={industry.slug}>
                   <Link
                     href={`/industries/${industry.slug}`}
-                    className="group block rounded-xl border border-ss-border bg-ss-surface/60 p-5 transition-colors hover:border-ss-teal"
+                    className={`group block rounded-xl border border-ss-border bg-ss-surface/60 p-5 transition-colors ${accentClasses.hoverBorder}`}
                   >
                     <p className="font-display text-sm font-semibold text-ss-text group-hover:text-ss-mint">
                       {industry.name}
@@ -202,7 +231,7 @@ export default async function ServiceDetailPage({
             </h2>
           </Reveal>
           <div className="mt-8">
-            <FaqAccordion items={[...service.faqs]} />
+            <FaqAccordion items={[...service.faqs]} accent={service.theme.accent} />
           </div>
         </Container>
       </section>
@@ -219,7 +248,7 @@ export default async function ServiceDetailPage({
               <RevealItem key={related.slug}>
                 <Link
                   href={`/services/${related.slug}`}
-                  className="group block rounded-xl border border-ss-border bg-ss-surface/60 p-5 transition-colors hover:border-ss-teal"
+                  className={`group block rounded-xl border border-ss-border bg-ss-surface/60 p-5 transition-colors ${ACCENT_CLASSES[related.theme.accent].hoverBorder}`}
                 >
                   <p className="font-display text-sm font-semibold text-ss-text group-hover:text-ss-mint">
                     {related.title}

@@ -8,8 +8,16 @@ import { testimonials } from "@/content/testimonials";
 
 export function Testimonials() {
   return (
-    <section className="border-y border-ss-border bg-ss-surface-2/40 py-24 sm:py-32">
-      <Container>
+    <section className="relative overflow-hidden border-y border-ss-border bg-ss-surface-2/40 py-24 sm:py-32">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute left-1/2 top-0 h-48 w-[36rem] -translate-x-1/2 opacity-[0.12] blur-[80px]"
+        style={{
+          background: "var(--ss-mint)",
+          animation: "pulse-soft 7s var(--ease-io, cubic-bezier(.4,0,.2,1)) infinite",
+        }}
+      />
+      <Container className="relative">
         <Reveal>
           <SectionHeading
             eyebrow="4.9 ★★★★★ · 80+ Client Reviews"

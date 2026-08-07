@@ -12,6 +12,8 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { LenisScrollSync } from "@/components/LenisScrollSync";
 import { ScrollProgressBar } from "@/components/ScrollProgressBar";
+import { AiGuideProvider } from "@/components/ai-guide/AiGuideContext";
+import { AiGuideLauncher } from "@/components/ai-guide/AiGuideLauncher";
 import "./globals.css";
 
 // Nebula theme fonts (site-wide default)
@@ -64,9 +66,12 @@ export default function RootLayout({
           <ReactLenis root options={{ duration: 1.1, smoothWheel: true }}>
             <LenisScrollSync />
             <ScrollProgressBar />
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
+            <AiGuideProvider>
+              <Header />
+              <main className="flex-1">{children}</main>
+              <Footer />
+              <AiGuideLauncher />
+            </AiGuideProvider>
           </ReactLenis>
         </ThemeProvider>
       </body>

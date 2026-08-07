@@ -14,16 +14,49 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-ss-border bg-ss-surface-2">
-      <Container className="grid grid-cols-1 gap-12 py-16 sm:grid-cols-2 lg:grid-cols-4">
+    <footer className="footer-brand relative overflow-hidden border-t border-ss-border bg-ss-surface-2">
+      <div aria-hidden className="pointer-events-none absolute inset-0">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,_color-mix(in_srgb,var(--ss-teal)_16%,transparent),_transparent_70%)]" />
+        <div
+          className="bg-grid-animate absolute inset-0 opacity-30"
+          style={{
+            maskImage:
+              "radial-gradient(ellipse 90% 80% at 50% 0%, black 30%, transparent 85%)",
+            WebkitMaskImage:
+              "radial-gradient(ellipse 90% 80% at 50% 0%, black 30%, transparent 85%)",
+          }}
+        />
+        <div
+          className="absolute -left-24 top-10 h-72 w-72 rounded-full opacity-[0.12] blur-[100px]"
+          style={{
+            background: "var(--ss-teal)",
+            animation: "drift 26s var(--ease-io, cubic-bezier(.4,0,.2,1)) infinite alternate",
+          }}
+        />
+        <div
+          className="absolute -right-16 bottom-0 h-64 w-64 rounded-full opacity-[0.10] blur-[100px]"
+          style={{
+            background: "var(--ss-cyan)",
+            animation:
+              "drift 32s var(--ease-io, cubic-bezier(.4,0,.2,1)) infinite alternate-reverse",
+          }}
+        />
+      </div>
+
+      <Container className="relative grid grid-cols-1 gap-12 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col gap-4">
-          <Image
-            src="/images/logos/logo-light-text.webp"
-            alt={siteConfig.name}
-            width={220}
-            height={62}
-            className="h-9 w-auto"
-          />
+          <Link href="/" className="flex items-center gap-2.5" aria-label={siteConfig.name}>
+            <Image
+              src="/images/logos/logo-icon.png"
+              alt=""
+              width={36}
+              height={36}
+              className="h-9 w-9"
+            />
+            <span className="font-display text-lg font-semibold tracking-wide text-ss-text">
+              Staller <span className="text-ss-teal">Stack</span>
+            </span>
+          </Link>
           <p className="max-w-xs text-sm text-ss-muted">
             {siteConfig.description}
           </p>
@@ -83,7 +116,7 @@ export function Footer() {
         </div>
       </Container>
 
-      <div className="overflow-hidden border-y border-ss-border py-4">
+      <div className="relative overflow-hidden border-y border-ss-border py-4">
         <div className="animate-marquee flex w-max gap-8 whitespace-nowrap font-display text-sm uppercase tracking-[0.3em] text-ss-muted">
           {[...marqueeKeywords, ...marqueeKeywords].map((word, i) => (
             <span key={`${word}-${i}`} className="flex items-center gap-8">
@@ -94,7 +127,7 @@ export function Footer() {
         </div>
       </div>
 
-      <Container className="flex flex-col items-center justify-between gap-4 py-8 text-sm text-ss-muted sm:flex-row">
+      <Container className="relative flex flex-col items-center justify-between gap-4 py-8 text-sm text-ss-muted sm:flex-row">
         <p>
           © {year} {siteConfig.name}. All rights reserved.
         </p>

@@ -1,6 +1,9 @@
+"use client";
+
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
+import { useAiGuide } from "@/components/ai-guide/AiGuideContext";
 
 const trustPoints = [
   "Response within 24 hours",
@@ -9,9 +12,19 @@ const trustPoints = [
 ];
 
 export function ProjectCta() {
+  const { open } = useAiGuide();
+
   return (
-    <section className="border-t border-ss-border py-24 sm:py-32">
-      <Container className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
+    <section className="relative overflow-hidden border-t border-ss-border py-24 sm:py-32">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -right-24 bottom-[-40px] h-64 w-64 rounded-full opacity-[0.11] blur-[100px]"
+        style={{
+          background: "var(--ss-blue)",
+          animation: "drift 24s var(--ease-io, cubic-bezier(.4,0,.2,1)) infinite alternate",
+        }}
+      />
+      <Container className="relative grid grid-cols-1 items-center gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
         <Reveal>
           <p className="font-mono text-xs uppercase tracking-[0.25em] text-ss-teal">
             Get Started
@@ -46,11 +59,11 @@ export function ProjectCta() {
             Not sure where to start?
           </p>
           <p className="mt-2 text-sm text-ss-muted">
-            Let&apos;s simplify it. Talk to us directly — we&apos;re here to
-            help.
+            Answer a few quick questions and we&apos;ll point you to the right
+            service.
           </p>
-          <Button href="/contact" className="mt-6 w-full justify-center">
-            Talk to Us <span aria-hidden>→</span>
+          <Button onClick={open} className="mt-6 w-full justify-center">
+            Try Our AI Guide <span aria-hidden>→</span>
           </Button>
         </Reveal>
       </Container>

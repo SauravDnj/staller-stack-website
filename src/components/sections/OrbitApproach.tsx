@@ -27,6 +27,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { IconTile, type IconTileColor } from "@/components/ui/IconTile";
+import { AmbientVisual } from "@/components/ui/AmbientVisual";
 import { approachTabs, orbitNodesByTab, type ApproachTab } from "@/content/approach";
 
 const NODE_ICONS: Record<string, IconType> = {
@@ -228,8 +229,13 @@ export function OrbitApproach() {
   const active = approachTabs.find((t) => t.key === activeKey) ?? approachTabs[0];
 
   return (
-    <section id="approach" className="py-24 sm:py-32">
-      <Container>
+    <section id="approach" className="relative overflow-hidden py-24 sm:py-32">
+      <AmbientVisual
+        visual="orbit"
+        color="var(--ss-teal)"
+        className="right-[-60px] top-8 hidden h-72 w-72 opacity-[0.35] lg:block"
+      />
+      <Container className="relative">
         <Reveal>
           <SectionHeading
             eyebrow="Our Approach"

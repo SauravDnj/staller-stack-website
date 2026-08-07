@@ -69,8 +69,24 @@ export function PortfolioPreview() {
   }
 
   return (
-    <section id="portfolio" className="py-24 sm:py-32">
-      <Container>
+    <section id="portfolio" className="relative overflow-hidden py-24 sm:py-32">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -left-20 top-0 h-60 w-60 rounded-full opacity-[0.1] blur-[95px]"
+        style={{
+          background: "var(--ss-amber)",
+          animation: "drift 22s var(--ease-io, cubic-bezier(.4,0,.2,1)) infinite alternate",
+        }}
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -right-16 top-24 h-52 w-52 rounded-full opacity-[0.1] blur-[90px]"
+        style={{
+          background: "var(--ss-blue)",
+          animation: "drift 28s var(--ease-io, cubic-bezier(.4,0,.2,1)) infinite alternate-reverse",
+        }}
+      />
+      <Container className="relative">
         <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <Reveal>
             <SectionHeading

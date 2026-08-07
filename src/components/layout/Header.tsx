@@ -94,16 +94,44 @@ export function Header() {
           : "border-transparent bg-transparent"
       }`}
     >
-      <Container className="flex h-20 items-center justify-between">
-        <Link href="/" className="flex items-center" aria-label={siteConfig.name}>
+      <div
+        aria-hidden
+        className={`pointer-events-none absolute inset-x-0 top-0 h-20 overflow-hidden transition-opacity duration-500 ${
+          isScrolled || openMenu ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_100%_at_15%_0%,_color-mix(in_srgb,var(--ss-teal)_22%,transparent),_transparent_70%)]" />
+        <div
+          className="bg-grid-animate absolute inset-0 opacity-40"
+          style={{
+            maskImage:
+              "linear-gradient(to right, transparent, black 15%, black 85%, transparent)",
+            WebkitMaskImage:
+              "linear-gradient(to right, transparent, black 15%, black 85%, transparent)",
+          }}
+        />
+        <div
+          className="absolute -right-10 -top-16 h-40 w-40 rounded-full opacity-20 blur-3xl"
+          style={{
+            background: "var(--ss-teal)",
+            animation: "drift 18s var(--ease-io, cubic-bezier(.4,0,.2,1)) infinite alternate",
+          }}
+        />
+      </div>
+
+      <Container className="relative flex h-20 items-center justify-between">
+        <Link href="/" className="flex items-center gap-2.5" aria-label={siteConfig.name}>
           <Image
-            src="/images/logos/logo-light-text.webp"
-            alt={siteConfig.name}
-            width={220}
-            height={62}
+            src="/images/logos/logo-icon.png"
+            alt=""
+            width={40}
+            height={40}
             priority
-            className="h-9 w-auto sm:h-10"
+            className="h-9 w-9 sm:h-10 sm:w-10"
           />
+          <span className="font-display text-lg font-semibold tracking-wide text-ss-text sm:text-xl">
+            Staller <span className="text-ss-teal">Stack</span>
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">

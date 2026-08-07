@@ -80,7 +80,8 @@ export function HeroTerminal() {
       <div
         className="pointer-events-none absolute -inset-10 rounded-[2rem] opacity-60 blur-2xl"
         style={{
-          background: "radial-gradient(circle, rgba(45,212,191,0.25), transparent 70%)",
+          background:
+            "radial-gradient(circle, color-mix(in srgb, var(--ss-teal) 25%, transparent), transparent 70%)",
         }}
       />
 
