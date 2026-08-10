@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
@@ -36,6 +37,33 @@ export function ServiceHero({ service }: { service: Service }) {
   const isDiagonal = heroVariant === "diagonal";
   const isCentered = heroVariant === "centered";
 
+  const photoPanel = (
+    <div
+      className="relative h-full w-full overflow-hidden rounded-3xl border bg-ss-surface/30"
+      style={{ borderColor: `color-mix(in srgb, ${color} 45%, transparent)` }}
+    >
+      <Image
+        src={service.image}
+        alt={service.imageAlt}
+        fill
+        sizes="(min-width: 1024px) 40vw, 100vw"
+        className="object-cover"
+        priority
+      />
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background: `linear-gradient(180deg, transparent 40%, color-mix(in srgb, ${color} 35%, var(--ss-base) 65%) 100%)`,
+        }}
+      />
+      {showCanvas && (
+        <div className="pointer-events-none absolute inset-0 opacity-60 mix-blend-screen">
+          <Visual color={color} paused={!showCanvas} />
+        </div>
+      )}
+    </div>
+  );
+
   return (
     <section
       ref={sectionRef}
@@ -43,12 +71,29 @@ export function ServiceHero({ service }: { service: Service }) {
     >
       {isDiagonal && (
         <div
-          className="pointer-events-none absolute inset-y-0 right-0 w-[65%] opacity-[0.16]"
-          style={{
-            background: `linear-gradient(135deg, ${color}, transparent 70%)`,
-            clipPath: "polygon(30% 0, 100% 0, 100% 100%, 0% 100%)",
-          }}
-        />
+          className="pointer-events-none absolute inset-y-0 right-0 hidden w-[55%] lg:block"
+          style={{ clipPath: "polygon(22% 0, 100% 0, 100% 100%, 0% 100%)" }}
+        >
+          <Image
+            src={service.image}
+            alt={service.imageAlt}
+            fill
+            sizes="55vw"
+            className="object-cover opacity-40"
+            priority
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background: `linear-gradient(115deg, var(--ss-base) 0%, transparent 35%, color-mix(in srgb, ${color} 30%, transparent) 100%)`,
+            }}
+          />
+          {showCanvas && (
+            <div className="pointer-events-none absolute inset-0 opacity-70">
+              <Visual color={color} paused={!showCanvas} />
+            </div>
+          )}
+        </div>
       )}
       <div
         className="pointer-events-none absolute inset-0 opacity-70"
@@ -56,14 +101,8 @@ export function ServiceHero({ service }: { service: Service }) {
           background: `radial-gradient(ellipse at top, color-mix(in srgb, ${color} 18%, transparent), transparent 60%)`,
         }}
       />
-      {showCanvas && (
-        <div
-          className={
-            isSplit
-              ? "pointer-events-none absolute inset-y-0 right-0 hidden w-1/2 opacity-70 lg:block"
-              : "pointer-events-none absolute inset-0 opacity-60"
-          }
-        >
+      {!isSplit && !isDiagonal && showCanvas && (
+        <div className="pointer-events-none absolute inset-0 opacity-60">
           <Visual color={color} paused={!showCanvas} />
         </div>
       )}
@@ -105,13 +144,17 @@ export function ServiceHero({ service }: { service: Service }) {
                 </div>
               </div>
             </Reveal>
+            {isCentered && (
+              <Reveal delay={0.15}>
+                <div className="relative mx-auto mt-12 aspect-[16/9] w-full max-w-xl">
+                  {photoPanel}
+                </div>
+              </Reveal>
+            )}
           </div>
           {isSplit && (
             <div className="relative mt-12 hidden aspect-square items-center justify-center lg:mt-0 lg:flex">
-              <div
-                className="h-full w-full rounded-3xl border bg-ss-surface/30 backdrop-blur-sm"
-                style={{ borderColor: `color-mix(in srgb, ${color} 45%, transparent)` }}
-              />
+              {photoPanel}
             </div>
           )}
         </div>

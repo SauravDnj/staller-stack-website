@@ -6,7 +6,8 @@ import { IndustryIcon } from "@/components/ui/IndustryIcon";
 import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
 import { PageHeader } from "@/components/sections/PageHeader";
 import { CtaBanner } from "@/components/sections/CtaBanner";
-import { industries } from "@/content/industries";
+import { DEFAULT_INDUSTRY_THEME, industries } from "@/content/industries";
+import { ACCENT_CLASSES } from "@/lib/accentTheme";
 
 export const metadata: Metadata = {
   title: "Industries | Staller Stack",
@@ -26,26 +27,32 @@ export default function IndustriesPage() {
       <section className="pb-24 sm:pb-32">
         <Container>
           <RevealGroup className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {industries.map((industry) => (
-              <RevealItem key={industry.slug}>
-                <Link href={`/industries/${industry.slug}`}>
-                  <TiltCard className="h-full">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-ss-border bg-ss-base">
-                      <IndustryIcon icon={industry.icon} />
-                    </div>
-                    <h2 className="mt-6 font-display text-xl font-semibold text-ss-text">
-                      {industry.name}
-                    </h2>
-                    <p className="mt-3 text-sm text-ss-muted">
-                      {industry.description}
-                    </p>
-                    <span className="mt-6 inline-block font-display text-sm text-ss-teal">
-                      Learn more →
-                    </span>
-                  </TiltCard>
-                </Link>
-              </RevealItem>
-            ))}
+            {industries.map((industry) => {
+              const { accent } = industry.theme ?? DEFAULT_INDUSTRY_THEME;
+              const accentClasses = ACCENT_CLASSES[accent];
+              return (
+                <RevealItem key={industry.slug}>
+                  <Link href={`/industries/${industry.slug}`}>
+                    <TiltCard className="h-full" accent={accent}>
+                      <div
+                        className={`flex h-12 w-12 items-center justify-center rounded-xl border bg-ss-base transition-colors duration-300 ${accentClasses.hoverBorder}`}
+                      >
+                        <IndustryIcon icon={industry.icon} />
+                      </div>
+                      <h2 className="mt-6 font-display text-xl font-semibold text-ss-text">
+                        {industry.name}
+                      </h2>
+                      <p className="mt-3 text-sm text-ss-muted">
+                        {industry.description}
+                      </p>
+                      <span className={`mt-6 inline-block font-display text-sm ${accentClasses.text}`}>
+                        Learn more →
+                      </span>
+                    </TiltCard>
+                  </Link>
+                </RevealItem>
+              );
+            })}
           </RevealGroup>
         </Container>
       </section>

@@ -15,6 +15,8 @@ import { LiveConsole } from "@/components/sections/LiveConsole";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { ProjectCta } from "@/components/sections/ProjectCta";
+import { ContactSection } from "@/components/sections/ContactSection";
+import { ContactPopup } from "@/components/sections/ContactPopup";
 import { SectionNavDock } from "@/components/SectionNavDock";
 
 export default function Home() {
@@ -38,6 +40,8 @@ export default function Home() {
       <Testimonials />
       <CtaBanner />
       <ProjectCta />
+      <ContactSection />
+      <ContactPopup />
     </>
   );
 }

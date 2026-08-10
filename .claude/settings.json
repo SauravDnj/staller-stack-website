@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node _process-logo.js)",
+      "Bash(cp \"public/images/logos/logo-icon.png\" \"src/app/icon.png\")",
+      "Bash(cp \"public/images/logos/_apple-icon-180.png\" \"src/app/apple-icon.png\")",
+      "Bash(rm \"public/images/logos/_favicon-64.png\" \"public/images/logos/_apple-icon-180.png\" \"_process-logo.js\")",
+      "Bash(rm \"public/images/logos/logo-dark-text.webp\" \"public/images/logos/logo-full-dark.svg\" \"public/images/logos/logo-icon.webp\" \"public/images/logos/logo-light-text.webp\")",
+      "Bash(npx tsc *)",
+      "Bash(npx eslint *)",
+      "PowerShell(Get-NetTCPConnection -State Listen | Where-Object { $_.LocalPort -in 3000,3001 } | Select-Object LocalPort, OwningProcess)",
+      "PowerShell(npm run dev)",
+      "PowerShell(Get-NetTCPConnection -State Listen -ErrorAction SilentlyContinue | Where-Object { $_.LocalPort -in 3000,3001,3002,3003 } | Select-Object LocalPort, OwningProcess)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:4123/industries/healthcare\" -UseBasicParsing -TimeoutSec 120; \"healthcare -> $\\($r.StatusCode\\) len=$\\($r.Content.Length\\)\" } catch { \"ERR: $\\($_.Exception.Message\\)\" })"
+    ]
+  }
+}

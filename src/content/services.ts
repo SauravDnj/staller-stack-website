@@ -9,6 +9,8 @@ export type Service = {
   intro: string;
   bullets: string[];
   icon: "code" | "cloud" | "shield" | "brain" | "cpu" | "smartphone" | "layers" | "database" | "users";
+  image: string;
+  imageAlt: string;
   theme: { accent: AccentKey; visual: VisualKey; heroVariant: HeroVariant };
   stats: { label: string; value: string }[];
   process: { title: string; description: string }[];
@@ -33,6 +35,8 @@ export const services: Service[] = [
       "MLOps Pipeline Deployment",
     ],
     icon: "brain",
+    image: "/images/stallerstack/services/ai-ml-solutions.jpg",
+    imageAlt: "Predictive analytics dashboard with charts and graphs on a laptop screen",
     theme: { accent: "indigo", visual: "mesh", heroVariant: "centered" },
     stats: [
       { label: "Avg. Model Accuracy Lift", value: "27%" },
@@ -147,6 +151,8 @@ export const services: Service[] = [
       "Evaluation, Guardrails & Monitoring",
     ],
     icon: "cpu",
+    image: "/images/stallerstack/services/ai-agent-model-training.jpg",
+    imageAlt: "Black and white robot toy representing an AI agent",
     theme: { accent: "cyan", visual: "orbit", heroVariant: "split" },
     stats: [
       { label: "Avg. Task Automation Rate", value: "60%" },
@@ -261,6 +267,8 @@ export const services: Service[] = [
       "Ongoing OS & Dependency Maintenance",
     ],
     icon: "smartphone",
+    image: "/images/stallerstack/services/mobile-app-development.jpg",
+    imageAlt: "A hand holding up a smartphone displaying an app interface",
     theme: { accent: "mint", visual: "pulse", heroVariant: "diagonal" },
     stats: [
       { label: "Apps Shipped", value: "50+" },
@@ -373,6 +381,8 @@ export const services: Service[] = [
       "Ongoing Performance & Security Patching",
     ],
     icon: "code",
+    image: "/images/stallerstack/services/web-development.jpg",
+    imageAlt: "Developer working across three monitors displaying code",
     theme: { accent: "teal", visual: "wave", heroVariant: "centered" },
     stats: [
       { label: "Avg. Lighthouse Score", value: "95+" },
@@ -486,6 +496,8 @@ export const services: Service[] = [
       "24/7 Monitoring & Auto-Scaling",
     ],
     icon: "cloud",
+    image: "/images/stallerstack/services/cloud-devops.jpg",
+    imageAlt: "Close-up view of an illuminated server room",
     theme: { accent: "blue", visual: "orbit", heroVariant: "split" },
     stats: [
       { label: "Migrations Completed", value: "30+" },
@@ -600,6 +612,8 @@ export const services: Service[] = [
       "Legacy System Modernization",
     ],
     icon: "layers",
+    image: "/images/stallerstack/services/software-development.jpg",
+    imageAlt: "A coder's workspace filled with code on screen and keyboards",
     theme: { accent: "indigo", visual: "mesh", heroVariant: "diagonal" },
     stats: [
       { label: "Custom Platforms Delivered", value: "45+" },
@@ -711,6 +725,8 @@ export const services: Service[] = [
       "Custom Reporting & Approval Workflows",
     ],
     icon: "database",
+    image: "/images/stallerstack/services/erp-custom-software.jpg",
+    imageAlt: "Two businesspeople shaking hands outside a modern office building",
     theme: { accent: "amber", visual: "wave", heroVariant: "centered" },
     stats: [
       { label: "ERP Modules Delivered", value: "Finance to HR" },
@@ -823,6 +839,8 @@ export const services: Service[] = [
       "Email, Calendar & VoIP Integrations",
     ],
     icon: "users",
+    image: "/images/stallerstack/services/crm-custom-software.jpg",
+    imageAlt: "Smiling customer support agent wearing a headset at a computer",
     theme: { accent: "mint", visual: "pulse", heroVariant: "split" },
     stats: [
       { label: "CRMs Delivered", value: "25+" },
@@ -935,6 +953,8 @@ export const services: Service[] = [
       "Zero-Trust Architecture Design",
     ],
     icon: "shield",
+    image: "/images/stallerstack/services/security-compliance.jpg",
+    imageAlt: "Red padlock resting on a black computer keyboard",
     theme: { accent: "cyan", visual: "orbit", heroVariant: "diagonal" },
     stats: [
       { label: "Vulnerabilities Remediated", value: "500+" },
