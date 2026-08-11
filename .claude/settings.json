@@ -11,7 +11,8 @@
       "PowerShell(Get-NetTCPConnection -State Listen | Where-Object { $_.LocalPort -in 3000,3001 } | Select-Object LocalPort, OwningProcess)",
       "PowerShell(npm run dev)",
       "PowerShell(Get-NetTCPConnection -State Listen -ErrorAction SilentlyContinue | Where-Object { $_.LocalPort -in 3000,3001,3002,3003 } | Select-Object LocalPort, OwningProcess)",
-      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:4123/industries/healthcare\" -UseBasicParsing -TimeoutSec 120; \"healthcare -> $\\($r.StatusCode\\) len=$\\($r.Content.Length\\)\" } catch { \"ERR: $\\($_.Exception.Message\\)\" })"
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:4123/industries/healthcare\" -UseBasicParsing -TimeoutSec 120; \"healthcare -> $\\($r.StatusCode\\) len=$\\($r.Content.Length\\)\" } catch { \"ERR: $\\($_.Exception.Message\\)\" })",
+      "PowerShell(npx next dev -p 3010)"
     ]
   }
 }

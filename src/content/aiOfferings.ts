@@ -1,3 +1,5 @@
+import type { AccentKey, VisualKey, HeroVariant } from "@/content/services";
+
 export type AiOfferingCategory = "service" | "solution";
 
 export type AiOffering = {
@@ -6,6 +8,17 @@ export type AiOffering = {
   description: string;
   icon: string;
   category: AiOfferingCategory;
+  intro: string;
+  image: string;
+  imageAlt: string;
+  theme: { accent: AccentKey; visual: VisualKey; heroVariant: HeroVariant };
+  stats: { label: string; value: string }[];
+  process: { title: string; description: string }[];
+  deliverables: string[];
+  engagementModel: { title: string; description: string }[];
+  techStack: { category: string; items: string[] }[];
+  faqs: { question: string; answer: string }[];
+  seo: { metaTitle: string; metaDescription: string; keywords: string[] };
 };
 
 export const aiServices: AiOffering[] = [
@@ -15,6 +28,50 @@ export const aiServices: AiOffering[] = [
     description: "Intelligent AI solutions built for automation, insights, and business growth.",
     icon: "brain",
     category: "service",
+    intro:
+      "Our core AI practice covers the full range of machine learning, NLP, computer vision, and generative AI disciplines — scoped around a specific business outcome rather than a generic technology label. We help you decide what kind of AI actually fits the problem, then build it end to end.",
+    image: "/images/stallerstack/build-with-ai/artificial-intelligence.jpg",
+    imageAlt: "Circuit board pattern overlaid with a human brain silhouette",
+    theme: { accent: "cyan", visual: "orbit", heroVariant: "centered" },
+    stats: [
+      { label: "AI Engagements Delivered", value: "60+" },
+      { label: "Disciplines Covered", value: "6" },
+      { label: "Avg. Discovery Sprint", value: "2 wks" },
+      { label: "Production Uptime", value: "99.9%" },
+    ],
+    process: [
+      { title: "Opportunity Mapping", description: "We audit your workflows and data to find where AI creates measurable value, not just novelty." },
+      { title: "Approach Selection", description: "We recommend the right technique — ML, LLM, CV, or a hybrid — instead of forcing one tool everywhere." },
+      { title: "Build & Integrate", description: "The solution is built, tested against real data, and wired into your existing systems." },
+      { title: "Support & Iterate", description: "We monitor performance post-launch and iterate as your data and requirements evolve." },
+    ],
+    deliverables: [
+      "AI opportunity assessment and roadmap",
+      "Working solution matched to the chosen approach",
+      "Integration into existing tools and workflows",
+      "Documentation and internal enablement session",
+      "Post-launch monitoring plan",
+    ],
+    engagementModel: [
+      { title: "Discovery Sprint", description: "A 1-2 week assessment to identify the highest-value AI opportunities in your business and recommend an approach." },
+      { title: "Build Engagement", description: "Project-based delivery of the chosen AI solution, from prototype through production deployment." },
+      { title: "Ongoing Partnership", description: "A monthly retainer for monitoring, retraining, and expanding AI capability as new use cases emerge." },
+    ],
+    techStack: [
+      { category: "Core AI", items: ["Python", "TensorFlow", "PyTorch", "OpenAI API"] },
+      { category: "Data & Infra", items: ["PostgreSQL", "Docker", "Kubernetes", "AWS"] },
+    ],
+    faqs: [
+      { question: "We don't know what kind of AI we need — can you help us figure that out?", answer: "Yes, that's exactly what the discovery sprint is for. We look at your data and workflows first, then recommend an approach rather than starting from a technology." },
+      { question: "Do you only build with a specific AI vendor?", answer: "No — we work across OpenAI, Anthropic, open-source models, and classical ML depending on what fits your cost, latency, and data-privacy constraints." },
+      { question: "How is this different from your other AI services?", answer: "This is the umbrella entry point. If you already know you need agents, a chatbot, or computer vision specifically, jump straight to that service page." },
+      { question: "Can you work with our existing data science team?", answer: "Yes — we regularly augment in-house teams rather than replacing them, especially for MLOps and production engineering." },
+    ],
+    seo: {
+      metaTitle: "Artificial Intelligence Development Services | Staller Stack",
+      metaDescription: "End-to-end AI development — machine learning, NLP, computer vision, and generative AI solutions scoped to your business outcomes and built for production.",
+      keywords: ["artificial intelligence services", "AI development company", "custom AI solutions", "enterprise AI development"],
+    },
   },
   {
     slug: "agentic-ai",
@@ -22,6 +79,50 @@ export const aiServices: AiOffering[] = [
     description: "Autonomous AI systems designed to plan, decide, and execute tasks.",
     icon: "robot",
     category: "service",
+    intro:
+      "Agentic AI systems don't just respond — they plan a sequence of steps, call tools, and adapt when something fails. We design multi-step agents with real guardrails: scoped permissions, human-in-the-loop checkpoints, and full execution traces so autonomy never means loss of control.",
+    image: "/images/stallerstack/build-with-ai/agentic-ai.jpg",
+    imageAlt: "Blue industrial robot arm operating on a factory production line",
+    theme: { accent: "indigo", visual: "mesh", heroVariant: "split" },
+    stats: [
+      { label: "Avg. Task Completion Rate", value: "92%" },
+      { label: "Tool Integrations Supported", value: "20+" },
+      { label: "Typical Engagement", value: "6-10 wks" },
+      { label: "Human Escalation Paths", value: "Built-in" },
+    ],
+    process: [
+      { title: "Task Decomposition", description: "We map the target workflow into discrete steps an agent can reliably plan and execute." },
+      { title: "Tool & Permission Design", description: "Every action the agent can take is scoped to a specific tool with explicit permission boundaries." },
+      { title: "Agent Build & Evaluation", description: "We build the planning loop and run it against real scenarios, including failure and edge cases." },
+      { title: "Guardrails & Launch", description: "Human-in-the-loop checkpoints and execution logging are added before the agent goes live." },
+    ],
+    deliverables: [
+      "Multi-step agent with defined tool access",
+      "Execution trace and audit logging",
+      "Human-in-the-loop escalation flow",
+      "Evaluation suite covering common failure modes",
+      "Deployment and monitoring setup",
+    ],
+    engagementModel: [
+      { title: "Feasibility Pilot", description: "A scoped 2-3 week pilot to prove the agent can complete the target workflow reliably before further investment." },
+      { title: "Production Build", description: "Full agent development with tool integrations, guardrails, and monitoring — typically 6-10 weeks." },
+      { title: "Ongoing Tuning", description: "Monthly retainer to refine prompts, add tools, and improve task completion rates as usage grows." },
+    ],
+    techStack: [
+      { category: "Agent Frameworks", items: ["LangGraph", "LangChain", "OpenAI API", "Anthropic API"] },
+      { category: "Infra", items: ["Python", "Redis", "Docker", "PostgreSQL"] },
+    ],
+    faqs: [
+      { question: "How do you stop an agent from taking unwanted actions?", answer: "Every tool call is explicitly scoped and permissioned, and high-risk actions route through a human approval step by default." },
+      { question: "What's the difference between Agentic AI and your AI Agents service?", answer: "Agentic AI focuses on the underlying planning and tool-use architecture; AI Agents refers to the deliverable — a specific agent built for a task, often using this architecture." },
+      { question: "Can an agent call our internal APIs?", answer: "Yes — we wrap internal systems as tools with authentication and rate limits so agents interact with them safely." },
+      { question: "What happens when the agent gets stuck?", answer: "We build explicit failure paths — the agent either retries with a different strategy or escalates to a human rather than looping silently." },
+    ],
+    seo: {
+      metaTitle: "Agentic AI Development Services | Staller Stack",
+      metaDescription: "Multi-step, tool-using AI agents built with LangGraph and production guardrails — planning, execution, and human-in-the-loop escalation included.",
+      keywords: ["agentic AI development", "AI agent architecture", "autonomous AI agents", "LangGraph development"],
+    },
   },
   {
     slug: "generative-ai",
@@ -29,6 +130,50 @@ export const aiServices: AiOffering[] = [
     description: "Generative AI solutions for content creation, automation, and smarter workflows.",
     icon: "sparkles",
     category: "service",
+    intro:
+      "From drafting and summarizing to generating structured data and code, generative AI can absorb a meaningful share of repetitive creative and analytical work — if the output is grounded, reviewed, and integrated into a real workflow instead of a standalone demo.",
+    image: "/images/stallerstack/build-with-ai/generative-ai.jpg",
+    imageAlt: "Abstract colorful pixelated digital artwork",
+    theme: { accent: "teal", visual: "wave", heroVariant: "diagonal" },
+    stats: [
+      { label: "Avg. Time Saved on Drafting", value: "60%" },
+      { label: "Content Types Supported", value: "10+" },
+      { label: "Typical Engagement", value: "4-8 wks" },
+      { label: "Human Review Step", value: "Always On" },
+    ],
+    process: [
+      { title: "Use Case Scoping", description: "We identify which content or output types are worth automating and what quality bar they must hit." },
+      { title: "Prompt & Pipeline Design", description: "We design prompts, retrieval context, and structured output formats tailored to your content." },
+      { title: "Workflow Integration", description: "Generation is wired into your CMS, docs, or app so outputs land where people already work." },
+      { title: "Quality Loop", description: "We add review checkpoints and feedback capture to keep output quality improving over time." },
+    ],
+    deliverables: [
+      "Generation pipeline for the target content type",
+      "Prompt library with versioning",
+      "Workflow integration into existing tools",
+      "Human review and feedback loop",
+      "Usage and quality monitoring dashboard",
+    ],
+    engagementModel: [
+      { title: "Pilot Sprint", description: "A 2-3 week sprint generating real content samples so you can judge quality before wider rollout." },
+      { title: "Production Build", description: "Full pipeline build with workflow integration and review tooling — typically 4-8 weeks." },
+      { title: "Ongoing Optimization", description: "Monthly retainer to tune prompts and expand coverage as new content types come up." },
+    ],
+    techStack: [
+      { category: "Generation", items: ["OpenAI API", "Anthropic API", "LangChain", "Hugging Face"] },
+      { category: "Delivery", items: ["Next.js", "Node.js", "PostgreSQL"] },
+    ],
+    faqs: [
+      { question: "Will generated content sound generic?", answer: "Not if it's grounded in your voice and data — we fine-tune prompts and retrieval context against your existing content, not a blank template." },
+      { question: "How do you handle factual accuracy?", answer: "We ground generation with retrieval where facts matter, and always keep a human review step before publish for anything customer-facing." },
+      { question: "Can this generate structured data, not just text?", answer: "Yes — structured JSON, code, and data transformations are common generative AI use cases we build for." },
+      { question: "Is this different from RAG Solutions?", answer: "Generative AI is about producing new content; RAG Solutions is specifically about answering questions accurately from your own knowledge base. They're often combined." },
+    ],
+    seo: {
+      metaTitle: "Generative AI Development Services | Staller Stack",
+      metaDescription: "Generative AI pipelines for content, code, and structured data — grounded, integrated into your workflow, and backed by a human review loop.",
+      keywords: ["generative AI development", "generative AI solutions", "AI content generation", "LLM content pipeline"],
+    },
   },
   {
     slug: "computer-vision",
@@ -36,6 +181,50 @@ export const aiServices: AiOffering[] = [
     description: "AI vision systems for image, video, and object analysis.",
     icon: "eye",
     category: "service",
+    intro:
+      "We build computer vision systems that turn images and video streams into structured, actionable data — detection, classification, segmentation, and tracking — deployed on cloud infrastructure or directly to edge hardware depending on your latency needs.",
+    image: "/images/stallerstack/build-with-ai/computer-vision.jpg",
+    imageAlt: "Close-up of a camera lens in selective focus",
+    theme: { accent: "indigo", visual: "mesh", heroVariant: "split" },
+    stats: [
+      { label: "Avg. Detection Accuracy", value: "94%" },
+      { label: "Inference Latency", value: "<100ms" },
+      { label: "Typical Engagement", value: "8-12 wks" },
+      { label: "Models Shipped to Edge", value: "15+" },
+    ],
+    process: [
+      { title: "Data Collection Audit", description: "We assess your existing image/video data and identify gaps that need labeling or collection." },
+      { title: "Model Selection & Training", description: "We train or fine-tune a vision model suited to your accuracy and latency requirements." },
+      { title: "Pipeline Engineering", description: "The model is wrapped in an inference pipeline that handles real camera or upload streams." },
+      { title: "Deployment & Monitoring", description: "We deploy to cloud or edge and monitor accuracy drift as conditions change." },
+    ],
+    deliverables: [
+      "Trained vision model with benchmark report",
+      "Inference API or edge deployment package",
+      "Labeled dataset and annotation guidelines",
+      "Monitoring dashboard for accuracy drift",
+      "Integration documentation",
+    ],
+    engagementModel: [
+      { title: "Proof of Concept", description: "A 2-3 week sprint training on a sample of your real images to validate feasibility before full build." },
+      { title: "Production Build", description: "Full pipeline development from data labeling through deployment — typically 8-12 weeks." },
+      { title: "Ongoing MLOps", description: "Monthly retainer for retraining as camera conditions, angles, or object classes change." },
+    ],
+    techStack: [
+      { category: "Vision Frameworks", items: ["PyTorch", "TensorFlow", "ONNX", "OpenAI API"] },
+      { category: "Deployment", items: ["Docker", "Kubernetes", "AWS", "Google Cloud"] },
+    ],
+    faqs: [
+      { question: "Do we need thousands of labeled images to start?", answer: "Often no — pretrained vision models can be fine-tuned on a few hundred well-chosen examples, and we help identify what to label first." },
+      { question: "Can this run on-device instead of the cloud?", answer: "Yes — see our Edge AI service for latency-sensitive or offline deployments; we optimize models specifically for that." },
+      { question: "What accuracy can we realistically expect?", answer: "It depends on image quality and object variability, but we set a realistic benchmark during the proof-of-concept before committing to production." },
+      { question: "How is this different from AI Object Detection?", answer: "Computer Vision is the broader capability — detection, classification, segmentation, OCR. AI Object Detection is a specific applied solution built on top of it." },
+    ],
+    seo: {
+      metaTitle: "Computer Vision Development Services | Staller Stack",
+      metaDescription: "Custom computer vision systems for detection, classification, and tracking — trained on your data and deployed to cloud or edge with monitored accuracy.",
+      keywords: ["computer vision development", "computer vision company", "image recognition AI", "video analysis AI"],
+    },
   },
   {
     slug: "nlp-development",
@@ -43,6 +232,50 @@ export const aiServices: AiOffering[] = [
     description: "Language AI solutions for text analysis, chat, and speech understanding.",
     icon: "language",
     category: "service",
+    intro:
+      "Natural language processing turns unstructured text and speech into structured signal — entities, sentiment, intent, summaries — that your systems can act on. We build NLP pipelines that hold up on messy real-world language, not clean benchmark datasets.",
+    image: "/images/stallerstack/build-with-ai/nlp-development.jpg",
+    imageAlt: "Close-up of an open book with text on the page",
+    theme: { accent: "blue", visual: "pulse", heroVariant: "centered" },
+    stats: [
+      { label: "Avg. Classification Accuracy", value: "91%" },
+      { label: "Languages Supported", value: "12+" },
+      { label: "Typical Engagement", value: "6-10 wks" },
+      { label: "Throughput", value: "1000s/min" },
+    ],
+    process: [
+      { title: "Text Data Audit", description: "We review sample text or speech data to understand structure, noise, and language coverage." },
+      { title: "Pipeline Design", description: "We select the right approach — classical NLP, fine-tuned transformer, or LLM — for accuracy and cost." },
+      { title: "Training & Evaluation", description: "The pipeline is trained and benchmarked against held-out real examples, not synthetic ones." },
+      { title: "Integration & Scaling", description: "We deploy as an API and load-test it against your expected volume." },
+    ],
+    deliverables: [
+      "NLP pipeline for the target task (extraction, classification, summarization, etc.)",
+      "Evaluation report with accuracy benchmarks",
+      "Production API endpoint",
+      "Monitoring for accuracy and latency",
+      "Technical handover documentation",
+    ],
+    engagementModel: [
+      { title: "Proof of Concept", description: "A 2-week sprint validating accuracy on your real text samples before committing to production." },
+      { title: "Production Build", description: "Full pipeline engineering and deployment — typically 6-10 weeks depending on scope." },
+      { title: "Ongoing Retainer", description: "Monthly monitoring and retraining as language patterns or business categories shift." },
+    ],
+    techStack: [
+      { category: "NLP", items: ["Hugging Face", "OpenAI API", "Python", "LangChain"] },
+      { category: "Infra", items: ["PostgreSQL", "Elasticsearch", "Docker", "AWS"] },
+    ],
+    faqs: [
+      { question: "Can this handle languages other than English?", answer: "Yes — we've shipped multilingual pipelines using both fine-tuned multilingual models and LLM-based approaches, depending on accuracy needs." },
+      { question: "What's the difference between this and AI Chatbot?", answer: "NLP Development covers underlying text understanding tasks; AI Chatbot is a specific conversational product often built using NLP components." },
+      { question: "Can it process speech, not just text?", answer: "Yes — speech-to-text transcription is commonly paired with downstream NLP for call and voice analysis use cases." },
+      { question: "How do you handle domain-specific jargon?", answer: "We fine-tune or add domain glossaries and examples so the model correctly interprets industry-specific terms rather than generic language." },
+    ],
+    seo: {
+      metaTitle: "NLP Development Services | Staller Stack",
+      metaDescription: "Custom NLP pipelines for text classification, entity extraction, summarization, and speech understanding — built and benchmarked on your real data.",
+      keywords: ["NLP development services", "natural language processing company", "text analysis AI", "speech recognition AI"],
+    },
   },
   {
     slug: "ai-chatbot",
@@ -50,6 +283,50 @@ export const aiServices: AiOffering[] = [
     description: "Smart AI chatbots for customer support, sales, and user engagement.",
     icon: "chatbot",
     category: "service",
+    intro:
+      "We build conversational AI chatbots that actually resolve requests — grounded in your knowledge base, connected to your systems for real actions, and handed off cleanly to a human when the conversation needs one.",
+    image: "/images/stallerstack/build-with-ai/ai-chatbot.jpg",
+    imageAlt: "The ChatGPT app open on a smartphone screen",
+    theme: { accent: "mint", visual: "orbit", heroVariant: "split" },
+    stats: [
+      { label: "Avg. First-Contact Resolution", value: "68%" },
+      { label: "Channels Supported", value: "Web, WhatsApp, SMS" },
+      { label: "Typical Engagement", value: "4-8 wks" },
+      { label: "Avg. Response Time", value: "<2s" },
+    ],
+    process: [
+      { title: "Conversation Design", description: "We map the top request types and design flows that resolve them without dead ends." },
+      { title: "Knowledge Grounding", description: "The bot is connected to your docs, FAQs, and systems so answers are accurate, not hallucinated." },
+      { title: "Build & Handoff Logic", description: "We build the bot with clear escalation paths to a human agent when needed." },
+      { title: "Launch & Tune", description: "We monitor real conversations after launch and tune flows based on where users get stuck." },
+    ],
+    deliverables: [
+      "Deployed chatbot on your chosen channel(s)",
+      "Knowledge base integration and grounding",
+      "Human handoff and escalation flow",
+      "Conversation analytics dashboard",
+      "Ongoing tuning playbook",
+    ],
+    engagementModel: [
+      { title: "Pilot Bot", description: "A 2-3 week build covering your top 5-10 request types, launched to a limited audience first." },
+      { title: "Production Build", description: "Full chatbot covering your priority use cases with system integrations — typically 4-8 weeks." },
+      { title: "Ongoing Tuning Retainer", description: "Monthly review of transcripts and resolution rates to keep improving the bot's accuracy." },
+    ],
+    techStack: [
+      { category: "Conversational AI", items: ["OpenAI API", "Anthropic API", "LangChain", "Pinecone"] },
+      { category: "Channels & Infra", items: ["Twilio", "Node.js", "PostgreSQL"] },
+    ],
+    faqs: [
+      { question: "Will it just make things up when it doesn't know an answer?", answer: "No — we ground responses in your actual documentation and configure the bot to say it doesn't know and escalate, rather than guess." },
+      { question: "Can it take real actions, like checking an order status?", answer: "Yes — we connect the bot to your backend systems through authenticated tools so it can look up and act on real data." },
+      { question: "Which channels can it run on?", answer: "Website widget, WhatsApp, SMS, and Slack/Teams are all common — we scope channels during conversation design." },
+      { question: "How does this differ from AI Voice Agent?", answer: "AI Chatbot handles text-based conversations; AI Voice Agent handles phone calls with speech recognition and synthesis." },
+    ],
+    seo: {
+      metaTitle: "AI Chatbot Development Services | Staller Stack",
+      metaDescription: "Custom AI chatbots grounded in your knowledge base with real system integrations, clean human handoff, and measurable resolution rates.",
+      keywords: ["AI chatbot development", "custom chatbot company", "customer support chatbot", "conversational AI development"],
+    },
   },
   {
     slug: "ai-consulting",
@@ -57,6 +334,50 @@ export const aiServices: AiOffering[] = [
     description: "Expert AI consulting to plan, validate, and implement AI solutions.",
     icon: "bulb",
     category: "service",
+    intro:
+      "Before you commit budget to an AI build, it's worth an honest outside read on whether it will actually work, what it will cost, and how to sequence it. Our AI consulting engagements deliver a concrete roadmap, not a slide deck of buzzwords.",
+    image: "/images/stallerstack/build-with-ai/ai-consulting.jpg",
+    imageAlt: "Office worker presenting a marketing strategy on a whiteboard to colleagues",
+    theme: { accent: "mint", visual: "wave", heroVariant: "centered" },
+    stats: [
+      { label: "Roadmaps Delivered", value: "40+" },
+      { label: "Avg. Assessment Length", value: "2-3 wks" },
+      { label: "Vendor-Neutral", value: "Always" },
+      { label: "Follow-on Build Rate", value: "70%" },
+    ],
+    process: [
+      { title: "Current-State Assessment", description: "We review your data, systems, and team capability to understand what's realistic today." },
+      { title: "Opportunity Prioritization", description: "We rank potential AI use cases by expected impact versus effort and risk." },
+      { title: "Roadmap & Cost Model", description: "You get a phased roadmap with realistic timelines, cost ranges, and build-vs-buy recommendations." },
+      { title: "Build Handoff", description: "If you proceed, the roadmap becomes the scope for a build engagement — with us or your own team." },
+    ],
+    deliverables: [
+      "Current-state AI readiness assessment",
+      "Prioritized opportunity list with impact/effort scoring",
+      "Phased roadmap with cost ranges",
+      "Build-vs-buy recommendations per use case",
+      "Executive-ready summary presentation",
+    ],
+    engagementModel: [
+      { title: "Readiness Assessment", description: "A focused 1-2 week review of your data and systems to gauge what's realistically achievable." },
+      { title: "Strategy Engagement", description: "A 2-4 week deep dive producing a full prioritized roadmap and cost model." },
+      { title: "Advisory Retainer", description: "Ongoing monthly advisory as you execute the roadmap, whether in-house or with us." },
+    ],
+    techStack: [
+      { category: "Assessment Tools", items: ["Python", "Jupyter", "Power BI"] },
+      { category: "Delivery", items: ["Figma", "PostgreSQL"] },
+    ],
+    faqs: [
+      { question: "Are you going to just recommend your own build services?", answer: "The roadmap includes honest build-vs-buy calls, including off-the-shelf tools where they're genuinely the better fit." },
+      { question: "We already have a data science team — is this still useful?", answer: "Yes, we often work alongside existing teams to pressure-test priorities and provide an outside perspective on feasibility." },
+      { question: "What if the assessment concludes AI isn't the right fit yet?", answer: "That's a valid and common outcome — we'll tell you honestly if the data or process maturity isn't there yet, and what to fix first." },
+      { question: "How long until we see a roadmap?", answer: "Most readiness assessments and roadmaps are delivered within 2-4 weeks of kickoff." },
+    ],
+    seo: {
+      metaTitle: "AI Consulting & Strategy Services | Staller Stack",
+      metaDescription: "Vendor-neutral AI consulting — readiness assessments, prioritized roadmaps, and build-vs-buy guidance before you commit budget to an AI build.",
+      keywords: ["AI consulting services", "AI strategy consulting", "AI readiness assessment", "enterprise AI roadmap"],
+    },
   },
   {
     slug: "predictive-analytics",
@@ -64,6 +385,50 @@ export const aiServices: AiOffering[] = [
     description: "Data-driven analytics solutions for forecasting, trends, and business decisions.",
     icon: "chartline",
     category: "service",
+    intro:
+      "We build predictive models — demand forecasts, churn scores, risk ratings — that plug directly into the decisions your team already makes, with confidence intervals and monitoring so you know when to trust the number.",
+    image: "/images/stallerstack/build-with-ai/predictive-analytics.jpg",
+    imageAlt: "Trader analyzing stock market charts on a tablet and monitor",
+    theme: { accent: "indigo", visual: "mesh", heroVariant: "centered" },
+    stats: [
+      { label: "Avg. Forecast Accuracy Lift", value: "24%" },
+      { label: "Typical Engagement", value: "6-10 wks" },
+      { label: "Models in Production", value: "35+" },
+      { label: "Retraining Cadence", value: "Automated" },
+    ],
+    process: [
+      { title: "Data Assessment", description: "We audit historical data quality and volume to scope what forecasts are realistically achievable." },
+      { title: "Model Prototyping", description: "We train candidate models and validate them against held-out historical periods." },
+      { title: "Decision Integration", description: "The model's output is wired directly into the dashboard or workflow the decision gets made in." },
+      { title: "Monitoring & Retraining", description: "We track forecast error over time and retrain automatically as patterns shift." },
+    ],
+    deliverables: [
+      "Trained forecasting or scoring model",
+      "Accuracy benchmark report with confidence intervals",
+      "Dashboard or API integration",
+      "Automated retraining pipeline",
+      "Documentation of assumptions and limitations",
+    ],
+    engagementModel: [
+      { title: "Proof of Concept", description: "A 2-3 week sprint forecasting on historical data to validate accuracy before full build." },
+      { title: "Production Build", description: "Full model development and dashboard/API integration — typically 6-10 weeks." },
+      { title: "Ongoing MLOps Retainer", description: "Monthly monitoring and retraining as your business and data evolve." },
+    ],
+    techStack: [
+      { category: "Modeling", items: ["Python", "Scikit-learn", "Pandas", "NumPy"] },
+      { category: "MLOps", items: ["MLflow", "Apache Airflow", "PostgreSQL"] },
+    ],
+    faqs: [
+      { question: "How far in advance can predictions be made?", answer: "It depends on the signal-to-noise in your data — we validate the realistic forecast horizon during the proof-of-concept, not before." },
+      { question: "What if our historical data is incomplete?", answer: "We assess this upfront; gaps can often be handled, but we'll tell you honestly if the model's accuracy will be limited as a result." },
+      { question: "Can this feed into our existing BI dashboards?", answer: "Yes — we deliver forecasts as an API or scheduled export designed to plug into tools like Power BI or your data warehouse." },
+      { question: "How is this different from Machine Learning as a service?", answer: "Predictive Analytics is a specific applied use case — forecasting and scoring; Machine Learning covers the broader set of techniques including classification and clustering." },
+    ],
+    seo: {
+      metaTitle: "Predictive Analytics Services | Staller Stack",
+      metaDescription: "Custom forecasting and predictive scoring models with confidence intervals, dashboard integration, and automated retraining pipelines.",
+      keywords: ["predictive analytics services", "forecasting AI models", "predictive modeling company", "demand forecasting AI"],
+    },
   },
   {
     slug: "ai-agents",
@@ -71,6 +436,50 @@ export const aiServices: AiOffering[] = [
     description: "Custom AI agents that automate tasks and improve business productivity.",
     icon: "cpu",
     category: "service",
+    intro:
+      "AI Agents is where agentic architecture becomes a deployed product — a specific agent scoped to a specific job, whether that's triaging support tickets, qualifying leads, or reconciling records, running reliably in your stack every day.",
+    image: "/images/stallerstack/build-with-ai/ai-agents.jpg",
+    imageAlt: "Team collaborating around a computer in an office",
+    theme: { accent: "amber", visual: "mesh", heroVariant: "diagonal" },
+    stats: [
+      { label: "Avg. Task Volume Automated", value: "40%" },
+      { label: "Agents Shipped", value: "25+" },
+      { label: "Typical Engagement", value: "6-10 wks" },
+      { label: "Uptime SLA", value: "99.5%" },
+    ],
+    process: [
+      { title: "Job Definition", description: "We define exactly what task the agent owns and what 'done' looks like for that task." },
+      { title: "Tool Wiring", description: "We connect the agent to the systems it needs to read from and act on." },
+      { title: "Build & Test", description: "The agent is built and tested against real historical cases, including edge cases." },
+      { title: "Launch & Guard Rails", description: "We roll out with monitoring and a clear escalation path for anything outside its scope." },
+    ],
+    deliverables: [
+      "Production agent scoped to the defined task",
+      "System integrations for read/write actions",
+      "Escalation flow for out-of-scope cases",
+      "Monitoring dashboard and execution logs",
+      "Runbook for operating and updating the agent",
+    ],
+    engagementModel: [
+      { title: "Scoped Pilot", description: "A 2-3 week build targeting one task with a defined success metric before wider rollout." },
+      { title: "Production Build", description: "Full agent development with integrations and monitoring — typically 6-10 weeks." },
+      { title: "Ongoing Tuning", description: "Monthly retainer to expand scope and improve accuracy as the agent handles more volume." },
+    ],
+    techStack: [
+      { category: "Agent Stack", items: ["LangGraph", "OpenAI API", "Anthropic API", "Python"] },
+      { category: "Infra", items: ["Docker", "PostgreSQL", "Redis"] },
+    ],
+    faqs: [
+      { question: "How narrow should an agent's scope be?", answer: "Narrower than you'd think — we've found agents scoped to one clear job outperform broad 'do everything' agents on reliability." },
+      { question: "What happens if the agent makes a mistake?", answer: "Every agent ships with logging and an escalation path, so mistakes are caught and reviewable, not silently repeated." },
+      { question: "Can you build multiple agents that work together?", answer: "Yes — see our AI Agent Orchestrator solution for coordinating multiple specialized agents." },
+      { question: "Do you maintain the agent after launch?", answer: "We offer an ongoing tuning retainer, or hand over full documentation if you prefer to maintain it in-house." },
+    ],
+    seo: {
+      metaTitle: "Custom AI Agent Development | Staller Stack",
+      metaDescription: "Production-ready AI agents scoped to a specific task, wired into your systems, with monitoring and human escalation built in.",
+      keywords: ["AI agent development", "custom AI agents", "business process automation AI", "AI task automation"],
+    },
   },
   {
     slug: "ai-maintenance-support",
@@ -78,6 +487,50 @@ export const aiServices: AiOffering[] = [
     description: "Reliable AI support to monitor, improve, and maintain AI systems.",
     icon: "tool",
     category: "service",
+    intro:
+      "Every AI system degrades without attention — model drift, prompt regressions, upstream API changes. We take on the ongoing monitoring, retraining, and incident response so your AI stays accurate long after the initial launch.",
+    image: "/images/stallerstack/build-with-ai/ai-maintenance-support.jpg",
+    imageAlt: "Close-up of a hand typing on a computer keyboard",
+    theme: { accent: "cyan", visual: "wave", heroVariant: "centered" },
+    stats: [
+      { label: "Avg. Response to Drift Alert", value: "<4 hrs" },
+      { label: "Systems Under Support", value: "30+" },
+      { label: "Retraining Automation", value: "Built-in" },
+      { label: "Monthly Health Reports", value: "Included" },
+    ],
+    process: [
+      { title: "Baseline Audit", description: "We assess your current AI system's monitoring, documentation, and known failure modes." },
+      { title: "Monitoring Setup", description: "We instrument accuracy, latency, and cost tracking so drift is caught before it's a support ticket." },
+      { title: "Ongoing Operations", description: "We handle retraining, prompt updates, and dependency upgrades on a regular cadence." },
+      { title: "Incident Response", description: "When something breaks, we're the team that diagnoses and fixes it, with a defined SLA." },
+    ],
+    deliverables: [
+      "Monitoring and alerting for drift, latency, and cost",
+      "Scheduled retraining or prompt review cadence",
+      "Monthly health report",
+      "Incident response with defined SLA",
+      "Change log of updates and their impact",
+    ],
+    engagementModel: [
+      { title: "Support Retainer", description: "A monthly retainer covering monitoring, minor updates, and incident response for one or more AI systems." },
+      { title: "Retraining Package", description: "Scheduled model retraining cycles for systems with regularly changing data." },
+      { title: "On-Call SLA", description: "A defined response-time SLA for critical AI system incidents outside normal hours." },
+    ],
+    techStack: [
+      { category: "Monitoring", items: ["Prometheus", "Grafana", "MLflow"] },
+      { category: "Infra", items: ["Docker", "Kubernetes", "AWS"] },
+    ],
+    faqs: [
+      { question: "Do you support AI systems you didn't originally build?", answer: "Yes — we regularly take over maintenance for systems built by other teams after an onboarding audit." },
+      { question: "How do you catch model drift before users notice?", answer: "We instrument ongoing accuracy and confidence tracking against live data, with alerts when metrics move outside expected bounds." },
+      { question: "What's included in the monthly health report?", answer: "Accuracy trends, cost, latency, incident history, and recommended next actions — a clear picture of system health." },
+      { question: "Can this cover LLM-based systems, not just classical ML?", answer: "Yes — prompt regression testing and output quality monitoring are core parts of our LLM support offering." },
+    ],
+    seo: {
+      metaTitle: "AI Maintenance & Support Services | Staller Stack",
+      metaDescription: "Ongoing monitoring, retraining, and incident response for production AI systems — catch drift and regressions before they hit users.",
+      keywords: ["AI maintenance services", "AI support retainer", "model monitoring", "AI system reliability"],
+    },
   },
   {
     slug: "ai-app-development",
@@ -85,6 +538,50 @@ export const aiServices: AiOffering[] = [
     description: "AI-powered apps built for smarter user experiences and automation.",
     icon: "apps",
     category: "service",
+    intro:
+      "We build AI-native applications — where intelligence is the core product, not a bolt-on feature — from the first prototype through a production app with real users, backed by our full-stack web and mobile engineering team.",
+    image: "/images/stallerstack/build-with-ai/ai-app-development.jpg",
+    imageAlt: "Two people brainstorming with sticky notes on a wall",
+    theme: { accent: "indigo", visual: "pulse", heroVariant: "split" },
+    stats: [
+      { label: "AI Apps Shipped", value: "18+" },
+      { label: "Typical Engagement", value: "10-16 wks" },
+      { label: "Platforms", value: "Web & Mobile" },
+      { label: "Avg. Time to MVP", value: "6 wks" },
+    ],
+    process: [
+      { title: "Product & AI Scoping", description: "We define the core AI capability and how it drives the app's value, not just a feature list." },
+      { title: "Prototype", description: "A functional prototype validates the AI experience with real users early, before full build." },
+      { title: "Full-Stack Build", description: "We build the complete application — frontend, backend, and the AI pipeline — as one cohesive product." },
+      { title: "Launch & Iterate", description: "We ship, monitor usage and AI performance together, and iterate based on real behavior." },
+    ],
+    deliverables: [
+      "Production web and/or mobile application",
+      "Integrated AI pipeline powering the core feature",
+      "User analytics and AI performance dashboard",
+      "Source code and deployment documentation",
+      "Post-launch iteration backlog",
+    ],
+    engagementModel: [
+      { title: "Prototype Sprint", description: "A 3-4 week sprint building a testable prototype of the core AI experience." },
+      { title: "Full Product Build", description: "End-to-end application development from prototype to production launch — typically 10-16 weeks." },
+      { title: "Ongoing Product Retainer", description: "Monthly development capacity for new features and AI improvements post-launch." },
+    ],
+    techStack: [
+      { category: "App Layer", items: ["Next.js", "React Native", "TypeScript"] },
+      { category: "AI Layer", items: ["OpenAI API", "LangChain", "PostgreSQL"] },
+    ],
+    faqs: [
+      { question: "Can you build both the app and the AI, or just one?", answer: "Both — this service pairs our AI engineering with our web/mobile development team so the whole product is one build." },
+      { question: "Do you build native mobile apps too?", answer: "Yes, using React Native and native Swift/Kotlin where performance demands it." },
+      { question: "What if we already have an app and want to add AI?", answer: "See our AI Integration service for adding AI to an existing product; this service is for building the AI-native app itself." },
+      { question: "How do you validate the AI experience is actually good before full build?", answer: "The prototype sprint puts a working version in front of real users early, so we adjust before committing to the full build." },
+    ],
+    seo: {
+      metaTitle: "AI App Development Services | Staller Stack",
+      metaDescription: "AI-native web and mobile app development — from prototype to production, pairing full-stack engineering with a real AI pipeline.",
+      keywords: ["AI app development", "AI-powered mobile apps", "AI software development company", "AI native applications"],
+    },
   },
   {
     slug: "ai-model-fine-tuning",
@@ -92,6 +589,50 @@ export const aiServices: AiOffering[] = [
     description: "Fine-tuned AI models customized for your business data and needs.",
     icon: "tune",
     category: "service",
+    intro:
+      "A general-purpose model gets you 80% of the way there; fine-tuning closes the gap — teaching a model your terminology, tone, and edge cases using LoRA/PEFT techniques that keep training costs proportional to the problem.",
+    image: "/images/stallerstack/build-with-ai/ai-model-fine-tuning.jpg",
+    imageAlt: "Black and white audio mixer with tuning dials",
+    theme: { accent: "teal", visual: "orbit", heroVariant: "diagonal" },
+    stats: [
+      { label: "Avg. Accuracy Improvement", value: "18%" },
+      { label: "Training Cost vs. Full Fine-Tune", value: "-70%" },
+      { label: "Typical Engagement", value: "4-8 wks" },
+      { label: "Models Fine-Tuned", value: "20+" },
+    ],
+    process: [
+      { title: "Dataset Curation", description: "We help you assemble and clean a training dataset that actually represents your target task." },
+      { title: "Fine-Tuning Approach", description: "We select LoRA, PEFT, or full fine-tuning based on data volume, budget, and target model." },
+      { title: "Training & Evaluation", description: "We train and benchmark against the base model to confirm a genuine accuracy or quality lift." },
+      { title: "Deployment", description: "The fine-tuned model is deployed behind an API with version control for future updates." },
+    ],
+    deliverables: [
+      "Fine-tuned model with before/after benchmark",
+      "Curated and documented training dataset",
+      "Deployed inference API",
+      "Model versioning setup",
+      "Retraining playbook for future updates",
+    ],
+    engagementModel: [
+      { title: "Dataset & Feasibility", description: "A 1-2 week engagement to curate a sample dataset and confirm fine-tuning will meaningfully help." },
+      { title: "Fine-Tuning Build", description: "Full training, evaluation, and deployment — typically 4-8 weeks depending on data volume." },
+      { title: "Ongoing Retraining", description: "Periodic retraining as your data grows or the underlying base model is upgraded." },
+    ],
+    techStack: [
+      { category: "Fine-Tuning", items: ["PyTorch", "Hugging Face", "OpenAI API"] },
+      { category: "MLOps", items: ["Weights & Biases", "Docker", "AWS SageMaker"] },
+    ],
+    faqs: [
+      { question: "How much data do we need to fine-tune a model?", answer: "LoRA-based fine-tuning can show real improvement with a few hundred to a few thousand examples, far less than full fine-tuning requires." },
+      { question: "Is fine-tuning always the right choice over prompting?", answer: "No — we test whether better prompting or retrieval (RAG) solves the problem first, since fine-tuning is more effort. We recommend it when those aren't enough." },
+      { question: "Can we fine-tune closed models like GPT?", answer: "Yes, for providers that support it (like OpenAI's fine-tuning API); for others we fine-tune open-source models instead." },
+      { question: "What happens when the base model gets updated?", answer: "We include a retraining playbook so re-running the fine-tune against a new base version is a known, repeatable process." },
+    ],
+    seo: {
+      metaTitle: "AI Model Fine-Tuning Services | Staller Stack",
+      metaDescription: "LoRA and PEFT-based fine-tuning to adapt AI models to your data, terminology, and edge cases — with before/after benchmarking.",
+      keywords: ["AI model fine-tuning", "LLM fine-tuning services", "custom AI model training", "LoRA fine-tuning"],
+    },
   },
   {
     slug: "ai-integration",
@@ -99,6 +640,50 @@ export const aiServices: AiOffering[] = [
     description: "Seamless AI integration into existing tools, platforms, and workflows.",
     icon: "plug",
     category: "service",
+    intro:
+      "Most AI value comes from embedding it into tools people already use, not asking them to open a new one. We integrate AI capabilities — search, summarization, classification, generation — directly into your existing CRM, CMS, or internal tools.",
+    image: "/images/stallerstack/build-with-ai/ai-integration.jpg",
+    imageAlt: "A bunch of wires connected to a server",
+    theme: { accent: "blue", visual: "mesh", heroVariant: "centered" },
+    stats: [
+      { label: "Systems Integrated", value: "50+" },
+      { label: "Typical Engagement", value: "3-6 wks" },
+      { label: "Avg. Rollout Time", value: "2 wks" },
+      { label: "Zero-Downtime Deploys", value: "Standard" },
+    ],
+    process: [
+      { title: "System Audit", description: "We map your existing tool's data model and extension points to find the cleanest integration path." },
+      { title: "Capability Design", description: "We define exactly what the AI feature does inside the existing workflow, not as a separate screen." },
+      { title: "Build & Test", description: "The integration is built and tested against your real data without disrupting existing functionality." },
+      { title: "Rollout", description: "We ship with feature flags so the AI capability can be rolled out gradually and monitored." },
+    ],
+    deliverables: [
+      "AI capability embedded in your existing platform",
+      "API or plugin connecting to the AI service",
+      "Feature-flagged rollout plan",
+      "Usage monitoring for the new capability",
+      "Integration documentation for your team",
+    ],
+    engagementModel: [
+      { title: "Integration Sprint", description: "A focused 3-6 week build to add one AI capability to an existing system." },
+      { title: "Multi-System Rollout", description: "Sequenced integrations across several tools for teams standardizing AI capability platform-wide." },
+      { title: "Ongoing Support", description: "Monthly retainer to maintain the integration as your core platform or the AI provider changes." },
+    ],
+    techStack: [
+      { category: "Integration", items: ["GraphQL", "Node.js", "OpenAI API"] },
+      { category: "Infra", items: ["Docker", "PostgreSQL", "AWS"] },
+    ],
+    faqs: [
+      { question: "Which platforms can you integrate AI into?", answer: "Most systems with an API or plugin architecture — common examples include CRMs, helpdesk tools, CMSs, and internal admin panels." },
+      { question: "Will this require replacing our current software?", answer: "No — the goal is adding AI capability to what you already use, not a rip-and-replace." },
+      { question: "What if our platform doesn't have a public API?", answer: "We assess this during the system audit; some integrations use middleware or database-level hooks when a public API isn't available." },
+      { question: "How is this different from AI App Development?", answer: "AI Integration adds capability to an existing system; AI App Development builds a new AI-native product from scratch." },
+    ],
+    seo: {
+      metaTitle: "AI Integration Services | Staller Stack",
+      metaDescription: "Embed AI capability — search, summarization, classification, generation — directly into your existing CRM, CMS, or internal tools.",
+      keywords: ["AI integration services", "AI API integration", "embed AI in existing software", "AI platform integration"],
+    },
   },
   {
     slug: "llm-development",
@@ -106,6 +691,50 @@ export const aiServices: AiOffering[] = [
     description: "Custom LLM solutions for chat, search, automation, and knowledge systems.",
     icon: "message",
     category: "service",
+    intro:
+      "We design custom applications on top of large language models — internal copilots, semantic search, document automation — choosing the right model, context strategy, and guardrails for your accuracy and cost requirements.",
+    image: "/images/stallerstack/build-with-ai/llm-development.jpg",
+    imageAlt: "Glowing microchip on a circuit board",
+    theme: { accent: "mint", visual: "wave", heroVariant: "split" },
+    stats: [
+      { label: "LLM Apps Shipped", value: "30+" },
+      { label: "Typical Engagement", value: "6-12 wks" },
+      { label: "Avg. Cost Reduction via Optimization", value: "35%" },
+      { label: "Model Providers Supported", value: "5+" },
+    ],
+    process: [
+      { title: "Use Case Definition", description: "We scope exactly what the LLM application needs to do and what 'accurate enough' looks like." },
+      { title: "Model & Architecture Selection", description: "We choose the right model size, provider, and context strategy for cost and latency targets." },
+      { title: "Build & Evaluate", description: "The application is built with an evaluation harness testing accuracy against real examples." },
+      { title: "Launch & Cost-Tune", description: "We launch and continuously tune prompts and caching to control ongoing inference cost." },
+    ],
+    deliverables: [
+      "Production LLM application or API",
+      "Evaluation harness with accuracy benchmarks",
+      "Cost and latency optimization report",
+      "Prompt and context management system",
+      "Technical documentation and handover",
+    ],
+    engagementModel: [
+      { title: "Prototype", description: "A 2-3 week prototype to validate the LLM can handle the target use case with acceptable accuracy." },
+      { title: "Production Build", description: "Full application development with evaluation and cost optimization — typically 6-12 weeks." },
+      { title: "Ongoing Optimization", description: "Monthly retainer to tune prompts, manage model upgrades, and control inference cost." },
+    ],
+    techStack: [
+      { category: "LLM Stack", items: ["OpenAI API", "Anthropic API", "LangChain", "LlamaIndex"] },
+      { category: "Infra", items: ["Pinecone", "Redis", "PostgreSQL"] },
+    ],
+    faqs: [
+      { question: "Which LLM provider do you recommend?", answer: "It depends on accuracy, cost, and data residency needs — we benchmark candidates against your actual use case rather than defaulting to one vendor." },
+      { question: "How do you control runaway inference costs?", answer: "Through prompt optimization, caching, and choosing the smallest model that meets your accuracy bar — we report cost per request throughout." },
+      { question: "Is this the same as RAG Solutions?", answer: "RAG is one technique we use within LLM Development for grounding responses in your data; LLM Development is the broader application build." },
+      { question: "Can you run this on a self-hosted or open-source model?", answer: "Yes — for data residency or cost reasons, we've deployed open-source models like Llama via Hugging Face on your own infrastructure." },
+    ],
+    seo: {
+      metaTitle: "Custom LLM Development Services | Staller Stack",
+      metaDescription: "Custom large language model applications — copilots, semantic search, document automation — built with evaluation and cost optimization.",
+      keywords: ["LLM development services", "custom LLM application", "large language model development", "LLM app development company"],
+    },
   },
   {
     slug: "rag-solutions",
@@ -113,6 +742,50 @@ export const aiServices: AiOffering[] = [
     description: "RAG-based solutions for accurate answers from business knowledge sources.",
     icon: "search",
     category: "service",
+    intro:
+      "Retrieval-augmented generation grounds an LLM's answers in your actual documents, tickets, or wikis instead of its training data — so users get accurate, sourced answers from your knowledge base rather than plausible-sounding guesses.",
+    image: "/images/stallerstack/build-with-ai/rag-solutions.jpg",
+    imageAlt: "A text snippet focused through a magnifying glass",
+    theme: { accent: "amber", visual: "pulse", heroVariant: "diagonal" },
+    stats: [
+      { label: "Avg. Answer Accuracy", value: "89%" },
+      { label: "Documents Indexed (Typical)", value: "10k+" },
+      { label: "Typical Engagement", value: "5-9 wks" },
+      { label: "Source Citations", value: "Always Included" },
+    ],
+    process: [
+      { title: "Knowledge Audit", description: "We assess your documents, wikis, and data sources for structure, freshness, and quality." },
+      { title: "Retrieval Pipeline Build", description: "We build the chunking, embedding, and retrieval pipeline tuned for your content type." },
+      { title: "Grounded Generation", description: "Responses are generated strictly from retrieved context with source citations attached." },
+      { title: "Evaluation & Launch", description: "We test against real questions to confirm accuracy before rolling out to users." },
+    ],
+    deliverables: [
+      "RAG pipeline with retrieval and generation stages",
+      "Vector index of your knowledge base",
+      "Source citation on every generated answer",
+      "Accuracy evaluation report",
+      "Content update pipeline for keeping the index fresh",
+    ],
+    engagementModel: [
+      { title: "Proof of Concept", description: "A 2-3 week build against a sample of your documents to validate retrieval accuracy." },
+      { title: "Production Build", description: "Full pipeline covering your complete knowledge base — typically 5-9 weeks." },
+      { title: "Ongoing Index Maintenance", description: "Monthly retainer to keep the index current as documents are added or updated." },
+    ],
+    techStack: [
+      { category: "RAG Stack", items: ["LangChain", "LlamaIndex", "Pinecone", "OpenAI API"] },
+      { category: "Infra", items: ["Elasticsearch", "PostgreSQL", "Redis"] },
+    ],
+    faqs: [
+      { question: "How do you prevent hallucinated answers?", answer: "Generation is constrained to retrieved context and configured to say 'not found' rather than guess when no relevant source exists." },
+      { question: "What document formats can be indexed?", answer: "PDFs, Word docs, wikis, HTML, and structured data are all commonly supported — we scope your specific sources during the knowledge audit." },
+      { question: "How do you keep the index up to date?", answer: "We build a sync pipeline that re-indexes changed documents on a schedule or via webhook, so answers don't go stale." },
+      { question: "Can this replace our internal search tool?", answer: "Often yes for question-answering use cases — RAG typically outperforms keyword search for natural-language questions against your content." },
+    ],
+    seo: {
+      metaTitle: "RAG (Retrieval-Augmented Generation) Solutions | Staller Stack",
+      metaDescription: "RAG pipelines that ground LLM answers in your own documents and knowledge base — with source citations and accuracy evaluation.",
+      keywords: ["RAG solutions", "retrieval augmented generation", "enterprise knowledge base AI", "RAG development company"],
+    },
   },
   {
     slug: "edge-ai",
@@ -120,6 +793,50 @@ export const aiServices: AiOffering[] = [
     description: "Edge AI solutions for real-time intelligence on devices and systems.",
     icon: "edge",
     category: "service",
+    intro:
+      "When latency, connectivity, or privacy rules out a cloud round-trip, we optimize and deploy models to run directly on-device — cameras, sensors, mobile hardware — without sacrificing the accuracy your use case needs.",
+    image: "/images/stallerstack/build-with-ai/edge-ai.jpg",
+    imageAlt: "An old building with a tower and satellite dish on top",
+    theme: { accent: "cyan", visual: "orbit", heroVariant: "centered" },
+    stats: [
+      { label: "Avg. Inference Latency", value: "<50ms" },
+      { label: "Model Size Reduction", value: "-80%" },
+      { label: "Devices Deployed To", value: "10k+" },
+      { label: "Offline Capable", value: "Yes" },
+    ],
+    process: [
+      { title: "Hardware Assessment", description: "We evaluate the target device's compute, memory, and power constraints." },
+      { title: "Model Optimization", description: "We quantize and compress the model to fit device constraints while preserving accuracy." },
+      { title: "On-Device Testing", description: "We validate real-world performance directly on target hardware, not just in simulation." },
+      { title: "Deployment & Updates", description: "We ship the model with a pipeline for pushing future updates to deployed devices." },
+    ],
+    deliverables: [
+      "Optimized model package (quantized/compressed)",
+      "On-device benchmark report (latency, accuracy, power)",
+      "Deployment package for target hardware",
+      "Over-the-air model update pipeline",
+      "Fallback strategy for offline conditions",
+    ],
+    engagementModel: [
+      { title: "Feasibility Test", description: "A 2-3 week test optimizing a model on sample hardware to validate the latency and accuracy trade-off." },
+      { title: "Production Build", description: "Full optimization and deployment pipeline across your device fleet — typically 6-10 weeks." },
+      { title: "Ongoing Model Updates", description: "Monthly retainer to ship improved models to deployed devices over the air." },
+    ],
+    techStack: [
+      { category: "Edge Optimization", items: ["ONNX", "TensorFlow", "PyTorch"] },
+      { category: "Infra", items: ["Docker", "AWS", "Python"] },
+    ],
+    faqs: [
+      { question: "What kind of devices can run edge AI models?", answer: "Cameras, industrial sensors, mobile phones, and embedded boards are all common targets — we scope compatibility during the hardware assessment." },
+      { question: "How much accuracy do we lose by compressing the model?", answer: "It varies by model and technique, but we benchmark the compressed version against the full model so the trade-off is a known, agreed number, not a surprise." },
+      { question: "What happens when the device is offline?", answer: "Edge AI is designed to run without a network connection at all — that's the core reason to choose it over a cloud API." },
+      { question: "How do we update models already deployed in the field?", answer: "We build an over-the-air update pipeline so new model versions roll out to devices without physical access." },
+    ],
+    seo: {
+      metaTitle: "Edge AI Development Services | Staller Stack",
+      metaDescription: "On-device AI model optimization and deployment for real-time, offline-capable intelligence on cameras, sensors, and embedded hardware.",
+      keywords: ["edge AI development", "on-device AI models", "embedded AI solutions", "edge computing AI"],
+    },
   },
   {
     slug: "ai-workflow-automation",
@@ -127,6 +844,50 @@ export const aiServices: AiOffering[] = [
     description: "AI automation solutions that reduce manual work and improve efficiency.",
     icon: "route",
     category: "service",
+    intro:
+      "We automate multi-step business processes by combining AI decision-making with workflow orchestration — replacing manual data entry, approvals, and routing with a system that handles the routine cases and flags the exceptions.",
+    image: "/images/stallerstack/build-with-ai/ai-workflow-automation.jpg",
+    imageAlt: "Close-up photography of black metal gears",
+    theme: { accent: "teal", visual: "wave", heroVariant: "diagonal" },
+    stats: [
+      { label: "Avg. Manual Hours Saved/Week", value: "20+" },
+      { label: "Workflows Automated", value: "45+" },
+      { label: "Typical Engagement", value: "5-9 wks" },
+      { label: "Exception Handling", value: "Built-in" },
+    ],
+    process: [
+      { title: "Process Mapping", description: "We document the current manual workflow, step by step, including exception handling." },
+      { title: "Automation Design", description: "We identify which steps AI can safely own and which need to stay human-reviewed." },
+      { title: "Build & Orchestrate", description: "We build the automation using orchestration tools that connect your existing systems." },
+      { title: "Rollout & Refine", description: "We roll out gradually, watching exception rates, and refine the automation's coverage." },
+    ],
+    deliverables: [
+      "Automated workflow covering the mapped process",
+      "Exception handling and human review queue",
+      "Integration with existing systems (CRM, ERP, etc.)",
+      "Automation performance dashboard",
+      "Process documentation for your team",
+    ],
+    engagementModel: [
+      { title: "Process Pilot", description: "A 2-3 week automation of one workflow segment to prove the approach before full rollout." },
+      { title: "Full Automation Build", description: "Complete workflow automation with system integrations — typically 5-9 weeks." },
+      { title: "Ongoing Optimization", description: "Monthly retainer to expand automation coverage and reduce exception rates over time." },
+    ],
+    techStack: [
+      { category: "Orchestration", items: ["n8n", "Python", "OpenAI API"] },
+      { category: "Integration", items: ["PostgreSQL", "GraphQL", "AWS"] },
+    ],
+    faqs: [
+      { question: "What happens to cases the automation can't handle?", answer: "They route to a human review queue automatically — the goal is automating the routine majority, not eliminating oversight entirely." },
+      { question: "Can this connect to our CRM and ERP systems?", answer: "Yes — we build integrations to the systems your workflow already touches rather than creating a separate silo." },
+      { question: "How do you measure success?", answer: "We track hours saved, exception rate, and processing time reduction against the pre-automation baseline we document during process mapping." },
+      { question: "Is this the same as your AI Agents service?", answer: "Related but distinct — Workflow Automation focuses on orchestrating an existing multi-step business process; AI Agents is about a single autonomous agent completing a task." },
+    ],
+    seo: {
+      metaTitle: "AI Workflow Automation Services | Staller Stack",
+      metaDescription: "Automate multi-step business processes with AI-driven decisioning and workflow orchestration — with built-in exception handling.",
+      keywords: ["AI workflow automation", "business process automation AI", "intelligent process automation", "workflow orchestration AI"],
+    },
   },
   {
     slug: "enterprise-ai",
@@ -134,6 +895,50 @@ export const aiServices: AiOffering[] = [
     description: "Enterprise AI solutions built for scalability, security, and operations.",
     icon: "enterprise",
     category: "service",
+    intro:
+      "Enterprise AI adoption fails on governance as often as it fails on technology. We build AI platforms designed for scale from day one — access control, audit trails, cost governance, and compliance baked into the architecture, not bolted on after a pilot succeeds.",
+    image: "/images/stallerstack/build-with-ai/enterprise-ai.jpg",
+    imageAlt: "A diverse group of colleagues celebrating success in an office",
+    theme: { accent: "blue", visual: "mesh", heroVariant: "split" },
+    stats: [
+      { label: "Enterprise Deployments", value: "12+" },
+      { label: "Typical Engagement", value: "10-16 wks" },
+      { label: "Compliance Frameworks Supported", value: "SOC 2, HIPAA" },
+      { label: "Uptime SLA", value: "99.9%" },
+    ],
+    process: [
+      { title: "Governance Design", description: "We define access control, audit logging, and approval workflows before a single model is deployed." },
+      { title: "Platform Architecture", description: "We architect for multi-team, multi-use-case scale rather than a single pilot use case." },
+      { title: "Pilot Rollout", description: "A controlled pilot with one or two teams validates the platform before organization-wide rollout." },
+      { title: "Scale & Govern", description: "We expand access and add cost/usage governance as adoption grows across the organization." },
+    ],
+    deliverables: [
+      "Enterprise AI platform with access control and audit logging",
+      "Cost and usage governance dashboard",
+      "Compliance documentation for relevant frameworks",
+      "Pilot rollout with defined success metrics",
+      "Scale-out playbook for additional teams",
+    ],
+    engagementModel: [
+      { title: "Platform Design", description: "A 2-4 week architecture engagement defining governance, access control, and platform structure." },
+      { title: "Build & Pilot", description: "Full platform build and controlled pilot rollout — typically 10-16 weeks." },
+      { title: "Managed Scale-Out", description: "Ongoing retainer supporting rollout to additional teams and use cases." },
+    ],
+    techStack: [
+      { category: "Platform", items: ["Kubernetes", "AWS", "Azure"] },
+      { category: "Governance & Security", items: ["Hashicorp Vault", "PostgreSQL", "Grafana"] },
+    ],
+    faqs: [
+      { question: "How do you handle data residency and compliance requirements?", answer: "Governance design happens before any build work, including which frameworks (SOC 2, HIPAA, etc.) and data residency constraints apply." },
+      { question: "Can this support multiple business units with different use cases?", answer: "Yes — the platform is architected for multi-team use from the start, with per-team access control and cost tracking." },
+      { question: "Do you support both cloud and on-prem/private cloud deployment?", answer: "Yes, depending on your compliance and data sovereignty requirements, we architect for either." },
+      { question: "How is this different from individual services like LLM Development?", answer: "Enterprise AI is the governing platform layer; individual services like LLM Development or RAG Solutions can then be deployed on top of it consistently." },
+    ],
+    seo: {
+      metaTitle: "Enterprise AI Platform Development | Staller Stack",
+      metaDescription: "Enterprise-grade AI platforms with access control, audit logging, and cost governance built in — architected for scale across teams.",
+      keywords: ["enterprise AI solutions", "enterprise AI platform", "AI governance", "scalable AI infrastructure"],
+    },
   },
   {
     slug: "ai-product",
@@ -141,6 +946,50 @@ export const aiServices: AiOffering[] = [
     description: "AI product development from strategy and design to final launch.",
     icon: "box",
     category: "service",
+    intro:
+      "Building an AI-native product takes more than a model — it takes product strategy, UX that sets the right expectations for AI behavior, and a go-to-market plan. We partner across the full lifecycle, not just the engineering slice.",
+    image: "/images/stallerstack/build-with-ai/ai-product.jpg",
+    imageAlt: "Team brainstorming with sticky notes on a glass wall",
+    theme: { accent: "mint", visual: "pulse", heroVariant: "diagonal" },
+    stats: [
+      { label: "AI Products Launched", value: "10+" },
+      { label: "Typical Engagement", value: "12-20 wks" },
+      { label: "Discovery to Launch", value: "One Team" },
+      { label: "Post-Launch Support", value: "Included" },
+    ],
+    process: [
+      { title: "Product Strategy", description: "We define the product's core value proposition and where AI genuinely differentiates it." },
+      { title: "UX for AI", description: "We design interfaces that set honest expectations for AI capability and handle uncertainty gracefully." },
+      { title: "Build & Launch", description: "The product is engineered and launched with the AI pipeline as a first-class part of the build." },
+      { title: "Post-Launch Iteration", description: "We track usage and AI performance together to prioritize the next iteration." },
+    ],
+    deliverables: [
+      "Product strategy and roadmap",
+      "UX designs accounting for AI behavior and edge cases",
+      "Production application with integrated AI pipeline",
+      "Launch plan and analytics setup",
+      "Post-launch iteration roadmap",
+    ],
+    engagementModel: [
+      { title: "Strategy & Design Sprint", description: "A 3-4 week sprint defining product strategy and core UX before engineering begins." },
+      { title: "Full Product Build", description: "End-to-end development from design through launch — typically 12-20 weeks." },
+      { title: "Ongoing Product Partnership", description: "Monthly capacity for continued feature development and AI refinement post-launch." },
+    ],
+    techStack: [
+      { category: "Product", items: ["Figma", "Next.js", "TypeScript"] },
+      { category: "AI Layer", items: ["OpenAI API", "LangChain", "PostgreSQL"] },
+    ],
+    faqs: [
+      { question: "Do you handle both design and engineering?", answer: "Yes — this service pairs product strategy and UX design with full engineering delivery as one accountable team." },
+      { question: "How do you design UX around AI uncertainty?", answer: "We design explicit states for confidence, uncertainty, and failure — showing users what the AI knows and doesn't, rather than presenting every answer as fact." },
+      { question: "Can you take over a product that's already in progress?", answer: "Yes, we regularly join at the design or engineering stage of an existing AI product roadmap." },
+      { question: "How is this different from AI App Development?", answer: "AI Product includes strategy and UX from the start; AI App Development assumes the product direction is already defined and focuses on the build." },
+    ],
+    seo: {
+      metaTitle: "AI Product Development Services | Staller Stack",
+      metaDescription: "Full-lifecycle AI product development — strategy, UX design for AI behavior, engineering, and launch — from one accountable team.",
+      keywords: ["AI product development", "AI product design", "AI product strategy", "AI product launch"],
+    },
   },
   {
     slug: "ai-poc",
@@ -148,6 +997,50 @@ export const aiServices: AiOffering[] = [
     description: "AI proof-of-concepts to validate ideas before full-scale development.",
     icon: "flask",
     category: "service",
+    intro:
+      "Before committing months of engineering to an AI idea, a focused proof-of-concept answers the real question — will this work on our actual data, at acceptable accuracy, for a cost that makes sense — in a matter of weeks.",
+    image: "/images/stallerstack/build-with-ai/ai-poc.jpg",
+    imageAlt: "A 3D printer creating a red object with yellow filament",
+    theme: { accent: "teal", visual: "wave", heroVariant: "split" },
+    stats: [
+      { label: "POCs Delivered", value: "50+" },
+      { label: "Avg. Turnaround", value: "2-3 wks" },
+      { label: "Proceed-to-Build Rate", value: "65%" },
+      { label: "Fixed Scope", value: "Always" },
+    ],
+    process: [
+      { title: "Hypothesis Definition", description: "We define the specific question the POC needs to answer and what success looks like, in numbers." },
+      { title: "Rapid Build", description: "We build the minimum version needed to test against your real data, not a polished product." },
+      { title: "Results & Benchmark", description: "You get a clear result — did it hit the target accuracy or cost bar — with supporting evidence." },
+      { title: "Go/No-Go Recommendation", description: "We give an honest recommendation on whether and how to proceed to production." },
+    ],
+    deliverables: [
+      "Working proof-of-concept tested on real data",
+      "Benchmark results against the defined success criteria",
+      "Honest go/no-go recommendation",
+      "Estimated cost and timeline for production build if proceeding",
+      "Technical writeup of findings and limitations",
+    ],
+    engagementModel: [
+      { title: "Fixed-Scope POC", description: "A 2-3 week fixed-price engagement testing one specific AI hypothesis against your data." },
+      { title: "Multi-POC Sprint", description: "Several smaller POCs run in parallel or sequence to compare approaches before committing." },
+      { title: "POC-to-Build Transition", description: "A defined handoff into a full production engagement if the POC succeeds." },
+    ],
+    techStack: [
+      { category: "Rapid Prototyping", items: ["Python", "Jupyter", "OpenAI API"] },
+      { category: "Evaluation", items: ["Pandas", "NumPy"] },
+    ],
+    faqs: [
+      { question: "What if the POC shows the idea doesn't work?", answer: "That's a valid and valuable outcome — you'll know definitively before investing in a full build, with documented reasons why." },
+      { question: "How is this scoped to stay fast?", answer: "We fix the hypothesis and success criteria upfront and deliberately skip production concerns like scaling or polish — those come later if the POC succeeds." },
+      { question: "Can you run multiple POCs to compare approaches?", answer: "Yes — this is common when it's unclear whether, say, a fine-tuned model or a RAG approach will perform better on your data." },
+      { question: "Does the POC code carry over to production?", answer: "Some of it can, but expect meaningful rework — POC code is optimized for speed of learning, not production robustness." },
+    ],
+    seo: {
+      metaTitle: "AI Proof of Concept (POC) Development | Staller Stack",
+      metaDescription: "Fast, fixed-scope AI proof-of-concepts that validate feasibility on your real data before you commit to a full production build.",
+      keywords: ["AI proof of concept", "AI POC development", "AI feasibility study", "AI prototype development"],
+    },
   },
   {
     slug: "machine-learning",
@@ -155,6 +1048,50 @@ export const aiServices: AiOffering[] = [
     description: "Machine learning solutions for prediction, personalization, and intelligent decisions.",
     icon: "ml",
     category: "service",
+    intro:
+      "Classical machine learning — classification, regression, clustering, recommendation — is still the right tool for a huge range of business problems. We build ML models matched to the problem, not the hype cycle, with full MLOps support behind them.",
+    image: "/images/stallerstack/build-with-ai/machine-learning.jpg",
+    imageAlt: "Abstract blue grid pattern with glowing lines",
+    theme: { accent: "indigo", visual: "mesh", heroVariant: "centered" },
+    stats: [
+      { label: "Models in Production", value: "40+" },
+      { label: "Avg. Accuracy Lift", value: "22%" },
+      { label: "Typical Engagement", value: "6-12 wks" },
+      { label: "Retraining", value: "Automated" },
+    ],
+    process: [
+      { title: "Problem Framing", description: "We translate the business question into a specific ML problem type — classification, regression, or clustering." },
+      { title: "Feature & Data Engineering", description: "We build the feature pipeline from your raw data, the step that most determines model quality." },
+      { title: "Model Development", description: "We train and compare multiple candidate models to find the best accuracy-for-cost trade-off." },
+      { title: "Production Deployment", description: "The winning model ships as an API with monitoring for accuracy drift." },
+    ],
+    deliverables: [
+      "Trained model with documented accuracy benchmarks",
+      "Feature engineering pipeline",
+      "Production API endpoint",
+      "Automated retraining pipeline",
+      "Model card documenting assumptions and limitations",
+    ],
+    engagementModel: [
+      { title: "Proof of Concept", description: "A 2-3 week sprint on real data to validate the model can hit a useful accuracy bar." },
+      { title: "Production Build", description: "Full model development, feature engineering, and deployment — typically 6-12 weeks." },
+      { title: "Ongoing MLOps Retainer", description: "Monthly retraining and monitoring as your data and business evolve." },
+    ],
+    techStack: [
+      { category: "ML Frameworks", items: ["Scikit-learn", "TensorFlow", "PyTorch"] },
+      { category: "MLOps", items: ["MLflow", "Apache Airflow", "AWS SageMaker"] },
+    ],
+    faqs: [
+      { question: "Do we need deep learning, or will classical ML work?", answer: "Often classical ML (like gradient boosting) outperforms deep learning on structured business data and is cheaper to run — we test both where it's unclear." },
+      { question: "How much data do we need?", answer: "It varies by problem, but we assess this honestly during scoping rather than assuming more data is always required." },
+      { question: "How do you prevent the model from degrading over time?", answer: "Every production model ships with drift monitoring and an automated retraining pipeline, not a one-time train-and-forget." },
+      { question: "What's the difference between this and Predictive Analytics?", answer: "Predictive Analytics is a specific applied use case (forecasting); Machine Learning covers the full range of techniques including classification, clustering, and recommendation." },
+    ],
+    seo: {
+      metaTitle: "Machine Learning Development Services | Staller Stack",
+      metaDescription: "Custom machine learning models for classification, regression, and clustering — built with feature engineering and full MLOps support.",
+      keywords: ["machine learning development", "machine learning company", "custom ML models", "MLOps services"],
+    },
   },
 ];
 
@@ -165,6 +1102,50 @@ export const aiSolutions: AiOffering[] = [
     description: "AI healthcare solutions for smarter care, diagnosis, and patient management.",
     icon: "heartbeat",
     category: "solution",
+    intro:
+      "We build AI systems for clinical documentation, triage support, and patient management that are designed around the reality of healthcare — human clinicians stay in the decision loop, and every system is built with HIPAA-aligned data handling from day one.",
+    image: "/images/stallerstack/build-with-ai/ai-healthcare.jpg",
+    imageAlt: "Doctor writing on a patient's chart",
+    theme: { accent: "mint", visual: "wave", heroVariant: "split" },
+    stats: [
+      { label: "Avg. Documentation Time Saved", value: "35%" },
+      { label: "HIPAA-Aligned Builds", value: "Standard" },
+      { label: "Typical Engagement", value: "8-14 wks" },
+      { label: "Clinician-in-the-Loop", value: "Always" },
+    ],
+    process: [
+      { title: "Clinical Workflow Audit", description: "We map the specific documentation or triage workflow and its compliance requirements." },
+      { title: "Data & Compliance Design", description: "We design data handling that meets HIPAA and your organization's privacy requirements." },
+      { title: "Build & Clinical Review", description: "The system is built and reviewed against real clinical scenarios before deployment." },
+      { title: "Deploy & Monitor", description: "We roll out with monitoring for accuracy and clinician feedback loops." },
+    ],
+    deliverables: [
+      "AI system for the target clinical workflow",
+      "HIPAA-aligned data handling documentation",
+      "Clinician review and feedback process",
+      "Deployment with usage monitoring",
+      "Compliance and audit documentation",
+    ],
+    engagementModel: [
+      { title: "Pilot Program", description: "A 4-6 week pilot with a limited clinical team to validate safety and usefulness before wider rollout." },
+      { title: "Production Build", description: "Full system development with compliance review — typically 8-14 weeks." },
+      { title: "Ongoing Compliance Retainer", description: "Monthly monitoring and compliance review as regulations and usage evolve." },
+    ],
+    techStack: [
+      { category: "AI Layer", items: ["OpenAI API", "Python", "Hugging Face"] },
+      { category: "Infra", items: ["PostgreSQL", "AWS", "Hashicorp Vault"] },
+    ],
+    faqs: [
+      { question: "Does this replace clinical judgment?", answer: "No — every system we build keeps a clinician in the decision loop; AI supports documentation and triage, it doesn't make diagnostic calls alone." },
+      { question: "Is this HIPAA compliant?", answer: "We design data handling to align with HIPAA requirements, though your organization's compliance officer should review the final implementation." },
+      { question: "Can this integrate with our EHR system?", answer: "Yes, depending on your EHR's API or HL7/FHIR support — we assess this during the workflow audit." },
+      { question: "How do you handle sensitive patient data during development?", answer: "We use de-identified or synthetic data wherever possible during development and testing, minimizing exposure to real patient records." },
+    ],
+    seo: {
+      metaTitle: "AI Healthcare Solutions | Staller Stack",
+      metaDescription: "HIPAA-aligned AI for clinical documentation, triage support, and patient management — built with clinicians kept in the decision loop.",
+      keywords: ["AI healthcare solutions", "healthcare AI development", "clinical AI documentation", "AI patient management"],
+    },
   },
   {
     slug: "ai-ecommerce",
@@ -172,6 +1153,50 @@ export const aiSolutions: AiOffering[] = [
     description: "AI-powered e-commerce solutions for personalization, automation, and customer growth.",
     icon: "cart",
     category: "solution",
+    intro:
+      "From personalized product recommendations to automated customer support and dynamic pricing, we build AI systems that plug into your existing storefront to lift conversion and reduce manual operations work.",
+    image: "/images/stallerstack/build-with-ai/ai-ecommerce.jpg",
+    imageAlt: "Three smiling women with shopping bags in a mall",
+    theme: { accent: "cyan", visual: "pulse", heroVariant: "centered" },
+    stats: [
+      { label: "Avg. Conversion Lift", value: "15%" },
+      { label: "Platforms Supported", value: "Shopify, custom" },
+      { label: "Typical Engagement", value: "5-9 wks" },
+      { label: "Avg. AOV Increase", value: "12%" },
+    ],
+    process: [
+      { title: "Storefront Audit", description: "We review your catalog data, traffic patterns, and current personalization gaps." },
+      { title: "Use Case Selection", description: "We prioritize recommendations, search, support, or pricing based on expected impact." },
+      { title: "Build & Integrate", description: "The AI feature is built and integrated directly into your existing storefront." },
+      { title: "Measure & Iterate", description: "We track conversion and AOV impact and iterate on the model post-launch." },
+    ],
+    deliverables: [
+      "AI feature integrated into your storefront (recommendations, search, or support)",
+      "A/B test results measuring impact on conversion",
+      "Personalization or pricing engine",
+      "Analytics dashboard for ongoing tracking",
+      "Integration documentation",
+    ],
+    engagementModel: [
+      { title: "Pilot Feature", description: "A 3-4 week build of one AI feature, A/B tested against your current baseline." },
+      { title: "Full Rollout", description: "Multi-feature build across recommendations, search, and support — typically 5-9 weeks." },
+      { title: "Ongoing Optimization", description: "Monthly retainer to tune models against new catalog data and seasonal trends." },
+    ],
+    techStack: [
+      { category: "AI Layer", items: ["OpenAI API", "Python", "Pinecone"] },
+      { category: "Commerce", items: ["Node.js", "GraphQL", "PostgreSQL"] },
+    ],
+    faqs: [
+      { question: "Which platforms do you support?", answer: "Shopify, headless commerce setups, and custom storefronts are all common — we assess integration paths during the storefront audit." },
+      { question: "How do you measure whether it's actually working?", answer: "Every feature launches with an A/B test against your current baseline so impact on conversion and AOV is measured, not assumed." },
+      { question: "Can the chatbot handle order-related questions?", answer: "Yes — it connects to your order and inventory systems to answer real questions, not just generic FAQs." },
+      { question: "Do recommendations update as our catalog changes?", answer: "Yes, the recommendation index is kept in sync with your catalog through a scheduled or webhook-triggered pipeline." },
+    ],
+    seo: {
+      metaTitle: "AI E-Commerce Solutions | Staller Stack",
+      metaDescription: "AI-powered personalization, recommendations, and customer support for e-commerce — integrated into your existing storefront.",
+      keywords: ["AI e-commerce solutions", "ecommerce personalization AI", "AI product recommendations", "ecommerce chatbot AI"],
+    },
   },
   {
     slug: "agentic-ai-hr",
@@ -179,13 +1204,101 @@ export const aiSolutions: AiOffering[] = [
     description: "Agentic AI solutions for recruitment, employee support, and HR automation.",
     icon: "users",
     category: "solution",
+    intro:
+      "We build agentic AI systems for HR teams — screening resumes against real job criteria, answering employee policy questions, and automating onboarding steps — always with a human reviewer for anything involving hiring decisions.",
+    image: "/images/stallerstack/build-with-ai/agentic-ai-hr.jpg",
+    imageAlt: "Two men facing each other while shaking hands and smiling",
+    theme: { accent: "indigo", visual: "mesh", heroVariant: "split" },
+    stats: [
+      { label: "Avg. Screening Time Saved", value: "50%" },
+      { label: "Employee Query Resolution", value: "75%" },
+      { label: "Typical Engagement", value: "5-9 wks" },
+      { label: "Human Review on Hiring", value: "Always" },
+    ],
+    process: [
+      { title: "HR Workflow Mapping", description: "We identify which recruitment or employee-support tasks are best suited for agentic automation." },
+      { title: "Bias & Compliance Review", description: "We review screening criteria for fairness and compliance before any automation touches candidates." },
+      { title: "Agent Build", description: "We build the agent with clear boundaries around what it decides versus what it recommends." },
+      { title: "Launch with Oversight", description: "We roll out with mandatory human review on hiring-related decisions." },
+    ],
+    deliverables: [
+      "Recruitment screening or employee support agent",
+      "Bias and compliance review documentation",
+      "Human review checkpoint for hiring decisions",
+      "Integration with your ATS or HRIS",
+      "Usage and outcome monitoring dashboard",
+    ],
+    engagementModel: [
+      { title: "Pilot Program", description: "A 3-4 week pilot on one HR workflow, such as resume screening for a single role type." },
+      { title: "Production Build", description: "Full agent build with ATS/HRIS integration — typically 5-9 weeks." },
+      { title: "Ongoing Compliance Review", description: "Monthly retainer to review outcomes for fairness as the agent scales to more roles." },
+    ],
+    techStack: [
+      { category: "Agent Stack", items: ["LangGraph", "OpenAI API", "Python"] },
+      { category: "Infra", items: ["PostgreSQL", "Docker"] },
+    ],
+    faqs: [
+      { question: "Does the AI make hiring decisions on its own?", answer: "No — it screens and ranks against defined criteria, but every hiring decision requires human review before a candidate is rejected or advanced." },
+      { question: "How do you prevent biased screening?", answer: "We run a bias and compliance review on the screening criteria before launch, and monitor outcomes on an ongoing basis." },
+      { question: "Can it integrate with our existing ATS?", answer: "Yes, for most major ATS and HRIS platforms with an API — we confirm compatibility during workflow mapping." },
+      { question: "What HR tasks beyond screening can this help with?", answer: "Common additions include onboarding checklist automation and answering employee policy questions grounded in your handbook." },
+    ],
+    seo: {
+      metaTitle: "Agentic AI for HR Solutions | Staller Stack",
+      metaDescription: "AI agents for recruitment screening, employee support, and HR automation — with mandatory human review on hiring decisions.",
+      keywords: ["agentic AI HR", "AI recruitment screening", "HR automation AI", "AI employee support agent"],
+    },
   },
   {
     slug: "enterprise-ai-agent",
     name: "Enterprise AI Agent",
     description: "Enterprise AI agents for automating complex workflows and business operations.",
-    icon: "hierarchy",
+    icon: "hierarchy2",
     category: "solution",
+    intro:
+      "For workflows that span multiple departments and systems, we build enterprise-grade agents with the access control, audit logging, and change management that large organizations require — not a lightweight bot bolted onto one team's process.",
+    image: "/images/stallerstack/build-with-ai/enterprise-ai-agent.jpg",
+    imageAlt: "Modern office lobby with reception desk and elevators",
+    theme: { accent: "teal", visual: "wave", heroVariant: "diagonal" },
+    stats: [
+      { label: "Cross-Department Workflows Automated", value: "15+" },
+      { label: "Typical Engagement", value: "10-16 wks" },
+      { label: "Audit Logging", value: "Full Trace" },
+      { label: "Uptime SLA", value: "99.9%" },
+    ],
+    process: [
+      { title: "Cross-Functional Mapping", description: "We map the workflow across every department and system it touches, not just one team's view." },
+      { title: "Access & Governance Design", description: "We define role-based access and approval boundaries appropriate for enterprise operations." },
+      { title: "Build & Integrate", description: "The agent is built with integrations across each affected system." },
+      { title: "Phased Rollout", description: "We roll out department by department with full audit logging from day one." },
+    ],
+    deliverables: [
+      "Enterprise agent covering the cross-department workflow",
+      "Role-based access control and approval workflows",
+      "Full audit trail of every agent action",
+      "Integrations across affected systems",
+      "Change management documentation for stakeholder teams",
+    ],
+    engagementModel: [
+      { title: "Scoping & Governance", description: "A 2-4 week engagement mapping the workflow and defining access/governance requirements." },
+      { title: "Production Build", description: "Full agent build with cross-system integrations — typically 10-16 weeks." },
+      { title: "Managed Operations", description: "Ongoing retainer for monitoring, incident response, and expanding scope to additional workflows." },
+    ],
+    techStack: [
+      { category: "Agent Stack", items: ["LangGraph", "OpenAI API", "Python"] },
+      { category: "Enterprise Infra", items: ["Kubernetes", "Hashicorp Vault", "PostgreSQL"] },
+    ],
+    faqs: [
+      { question: "How is this different from your AI Agents service?", answer: "AI Agents typically covers a single-team task; Enterprise AI Agent is scoped for workflows spanning multiple departments and systems, with corresponding governance." },
+      { question: "What audit capability does the agent have?", answer: "Every action is logged with full trace — what was decided, what data it used, and what system it touched — for compliance review." },
+      { question: "How do you roll this out across a large organization?", answer: "In phases, department by department, so each team can validate the agent's behavior before it takes on more scope." },
+      { question: "Can multiple enterprise agents coordinate with each other?", answer: "Yes — see our AI Agent Orchestrator solution for coordinating several specialized agents across a larger operation." },
+    ],
+    seo: {
+      metaTitle: "Enterprise AI Agent Development | Staller Stack",
+      metaDescription: "Enterprise-grade AI agents for cross-department workflow automation, with role-based access control and full audit logging.",
+      keywords: ["enterprise AI agent", "enterprise workflow automation AI", "AI business operations agent", "enterprise agent governance"],
+    },
   },
   {
     slug: "ai-banking",
@@ -193,6 +1306,50 @@ export const aiSolutions: AiOffering[] = [
     description: "AI banking solutions for fraud detection, automation, and customer support.",
     icon: "bank",
     category: "solution",
+    intro:
+      "We build AI systems for banking and fintech — fraud detection, credit risk scoring, and customer support — engineered to meet the accuracy, explainability, and regulatory review requirements the financial sector demands.",
+    image: "/images/stallerstack/build-with-ai/ai-banking.jpg",
+    imageAlt: "Hands holding a smartphone using a banking app to transfer money",
+    theme: { accent: "blue", visual: "orbit", heroVariant: "split" },
+    stats: [
+      { label: "Avg. Fraud Detection Lift", value: "30%" },
+      { label: "False Positive Reduction", value: "-25%" },
+      { label: "Typical Engagement", value: "8-14 wks" },
+      { label: "Model Explainability", value: "Required" },
+    ],
+    process: [
+      { title: "Risk & Compliance Scoping", description: "We identify the target use case and its regulatory and explainability requirements upfront." },
+      { title: "Model Development", description: "We train fraud or credit risk models on historical transaction data with explainability built in." },
+      { title: "Validation & Backtesting", description: "Models are backtested against historical fraud cases before deployment." },
+      { title: "Deploy & Monitor", description: "We deploy with real-time monitoring and a clear audit trail for every flagged decision." },
+    ],
+    deliverables: [
+      "Fraud detection or credit risk model with explainability report",
+      "Backtesting results against historical cases",
+      "Real-time scoring API",
+      "Audit trail for every flagged transaction",
+      "Compliance documentation for regulatory review",
+    ],
+    engagementModel: [
+      { title: "Proof of Concept", description: "A 3-4 week backtest against historical transaction data to validate model performance." },
+      { title: "Production Build", description: "Full model development, validation, and deployment — typically 8-14 weeks." },
+      { title: "Ongoing Model Monitoring", description: "Monthly retainer for retraining and monitoring as fraud patterns evolve." },
+    ],
+    techStack: [
+      { category: "Modeling", items: ["Python", "Scikit-learn", "TensorFlow"] },
+      { category: "Infra", items: ["PostgreSQL", "AWS", "Hashicorp Vault"] },
+    ],
+    faqs: [
+      { question: "Can the model explain why it flagged a transaction?", answer: "Yes — explainability is a requirement we build in from the start, since financial institutions need to justify flags to regulators and customers." },
+      { question: "How do you validate accuracy before going live?", answer: "We backtest against your historical fraud cases and report both detection rate and false positive rate before deployment." },
+      { question: "Does this help with regulatory compliance?", answer: "We provide documentation supporting compliance review, though your compliance team should confirm alignment with applicable regulations." },
+      { question: "Can this integrate with our existing core banking system?", answer: "Yes, we integrate via your core banking platform's API or a real-time transaction stream, depending on your architecture." },
+    ],
+    seo: {
+      metaTitle: "AI Banking & Fintech Solutions | Staller Stack",
+      metaDescription: "AI fraud detection, credit risk scoring, and customer support for banking and fintech — built with explainability and audit trails.",
+      keywords: ["AI banking solutions", "fraud detection AI", "credit risk scoring AI", "fintech AI development"],
+    },
   },
   {
     slug: "ai-threat-detection",
@@ -200,6 +1357,50 @@ export const aiSolutions: AiOffering[] = [
     description: "Detect security threats, risks, and unusual activities with AI.",
     icon: "shieldalert",
     category: "solution",
+    intro:
+      "We build anomaly detection systems that flag unusual network activity, access patterns, or system behavior in real time — designed to augment your security team's judgment, not replace it, with clear evidence behind every alert.",
+    image: "/images/stallerstack/build-with-ai/ai-threat-detection.jpg",
+    imageAlt: "A person holding a credit card in their hand",
+    theme: { accent: "amber", visual: "pulse", heroVariant: "centered" },
+    stats: [
+      { label: "Avg. Detection Latency", value: "<2 min" },
+      { label: "False Positive Reduction", value: "-30%" },
+      { label: "Typical Engagement", value: "6-10 wks" },
+      { label: "SOC Integration", value: "Standard" },
+    ],
+    process: [
+      { title: "Baseline Modeling", description: "We build a model of normal activity patterns from your historical logs and traffic." },
+      { title: "Anomaly Detection Build", description: "We train detection models to flag statistically significant deviations from that baseline." },
+      { title: "Alert Tuning", description: "We tune sensitivity against real incidents to reduce noise without missing real threats." },
+      { title: "SOC Integration", description: "Alerts are routed into your existing security operations tooling with supporting evidence." },
+    ],
+    deliverables: [
+      "Anomaly detection model tuned to your environment",
+      "Real-time alerting integrated with your SOC tooling",
+      "Evidence and context attached to every alert",
+      "Tuning report on false positive/negative rates",
+      "Runbook for triaging flagged incidents",
+    ],
+    engagementModel: [
+      { title: "Baseline & Pilot", description: "A 3-4 week engagement building a baseline model and piloting detection against recent historical incidents." },
+      { title: "Production Build", description: "Full detection system with SOC integration — typically 6-10 weeks." },
+      { title: "Ongoing Tuning Retainer", description: "Monthly retainer to retune detection as your environment and threat landscape change." },
+    ],
+    techStack: [
+      { category: "Detection", items: ["Python", "Scikit-learn", "Elasticsearch"] },
+      { category: "Infra", items: ["Prometheus", "Grafana", "AWS"] },
+    ],
+    faqs: [
+      { question: "Does this replace our security team?", answer: "No — it's built to augment your SOC by surfacing anomalies faster and with supporting evidence, with your team making the final call." },
+      { question: "How do you avoid alert fatigue from false positives?", answer: "We tune detection sensitivity against your real historical incidents specifically to keep false positive rates manageable." },
+      { question: "Can this integrate with our existing SIEM?", answer: "Yes — alerts are designed to route into your existing SOC tooling and SIEM rather than requiring a separate dashboard." },
+      { question: "What kind of threats can it detect?", answer: "Unusual access patterns, data exfiltration signals, and abnormal system behavior are common targets — we scope specifics during baseline modeling." },
+    ],
+    seo: {
+      metaTitle: "AI Threat Detection Solutions | Staller Stack",
+      metaDescription: "Real-time AI anomaly detection for unusual network activity and access patterns — integrated with your existing SOC tooling.",
+      keywords: ["AI threat detection", "AI anomaly detection security", "cybersecurity AI solutions", "AI SOC augmentation"],
+    },
   },
   {
     slug: "ai-behaviour-detection",
@@ -207,6 +1408,50 @@ export const aiSolutions: AiOffering[] = [
     description: "Detect user behavior patterns with intelligent AI-based monitoring systems.",
     icon: "activity",
     category: "solution",
+    intro:
+      "We build behavioral analytics systems that learn what normal user or entity activity looks like and flag meaningful deviations — used for fraud signals, insider risk, and operational anomalies across web, app, and internal systems.",
+    image: "/images/stallerstack/build-with-ai/ai-behaviour-detection.jpg",
+    imageAlt: "Macro photography of a human eye",
+    theme: { accent: "indigo", visual: "wave", heroVariant: "centered" },
+    stats: [
+      { label: "Avg. Anomaly Detection Accuracy", value: "88%" },
+      { label: "Typical Engagement", value: "6-10 wks" },
+      { label: "Data Sources Supported", value: "Web, App, Logs" },
+      { label: "Real-Time Scoring", value: "Yes" },
+    ],
+    process: [
+      { title: "Behavior Baselining", description: "We model normal patterns of activity per user or entity from historical data." },
+      { title: "Deviation Scoring", description: "We build models that score how far current activity deviates from the learned baseline." },
+      { title: "Threshold Tuning", description: "We tune alert thresholds against known past incidents to balance sensitivity and noise." },
+      { title: "Deployment", description: "The scoring system is deployed with real-time or batch scoring depending on your needs." },
+    ],
+    deliverables: [
+      "Behavioral baseline model per user or entity type",
+      "Real-time or batch anomaly scoring pipeline",
+      "Alert dashboard with supporting evidence",
+      "Threshold tuning report",
+      "Integration documentation",
+    ],
+    engagementModel: [
+      { title: "Baseline Pilot", description: "A 3-4 week engagement building and validating the behavioral baseline against historical data." },
+      { title: "Production Build", description: "Full scoring pipeline and alert integration — typically 6-10 weeks." },
+      { title: "Ongoing Retuning", description: "Monthly retainer to retune thresholds as normal behavior patterns shift over time." },
+    ],
+    techStack: [
+      { category: "Modeling", items: ["Python", "Scikit-learn", "Pandas"] },
+      { category: "Infra", items: ["Elasticsearch", "PostgreSQL", "Redis"] },
+    ],
+    faqs: [
+      { question: "What counts as 'behavior' for this system?", answer: "Login patterns, transaction sequences, navigation flows, or system access — we scope the specific signals during baselining." },
+      { question: "How is this different from AI Threat Detection?", answer: "AI Threat Detection focuses specifically on security/network threats; AI Behaviour Detection is broader and also covers fraud, insider risk, and operational anomalies." },
+      { question: "Does it work for new users with no history?", answer: "New entities use a cohort-based baseline until enough individual history accumulates, rather than being unscored." },
+      { question: "Can this run in real time?", answer: "Yes, for use cases like fraud where latency matters; batch scoring is also available where real-time isn't required." },
+    ],
+    seo: {
+      metaTitle: "AI Behaviour Detection Solutions | Staller Stack",
+      metaDescription: "AI-based behavioral analytics that learn normal user and entity activity patterns and flag meaningful deviations in real time.",
+      keywords: ["AI behaviour detection", "user behavior analytics AI", "behavioral anomaly detection", "AI insider risk detection"],
+    },
   },
   {
     slug: "ai-object-detection",
@@ -214,6 +1459,50 @@ export const aiSolutions: AiOffering[] = [
     description: "Identify, track, and analyze objects using advanced computer vision models.",
     icon: "scan",
     category: "solution",
+    intro:
+      "We build object detection systems tuned to your specific objects and environment — inventory items on a shelf, vehicles in a lot, PPE compliance on a factory floor — trained on your imagery rather than a generic pretrained model alone.",
+    image: "/images/stallerstack/build-with-ai/ai-object-detection.jpg",
+    imageAlt: "A person unlocking a smartphone",
+    theme: { accent: "blue", visual: "wave", heroVariant: "centered" },
+    stats: [
+      { label: "Avg. Detection Accuracy", value: "93%" },
+      { label: "Inference Speed", value: "30+ FPS" },
+      { label: "Typical Engagement", value: "6-10 wks" },
+      { label: "Object Classes Trained", value: "Custom" },
+    ],
+    process: [
+      { title: "Object & Environment Audit", description: "We review sample footage or images to understand object variety, lighting, and camera angles." },
+      { title: "Model Training", description: "We fine-tune a detection model on your specific objects and environment conditions." },
+      { title: "Real-Time Pipeline", description: "We build the pipeline that processes live or recorded feeds and outputs structured detections." },
+      { title: "Deployment", description: "We deploy to cloud or edge depending on latency and connectivity requirements." },
+    ],
+    deliverables: [
+      "Object detection model trained on your imagery",
+      "Real-time or batch detection pipeline",
+      "Structured output feed (bounding boxes, counts, classifications)",
+      "Accuracy benchmark report",
+      "Deployment package for your environment",
+    ],
+    engagementModel: [
+      { title: "Proof of Concept", description: "A 2-3 week sprint training on sample footage to validate detection accuracy." },
+      { title: "Production Build", description: "Full pipeline development and deployment — typically 6-10 weeks." },
+      { title: "Ongoing Retraining", description: "Monthly retainer to retrain as new object types or camera setups are added." },
+    ],
+    techStack: [
+      { category: "Vision", items: ["PyTorch", "TensorFlow", "ONNX"] },
+      { category: "Deployment", items: ["Docker", "AWS", "Google Cloud"] },
+    ],
+    faqs: [
+      { question: "Can this detect objects specific to our industry?", answer: "Yes — we fine-tune on your imagery so the model learns your specific objects, not just generic categories from a public dataset." },
+      { question: "How many camera angles or conditions can it handle?", answer: "We train on the range of conditions you provide sample footage for; more variety in training data means more robust real-world performance." },
+      { question: "Can this run on existing cameras?", answer: "In most cases yes, as long as the feed can be accessed via RTSP or a similar standard protocol." },
+      { question: "How is this different from Computer Vision as a service?", answer: "Computer Vision is the broader capability; AI Object Detection is a specific applied solution focused on identifying and tracking objects." },
+    ],
+    seo: {
+      metaTitle: "AI Object Detection Solutions | Staller Stack",
+      metaDescription: "Custom object detection models trained on your imagery for inventory, safety, and operational monitoring, deployed in real time.",
+      keywords: ["AI object detection", "object detection solutions", "computer vision object tracking", "custom object detection model"],
+    },
   },
   {
     slug: "theft-detection-system",
@@ -221,6 +1510,50 @@ export const aiSolutions: AiOffering[] = [
     description: "Smart theft detection systems for real-time alerts and security monitoring.",
     icon: "alarm",
     category: "solution",
+    intro:
+      "We build computer vision systems that flag likely theft or shrinkage events in real time — suspicious concealment, unusual dwell time, self-checkout mismatches — routing alerts to loss prevention staff with the relevant video clip attached.",
+    image: "/images/stallerstack/build-with-ai/theft-detection-system.jpg",
+    imageAlt: "A security camera mounted to the ceiling of a building",
+    theme: { accent: "amber", visual: "pulse", heroVariant: "diagonal" },
+    stats: [
+      { label: "Avg. Shrinkage Reduction", value: "20%" },
+      { label: "Alert Latency", value: "<10s" },
+      { label: "Typical Engagement", value: "6-10 wks" },
+      { label: "False Alert Tuning", value: "Included" },
+    ],
+    process: [
+      { title: "Loss Pattern Review", description: "We review historical incidents and camera footage to understand common theft patterns in your environment." },
+      { title: "Model Training", description: "We train detection models on the specific behaviors and zones that matter most." },
+      { title: "Alert Workflow Design", description: "We design how alerts reach loss prevention staff, with clip and location context attached." },
+      { title: "Deployment & Tuning", description: "We deploy and tune sensitivity against real outcomes to control false alerts." },
+    ],
+    deliverables: [
+      "Theft/shrinkage detection model tuned to your locations",
+      "Real-time alerting with video clip evidence",
+      "Loss prevention dashboard",
+      "False alert tuning report",
+      "Deployment documentation for store or facility rollout",
+    ],
+    engagementModel: [
+      { title: "Single-Location Pilot", description: "A 3-4 week pilot at one location to validate detection accuracy and alert workflow." },
+      { title: "Multi-Location Rollout", description: "Phased deployment across additional locations — typically 6-10 weeks for initial rollout." },
+      { title: "Ongoing Tuning Retainer", description: "Monthly retainer to retune detection as layouts or product mix change." },
+    ],
+    techStack: [
+      { category: "Vision", items: ["PyTorch", "ONNX", "TensorFlow"] },
+      { category: "Infra", items: ["Docker", "AWS", "PostgreSQL"] },
+    ],
+    faqs: [
+      { question: "Does this replace security staff?", answer: "No — it's designed to direct staff attention to likely incidents in real time, with video evidence, rather than replace on-site presence." },
+      { question: "How do you keep false alerts manageable?", answer: "We tune detection thresholds against your real historical incidents specifically to keep the false alert rate workable for staff." },
+      { question: "Can this work across multiple store locations?", answer: "Yes — we design for phased multi-location rollout with centralized monitoring where needed." },
+      { question: "What camera setup does this require?", answer: "Most existing CCTV/IP camera setups work; we assess compatibility during the loss pattern review." },
+    ],
+    seo: {
+      metaTitle: "AI Theft Detection Systems | Staller Stack",
+      metaDescription: "Real-time AI theft and shrinkage detection with video evidence and alerting — tuned to your locations and loss patterns.",
+      keywords: ["theft detection system", "AI shrinkage detection", "loss prevention AI", "retail theft detection AI"],
+    },
   },
   {
     slug: "logistic-ai-agent",
@@ -228,6 +1561,50 @@ export const aiSolutions: AiOffering[] = [
     description: "AI logistics agents for route planning, delivery tracking, and operations.",
     icon: "truck",
     category: "solution",
+    intro:
+      "We build AI agents that plan delivery routes, track shipments, and flag exceptions in real time — reducing manual dispatch work while keeping a human dispatcher in control of final decisions on cost-sensitive or unusual routes.",
+    image: "/images/stallerstack/build-with-ai/logistic-ai-agent.jpg",
+    imageAlt: "A forklift driving through a warehouse filled with pallets",
+    theme: { accent: "blue", visual: "pulse", heroVariant: "centered" },
+    stats: [
+      { label: "Avg. Route Efficiency Gain", value: "18%" },
+      { label: "Typical Engagement", value: "6-10 wks" },
+      { label: "Exception Handling", value: "Automated Flagging" },
+      { label: "Fleet Sizes Supported", value: "10-1000+" },
+    ],
+    process: [
+      { title: "Operations Mapping", description: "We map your current dispatch and routing process to find where automation helps most." },
+      { title: "Routing Model Build", description: "We build the agent's route optimization logic against your real constraints (time windows, capacity, etc.)." },
+      { title: "Exception Handling", description: "We design how the agent flags and routes exceptions like delays or failed deliveries to dispatchers." },
+      { title: "Deployment", description: "We integrate with your fleet tracking and dispatch systems and roll out gradually." },
+    ],
+    deliverables: [
+      "Route planning and optimization agent",
+      "Real-time delivery tracking integration",
+      "Exception flagging and dispatcher escalation",
+      "Operations dashboard for route performance",
+      "Integration documentation for fleet systems",
+    ],
+    engagementModel: [
+      { title: "Route Pilot", description: "A 3-4 week pilot optimizing routes for a subset of your fleet to validate efficiency gains." },
+      { title: "Production Build", description: "Full agent build with fleet system integration — typically 6-10 weeks." },
+      { title: "Ongoing Optimization", description: "Monthly retainer to refine routing as fleet size, regions, or constraints change." },
+    ],
+    techStack: [
+      { category: "Agent Stack", items: ["Python", "OpenAI API", "PostgreSQL"] },
+      { category: "Integration", items: ["GraphQL", "Twilio", "AWS"] },
+    ],
+    faqs: [
+      { question: "Does the agent make final routing decisions, or just recommend?", answer: "It's configurable — most clients start with recommendations reviewed by dispatchers, then increase autonomy as trust in the agent's accuracy builds." },
+      { question: "Can it handle real-time disruptions like traffic or delays?", answer: "Yes — it monitors live conditions and re-plans affected routes, flagging significant changes to dispatchers." },
+      { question: "What fleet management systems does it integrate with?", answer: "We integrate with your existing telematics and dispatch platform via API; specifics are scoped during operations mapping." },
+      { question: "How is this different from AI Workflow Automation?", answer: "This is a purpose-built agent for logistics specifically; AI Workflow Automation is our general-purpose service for automating any multi-step business process." },
+    ],
+    seo: {
+      metaTitle: "Logistic AI Agent Solutions | Staller Stack",
+      metaDescription: "AI agents for delivery route planning, real-time tracking, and exception handling — integrated with your fleet and dispatch systems.",
+      keywords: ["logistics AI agent", "AI route optimization", "delivery tracking AI", "fleet management AI"],
+    },
   },
   {
     slug: "customer-support-ai-agent",
@@ -235,6 +1612,50 @@ export const aiSolutions: AiOffering[] = [
     description: "AI support agents for faster responses and better customer service.",
     icon: "headset",
     category: "solution",
+    intro:
+      "We build support agents that triage, answer, and resolve tickets against your actual help center and past resolutions — cutting response time on routine requests while escalating anything ambiguous or high-stakes to a human agent.",
+    image: "/images/stallerstack/build-with-ai/customer-support-ai-agent.jpg",
+    imageAlt: "A person typing on a laptop on a desk",
+    theme: { accent: "mint", visual: "orbit", heroVariant: "split" },
+    stats: [
+      { label: "Avg. First Response Time", value: "<1 min" },
+      { label: "Ticket Deflection Rate", value: "45%" },
+      { label: "Typical Engagement", value: "5-9 wks" },
+      { label: "CSAT Impact", value: "Tracked" },
+    ],
+    process: [
+      { title: "Ticket Pattern Analysis", description: "We analyze your historical tickets to find the highest-volume, most automatable request types." },
+      { title: "Knowledge Grounding", description: "The agent is grounded in your help center and past resolved tickets for accurate answers." },
+      { title: "Escalation Design", description: "We define clear rules for when a ticket routes to a human instead of the agent resolving it." },
+      { title: "Launch & Tune", description: "We monitor deflection rate and CSAT after launch and tune the agent's coverage." },
+    ],
+    deliverables: [
+      "Support agent integrated with your helpdesk platform",
+      "Knowledge base grounding and citation on answers",
+      "Escalation rules for human handoff",
+      "Deflection rate and CSAT tracking dashboard",
+      "Ongoing tuning playbook",
+    ],
+    engagementModel: [
+      { title: "Pilot Deployment", description: "A 2-3 week pilot covering your top 5-10 ticket categories before full rollout." },
+      { title: "Production Build", description: "Full agent covering priority categories with helpdesk integration — typically 5-9 weeks." },
+      { title: "Ongoing Tuning Retainer", description: "Monthly review of transcripts and CSAT to keep expanding safe coverage." },
+    ],
+    techStack: [
+      { category: "Agent Stack", items: ["OpenAI API", "LangChain", "Pinecone"] },
+      { category: "Support Tools", items: ["Zendesk", "PostgreSQL"] },
+    ],
+    faqs: [
+      { question: "Which helpdesk platforms do you integrate with?", answer: "Zendesk and similar ticketing platforms are common integrations; we confirm compatibility during ticket pattern analysis." },
+      { question: "How do you decide what the agent can resolve versus escalate?", answer: "We define escalation rules based on ticket type, customer sentiment, and confidence score, tuned against your real historical data." },
+      { question: "Will customers know they're talking to AI?", answer: "We recommend transparent disclosure, and the escalation path always makes a human agent available when needed." },
+      { question: "How is this different from AI Chatbot?", answer: "AI Chatbot is the general conversational product; Customer Support AI Agent is specifically built around ticket resolution and helpdesk workflows." },
+    ],
+    seo: {
+      metaTitle: "Customer Support AI Agent Solutions | Staller Stack",
+      metaDescription: "AI support agents that triage and resolve tickets grounded in your help center, with clear escalation to human agents when needed.",
+      keywords: ["customer support AI agent", "AI helpdesk automation", "AI ticket resolution", "support automation AI"],
+    },
   },
   {
     slug: "retail-ai-agent",
@@ -242,6 +1663,50 @@ export const aiSolutions: AiOffering[] = [
     description: "Retail AI agents for customer engagement, inventory, and sales support.",
     icon: "store",
     category: "solution",
+    intro:
+      "We build AI agents for retail operations — answering product questions in-store or online, flagging inventory issues before they cause stockouts, and supporting sales associates with real-time product knowledge.",
+    image: "/images/stallerstack/build-with-ai/retail-ai-agent.jpg",
+    imageAlt: "People walking through a modern shopping mall interior",
+    theme: { accent: "amber", visual: "mesh", heroVariant: "diagonal" },
+    stats: [
+      { label: "Avg. Stockout Reduction", value: "22%" },
+      { label: "Typical Engagement", value: "5-9 wks" },
+      { label: "Channels", value: "In-Store & Online" },
+      { label: "Product Catalog Grounding", value: "Real-Time" },
+    ],
+    process: [
+      { title: "Retail Workflow Audit", description: "We identify where customer engagement or inventory friction is costing sales or efficiency." },
+      { title: "Catalog Grounding", description: "The agent is grounded in your live product catalog and inventory data." },
+      { title: "Agent Build", description: "We build the agent for the target use case — customer Q&A, inventory alerts, or associate support." },
+      { title: "Deployment", description: "We roll out to the chosen channel with usage and impact tracking." },
+    ],
+    deliverables: [
+      "Retail agent for the target use case",
+      "Live product catalog and inventory integration",
+      "Deployment to in-store and/or online channels",
+      "Impact tracking dashboard",
+      "Training material for store associates",
+    ],
+    engagementModel: [
+      { title: "Single-Store Pilot", description: "A 3-4 week pilot at one location or storefront to validate the agent's usefulness." },
+      { title: "Production Build", description: "Full agent build with catalog integration and multi-channel deployment — typically 5-9 weeks." },
+      { title: "Ongoing Optimization", description: "Monthly retainer to expand coverage and tune against seasonal catalog changes." },
+    ],
+    techStack: [
+      { category: "Agent Stack", items: ["OpenAI API", "Pinecone", "Python"] },
+      { category: "Retail Systems", items: ["GraphQL", "PostgreSQL"] },
+    ],
+    faqs: [
+      { question: "Can this work both online and in physical stores?", answer: "Yes — we build for whichever channel matters most first, with the option to expand to the other later." },
+      { question: "How does it stay accurate as inventory changes?", answer: "It's grounded in your live catalog and inventory feed, not a static snapshot, so answers reflect current stock." },
+      { question: "Can it support store associates rather than customers directly?", answer: "Yes — an associate-facing version can answer product spec and inventory questions to speed up in-person service." },
+      { question: "How is this different from AI E-Commerce?", answer: "AI E-Commerce covers broader storefront personalization and support; Retail AI Agent is focused specifically on agent-driven engagement and inventory tasks." },
+    ],
+    seo: {
+      metaTitle: "Retail AI Agent Solutions | Staller Stack",
+      metaDescription: "AI agents for retail customer engagement, inventory alerts, and sales associate support — grounded in your live product catalog.",
+      keywords: ["retail AI agent", "AI inventory management", "retail customer engagement AI", "AI sales support"],
+    },
   },
   {
     slug: "ai-agent-orchestrator",
@@ -249,6 +1714,50 @@ export const aiSolutions: AiOffering[] = [
     description: "Manage multiple AI agents through smart orchestration and workflow control.",
     icon: "orchestrator",
     category: "solution",
+    intro:
+      "When you have several specialized agents — support, sales, logistics — they need a coordination layer that routes work, prevents conflicts, and gives you one place to monitor everything. We build that orchestration layer on top of your existing agents.",
+    image: "/images/stallerstack/build-with-ai/ai-agent-orchestrator.jpg",
+    imageAlt: "The control room of a ship with multiple monitors",
+    theme: { accent: "cyan", visual: "wave", heroVariant: "centered" },
+    stats: [
+      { label: "Agents Coordinated (Typical)", value: "3-8" },
+      { label: "Typical Engagement", value: "6-10 wks" },
+      { label: "Centralized Monitoring", value: "Included" },
+      { label: "Conflict Resolution", value: "Built-in" },
+    ],
+    process: [
+      { title: "Agent Inventory", description: "We map your existing or planned agents, their responsibilities, and where they overlap." },
+      { title: "Orchestration Design", description: "We design routing logic and conflict-resolution rules for handing off work between agents." },
+      { title: "Build & Integrate", description: "We build the orchestration layer connecting to each individual agent." },
+      { title: "Centralized Monitoring", description: "We add a single dashboard showing activity and outcomes across every coordinated agent." },
+    ],
+    deliverables: [
+      "Orchestration layer coordinating multiple agents",
+      "Routing and conflict-resolution logic",
+      "Centralized monitoring dashboard",
+      "Handoff protocol documentation",
+      "Runbook for adding new agents to the orchestrator",
+    ],
+    engagementModel: [
+      { title: "Orchestration Design", description: "A 2-3 week engagement mapping existing agents and designing the coordination logic." },
+      { title: "Production Build", description: "Full orchestration layer build and integration — typically 6-10 weeks." },
+      { title: "Ongoing Expansion Retainer", description: "Monthly retainer to onboard new agents and refine routing rules over time." },
+    ],
+    techStack: [
+      { category: "Orchestration", items: ["LangGraph", "Python", "Redis"] },
+      { category: "Infra", items: ["Docker", "Kubernetes", "PostgreSQL"] },
+    ],
+    faqs: [
+      { question: "Do you build the individual agents too, or just the orchestrator?", answer: "Both are options — we can build the orchestration layer on top of agents you already have, or build the full agent fleet plus orchestration together." },
+      { question: "How does it decide which agent handles a given task?", answer: "Routing logic is based on task type and defined agent responsibilities, with explicit rules for cases where more than one agent could apply." },
+      { question: "What happens if two agents conflict?", answer: "We design conflict-resolution rules upfront — typically a priority order or a human escalation for genuinely ambiguous cases." },
+      { question: "Can we add new agents later?", answer: "Yes — the orchestrator is designed to onboard new agents through a documented process rather than requiring a rebuild." },
+    ],
+    seo: {
+      metaTitle: "AI Agent Orchestrator Solutions | Staller Stack",
+      metaDescription: "A coordination layer for multiple AI agents — routing, conflict resolution, and centralized monitoring across your agent fleet.",
+      keywords: ["AI agent orchestrator", "multi-agent coordination", "AI agent management platform", "agent orchestration solutions"],
+    },
   },
   {
     slug: "ai-sales-agent",
@@ -256,6 +1765,50 @@ export const aiSolutions: AiOffering[] = [
     description: "AI sales agents for lead engagement, follow-ups, and sales automation.",
     icon: "trending",
     category: "solution",
+    intro:
+      "We build AI agents that qualify inbound leads, send timely follow-ups, and keep your CRM updated — freeing your sales team to focus on conversations that are actually ready to close.",
+    image: "/images/stallerstack/build-with-ai/ai-sales-agent.jpg",
+    imageAlt: "A desk with a phone, pencils, pens, and other office supplies",
+    theme: { accent: "indigo", visual: "pulse", heroVariant: "split" },
+    stats: [
+      { label: "Avg. Lead Response Time", value: "<5 min" },
+      { label: "Follow-Up Completion Rate", value: "95%" },
+      { label: "Typical Engagement", value: "4-8 wks" },
+      { label: "CRM Sync", value: "Real-Time" },
+    ],
+    process: [
+      { title: "Sales Process Mapping", description: "We map your current lead qualification and follow-up process to find automation opportunities." },
+      { title: "Qualification Logic", description: "We build the agent's criteria for scoring and routing leads based on your ICP." },
+      { title: "Follow-Up Automation", description: "We automate timely, personalized follow-ups without losing the human touch on high-value leads." },
+      { title: "CRM Integration", description: "We wire the agent into your CRM so every interaction is logged automatically." },
+    ],
+    deliverables: [
+      "Lead qualification and scoring agent",
+      "Automated, personalized follow-up sequences",
+      "Real-time CRM integration and logging",
+      "Handoff rules for high-value leads to reps",
+      "Performance dashboard (response time, conversion)",
+    ],
+    engagementModel: [
+      { title: "Pilot Program", description: "A 2-3 week pilot on one lead segment to validate qualification accuracy and response time." },
+      { title: "Production Build", description: "Full agent build with CRM integration — typically 4-8 weeks." },
+      { title: "Ongoing Optimization", description: "Monthly retainer to refine qualification criteria and follow-up sequences based on conversion data." },
+    ],
+    techStack: [
+      { category: "Agent Stack", items: ["OpenAI API", "Python", "PostgreSQL"] },
+      { category: "Sales Tools", items: ["Twilio", "Mailchimp", "GraphQL"] },
+    ],
+    faqs: [
+      { question: "Does this replace our sales reps?", answer: "No — it handles qualification and routine follow-up so reps spend their time on qualified, ready-to-close conversations." },
+      { question: "Which CRMs do you integrate with?", answer: "Most major CRMs with an API; we confirm specifics during sales process mapping." },
+      { question: "How does it decide when to hand off to a human rep?", answer: "Based on lead score and engagement signals defined with your sales team, with clear thresholds for handoff." },
+      { question: "Can it personalize outreach, or is it generic templates?", answer: "It personalizes based on lead data and behavior rather than sending identical templates to everyone." },
+    ],
+    seo: {
+      metaTitle: "AI Sales Agent Solutions | Staller Stack",
+      metaDescription: "AI agents for lead qualification, automated follow-ups, and CRM logging — built to free your sales team for high-value conversations.",
+      keywords: ["AI sales agent", "AI lead qualification", "sales automation AI", "AI follow-up automation"],
+    },
   },
   {
     slug: "ai-voice-agent",
@@ -263,6 +1816,50 @@ export const aiSolutions: AiOffering[] = [
     description: "AI voice agents for calls, customer support, and business communication.",
     icon: "mic",
     category: "solution",
+    intro:
+      "We build voice agents that handle phone calls with natural speech recognition and synthesis — answering common questions, routing calls, and capturing information — with a clean handoff to a human whenever the caller needs one.",
+    image: "/images/stallerstack/build-with-ai/ai-voice-agent.jpg",
+    imageAlt: "A bluetooth speaker sitting on top of a table",
+    theme: { accent: "teal", visual: "orbit", heroVariant: "diagonal" },
+    stats: [
+      { label: "Avg. Call Resolution Rate", value: "55%" },
+      { label: "Avg. Latency (Speech-to-Response)", value: "<1.5s" },
+      { label: "Typical Engagement", value: "5-9 wks" },
+      { label: "24/7 Availability", value: "Standard" },
+    ],
+    process: [
+      { title: "Call Flow Design", description: "We map your most common call types and design flows that resolve them naturally." },
+      { title: "Voice Pipeline Build", description: "We build the speech-to-text, reasoning, and text-to-speech pipeline for natural conversation." },
+      { title: "Integration", description: "We connect the agent to your phone system and backend systems for real actions." },
+      { title: "Launch & Tune", description: "We monitor real call transcripts and tune flows based on where callers get stuck." },
+    ],
+    deliverables: [
+      "Deployed voice agent on your phone system",
+      "Speech recognition and synthesis pipeline",
+      "System integrations for real actions (bookings, lookups, etc.)",
+      "Call transcript and resolution analytics",
+      "Escalation flow to human agents",
+    ],
+    engagementModel: [
+      { title: "Pilot Line", description: "A 2-3 week pilot on one phone line or call type before wider rollout." },
+      { title: "Production Build", description: "Full voice agent covering your priority call types — typically 5-9 weeks." },
+      { title: "Ongoing Tuning Retainer", description: "Monthly review of call transcripts to improve resolution rate." },
+    ],
+    techStack: [
+      { category: "Voice Stack", items: ["OpenAI API", "Twilio", "Python"] },
+      { category: "Infra", items: ["PostgreSQL", "Redis"] },
+    ],
+    faqs: [
+      { question: "Does it sound robotic?", answer: "Modern speech synthesis is natural-sounding; we tune pacing and tone during call flow design to match your brand voice." },
+      { question: "Can it handle interruptions or people talking over it?", answer: "Yes — the pipeline is built to handle natural conversational patterns, including interruptions, not just linear scripted turns." },
+      { question: "What happens if the caller wants a human?", answer: "The agent recognizes explicit requests and common frustration signals and transfers to a human agent immediately." },
+      { question: "Can it work outside business hours?", answer: "Yes — 24/7 availability is one of the main reasons clients deploy a voice agent for routine call types." },
+    ],
+    seo: {
+      metaTitle: "AI Voice Agent Solutions | Staller Stack",
+      metaDescription: "AI voice agents for phone support and business communication — natural speech recognition, real system integrations, human handoff.",
+      keywords: ["AI voice agent", "AI phone support", "voice AI customer service", "AI call automation"],
+    },
   },
   {
     slug: "ai-based-video-analysis",
@@ -270,6 +1867,50 @@ export const aiSolutions: AiOffering[] = [
     description: "Analyze video data with AI for insights, safety, and monitoring.",
     icon: "video",
     category: "solution",
+    intro:
+      "We build video analytics pipelines that extract structured insight from recorded or live footage — occupancy counts, safety compliance, incident detection — turning hours of video into searchable, actionable data.",
+    image: "/images/stallerstack/build-with-ai/ai-based-video-analysis.jpg",
+    imageAlt: "Time-lapse photography of light trails",
+    theme: { accent: "amber", visual: "orbit", heroVariant: "centered" },
+    stats: [
+      { label: "Avg. Processing Speed", value: "Real-Time" },
+      { label: "Typical Engagement", value: "6-10 wks" },
+      { label: "Use Cases Supported", value: "Safety, Occupancy, Incidents" },
+      { label: "Searchable Event Index", value: "Included" },
+    ],
+    process: [
+      { title: "Footage Audit", description: "We review sample footage to understand camera coverage, quality, and target insights." },
+      { title: "Model Training", description: "We train or fine-tune models for the specific events or metrics you need extracted." },
+      { title: "Pipeline Build", description: "We build the pipeline processing live or archived footage into structured events." },
+      { title: "Dashboard & Search", description: "We deliver a dashboard where events are searchable and reviewable with video context." },
+    ],
+    deliverables: [
+      "Video analysis pipeline for the target use case",
+      "Structured event index (searchable by type, time, location)",
+      "Dashboard with video playback context",
+      "Accuracy benchmark report",
+      "Deployment documentation for your camera infrastructure",
+    ],
+    engagementModel: [
+      { title: "Proof of Concept", description: "A 2-3 week sprint analyzing sample footage to validate detection accuracy." },
+      { title: "Production Build", description: "Full pipeline and dashboard build — typically 6-10 weeks." },
+      { title: "Ongoing Retraining", description: "Monthly retainer to expand detected event types or retrain for new camera setups." },
+    ],
+    techStack: [
+      { category: "Vision", items: ["PyTorch", "TensorFlow", "ONNX"] },
+      { category: "Infra", items: ["Elasticsearch", "Docker", "AWS"] },
+    ],
+    faqs: [
+      { question: "Can this analyze archived footage, not just live feeds?", answer: "Yes — batch processing of archived video is common, particularly for incident investigation use cases." },
+      { question: "What kinds of events can it detect?", answer: "Safety compliance (PPE, restricted zones), occupancy counts, and incident detection are common examples — we scope specifics during the footage audit." },
+      { question: "How is this different from CCTV Security?", answer: "CCTV Security is specifically about real-time surveillance monitoring and alerting; AI-Based Video Analysis covers broader insight extraction, including from archived footage." },
+      { question: "Do you store the video, or just the extracted data?", answer: "That's configurable based on your storage and privacy requirements — some deployments only retain structured events, not raw footage." },
+    ],
+    seo: {
+      metaTitle: "AI-Based Video Analysis Solutions | Staller Stack",
+      metaDescription: "AI video analytics for safety compliance, occupancy monitoring, and incident detection — turning footage into searchable, structured data.",
+      keywords: ["AI video analysis", "video analytics AI", "AI safety monitoring", "AI incident detection video"],
+    },
   },
   {
     slug: "cctv-security",
@@ -277,6 +1918,50 @@ export const aiSolutions: AiOffering[] = [
     description: "AI-powered CCTV security for real-time monitoring and threat detection.",
     icon: "camera",
     category: "solution",
+    intro:
+      "We augment existing CCTV infrastructure with AI-powered real-time monitoring — flagging intrusions, loitering, and unusual activity as they happen and alerting security staff instead of relying on someone watching a wall of monitors.",
+    image: "/images/stallerstack/build-with-ai/cctv-security.jpg",
+    imageAlt: "Three white CCTV cameras mounted on a wall",
+    theme: { accent: "blue", visual: "pulse", heroVariant: "split" },
+    stats: [
+      { label: "Avg. Alert Latency", value: "<5s" },
+      { label: "Typical Engagement", value: "5-9 wks" },
+      { label: "Cameras Supported (Typical)", value: "10-500+" },
+      { label: "24/7 Monitoring", value: "Automated" },
+    ],
+    process: [
+      { title: "Site & Camera Audit", description: "We assess your existing camera infrastructure, coverage, and current monitoring process." },
+      { title: "Detection Model Setup", description: "We configure detection for intrusion, loitering, or other events relevant to your site." },
+      { title: "Alert Workflow Design", description: "We design how alerts reach security staff, with camera context and video clips attached." },
+      { title: "Deployment & Tuning", description: "We deploy across your camera network and tune sensitivity against real conditions." },
+    ],
+    deliverables: [
+      "AI monitoring layer added to your existing CCTV network",
+      "Real-time alerting with video clip evidence",
+      "Security dashboard for live and historical review",
+      "False alert tuning report",
+      "Deployment documentation for your site",
+    ],
+    engagementModel: [
+      { title: "Single-Site Pilot", description: "A 3-4 week pilot at one site to validate detection accuracy and alert workflow." },
+      { title: "Multi-Site Rollout", description: "Phased deployment across additional sites — typically 5-9 weeks for initial rollout." },
+      { title: "Ongoing Monitoring Retainer", description: "Monthly retainer for tuning and support as camera coverage or site conditions change." },
+    ],
+    techStack: [
+      { category: "Vision", items: ["PyTorch", "ONNX", "TensorFlow"] },
+      { category: "Infra", items: ["Docker", "AWS", "Grafana"] },
+    ],
+    faqs: [
+      { question: "Do we need to replace our existing cameras?", answer: "Usually no — we work with your existing IP camera infrastructure as long as feeds are accessible via standard protocols." },
+      { question: "Does this replace security guards?", answer: "No — it's designed to direct attention to real events in real time rather than requiring someone to watch every feed continuously." },
+      { question: "How do you handle privacy concerns?", answer: "We scope data retention and access controls with you during the site audit, aligned with your local regulations and policies." },
+      { question: "Can this scale across multiple sites?", answer: "Yes — the platform is designed for multi-site deployment with centralized monitoring where needed." },
+    ],
+    seo: {
+      metaTitle: "AI-Powered CCTV Security Solutions | Staller Stack",
+      metaDescription: "Real-time AI monitoring layered onto your existing CCTV network — intrusion and anomaly detection with instant alerting.",
+      keywords: ["AI CCTV security", "AI video surveillance", "intrusion detection AI", "smart security camera AI"],
+    },
   },
   {
     slug: "ai-based-recommendation",
@@ -284,6 +1969,50 @@ export const aiSolutions: AiOffering[] = [
     description: "Personalized AI recommendations for products, content, and user experiences.",
     icon: "thumb",
     category: "solution",
+    intro:
+      "We build recommendation engines that learn from real user behavior — not just static rules — to surface the right product, article, or next action for each user, integrated directly into your existing app or site.",
+    image: "/images/stallerstack/build-with-ai/ai-based-recommendation.jpg",
+    imageAlt: "Smartphone displaying colorful app icons on a marble surface",
+    theme: { accent: "teal", visual: "mesh", heroVariant: "diagonal" },
+    stats: [
+      { label: "Avg. Engagement Lift", value: "20%" },
+      { label: "Typical Engagement", value: "5-9 wks" },
+      { label: "Cold-Start Handling", value: "Built-in" },
+      { label: "Real-Time Personalization", value: "Yes" },
+    ],
+    process: [
+      { title: "Behavior Data Audit", description: "We review your existing user interaction data to assess what signals are available for personalization." },
+      { title: "Model Selection", description: "We choose a collaborative filtering, content-based, or hybrid approach matched to your data volume." },
+      { title: "Integration", description: "We integrate the recommendation engine directly into your product or site." },
+      { title: "A/B Testing", description: "We measure lift against your current experience before full rollout." },
+    ],
+    deliverables: [
+      "Recommendation engine integrated into your product",
+      "A/B test results measuring engagement lift",
+      "Cold-start strategy for new users/items",
+      "Real-time personalization pipeline",
+      "Monitoring dashboard for recommendation performance",
+    ],
+    engagementModel: [
+      { title: "Pilot Build", description: "A 3-4 week build tested via A/B experiment against your current experience." },
+      { title: "Production Rollout", description: "Full integration and rollout across your product — typically 5-9 weeks." },
+      { title: "Ongoing Optimization", description: "Monthly retainer to retrain and tune as user behavior and catalog evolve." },
+    ],
+    techStack: [
+      { category: "Modeling", items: ["Python", "Scikit-learn", "Pinecone"] },
+      { category: "Infra", items: ["Redis", "PostgreSQL", "GraphQL"] },
+    ],
+    faqs: [
+      { question: "What if we're a new product with little user data?", answer: "We use a cold-start strategy — content-based or rule-informed recommendations — until enough behavioral data accumulates to personalize fully." },
+      { question: "How do you prove it's actually improving engagement?", answer: "Every rollout is A/B tested against your current experience, so the lift is measured, not assumed." },
+      { question: "Can this recommend content as well as products?", answer: "Yes — the same underlying approach applies to articles, media, or any catalog of recommendable items." },
+      { question: "Does it update in real time as users interact?", answer: "Yes, real-time personalization reflects recent behavior rather than only a periodically retrained batch model." },
+    ],
+    seo: {
+      metaTitle: "AI-Based Recommendation Engine Solutions | Staller Stack",
+      metaDescription: "Personalized AI recommendation engines for products and content — integrated into your app or site with measured A/B tested lift.",
+      keywords: ["AI recommendation engine", "personalization AI", "AI product recommendations", "recommendation system development"],
+    },
   },
 ];
 

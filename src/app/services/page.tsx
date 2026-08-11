@@ -28,14 +28,19 @@ export default function ServicesPage() {
       <section className="pb-24 sm:pb-32">
         <Container>
           <RevealGroup className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {services.map((service) => (
+            {services.map((service, index) => (
               <RevealItem key={service.slug}>
                 <Link href={`/services/${service.slug}`}>
                   <TiltCard className="h-full" accent={service.theme.accent}>
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-ss-border bg-ss-base">
-                      <SpinningIcon>
-                        <ServiceIcon icon={service.icon} />
-                      </SpinningIcon>
+                    <div className="flex items-start justify-between">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-ss-border bg-ss-base">
+                        <SpinningIcon>
+                          <ServiceIcon icon={service.icon} />
+                        </SpinningIcon>
+                      </div>
+                      <span className="font-mono text-xs text-ss-muted">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
                     </div>
                     <h2 className="mt-6 font-display text-xl font-semibold text-ss-text">
                       {service.title}
@@ -57,8 +62,11 @@ export default function ServicesPage() {
                           </span>
                         ))}
                     </div>
-                    <span className="mt-6 inline-block font-display text-sm text-ss-teal">
-                      Learn more →
+                    <span className="mt-6 inline-flex items-center gap-1.5 font-display text-sm text-ss-teal">
+                      Learn more
+                      <span className="transition-transform duration-300 group-hover:translate-x-1">
+                        →
+                      </span>
                     </span>
                   </TiltCard>
                 </Link>

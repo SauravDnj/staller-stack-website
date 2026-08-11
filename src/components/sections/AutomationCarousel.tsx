@@ -19,6 +19,7 @@ import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { IconTile } from "@/components/ui/IconTile";
+import { AmbientVisual } from "@/components/ui/AmbientVisual";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 import { automationUseCases } from "@/content/home";
 
@@ -60,8 +61,13 @@ export function AutomationCarousel() {
   );
 
   return (
-    <section id="automation" className="py-24 sm:py-32">
-      <Container>
+    <section id="automation" className="relative overflow-hidden py-24 sm:py-32">
+      <AmbientVisual
+        visual="pulse"
+        color="var(--ss-cyan)"
+        className="right-[-70px] bottom-0 hidden h-72 w-72 opacity-[0.28] lg:block"
+      />
+      <Container className="relative">
         <Reveal className="flex flex-col items-center text-center">
           <Badge>{automationUseCases.badge}</Badge>
           <h2 className="mt-5 font-display text-3xl font-semibold sm:text-4xl lg:text-5xl">

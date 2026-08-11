@@ -1,14 +1,26 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { FiCode, FiCompass, FiTrendingUp } from "react-icons/fi";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
+import { IconTile, type IconTileColor } from "@/components/ui/IconTile";
 import { AmbientVisual } from "@/components/ui/AmbientVisual";
 import { process } from "@/content/home";
 
+const stepIcons = [FiCompass, FiCode, FiTrendingUp];
+const stepColors: IconTileColor[] = ["teal", "cyan", "amber"];
+const stepBorderHover = ["hover:border-ss-teal", "hover:border-ss-cyan", "hover:border-ss-amber"];
+
 export function Process() {
   return (
-    <section id="process" className="relative overflow-hidden border-y border-ss-border bg-ss-surface-2/40 py-24 sm:py-32">
+    <section
+      id="process"
+      className="relative overflow-hidden border-y border-ss-border bg-ss-surface-2/40 py-24 sm:py-32"
+    >
       <AmbientVisual
         visual="wave"
         color="var(--ss-amber)"
@@ -28,19 +40,46 @@ export function Process() {
           </Button>
         </div>
 
-        <RevealGroup className="mt-16 grid grid-cols-1 gap-10 md:grid-cols-3">
-          {process.steps.map((step) => (
-            <RevealItem key={step.step} className="relative pl-4">
-              <span className="font-display text-5xl font-semibold text-ss-teal/30">
-                {step.step}
-              </span>
-              <h3 className="mt-4 font-display text-xl font-semibold text-ss-text">
-                {step.title}
-              </h3>
-              <p className="mt-3 text-sm text-ss-muted">{step.description}</p>
-            </RevealItem>
-          ))}
-        </RevealGroup>
+        <div className="relative mt-16">
+          <div
+            className="pointer-events-none absolute left-0 right-0 hidden h-px md:block"
+            style={{ backgroundColor: "var(--ss-border)", top: "54px" }}
+          />
+          <motion.div
+            className="pointer-events-none absolute left-0 right-0 hidden h-px origin-left md:block"
+            style={{ backgroundColor: "var(--ss-amber)", top: "54px" }}
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 1.2, ease: "easeInOut" }}
+          />
+          <RevealGroup className="grid grid-cols-1 gap-6 md:grid-cols-3">
+            {process.steps.map((step, index) => {
+              const Icon = stepIcons[index];
+              return (
+                <RevealItem key={step.step}>
+                  <div
+                    className={`group relative h-full overflow-hidden rounded-2xl border border-ss-border bg-ss-surface/60 p-8 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 ${stepBorderHover[index]}`}
+                  >
+                    <span
+                      aria-hidden
+                      className="pointer-events-none absolute -right-2 -top-6 font-display text-7xl font-bold text-ss-text/[0.04] transition-colors duration-300 group-hover:text-ss-text/[0.07]"
+                    >
+                      {step.step}
+                    </span>
+                    <IconTile color={stepColors[index]} size="md" className="relative">
+                      <Icon />
+                    </IconTile>
+                    <h3 className="relative mt-6 font-display text-xl font-semibold text-ss-text">
+                      {step.title}
+                    </h3>
+                    <p className="relative mt-3 text-sm text-ss-muted">{step.description}</p>
+                  </div>
+                </RevealItem>
+              );
+            })}
+          </RevealGroup>
+        </div>
       </Container>
     </section>
   );

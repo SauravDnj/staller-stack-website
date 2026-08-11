@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { AmbientVisual } from "@/components/ui/AmbientVisual";
+import { TiltCard } from "@/components/ui/TiltCard";
 import { ContactForm } from "@/components/sections/ContactForm";
 import { siteConfig } from "@/content/siteConfig";
 
@@ -51,7 +52,7 @@ export function ContactSection() {
             </ul>
           </div>
 
-          <div className="rounded-2xl border border-ss-border bg-ss-surface/60 p-8">
+          <TiltCard strength={4}>
             <p className="font-display text-lg font-semibold text-ss-text">
               Not sure where to start?
             </p>
@@ -66,7 +67,7 @@ export function ContactSection() {
             >
               Talk to us <span aria-hidden>→</span>
             </Button>
-          </div>
+          </TiltCard>
         </Reveal>
 
         <Reveal delay={0.1} className="lg:col-span-3">

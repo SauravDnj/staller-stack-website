@@ -66,8 +66,9 @@ function TechRow({ reverse = false }: { reverse?: boolean }) {
 
 export function TechMarquee() {
   return (
-    <section className="border-y border-ss-border bg-ss-surface-2 py-14">
-      <Container>
+    <section className="relative overflow-hidden border-y border-ss-border bg-ss-surface-2 py-14">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_color-mix(in_srgb,var(--ss-teal)_10%,transparent),_transparent_65%)]" />
+      <Container className="relative">
         <Reveal className="text-center">
           <p className="font-mono text-xs uppercase tracking-[0.25em] text-ss-teal">
             Our Technology Stack

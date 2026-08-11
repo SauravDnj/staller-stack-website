@@ -14,6 +14,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
 import { Button } from "@/components/ui/Button";
 import { IconTile, type IconTileColor } from "@/components/ui/IconTile";
+import { AmbientVisual } from "@/components/ui/AmbientVisual";
 import { managedMode } from "@/content/home";
 
 const borderColors: Record<IconTileColor, string> = {
@@ -233,8 +234,16 @@ function ConsoleMockup() {
 
 export function ManagedMode() {
   return (
-    <section id="managed-mode" className="border-y border-ss-border bg-ss-surface-2/40 py-24 sm:py-32">
-      <Container>
+    <section
+      id="managed-mode"
+      className="relative overflow-hidden border-y border-ss-border bg-ss-surface-2/40 py-24 sm:py-32"
+    >
+      <AmbientVisual
+        visual="mesh"
+        color="var(--ss-indigo)"
+        className="left-[-60px] top-10 hidden h-72 w-72 opacity-[0.3] lg:block"
+      />
+      <Container className="relative">
         <Reveal>
           <SectionHeading
             align="center"

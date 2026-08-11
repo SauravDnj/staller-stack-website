@@ -8,8 +8,11 @@ import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
 import { ServiceHero } from "@/components/sections/ServiceHero";
 import { StatsStrip } from "@/components/sections/StatsStrip";
 import { EngagementModel } from "@/components/sections/EngagementModel";
+import { ProcessSteps } from "@/components/sections/ProcessSteps";
+import { DeliverablesShowcase } from "@/components/sections/DeliverablesShowcase";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { FaqAccordion } from "@/components/sections/FaqAccordion";
+import { AnimatedCheck } from "@/components/ui/AnimatedCheck";
 import { getServiceBySlug, services } from "@/content/services";
 import { industries } from "@/content/industries";
 import { siteConfig } from "@/content/siteConfig";
@@ -99,9 +102,9 @@ export default async function ServiceDetailPage({
                 className="flex items-start gap-3 bg-ss-surface/60 p-6 transition-colors duration-300 hover:bg-ss-surface"
               >
                 <span
-                  className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs ${accentClasses.bgSoft} ${accentClasses.text}`}
+                  className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full ${accentClasses.bgSoft}`}
                 >
-                  ✓
+                  <AnimatedCheck className={`h-3.5 w-3.5 ${accentClasses.text}`} />
                 </span>
                 <p className="font-display text-sm font-medium text-ss-text">{bullet}</p>
               </RevealItem>
@@ -110,50 +113,9 @@ export default async function ServiceDetailPage({
         </Container>
       </section>
 
-      <section className="border-t border-ss-border py-24 sm:py-32">
-        <Container>
-          <Reveal>
-            <h2 className="font-display text-2xl font-semibold text-ss-text">How We Work</h2>
-          </Reveal>
-          <div className="relative mt-10">
-            <div
-              className="pointer-events-none absolute left-0 right-0 top-4 hidden h-px lg:block"
-              style={{ backgroundColor: "var(--ss-border)" }}
-            />
-            <RevealGroup className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {service.process.map((step, index) => (
-                <RevealItem key={step.title} className="relative">
-                  <p className={`font-display text-3xl font-semibold ${accentClasses.text}`}>
-                    {String(index + 1).padStart(2, "0")}
-                  </p>
-                  <h3 className="mt-2 font-display text-base font-semibold text-ss-text">
-                    {step.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-ss-muted">{step.description}</p>
-                </RevealItem>
-              ))}
-            </RevealGroup>
-          </div>
-        </Container>
-      </section>
+      <ProcessSteps steps={service.process} accent={service.theme.accent} />
 
-      <section className="border-t border-ss-border py-24 sm:py-32">
-        <Container className="max-w-2xl">
-          <Reveal>
-            <h2 className="font-display text-2xl font-semibold text-ss-text">
-              What You&apos;ll Receive
-            </h2>
-            <ul className="mt-6 flex flex-col gap-3">
-              {service.deliverables.map((deliverable) => (
-                <li key={deliverable} className="flex items-start gap-3 text-sm text-ss-text">
-                  <span className={`mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full ${accentClasses.dot}`} />
-                  {deliverable}
-                </li>
-              ))}
-            </ul>
-          </Reveal>
-        </Container>
-      </section>
+      <DeliverablesShowcase deliverables={service.deliverables} accent={service.theme.accent} />
 
       <EngagementModel items={service.engagementModel} accent={service.theme.accent} />
 
@@ -210,7 +172,7 @@ export default async function ServiceDetailPage({
                 <RevealItem key={industry.slug}>
                   <Link
                     href={`/industries/${industry.slug}`}
-                    className={`group block rounded-xl border border-ss-border bg-ss-surface/60 p-5 transition-colors ${accentClasses.hoverBorder}`}
+                    className={`group block rounded-xl border border-ss-border bg-ss-surface/60 p-5 transition-all duration-300 hover:-translate-y-1 ${accentClasses.hoverBorder}`}
                   >
                     <p className="font-display text-sm font-semibold text-ss-text group-hover:text-ss-mint">
                       {industry.name}
@@ -248,7 +210,7 @@ export default async function ServiceDetailPage({
               <RevealItem key={related.slug}>
                 <Link
                   href={`/services/${related.slug}`}
-                  className={`group block rounded-xl border border-ss-border bg-ss-surface/60 p-5 transition-colors ${ACCENT_CLASSES[related.theme.accent].hoverBorder}`}
+                  className={`group block rounded-xl border border-ss-border bg-ss-surface/60 p-5 transition-all duration-300 hover:-translate-y-1 ${ACCENT_CLASSES[related.theme.accent].hoverBorder}`}
                 >
                   <p className="font-display text-sm font-semibold text-ss-text group-hover:text-ss-mint">
                     {related.title}

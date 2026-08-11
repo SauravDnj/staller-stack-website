@@ -3,6 +3,7 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
+import { TiltCard } from "@/components/ui/TiltCard";
 import { useAiGuide } from "@/components/ai-guide/AiGuideContext";
 
 const trustPoints = [
@@ -51,20 +52,19 @@ export function ProjectCta() {
           </ul>
         </Reveal>
 
-        <Reveal
-          delay={0.1}
-          className="rounded-2xl border border-ss-border bg-ss-surface/60 p-8"
-        >
-          <p className="font-display text-lg font-semibold text-ss-text">
-            Not sure where to start?
-          </p>
-          <p className="mt-2 text-sm text-ss-muted">
-            Answer a few quick questions and we&apos;ll point you to the right
-            service.
-          </p>
-          <Button onClick={open} className="mt-6 w-full justify-center">
-            Try Our AI Guide <span aria-hidden>→</span>
-          </Button>
+        <Reveal delay={0.1}>
+          <TiltCard>
+            <p className="font-display text-lg font-semibold text-ss-text">
+              Not sure where to start?
+            </p>
+            <p className="mt-2 text-sm text-ss-muted">
+              Answer a few quick questions and we&apos;ll point you to the right
+              service.
+            </p>
+            <Button onClick={open} className="mt-6 w-full justify-center">
+              Try Our AI Guide <span aria-hidden>→</span>
+            </Button>
+          </TiltCard>
         </Reveal>
       </Container>
     </section>

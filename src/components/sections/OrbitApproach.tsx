@@ -1,7 +1,9 @@
 "use client";
 
 import { useState, type ReactNode } from "react";
+import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
+import { useReducedMotion } from "@/lib/useReducedMotion";
 import type { IconType } from "react-icons";
 import {
   SiReact,
@@ -106,6 +108,7 @@ function nodePosition(index: number, total: number) {
 function OrbitalDiagram({ activeKey }: { activeKey: ApproachTab["key"] }) {
   const [hovered, setHovered] = useState<number | null>(null);
   const [prevActiveKey, setPrevActiveKey] = useState(activeKey);
+  const reducedMotion = useReducedMotion();
   const accent = tabAccentVar[activeKey];
   const nodes = orbitNodesByTab[activeKey];
 
@@ -159,16 +162,23 @@ function OrbitalDiagram({ activeKey }: { activeKey: ApproachTab["key"] }) {
       </svg>
 
       {/* Hub */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div
-          className={`flex h-28 w-28 items-center justify-center rounded-full border-2 bg-ss-surface transition-all duration-500 ${tabAccent[activeKey]}`}
+      <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
+        <motion.div
+          animate={reducedMotion ? undefined : { scale: [1, 1.05, 1] }}
+          transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut" }}
+          className={`flex h-28 w-28 items-center justify-center rounded-full border-2 bg-ss-surface p-6 transition-colors duration-500 ${tabAccent[activeKey]}`}
         >
-          <span className="text-center font-display text-sm font-bold leading-tight text-ss-text">
-            Staller
-            <br />
-            Stack
-          </span>
-        </div>
+          <Image
+            src="/images/logos/logo-icon.png"
+            alt=""
+            width={64}
+            height={64}
+            className="h-full w-full object-contain"
+          />
+        </motion.div>
+        <span className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-ss-muted">
+          Staller Stack
+        </span>
       </div>
 
       <AnimatePresence>
