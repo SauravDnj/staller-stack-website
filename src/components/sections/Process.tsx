@@ -14,6 +14,7 @@ import { process } from "@/content/home";
 const stepIcons = [FiCompass, FiCode, FiTrendingUp];
 const stepColors: IconTileColor[] = ["teal", "cyan", "amber"];
 const stepBorderHover = ["hover:border-ss-teal", "hover:border-ss-cyan", "hover:border-ss-amber"];
+const stepNumberColors = ["text-ss-teal", "text-ss-cyan", "text-ss-amber"];
 
 export function Process() {
   return (
@@ -61,15 +62,17 @@ export function Process() {
                   <div
                     className={`group relative h-full overflow-hidden rounded-2xl border border-ss-border bg-ss-surface/60 p-8 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 ${stepBorderHover[index]}`}
                   >
-                    <span
-                      aria-hidden
-                      className="pointer-events-none absolute -right-2 -top-6 font-display text-7xl font-bold text-ss-text/[0.04] transition-colors duration-300 group-hover:text-ss-text/[0.07]"
-                    >
-                      {step.step}
-                    </span>
-                    <IconTile color={stepColors[index]} size="md" className="relative">
-                      <Icon />
-                    </IconTile>
+                    <div className="flex items-start justify-between">
+                      <IconTile color={stepColors[index]} size="md" className="relative">
+                        <Icon />
+                      </IconTile>
+                      <span
+                        aria-hidden
+                        className={`font-display text-4xl font-bold leading-none sm:text-5xl ${stepNumberColors[index]}`}
+                      >
+                        {step.step}
+                      </span>
+                    </div>
                     <h3 className="relative mt-6 font-display text-xl font-semibold text-ss-text">
                       {step.title}
                     </h3>
