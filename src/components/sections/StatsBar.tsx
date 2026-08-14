@@ -8,7 +8,7 @@ export function StatsBar() {
       <Container className="grid grid-cols-3 gap-6 text-center">
         {aboutStats.stats.map((stat) => (
           <div key={stat.label}>
-            <p className="font-display text-4xl font-semibold text-ss-mint sm:text-5xl">
+            <p className="font-display text-3xl font-semibold text-ss-mint sm:text-4xl lg:text-5xl">
               <AnimatedCounter value={stat.value} suffix={stat.suffix} />
             </p>
             <p className="mt-2 text-sm text-ss-muted">{stat.label}</p>

@@ -3,6 +3,7 @@ import {
   managedServiceRouting,
   type AiGuideOption,
 } from "@/content/aiGuide";
+import { isMailerConfigured, sendAiGuideSubmission } from "@/lib/mailer";
 
 type AiGuideRequestBody = {
   segment: string;
@@ -158,6 +159,32 @@ async function forwardLead(body: AiGuideRequestBody, candidate: Candidate, leadT
   }
 }
 
+async function emailLead(body: AiGuideRequestBody, candidate: Candidate, leadTier: string) {
+  if (!isMailerConfigured()) return;
+
+  try {
+    await sendAiGuideSubmission({
+      name: body.name,
+      email: body.email,
+      company: body.company,
+      phone: body.phone,
+      segment: body.segment,
+      goal: body.goal,
+      service: candidate.service,
+      stage: body.stage,
+      timeline: body.timeline,
+      budget: body.budget,
+      teamSize: body.teamSize,
+      leadTier,
+      urgent: candidate.urgent,
+      notes: body.notes,
+    });
+  } catch (error) {
+    // Email delivery is best-effort — never block the visitor's result on it.
+    console.error("Failed to email AI Guide lead", error);
+  }
+}
+
 export async function POST(request: Request) {
   let body: AiGuideRequestBody;
   try {
@@ -177,7 +204,10 @@ export async function POST(request: Request) {
 
   const leadTier = computeLeadTier(body, candidate.urgent);
   const summary = await generateSummary(body, candidate);
-  await forwardLead(body, candidate, leadTier);
+  await Promise.all([
+    forwardLead(body, candidate, leadTier),
+    emailLead(body, candidate, leadTier),
+  ]);
 
   return Response.json({
     service: candidate.service,

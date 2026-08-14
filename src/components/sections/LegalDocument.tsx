@@ -8,6 +8,8 @@ export function LegalDocument({ document }: { document: LegalDocumentType }) {
       <Container className="max-w-3xl">
         <Reveal>
           <p className="font-mono text-xs uppercase tracking-wider text-ss-muted">
+            Effective Date: {document.effective}
+            <span className="mx-2 text-ss-border">·</span>
             Last Updated: {document.updated}
           </p>
           <p className="mt-6 text-ss-muted">{document.intro}</p>

@@ -124,13 +124,13 @@ export function Header() {
           <Image
             src="/images/logos/logo-icon.png"
             alt=""
-            width={40}
-            height={40}
+            width={48}
+            height={48}
             priority
-            className="h-9 w-9 sm:h-10 sm:w-10"
+            className="h-11 w-11 sm:h-12 sm:w-12"
           />
-          <span className="font-display text-lg font-semibold tracking-wide text-ss-text sm:text-xl">
-            Staller <span className="text-ss-teal">Stack</span>
+          <span className="font-display text-xl font-semibold tracking-wide text-ss-text sm:text-2xl">
+            StallerStack
           </span>
         </Link>
 

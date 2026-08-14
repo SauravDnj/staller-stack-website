@@ -54,10 +54,13 @@ Badges: ${siteConfig.badges.join(", ")}`,
   const portfolioText = section(
     "Portfolio / Case Studies",
     projects
-      .map(
-        (p) =>
-          `- ${p.title} for ${p.client} (${p.timeline}): ${p.description} Results: ${p.results.map((r) => `${r.label} ${r.value}`).join(", ")}.`,
-      )
+      .map((p) => {
+        const client = p.client && p.timeline ? ` for ${p.client} (${p.timeline})` : "";
+        const results = p.results?.length
+          ? ` Results: ${p.results.map((r) => `${r.label} ${r.value}`).join(", ")}.`
+          : "";
+        return `- ${p.title}${client}: ${p.description}${results}`;
+      })
       .join("\n"),
   );
 

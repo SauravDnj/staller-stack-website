@@ -45,7 +45,7 @@ export function Tilt({
       ref={ref}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      style={{ rotateX, rotateY, transformPerspective: 800 }}
+      style={{ rotateX, rotateY, transformPerspective: 800, transformStyle: "preserve-3d" }}
       className={className}
     >
       {children}

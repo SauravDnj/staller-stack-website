@@ -10,6 +10,7 @@ import { RevealGroup, RevealItem } from "@/components/ui/RevealGroup";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { getProjectBySlug, projects } from "@/content/portfolio";
 import { getIndustryBySlug } from "@/content/industries";
+import { TECH_ICONS } from "@/lib/techIcons";
 
 export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
@@ -39,8 +40,25 @@ export default async function CaseStudyDetailPage({
   const project = getProjectBySlug(slug);
   if (!project) notFound();
 
-  const industry = getIndustryBySlug(project.industrySlug);
+  const industry = project.industrySlug
+    ? getIndustryBySlug(project.industrySlug)
+    : undefined;
   const otherProjects = projects.filter((p) => p.slug !== project.slug);
+
+  const infoItems: { label: string; value: string; href?: string }[] = [
+    { label: "Category", value: project.category },
+    ...(project.client ? [{ label: "Client", value: project.client }] : []),
+    ...(project.timeline ? [{ label: "Timeline", value: project.timeline }] : []),
+    ...(industry
+      ? [
+          {
+            label: "Industry",
+            value: industry.name,
+            href: `/industries/${industry.slug}`,
+          },
+        ]
+      : []),
+  ];
 
   return (
     <>
@@ -60,103 +78,164 @@ export default async function CaseStudyDetailPage({
       <section className="pb-16 sm:pb-24">
         <Container>
           <Reveal>
-            <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-ss-border">
+            <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-ss-border bg-ss-surface">
               <Image
                 src={project.image}
                 alt={project.title}
                 fill
                 sizes="(min-width: 1024px) 80vw, 100vw"
-                className="object-cover"
+                className="object-contain"
                 priority
               />
             </div>
           </Reveal>
 
           <Reveal delay={0.1}>
-            <div className="mt-10 grid grid-cols-2 gap-4 rounded-2xl border border-ss-border bg-ss-surface/60 p-5 sm:gap-6 sm:p-8 sm:grid-cols-4">
-              <div>
-                <p className="font-mono text-xs uppercase tracking-wider text-ss-teal">
-                  Client
-                </p>
-                <p className="mt-2 text-sm text-ss-text">{project.client}</p>
-              </div>
-              <div>
-                <p className="font-mono text-xs uppercase tracking-wider text-ss-teal">
-                  Timeline
-                </p>
-                <p className="mt-2 text-sm text-ss-text">{project.timeline}</p>
-              </div>
-              <div>
-                <p className="font-mono text-xs uppercase tracking-wider text-ss-teal">
-                  Industry
-                </p>
-                {industry ? (
-                  <Link
-                    href={`/industries/${industry.slug}`}
-                    className="mt-2 block text-sm text-ss-mint hover:underline"
-                  >
-                    {industry.name}
-                  </Link>
-                ) : (
-                  <p className="mt-2 text-sm text-ss-text">—</p>
-                )}
-              </div>
-              <div>
-                <p className="font-mono text-xs uppercase tracking-wider text-ss-teal">
-                  Category
-                </p>
-                <p className="mt-2 text-sm text-ss-text">{project.category}</p>
-              </div>
+            <div
+              className={`mt-10 grid grid-cols-2 gap-4 rounded-2xl border border-ss-border bg-ss-surface/60 p-5 sm:gap-6 sm:p-8 ${
+                infoItems.length >= 4 ? "sm:grid-cols-4" : "sm:grid-cols-3"
+              }`}
+            >
+              {infoItems.map((item) => (
+                <div key={item.label}>
+                  <p className="font-mono text-xs uppercase tracking-wider text-ss-teal">
+                    {item.label}
+                  </p>
+                  {item.href ? (
+                    <Link
+                      href={item.href}
+                      className="mt-2 block text-sm text-ss-mint hover:underline"
+                    >
+                      {item.value}
+                    </Link>
+                  ) : (
+                    <p className="mt-2 text-sm text-ss-text">{item.value}</p>
+                  )}
+                </div>
+              ))}
             </div>
           </Reveal>
         </Container>
       </section>
 
-      <section className="border-t border-ss-border py-24 sm:py-32">
-        <Container className="grid grid-cols-1 gap-10 lg:grid-cols-2">
-          <Reveal>
-            <h2 className="font-display text-2xl font-semibold text-ss-text">
-              The Challenge
-            </h2>
-            <p className="mt-4 text-ss-muted">{project.challenge}</p>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <h2 className="font-display text-2xl font-semibold text-ss-text">
-              The Solution
-            </h2>
-            <p className="mt-4 text-ss-muted">{project.solution}</p>
-          </Reveal>
-        </Container>
-      </section>
+      {project.challenge && project.solution ? (
+        <section className="border-t border-ss-border py-24 sm:py-32">
+          <Container className="grid grid-cols-1 gap-10 lg:grid-cols-2">
+            <Reveal>
+              <h2 className="font-display text-2xl font-semibold text-ss-text">
+                The Challenge
+              </h2>
+              <p className="mt-4 text-ss-muted">{project.challenge}</p>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <h2 className="font-display text-2xl font-semibold text-ss-text">
+                The Solution
+              </h2>
+              <p className="mt-4 text-ss-muted">{project.solution}</p>
+            </Reveal>
+          </Container>
+        </section>
+      ) : project.purpose ? (
+        <section className="border-t border-ss-border py-24 sm:py-32">
+          <Container className="max-w-3xl">
+            <Reveal>
+              <h2 className="font-display text-2xl font-semibold text-ss-text">
+                Project Overview
+              </h2>
+              <div className="mt-4 flex flex-col gap-4">
+                {project.purpose.split("\n\n").map((paragraph) => (
+                  <p key={paragraph} className="text-ss-muted">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </Reveal>
+          </Container>
+        </section>
+      ) : null}
+
+      {project.functionality ? (
+        <section className="border-t border-ss-border py-24 sm:py-32">
+          <Container className="max-w-3xl">
+            <Reveal>
+              <h2 className="font-display text-2xl font-semibold text-ss-text">
+                How It Works
+              </h2>
+              <p className="mt-4 text-ss-muted">{project.functionality}</p>
+            </Reveal>
+          </Container>
+        </section>
+      ) : null}
+
+      {project.keyFeatures && project.keyFeatures.length > 0 ? (
+        <section className="border-t border-ss-border py-24 sm:py-32">
+          <Container>
+            <Reveal>
+              <h2 className="font-display text-2xl font-semibold text-ss-text">
+                Key Features
+              </h2>
+            </Reveal>
+            <RevealGroup className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+              {project.keyFeatures.map((feature) => (
+                <RevealItem key={feature}>
+                  <div className="flex items-start gap-3 rounded-xl border border-ss-border bg-ss-surface/60 p-5">
+                    <span
+                      aria-hidden
+                      className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-ss-teal/15 text-xs text-ss-teal"
+                    >
+                      ✓
+                    </span>
+                    <p className="text-sm text-ss-muted">{feature}</p>
+                  </div>
+                </RevealItem>
+              ))}
+            </RevealGroup>
+          </Container>
+        </section>
+      ) : null}
 
       <section className="border-t border-ss-border py-24 sm:py-32">
         <Container>
-          <Reveal>
-            <h2 className="font-display text-2xl font-semibold text-ss-text">
-              Results
-            </h2>
-          </Reveal>
-          <RevealGroup className="mt-8 grid grid-cols-2 gap-6 text-center sm:grid-cols-4">
-            {project.results.map((result) => (
-              <RevealItem key={result.label}>
-                <p className="font-display text-3xl font-semibold text-ss-mint sm:text-4xl">
-                  {result.value}
-                </p>
-                <p className="mt-2 text-sm text-ss-muted">{result.label}</p>
-              </RevealItem>
-            ))}
-          </RevealGroup>
+          {project.results && project.results.length > 0 ? (
+            <>
+              <Reveal>
+                <h2 className="font-display text-2xl font-semibold text-ss-text">
+                  Results
+                </h2>
+              </Reveal>
+              <RevealGroup className="mt-8 grid grid-cols-2 gap-6 text-center sm:grid-cols-4">
+                {project.results.map((result) => (
+                  <RevealItem key={result.label}>
+                    <p className="font-display text-3xl font-semibold text-ss-mint sm:text-4xl">
+                      {result.value}
+                    </p>
+                    <p className="mt-2 text-sm text-ss-muted">{result.label}</p>
+                  </RevealItem>
+                ))}
+              </RevealGroup>
+            </>
+          ) : (
+            <Reveal>
+              <h2 className="font-display text-2xl font-semibold text-ss-text">
+                Technology
+              </h2>
+            </Reveal>
+          )}
 
           <Reveal delay={0.1}>
-            <div className="mt-14 flex flex-wrap gap-2">
-              {project.techStack.map((tech) => (
-                <span
-                  key={tech}
-                  className="rounded-full border border-ss-border bg-ss-surface/60 px-4 py-1.5 font-mono text-xs uppercase tracking-wider text-ss-muted"
-                >
-                  {tech}
-                </span>
-              ))}
+            <div className={project.results?.length ? "mt-14 flex flex-wrap gap-3" : "mt-8 flex flex-wrap gap-3"}>
+              {project.techStack.map((tech) => {
+                const Icon = TECH_ICONS[tech];
+                return (
+                  <span
+                    key={tech}
+                    className="flex items-center gap-2 rounded-full border border-ss-border bg-ss-surface/60 px-4 py-2 font-mono text-xs uppercase tracking-wider text-ss-muted transition-colors hover:border-ss-teal hover:text-ss-mint"
+                  >
+                    {Icon && <Icon className="h-4 w-4 text-ss-teal" aria-hidden />}
+                    {tech}
+                  </span>
+                );
+              })}
             </div>
           </Reveal>
 

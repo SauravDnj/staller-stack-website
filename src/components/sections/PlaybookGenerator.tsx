@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { FiChevronDown, FiCloud, FiCode, FiCpu, FiShield } from "react-icons/fi";
+import { FiCloud, FiCode, FiCpu, FiShield } from "react-icons/fi";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
@@ -19,13 +19,6 @@ const categoryIcons: Record<string, React.ComponentType<{ className?: string }>>
 export function PlaybookGenerator() {
   const [activeCategory, setActiveCategory] = useState(playbookGenerator.categories[0]);
   const [value, setValue] = useState("");
-  const [exampleIndex, setExampleIndex] = useState(0);
-
-  const cyclePrompt = () => {
-    const examples = activeCategory.examples;
-    setValue(examples[exampleIndex % examples.length]);
-    setExampleIndex((i) => i + 1);
-  };
 
   return (
     <section id="playbook-generator" className="py-24 sm:py-32">
@@ -87,16 +80,11 @@ export function PlaybookGenerator() {
 
             <div className="mt-6 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex flex-wrap gap-3">
-                <button
-                  type="button"
-                  onClick={cyclePrompt}
-                  className="inline-flex items-center gap-2 rounded-full border border-ss-border px-5 py-3 font-display text-sm font-medium text-ss-text transition-colors hover:border-ss-teal hover:text-ss-mint"
+                <Button
+                  href={`/contact?brief=${encodeURIComponent(value)}`}
+                  variant="primary"
+                  className={value.trim() === "" ? "pointer-events-none opacity-50" : ""}
                 >
-                  {playbookGenerator.promptsLabel}
-                  <FiChevronDown className="h-4 w-4" />
-                </button>
-
-                <Button href="/contact" variant="primary" className={value.trim() === "" ? "pointer-events-none opacity-50" : ""}>
                   {playbookGenerator.submitLabel}
                   <span aria-hidden>→</span>
                 </Button>
@@ -112,10 +100,7 @@ export function PlaybookGenerator() {
                       type="button"
                       aria-label={category.label}
                       aria-pressed={isActive}
-                      onClick={() => {
-                        setActiveCategory(category);
-                        setExampleIndex(0);
-                      }}
+                      onClick={() => setActiveCategory(category)}
                       className={`rounded-full p-1 transition-transform duration-300 ${isActive ? "scale-110" : "opacity-60 hover:opacity-100"}`}
                     >
                       <IconTile color={category.color as IconTileColor} size="sm">

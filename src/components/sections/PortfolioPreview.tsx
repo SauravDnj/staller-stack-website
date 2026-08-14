@@ -5,7 +5,8 @@ import Link from "next/link";
 import { useRef, useState, type MouseEvent as ReactMouseEvent } from "react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { TiltCard } from "@/components/ui/TiltCard";
+import { Button } from "@/components/ui/Button";
+import { Tilt } from "@/components/ui/Tilt";
 import { Reveal } from "@/components/ui/Reveal";
 import { projects } from "@/content/portfolio";
 
@@ -95,12 +96,9 @@ export function PortfolioPreview() {
             />
           </Reveal>
           <div className="flex items-center gap-4">
-            <Link
-              href="/portfolio"
-              className="font-display text-sm text-ss-teal hover:text-ss-mint"
-            >
-              More Projects →
-            </Link>
+            <Button href="/portfolio" variant="outline">
+              View All Projects <span aria-hidden>→</span>
+            </Button>
             <div className="hidden gap-2 sm:flex">
               <button
                 type="button"
@@ -146,32 +144,39 @@ export function PortfolioPreview() {
                 : "scale-[0.94] opacity-50"
             }`}
           >
-            <TiltCard className="h-full !p-0 overflow-hidden">
-              <div className="group">
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    draggable={false}
-                    sizes="(min-width: 1024px) 34vw, (min-width: 640px) 55vw, 85vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ss-base/90 via-transparent to-transparent" />
-                </div>
-                <div className="p-6">
-                  <span className="font-mono text-xs uppercase tracking-wider text-ss-teal">
-                    {project.category}
-                  </span>
-                  <h3 className="mt-2 font-display text-lg font-semibold text-ss-text">
-                    {project.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-ss-muted line-clamp-2">
-                    {project.description}
-                  </p>
-                </div>
+            <Tilt
+              strength={10}
+              className="group relative h-full overflow-hidden rounded-2xl border border-ss-border bg-ss-surface/60 transition-colors duration-300 hover:border-ss-teal"
+            >
+              <div
+                className="relative aspect-[4/3] overflow-hidden bg-ss-surface"
+                style={{ transform: "translateZ(0px)" }}
+              >
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  draggable={false}
+                  sizes="(min-width: 1024px) 34vw, (min-width: 640px) 55vw, 85vw"
+                  className="object-contain transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ss-base/40 via-transparent to-transparent" />
               </div>
-            </TiltCard>
+              <div
+                className="relative p-6"
+                style={{ transform: "translateZ(44px)" }}
+              >
+                <span className="font-mono text-xs uppercase tracking-wider text-ss-teal">
+                  {project.category}
+                </span>
+                <h3 className="mt-2 font-display text-lg font-semibold text-ss-text">
+                  {project.title}
+                </h3>
+                <p className="mt-2 text-sm text-ss-muted line-clamp-2">
+                  {project.description}
+                </p>
+              </div>
+            </Tilt>
           </Link>
         ))}
       </div>

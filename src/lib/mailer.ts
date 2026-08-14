@@ -94,3 +94,73 @@ export async function sendContactSubmission(submission: ContactSubmission) {
     attachments: submission.attachment ? [submission.attachment] : undefined,
   });
 }
+
+export type AiGuideSubmission = {
+  name: string;
+  email: string;
+  company: string;
+  phone?: string;
+  segment: string;
+  goal: string;
+  service: string;
+  stage?: string;
+  timeline?: string;
+  budget?: string;
+  teamSize?: string;
+  leadTier: string;
+  urgent: boolean;
+  notes?: string;
+};
+
+export async function sendAiGuideSubmission(submission: AiGuideSubmission) {
+  const transporter = getTransporter();
+  const config = readSmtpConfig();
+  const to = process.env.CONTACT_TO_EMAIL;
+
+  if (!transporter || !config || !to) {
+    throw new Error("Mailer is not configured");
+  }
+
+  const rows: [string, string][] = [
+    ["Name", submission.name],
+    ["Email", submission.email],
+    ["Company", submission.company],
+    ["Phone", submission.phone || "—"],
+    ["Segment", submission.segment],
+    ["Goal", submission.goal],
+    ["Recommended Service", submission.service],
+    ["Stage", submission.stage || "—"],
+    ["Timeline", submission.timeline || "—"],
+    ["Budget", submission.budget || "—"],
+    ["Team Size", submission.teamSize || "—"],
+    ["Lead Tier", submission.leadTier],
+    ["Urgent", submission.urgent ? "Yes" : "No"],
+  ];
+
+  const html = `
+    <div style="font-family: Arial, sans-serif; color: #0a121c; line-height: 1.5;">
+      <h2 style="margin-bottom: 16px;">New AI Guide submission — Staller Stack</h2>
+      <table cellpadding="6" style="border-collapse: collapse;">
+        ${rows
+          .map(
+            ([label, value]) =>
+              `<tr><td style="font-weight: 600; vertical-align: top; padding-right: 12px;">${label}</td><td>${escapeHtml(value)}</td></tr>`
+          )
+          .join("")}
+      </table>
+      ${
+        submission.notes
+          ? `<h3 style="margin-top: 24px; margin-bottom: 8px;">Notes</h3><p style="white-space: pre-wrap; margin: 0;">${escapeHtml(submission.notes)}</p>`
+          : ""
+      }
+    </div>
+  `;
+
+  await transporter.sendMail({
+    from: process.env.SMTP_FROM || config.user,
+    to,
+    replyTo: submission.email,
+    subject: `New AI Guide lead (${submission.leadTier}) from ${submission.name}`,
+    html,
+  });
+}

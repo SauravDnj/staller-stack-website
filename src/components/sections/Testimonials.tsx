@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { TiltCard } from "@/components/ui/TiltCard";
@@ -33,22 +32,13 @@ export function Testimonials() {
                 <p className="text-sm text-ss-muted">
                   &ldquo;{testimonial.quote}&rdquo;
                 </p>
-                <div className="mt-6 flex items-center gap-3">
-                  <Image
-                    src={testimonial.avatar}
-                    alt={testimonial.name}
-                    width={44}
-                    height={44}
-                    className="rounded-full border border-ss-border"
-                  />
-                  <div>
-                    <p className="font-display text-sm font-semibold text-ss-text">
-                      {testimonial.name}
-                    </p>
-                    <p className="text-xs text-ss-muted">
-                      {testimonial.title}
-                    </p>
-                  </div>
+                <div className="mt-6">
+                  <p className="font-display text-sm font-semibold text-ss-text">
+                    {testimonial.name}
+                  </p>
+                  <p className="text-xs text-ss-muted">
+                    {testimonial.title}
+                  </p>
                 </div>
               </TiltCard>
             </RevealItem>

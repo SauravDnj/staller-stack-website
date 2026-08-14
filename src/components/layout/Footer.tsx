@@ -49,12 +49,12 @@ export function Footer() {
             <Image
               src="/images/logos/logo-icon.png"
               alt=""
-              width={36}
-              height={36}
-              className="h-9 w-9"
+              width={44}
+              height={44}
+              className="h-11 w-11"
             />
-            <span className="font-display text-lg font-semibold tracking-wide text-ss-text">
-              Staller <span className="text-ss-teal">Stack</span>
+            <span className="font-display text-xl font-semibold tracking-wide text-ss-text">
+              StallerStack
             </span>
           </Link>
           <p className="max-w-xs text-sm text-ss-muted">

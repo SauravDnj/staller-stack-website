@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useRef, useState } from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/Button";
 
 type Status = "idle" | "submitting" | "success" | "error";
@@ -24,6 +24,14 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
   const [file, setFile] = useState<File | null>(null);
   const [isDragging, setIsDragging] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const projectBriefRef = useRef<HTMLTextAreaElement>(null);
+
+  useEffect(() => {
+    const brief = new URLSearchParams(window.location.search).get("brief");
+    if (brief && projectBriefRef.current) {
+      projectBriefRef.current.value = brief;
+    }
+  }, []);
 
   function selectFile(selected: File | null | undefined) {
     if (!selected) return;
@@ -149,6 +157,7 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
           Project Brief *
         </label>
         <textarea
+          ref={projectBriefRef}
           id="projectBrief"
           name="projectBrief"
           required

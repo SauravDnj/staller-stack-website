@@ -7,10 +7,10 @@ export const siteConfig = {
   description:
     "Staller Stack is a full-service IT company delivering world-class web development, cloud solutions, security & compliance, and AI innovation to businesses worldwide.",
   url: "https://stallerstack.com",
-  email: "hello@stallerstack.com",
-  phone: "+91 (22) 4856-7890",
-  address: "42 Tech Park, Andheri East, Mumbai, Maharashtra 400069, India",
-  hours: "Mon–Fri 10:00 AM – 7:00 PM IST",
+  email: "hello@stallerstack.us",
+  phone: "+1 (009) 544-7818",
+  address: "5 Penn Plaza, 14th Floor, New York, NY 10001, United States",
+  hours: "Mon–Fri 10:00 AM – 7:00 PM",
   badges: ["ISO 27001 Certified", "AWS Partner"],
 } as const;
 

@@ -116,7 +116,6 @@ export const playbookGenerator = {
   subtext: "Describe what you want to automate — we'll turn it into a step-by-step playbook you can review, adapt, and approve.",
   badge: "AI-GUIDED",
   cardTitle: "Describe Your Automation",
-  promptsLabel: "Prompts",
   submitLabel: "Generate Playbook",
   ctaHelper: "We'll map this into a working playbook and get back to you within 48 hours.",
   categories: [

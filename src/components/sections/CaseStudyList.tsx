@@ -19,13 +19,13 @@ export function CaseStudyList() {
           >
             <Link href={`/portfolio/${project.slug}`} className="block">
               <Tilt strength={5} className="rounded-2xl">
-                <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-ss-border">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-ss-border bg-ss-surface">
                   <Image
                     src={project.image}
                     alt={project.title}
                     fill
                     sizes="(min-width: 1024px) 50vw, 100vw"
-                    className="object-cover"
+                    className="object-contain"
                   />
                 </div>
               </Tilt>
