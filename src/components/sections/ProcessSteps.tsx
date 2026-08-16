@@ -10,9 +10,11 @@ import type { AccentKey } from "@/content/services";
 export function ProcessSteps({
   steps,
   accent,
+  title = "How We Work",
 }: {
   steps: { title: string; description: string }[];
   accent: AccentKey;
+  title?: string;
 }) {
   const accentClasses = ACCENT_CLASSES[accent];
   const color = ACCENT_HEX[accent];
@@ -21,7 +23,7 @@ export function ProcessSteps({
     <section className="border-t border-ss-border py-24 sm:py-32">
       <Container>
         <Reveal>
-          <h2 className="font-display text-2xl font-semibold text-ss-text">How We Work</h2>
+          <h2 className="font-display text-2xl font-semibold text-ss-text">{title}</h2>
         </Reveal>
         <div className="relative mt-10">
           <div

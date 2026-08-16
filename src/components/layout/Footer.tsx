@@ -1,8 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { SiFiverr, SiUpwork } from "react-icons/si";
 import { Container } from "@/components/ui/Container";
 import {
+  footerAiLinks,
   footerCompanyLinks,
+  footerHireLinks,
   footerLegalLinks,
   footerServiceLinks,
   marqueeKeywords,
@@ -43,7 +46,7 @@ export function Footer() {
         />
       </div>
 
-      <Container className="relative grid grid-cols-1 gap-12 py-16 sm:grid-cols-2 lg:grid-cols-4">
+      <Container className="relative grid grid-cols-1 gap-12 py-16 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-6">
         <div className="flex flex-col gap-4">
           <Link href="/" className="flex items-center gap-2.5" aria-label={siteConfig.name}>
             <Image
@@ -73,6 +76,42 @@ export function Footer() {
           </h3>
           <ul className="mt-5 flex flex-col gap-3">
             {footerServiceLinks.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="text-sm text-ss-muted transition-colors hover:text-ss-mint"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="font-display text-sm uppercase tracking-[0.2em] text-ss-text">
+            AI Services &amp; Solutions
+          </h3>
+          <ul className="mt-5 flex flex-col gap-3">
+            {footerAiLinks.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="text-sm text-ss-muted transition-colors hover:text-ss-mint"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="font-display text-sm uppercase tracking-[0.2em] text-ss-text">
+            Hire Developers
+          </h3>
+          <ul className="mt-5 flex flex-col gap-3">
+            {footerHireLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
@@ -126,6 +165,38 @@ export function Footer() {
           ))}
         </div>
       </div>
+
+      <Container className="relative flex flex-col items-center justify-center gap-4 border-b border-ss-border py-8 sm:flex-row sm:justify-between">
+        <p className="font-mono text-xs uppercase tracking-wider text-ss-muted">Find Us On</p>
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          <a
+            href="https://clutch.co"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-full border border-ss-border bg-ss-surface px-4 py-2 font-display text-sm font-semibold text-ss-text transition-colors hover:border-ss-teal hover:text-ss-mint"
+          >
+            Clutch
+          </a>
+          <a
+            href="https://www.upwork.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-full border border-ss-border bg-ss-surface px-4 py-2 font-display text-sm text-ss-text transition-colors hover:border-ss-teal hover:text-ss-mint"
+          >
+            <SiUpwork className="h-4 w-4 text-ss-teal" />
+            Upwork
+          </a>
+          <a
+            href="https://www.fiverr.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-full border border-ss-border bg-ss-surface px-4 py-2 font-display text-sm text-ss-text transition-colors hover:border-ss-teal hover:text-ss-mint"
+          >
+            <SiFiverr className="h-4 w-4 text-ss-teal" />
+            Fiverr
+          </a>
+        </div>
+      </Container>
 
       <Container className="relative flex flex-col items-center justify-between gap-4 py-8 text-sm text-ss-muted sm:flex-row">
         <p>

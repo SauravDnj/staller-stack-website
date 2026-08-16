@@ -4,7 +4,6 @@ import { industries } from "@/content/industries";
 import { allAiOfferings } from "@/content/aiOfferings";
 import { projects } from "@/content/portfolio";
 import { teamMembers } from "@/content/team";
-import { pricingPlans, pricingFaqs } from "@/content/pricing";
 import { generalFaqs } from "@/content/faq";
 import {
   segmentOptions,
@@ -69,15 +68,6 @@ Badges: ${siteConfig.badges.join(", ")}`,
     teamMembers.map((t) => `- ${t.name} — ${t.role}`).join("\n"),
   );
 
-  const pricingText = section(
-    "Pricing Plans",
-    pricingPlans
-      .map((p) => `- ${p.name} (${p.price}/mo) — ${p.tagline}. Includes: ${p.features.join("; ")}.`)
-      .join("\n") +
-      "\n\nPricing FAQs:\n" +
-      pricingFaqs.map((f) => `Q: ${f.question}\nA: ${f.answer}`).join("\n"),
-  );
-
   const faqText = section(
     "General FAQs",
     generalFaqs.map((f) => `Q: ${f.question}\nA: ${f.answer}`).join("\n"),
@@ -101,7 +91,6 @@ If a visitor seems unsure what they need, suggest they try the AI Guide.`,
     aiOfferingsText,
     portfolioText,
     teamText,
-    pricingText,
     faqText,
     aiGuideText,
     section("Internal Reference (background context only — see system instructions)", aiGuideInternalSpec),

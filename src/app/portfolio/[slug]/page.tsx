@@ -78,13 +78,14 @@ export default async function CaseStudyDetailPage({
       <section className="pb-16 sm:pb-24">
         <Container>
           <Reveal>
-            <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-ss-border bg-ss-surface">
+            <div className="overflow-hidden rounded-2xl border border-ss-border bg-ss-surface">
               <Image
                 src={project.image}
                 alt={project.title}
-                fill
+                width={project.imageWidth}
+                height={project.imageHeight}
                 sizes="(min-width: 1024px) 80vw, 100vw"
-                className="object-contain"
+                className="h-auto w-full"
                 priority
               />
             </div>

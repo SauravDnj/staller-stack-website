@@ -31,6 +31,7 @@ import { TbBrandAzure } from "react-icons/tb";
 /** Maps a technology's display name (as used in content files) to its brand icon. */
 export const TECH_ICONS: Record<string, IconType> = {
   React: SiReact,
+  "React Native": SiReact,
   "Next.js": SiNextdotjs,
   "Node.js": SiNodedotjs,
   TypeScript: SiTypescript,
@@ -40,6 +41,7 @@ export const TECH_ICONS: Record<string, IconType> = {
   Firebase: SiFirebase,
   Expo: SiExpo,
   Stripe: SiStripe,
+  "Stripe Issuing": SiStripe,
   Shopify: SiShopify,
   "Google Maps": SiGooglemaps,
   PostgreSQL: SiPostgresql,

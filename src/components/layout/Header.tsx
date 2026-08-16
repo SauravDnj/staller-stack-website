@@ -18,7 +18,6 @@ import { MegaMenuPanel } from "@/components/layout/header/MegaMenuPanel";
 import { ServicesMegaMenu } from "@/components/layout/header/ServicesMegaMenu";
 import { IndustryMegaMenu } from "@/components/layout/header/IndustryMegaMenu";
 import { BuildWithAiMegaMenu } from "@/components/layout/header/BuildWithAiMegaMenu";
-import { AboutMegaMenu } from "@/components/layout/header/AboutMegaMenu";
 import { MobileMegaSection } from "@/components/layout/header/MobileMegaSection";
 import { services } from "@/content/services";
 import { industries } from "@/content/industries";
@@ -183,7 +182,7 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-4 lg:flex">
-          <ThemeToggle />
+          <ThemeToggle className="hidden" />
           <Button href={headerCta.href}>
             {headerCta.label}
             <span aria-hidden>→</span>
@@ -191,7 +190,7 @@ export function Header() {
         </div>
 
         <div className="flex items-center gap-2 lg:hidden">
-          <ThemeToggle />
+          <ThemeToggle className="hidden" />
           <button
             type="button"
             aria-label="Toggle menu"
@@ -232,9 +231,6 @@ export function Header() {
         </MegaMenuPanel>
         <MegaMenuPanel isOpen={openMenu === "buildWithAi"}>
           <BuildWithAiMegaMenu onNavigate={closeAll} />
-        </MegaMenuPanel>
-        <MegaMenuPanel isOpen={openMenu === "about"}>
-          <AboutMegaMenu onNavigate={closeAll} />
         </MegaMenuPanel>
       </div>
 
@@ -347,34 +343,7 @@ export function Header() {
                   );
                 }
 
-                return (
-                  <MobileMegaSection key={item.key} label={item.label}>
-                    <Link
-                      href="/about"
-                      className="rounded-lg px-3 py-2 text-sm text-ss-muted hover:text-ss-mint"
-                    >
-                      About Us
-                    </Link>
-                    <Link
-                      href="/portfolio"
-                      className="rounded-lg px-3 py-2 text-sm text-ss-muted hover:text-ss-mint"
-                    >
-                      Portfolio
-                    </Link>
-                    <Link
-                      href="/pricing"
-                      className="rounded-lg px-3 py-2 text-sm text-ss-muted hover:text-ss-mint"
-                    >
-                      Pricing
-                    </Link>
-                    <Link
-                      href="/faq"
-                      className="rounded-lg px-3 py-2 text-sm text-ss-muted hover:text-ss-mint"
-                    >
-                      FAQ
-                    </Link>
-                  </MobileMegaSection>
-                );
+                return null;
               })}
               <Button href={headerCta.href} className="mt-4 w-fit">
                 {headerCta.label}

@@ -9,7 +9,7 @@ type Message = { role: "user" | "assistant"; content: string };
 const WELCOME_MESSAGE: Message = {
   role: "assistant",
   content:
-    "Hey — I'm the Staller Stack AI Assistant. Ask me about our services, industries, pricing, or portfolio, and I'll do my best to help.",
+    "Hey — I'm the Staller Stack AI Assistant. Ask me about our services, industries, or portfolio, and I'll do my best to help.",
 };
 
 export function ChatPanel({ onSwitchToGuide }: { onSwitchToGuide?: () => void }) {
@@ -164,7 +164,7 @@ export function ChatPanel({ onSwitchToGuide }: { onSwitchToGuide?: () => void })
         <input
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Ask about our services, pricing, portfolio…"
+          placeholder="Ask about our services, portfolio…"
           disabled={isStreaming}
           className="flex-1 rounded-full border border-ss-border bg-ss-base px-4 py-2.5 text-sm text-ss-text placeholder:text-ss-muted/70 outline-none focus:border-ss-teal disabled:opacity-60"
         />

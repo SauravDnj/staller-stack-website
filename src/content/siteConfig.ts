@@ -1,4 +1,6 @@
 import { services } from "./services";
+import { aiServices, aiSolutions } from "./aiOfferings";
+import { hireRoles } from "./hireDevelopers";
 
 export const siteConfig = {
   name: "Staller Stack",
@@ -19,7 +21,7 @@ export type NavItem = {
   href: string;
 };
 
-export type MegaMenuKey = "services" | "industry" | "buildWithAi" | "about";
+export type MegaMenuKey = "services" | "industry" | "buildWithAi";
 
 export type PrimaryNavEntry =
   | { type: "link"; label: string; href: string }
@@ -30,8 +32,10 @@ export const primaryNav: PrimaryNavEntry[] = [
   { type: "mega", label: "Services", key: "services" },
   { type: "mega", label: "Industry", key: "industry" },
   { type: "mega", label: "Build With AI", key: "buildWithAi" },
-  { type: "mega", label: "About Us", key: "about" },
+  { type: "link", label: "About Us", href: "/about" },
   { type: "link", label: "Portfolio", href: "/portfolio" },
+  { type: "link", label: "Blog", href: "/blog" },
+  { type: "link", label: "FAQ", href: "/faq" },
 ];
 
 export const headerCta: NavItem = { label: "Let's Talk", href: "/contact" };
@@ -41,11 +45,31 @@ export const footerServiceLinks: NavItem[] = services.map((service) => ({
   href: `/services/${service.slug}`,
 }));
 
+const FOOTER_AI_SLUGS = [
+  "artificial-intelligence",
+  "agentic-ai",
+  "ai-chatbot",
+  "ai-agents",
+  "rag-solutions",
+  "ai-voice-agent",
+  "enterprise-ai-agent",
+];
+
+export const footerAiLinks: NavItem[] = FOOTER_AI_SLUGS.map((slug) => {
+  const offering = [...aiServices, ...aiSolutions].find((item) => item.slug === slug);
+  return { label: offering?.name ?? slug, href: `/build-with-ai/${slug}` };
+});
+
+export const footerHireLinks: NavItem[] = hireRoles.map((role) => ({
+  label: role.title,
+  href: `/hire-developers#${role.slug}`,
+}));
+
 export const footerCompanyLinks: NavItem[] = [
   { label: "About Us", href: "/about" },
   { label: "Industries", href: "/industries" },
   { label: "Portfolio", href: "/portfolio" },
-  { label: "Pricing", href: "/pricing" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact Us", href: "/contact" },
 ];
 

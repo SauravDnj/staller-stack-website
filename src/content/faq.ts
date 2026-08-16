@@ -12,7 +12,7 @@ export const generalFaqs = [
   {
     question: "Do you work with startups, or only larger companies?",
     answer:
-      "Both. We work with startups validating an MVP and enterprises modernizing legacy infrastructure — our Pricing plans and custom engagements are structured to fit either.",
+      "Both. We work with startups validating an MVP and enterprises modernizing legacy infrastructure — every engagement is scoped and quoted to fit the size and needs of the project.",
   },
   {
     question: "How long does a typical engagement take?",
