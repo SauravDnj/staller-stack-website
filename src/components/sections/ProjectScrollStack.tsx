@@ -15,7 +15,7 @@ function ProjectStackCard({ project, index, total }: { project: Project; index: 
   const highlights = stats.length === 0 ? project.keyFeatures?.slice(0, 2) ?? [] : [];
 
   return (
-    <div className="grid grid-cols-1 items-center gap-10 overflow-hidden rounded-3xl border border-ss-border bg-ss-surface p-6 shadow-[0_30px_80px_-40px_rgba(0,0,0,0.6)] sm:p-8 lg:grid-cols-2 lg:gap-14 lg:p-12">
+    <div className="grid grid-cols-1 items-center gap-8 overflow-hidden rounded-3xl border border-ss-border bg-ss-surface p-5 shadow-[0_30px_80px_-40px_rgba(0,0,0,0.6)] sm:gap-10 sm:p-8 lg:grid-cols-2 lg:gap-14 lg:p-12">
       <div>
         <div className="flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
@@ -30,7 +30,7 @@ function ProjectStackCard({ project, index, total }: { project: Project; index: 
         </div>
 
         <Link href={`/portfolio/${project.slug}`}>
-          <h3 className="mt-6 font-display text-2xl font-semibold leading-tight text-ss-text transition-colors hover:text-ss-mint sm:text-3xl lg:text-[2.5rem]">
+          <h3 className="mt-5 font-display text-xl font-semibold leading-tight text-ss-text transition-colors hover:text-ss-mint sm:mt-6 sm:text-2xl lg:text-[2.5rem]">
             {project.title}
           </h3>
         </Link>
@@ -47,14 +47,14 @@ function ProjectStackCard({ project, index, total }: { project: Project; index: 
           ))}
         </div>
 
-        <p className="mt-5 text-sm text-ss-muted sm:text-base">{project.description}</p>
+        <p className="mt-4 text-sm text-ss-muted sm:mt-5 sm:text-base">{project.description}</p>
 
         {stats.length > 0 && (
-          <div className="mt-7 flex flex-wrap gap-8">
+          <div className="mt-5 flex flex-wrap gap-6 sm:mt-7 sm:gap-8">
             {stats.map((stat) => (
               <div key={stat.label}>
-                <div className="flex items-center gap-1.5 font-display text-2xl font-semibold text-ss-mint sm:text-3xl">
-                  <ArrowUp className="h-5 w-5" aria-hidden />
+                <div className="flex items-center gap-1.5 font-display text-xl font-semibold text-ss-mint sm:text-2xl lg:text-3xl">
+                  <ArrowUp className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden />
                   {stat.value}
                 </div>
                 <p className="mt-1 text-xs text-ss-muted sm:text-sm">{stat.label}</p>
@@ -64,7 +64,7 @@ function ProjectStackCard({ project, index, total }: { project: Project; index: 
         )}
 
         {highlights.length > 0 && (
-          <ul className="mt-7 flex flex-col gap-2">
+          <ul className="mt-5 flex flex-col gap-2 sm:mt-7">
             {highlights.map((item) => (
               <li key={item} className="flex items-start gap-2 text-sm text-ss-muted">
                 <span aria-hidden className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-ss-teal" />
@@ -74,7 +74,7 @@ function ProjectStackCard({ project, index, total }: { project: Project; index: 
           </ul>
         )}
 
-        <Button href={`/portfolio/${project.slug}`} className="mt-8 w-fit">
+        <Button href={`/portfolio/${project.slug}`} className="mt-6 w-fit sm:mt-8">
           View Case Study <span aria-hidden>→</span>
         </Button>
       </div>
@@ -91,14 +91,14 @@ function ProjectStackCard({ project, index, total }: { project: Project; index: 
               "radial-gradient(circle at 30% 20%, color-mix(in srgb, var(--ss-teal) 22%, transparent), transparent 60%), radial-gradient(circle at 80% 80%, color-mix(in srgb, var(--ss-blue) 22%, transparent), transparent 55%)",
           }}
         />
-        <div className="relative flex items-center justify-center p-6 sm:p-8">
+        <div className="relative flex items-center justify-center p-5 sm:p-8">
           <Image
             src={project.image}
             alt={project.title}
             width={project.imageWidth}
             height={project.imageHeight}
             sizes="(min-width: 1024px) 42vw, 90vw"
-            className="h-auto max-h-[42vh] w-auto transition-transform duration-500 group-hover:scale-[1.02]"
+            className="h-auto max-h-[240px] w-auto transition-transform duration-500 group-hover:scale-[1.02] sm:max-h-[320px] lg:max-h-[440px]"
           />
         </div>
       </Link>
@@ -124,7 +124,7 @@ function StickyProjectCard({
   const scale = useTransform(scrollYProgress, [start, 1], [1, targetScale]);
 
   return (
-    <div className="sticky top-20 flex items-center justify-center py-6 sm:top-24">
+    <div className="relative flex items-center justify-center py-4 lg:sticky lg:top-24 lg:py-6">
       <motion.div style={{ scale }} className="w-full origin-top">
         <Container>
           <ProjectStackCard project={project} index={index} total={total} />
@@ -142,7 +142,10 @@ export function ProjectScrollStack({ projects }: { projects: Project[] }) {
   });
 
   return (
-    <div ref={containerRef} className="relative mt-16 flex flex-col gap-[12vh] pb-[20vh] sm:mt-20">
+    <div
+      ref={containerRef}
+      className="relative mt-16 flex flex-col gap-10 pb-10 sm:mt-20 lg:gap-40 lg:pb-48"
+    >
       {projects.map((project, index) => (
         <StickyProjectCard
           key={project.slug}
