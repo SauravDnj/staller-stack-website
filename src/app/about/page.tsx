@@ -3,8 +3,10 @@ import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { PageHeader } from "@/components/sections/PageHeader";
 import { StoryValues } from "@/components/sections/StoryValues";
+import { FounderSpotlight } from "@/components/sections/FounderSpotlight";
 import { StatsBar } from "@/components/sections/StatsBar";
-import { TeamGrid } from "@/components/sections/TeamGrid";
+import { MissionVision } from "@/components/sections/MissionVision";
+import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { aboutPage } from "@/content/about";
 import { siteConfig } from "@/content/siteConfig";
@@ -24,8 +26,10 @@ export default function AboutPage() {
         subtext={aboutPage.subtext}
       />
       <StoryValues />
+      <FounderSpotlight />
       <StatsBar />
-      <TeamGrid />
+      <MissionVision />
+      <WhyChooseUs />
 
       <section className="border-t border-ss-border py-24 sm:py-32">
         <Container>

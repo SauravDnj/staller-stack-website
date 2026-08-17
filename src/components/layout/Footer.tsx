@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { SiFiverr, SiUpwork } from "react-icons/si";
 import { Container } from "@/components/ui/Container";
 import {
   footerAiLinks,
@@ -173,27 +172,43 @@ export function Footer() {
             href="https://clutch.co"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-full border border-ss-border bg-ss-surface px-4 py-2 font-display text-sm font-semibold text-ss-text transition-colors hover:border-ss-teal hover:text-ss-mint"
+            className="flex items-center justify-center rounded-xl bg-white px-4 py-2.5 transition-transform duration-300 hover:scale-105"
           >
-            Clutch
+            <Image
+              src="/images/client/clutch.png"
+              alt="Clutch"
+              width={860}
+              height={283}
+              className="h-5 w-auto sm:h-6"
+            />
           </a>
           <a
             href="https://www.upwork.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-full border border-ss-border bg-ss-surface px-4 py-2 font-display text-sm text-ss-text transition-colors hover:border-ss-teal hover:text-ss-mint"
+            className="flex items-center justify-center rounded-xl bg-white px-4 py-2.5 transition-transform duration-300 hover:scale-105"
           >
-            <SiUpwork className="h-4 w-4 text-ss-teal" />
-            Upwork
+            <Image
+              src="/images/client/upwork.png"
+              alt="Upwork"
+              width={2400}
+              height={717}
+              className="h-5 w-auto sm:h-6"
+            />
           </a>
           <a
             href="https://www.fiverr.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-full border border-ss-border bg-ss-surface px-4 py-2 font-display text-sm text-ss-text transition-colors hover:border-ss-teal hover:text-ss-mint"
+            className="flex items-center justify-center rounded-xl bg-white px-4 py-2.5 transition-transform duration-300 hover:scale-105"
           >
-            <SiFiverr className="h-4 w-4 text-ss-teal" />
-            Fiverr
+            <Image
+              src="/images/client/fiverr.png"
+              alt="Fiverr"
+              width={3840}
+              height={2160}
+              className="h-5 w-auto sm:h-6"
+            />
           </a>
         </div>
       </Container>

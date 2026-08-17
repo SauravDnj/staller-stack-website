@@ -5,6 +5,8 @@ import { Reveal } from "@/components/ui/Reveal";
 import { ProjectScrollStack } from "@/components/sections/ProjectScrollStack";
 import { projects } from "@/content/portfolio";
 
+const PREVIEW_COUNT = 4;
+
 export function PortfolioPreview() {
   return (
     <section id="portfolio" className="relative py-24 sm:py-32">
@@ -31,7 +33,7 @@ export function PortfolioPreview() {
               <SectionHeading
                 eyebrow="Proud Projects"
                 title="Breaking Boundaries, Building Solutions."
-                description="From first pixel to production, here's every product we've shipped — scroll to step through each one."
+                description="A few of the products we've shipped recently — scroll to step through them, or see the full archive."
               />
             </Reveal>
             <Button href="/portfolio" variant="outline">
@@ -41,7 +43,7 @@ export function PortfolioPreview() {
         </Container>
       </div>
 
-      <ProjectScrollStack projects={projects} />
+      <ProjectScrollStack projects={projects.slice(0, PREVIEW_COUNT)} />
     </section>
   );
 }
