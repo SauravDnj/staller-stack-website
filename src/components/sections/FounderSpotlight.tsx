@@ -8,33 +8,33 @@ import { founder } from "@/content/team";
 export function FounderSpotlight() {
   return (
     <section className="border-t border-ss-border py-24 sm:py-32">
-      <Container className="grid grid-cols-1 items-center gap-14 lg:grid-cols-2">
-        <Reveal>
+      <Container className="grid grid-cols-1 items-center gap-12 lg:grid-cols-5 lg:gap-16">
+        <Reveal className="lg:col-span-2">
           <Badge>Leadership</Badge>
-          <h2 className="mt-6 font-display text-2xl font-semibold text-ss-text sm:text-3xl">
+          <h2 className="mt-5 font-display text-xl font-semibold text-ss-text sm:text-2xl">
             Built and Led by Someone Who Answers For It.
           </h2>
-          <div className="mt-6 flex flex-col gap-4">
+          <div className="mt-5 flex flex-col gap-3">
             {founder.bio.map((paragraph) => (
-              <p key={paragraph.slice(0, 24)} className="text-ss-muted">
+              <p key={paragraph.slice(0, 24)} className="text-sm text-ss-muted">
                 {paragraph}
               </p>
             ))}
           </div>
         </Reveal>
 
-        <Reveal delay={0.1}>
+        <Reveal delay={0.1} className="lg:col-span-3">
           <Tilt strength={5} className="rounded-3xl">
             <div className="overflow-hidden rounded-3xl border border-ss-border bg-ss-surface">
-              <div className="relative aspect-[4/5]">
-                <Image
-                  src={founder.photo}
-                  alt={founder.name}
-                  fill
-                  sizes="(min-width: 1024px) 40vw, 90vw"
-                  className="object-cover"
-                />
-              </div>
+              <Image
+                src={founder.photo}
+                alt={founder.name}
+                width={1170}
+                height={1134}
+                sizes="(min-width: 1024px) 55vw, 90vw"
+                className="h-auto w-full"
+                priority
+              />
             </div>
           </Tilt>
           <div className="mt-6 text-center">

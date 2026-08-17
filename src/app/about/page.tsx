@@ -7,6 +7,7 @@ import { FounderSpotlight } from "@/components/sections/FounderSpotlight";
 import { StatsBar } from "@/components/sections/StatsBar";
 import { MissionVision } from "@/components/sections/MissionVision";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
+import { TrustedPlatforms } from "@/components/sections/TrustedPlatforms";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { aboutPage } from "@/content/about";
 import { siteConfig } from "@/content/siteConfig";
@@ -30,6 +31,7 @@ export default function AboutPage() {
       <StatsBar />
       <MissionVision />
       <WhyChooseUs />
+      <TrustedPlatforms />
 
       <section className="border-t border-ss-border py-24 sm:py-32">
         <Container>
