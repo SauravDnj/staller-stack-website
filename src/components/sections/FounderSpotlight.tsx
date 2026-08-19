@@ -38,9 +38,18 @@ export function FounderSpotlight() {
         </Reveal>
 
         <Reveal delay={0.1} className="lg:col-span-2">
-          <div className="mx-auto max-w-xs lg:max-w-none">
-            <Tilt strength={5} className="rounded-3xl">
-              <div className="overflow-hidden rounded-3xl border border-ss-border bg-ss-surface">
+          <div className="relative mx-auto max-w-xs lg:max-w-none">
+            <div
+              aria-hidden
+              className="absolute -inset-6 -z-10 rounded-[2.5rem] opacity-30 blur-[60px]"
+              style={{
+                background:
+                  "radial-gradient(circle, var(--ss-teal), transparent 70%)",
+                animation: "pulse-soft 6s var(--ease-io, cubic-bezier(.4,0,.2,1)) infinite",
+              }}
+            />
+            <Tilt strength={5} className="relative rounded-3xl">
+              <div className="relative overflow-hidden rounded-3xl border border-ss-border bg-ss-surface">
                 <Image
                   src={founder.photo}
                   alt={founder.name}
@@ -50,15 +59,31 @@ export function FounderSpotlight() {
                   className="h-auto w-full"
                   priority
                 />
+                <div
+                  aria-hidden
+                  className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ss-base/80 to-transparent"
+                />
               </div>
             </Tilt>
-            <div className="mt-6 text-center">
-              <p className="font-display text-lg font-semibold text-ss-text">{founder.name}</p>
-              <p className="mt-1 font-mono text-xs uppercase tracking-wider text-ss-teal">
-                {founder.role}
-              </p>
+
+            <div className="animate-logo-float absolute -bottom-5 left-1/2 w-max -translate-x-1/2">
+              <span className="inline-flex items-center gap-2 rounded-full border border-ss-teal/40 bg-ss-surface px-4 py-2 font-mono text-xs uppercase tracking-wider text-ss-mint shadow-[0_0_24px_-8px_var(--ss-teal)]">
+                <span className="h-1.5 w-1.5 rounded-full bg-ss-mint" />
+                Founder
+              </span>
             </div>
           </div>
+
+          <Reveal delay={0.25} className="mt-10 text-center">
+            <p className="font-display text-xl font-semibold text-ss-text">{founder.name}</p>
+            <span
+              aria-hidden
+              className="mx-auto mt-2 block h-px w-12 bg-gradient-to-r from-transparent via-ss-teal to-transparent"
+            />
+            <p className="mt-2 font-mono text-xs uppercase tracking-wider text-ss-teal">
+              {founder.role}
+            </p>
+          </Reveal>
         </Reveal>
       </Container>
     </section>
