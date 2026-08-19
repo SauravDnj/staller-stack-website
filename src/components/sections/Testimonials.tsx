@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { TiltCard } from "@/components/ui/TiltCard";
@@ -34,8 +35,14 @@ export function Testimonials() {
                 </p>
                 <div className="mt-6">
                   <div className="flex items-center gap-2">
-                    <span className="text-lg leading-none" aria-hidden>
-                      {testimonial.flag}
+                    <span className="relative h-4 w-6 shrink-0 overflow-hidden rounded-[3px] border border-ss-border/60">
+                      <Image
+                        src={testimonial.flagIcon}
+                        alt={`${testimonial.country} flag`}
+                        fill
+                        sizes="24px"
+                        className="object-cover"
+                      />
                     </span>
                     <p className="font-display text-sm font-semibold text-ss-text">
                       {testimonial.name}

@@ -4,8 +4,12 @@ export type Testimonial = {
   title: string;
   avatar: string;
   country: string;
-  flag: string;
+  flagIcon: string;
 };
+
+function flagIcon(code: string) {
+  return `/images/flags/${code}.svg`;
+}
 
 export const testimonials: Testimonial[] = [
   {
@@ -15,7 +19,7 @@ export const testimonials: Testimonial[] = [
     title: "CTO, FinEdge Technologies",
     avatar: "https://randomuser.me/api/portraits/men/45.jpg",
     country: "United States",
-    flag: "🇺🇸",
+    flagIcon: flagIcon("us"),
   },
   {
     quote:
@@ -24,7 +28,7 @@ export const testimonials: Testimonial[] = [
     title: "VP of Product, ShopStream",
     avatar: "https://randomuser.me/api/portraits/women/68.jpg",
     country: "United Kingdom",
-    flag: "🇬🇧",
+    flagIcon: flagIcon("gb"),
   },
   {
     quote:
@@ -33,6 +37,6 @@ export const testimonials: Testimonial[] = [
     title: "CEO, MediVault Health",
     avatar: "https://randomuser.me/api/portraits/men/22.jpg",
     country: "Australia",
-    flag: "🇦🇺",
+    flagIcon: flagIcon("au"),
   },
 ];
