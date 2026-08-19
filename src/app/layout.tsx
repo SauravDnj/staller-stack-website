@@ -5,13 +5,13 @@ import {
   JetBrains_Mono,
   Inter,
   Inter_Tight,
+  Montserrat,
 } from "next/font/google";
 import { ReactLenis } from "lenis/react";
 import { ThemeProvider } from "next-themes";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { LenisScrollSync } from "@/components/LenisScrollSync";
-import { ScrollProgressBar } from "@/components/ScrollProgressBar";
 import { AiGuideProvider } from "@/components/ai-guide/AiGuideContext";
 import { AiGuideLauncher } from "@/components/ai-guide/AiGuideLauncher";
 import "./globals.css";
@@ -44,6 +44,14 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
 });
 
+// Logo-only typeface — scoped to the StallerStack wordmark via the Logo
+// component's className, never applied globally.
+const montserrat = Montserrat({
+  variable: "--font-montserrat-logo",
+  weight: "700",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
   title: "Staller Stack — AI-First IT Solutions | Web, Cloud, AI & Security",
   description:
@@ -59,13 +67,12 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} ${interTight.variable} ${jetbrainsMono.variable} ${manrope.variable} ${spaceGrotesk.variable} h-full antialiased`}
+      className={`${inter.variable} ${interTight.variable} ${jetbrainsMono.variable} ${manrope.variable} ${spaceGrotesk.variable} ${montserrat.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-ss-base text-ss-text">
         <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem={false}>
-          <ReactLenis root options={{ duration: 1.1, smoothWheel: true }}>
+          <ReactLenis root options={{ lerp: 0.1, smoothWheel: true }}>
             <LenisScrollSync />
-            <ScrollProgressBar />
             <AiGuideProvider>
               <Header />
               <main className="flex-1">{children}</main>

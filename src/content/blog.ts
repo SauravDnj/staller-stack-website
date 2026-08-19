@@ -29,11 +29,11 @@ export type BlogPost = {
 };
 
 function img(slug: string, kind: "inline-1" | "inline-2", caption: string): BlogImage {
-  return { src: `/images/blog/${slug}/${kind}.webp`, width: 1200, height: 750, caption };
+  return { src: `/images/blog/${slug}/${kind}.jpg`, width: 1200, height: 750, caption };
 }
 
 function cover(slug: string, caption: string): BlogImage {
-  return { src: `/images/blog/${slug}/cover.webp`, width: 1600, height: 900, caption };
+  return { src: `/images/blog/${slug}/cover.jpg`, width: 1600, height: 900, caption };
 }
 
 export const blogPosts: BlogPost[] = [
@@ -604,6 +604,158 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "The Simplest Filter",
         body: "A good AI development partner will tell you when AI isn't the right answer to your problem — sometimes the right solution is a simpler rule-based system, or no new system at all, just a process fix. A vendor who says yes to every AI project you describe, regardless of fit, is optimizing for closing the deal, not for your outcome. That single tell filters out a surprising number of vendors before you've spent a dollar.",
+      },
+    ],
+  },
+  {
+    slug: "how-to-choose-a-web-development-company",
+    title: "How to Choose the Right Web Development Company in 2026: A Buyer's Checklist",
+    excerpt:
+      "Every web development pitch sounds confident. The way to tell a genuinely capable partner from a good sales deck is a short list of concrete questions most vendors don't get asked — here's what to check before you sign.",
+    category: "Web Development",
+    accent: "amber",
+    tags: ["Web Development", "Vendor Selection", "Product Strategy"],
+    author: "Priya Sharma",
+    role: "Head of Engineering",
+    publishedAt: "2026-08-18",
+    readTime: "7 min read",
+    coverImage: cover("how-to-choose-a-web-development-company", "Evaluating a shortlist of web development vendors against a concrete checklist rather than a pitch deck."),
+    sections: [
+      {
+        heading: "What 'Right' Actually Means for Your Project",
+        body: "There's no universally best web development company — there's only the right fit for your specific project, budget, and timeline. A five-person agency that ships fast, opinionated marketing sites is the wrong choice for a complex multi-tenant SaaS platform, and a large enterprise dev shop built for six-month engagements is overkill and overpriced for a straightforward brochure site refresh. The first filtering question isn't \"who's the best,\" it's \"who has actually shipped something like this before.\"\n\nThat means the search should start narrower than most teams make it. Instead of a general search for \"web development company,\" look for a vendor whose public case studies include your specific category of complexity — e-commerce with inventory sync, a content platform with a custom CMS, a dashboard with real-time data — and treat unrelated portfolio polish as a weaker signal than direct relevance.",
+      },
+      {
+        heading: "Check the Portfolio for Relevance, Not Just Polish",
+        body: "Every agency's portfolio page is curated to look impressive, so the useful exercise isn't admiring the screenshots — it's clicking through to the live sites and testing them. Load a few case study sites on a mid-range phone over a throttled connection. Check whether the navigation actually makes sense, whether forms validate properly, whether the site is still fast eighteen months after launch or has visibly rotted. A beautiful screenshot tells you about their design sense; a live site under real use tells you about their engineering discipline.\n\nAsk directly which of the featured projects the team you'd actually be working with built, versus work done by people no longer at the company. Agencies grow and shrink, and a portfolio piece from three years ago built by a since-departed lead developer says very little about the team you're about to hire.",
+        image: img("how-to-choose-a-web-development-company", "inline-1", "Comparing vendors side by side against the same relevance and quality criteria."),
+      },
+      {
+        heading: "Ask About Process Before You Ask About Price",
+        body: "A vendor who quotes a firm price and timeline in the first conversation, before understanding your requirements in any depth, is either padding heavily for risk or setting you up for a change order later. A credible process includes a discovery phase — even a short one — where the team asks about your users, your existing systems, your content, and your real constraints before committing to a number.\n\nAsk how they handle scope changes mid-project, because they will happen. A good answer describes a specific change-request process with clear cost and timeline impact stated upfront, not vague reassurance that \"we're flexible.\" Also ask about communication cadence — how often you'll see progress, in what format, and who your actual point of contact is day to day versus who was in the sales call.",
+      },
+      {
+        heading: "Technical Due Diligence Questions to Ask",
+        body: "Get specific about the stack and why they'd choose it for your project, not just a list of technologies they know. A team that can explain the trade-off between a few reasonable options for your specific case is more trustworthy than one that defaults to \"we always use X.\" Ask how they handle testing — is it a real practice with coverage on critical paths, or an afterthought squeezed in before launch if time allows.\n\nAsk pointed questions about ownership and portability too: do you get the full source code and infrastructure access at handover, or does the vendor retain control that makes switching providers later expensive or impossible? Ask how they approach security for anything handling user data or payments, and ask what happens if a critical bug surfaces two weeks after launch — is that covered, or billed separately from day one.",
+        image: img("how-to-choose-a-web-development-company", "inline-2", "Technical due diligence covers ownership, testing discipline, and security practice — not just the tech stack list."),
+      },
+      {
+        heading: "The Contract Details That Prevent Disputes Later",
+        body: "The contract is where good intentions from the sales call either get locked in or quietly disappear. Confirm in writing that you own the finished code, content, and assets outright — this should not be a negotiation. Get explicit payment milestones tied to concrete deliverables rather than calendar dates, so a delay on their end doesn't put you on the hook for a payment against work that isn't actually done.\n\nClarify what post-launch support is included, for how long, and what it costs after that window closes. Teams that skip this conversation are often surprised to find that the agency who built their site charges a steep hourly rate for the first bug fix requested a month after launch. Getting this in writing upfront, while there's still negotiating leverage, is far easier than negotiating it after you've already paid and launched.",
+      },
+    ],
+  },
+  {
+    slug: "website-redesign-cost-2026",
+    title: "Website Redesign Cost in 2026: What Actually Drives the Price",
+    excerpt:
+      "\"How much does a redesign cost\" is the wrong first question — the honest answer is always a range, and the range depends on a handful of specific decisions most quote requests never mention. Here's what actually moves the number.",
+    category: "Web Development",
+    accent: "amber",
+    tags: ["Web Development", "Pricing", "Product Strategy"],
+    author: "Priya Sharma",
+    role: "Head of Engineering",
+    publishedAt: "2026-08-19",
+    readTime: "6 min read",
+    coverImage: cover("website-redesign-cost-2026", "A website redesign's cost shaped by page complexity, custom design work, and backend scope, not a flat rate card."),
+    sections: [
+      {
+        heading: "Why 'How Much Does a Redesign Cost' Has No Single Answer",
+        body: "Two businesses can both describe their project as \"redesign our website\" and mean projects that differ in cost by an order of magnitude. One means a visual refresh of an existing five-page marketing site with the same content and functionality. The other means rebuilding a content-heavy site's information architecture, migrating years of blog content, replacing an aging CMS, and adding new functionality the old site never had. Both are honestly described as a \"redesign,\" and quoting either one a single flat number without more detail is a guess dressed up as a quote.\n\nThe useful starting point isn't a target budget — it's a clear scope. What's changing: just the visual design, the underlying CMS and content structure, the functionality, or all three? That answer, more than anything else, determines which price band you're actually in.",
+      },
+      {
+        heading: "The Cost Drivers That Matter Most",
+        body: "Page count and template variety matter more than most people expect: a ten-page site built from three reusable templates costs meaningfully less than a ten-page site where every page has a bespoke layout. Custom design work — original illustration, unique interactive components, motion design — costs more than working from a well-executed design system with established patterns, and that's a legitimate trade-off to make deliberately rather than by accident.\n\nBackend and CMS complexity is the driver most non-technical stakeholders underestimate. A visual refresh that keeps the existing CMS and content model is a fraction of the cost of a redesign that also migrates to a new CMS, restructures how content is modeled, or adds e-commerce, gated content, or a customer account system that didn't exist before.",
+        image: img("website-redesign-cost-2026", "inline-1", "The handful of decisions that move a redesign quote the most: pages, custom design depth, and CMS scope."),
+      },
+      {
+        heading: "Typical Price Bands, and What You Get at Each",
+        body: "These are general ranges, not quotes — actual numbers vary by market and vendor — but they're useful for calibrating expectations before a scoping call. A focused visual refresh of a small marketing site, same CMS and content, usually lands at the lower end of the market: weeks, not months, of work. A mid-market rebuild — new design system, restructured content, a handful of new features, possibly a CMS migration — is a meaningfully larger project spanning a couple of months.\n\nAn enterprise-scale rebuild — new design system applied across dozens or hundreds of pages, deep integrations with internal systems, a full information architecture overhaul — is the largest band, both in cost and in the multi-quarter timeline it usually takes. Getting an accurate read on which band you're in requires the scoping conversation in the next section, not a number pulled from a blog post.",
+      },
+      {
+        heading: "Hidden Costs Teams Forget to Budget For",
+        body: "Content migration is the most commonly underestimated line item — moving years of blog posts, product pages, or resources into a new structure, cleaning up broken formatting, and re-tagging content takes real time that a quote focused only on \"design and development\" can quietly leave out. Preserving SEO through the transition — setting up redirects for every changed URL, keeping metadata intact — is easy to skip in a rush to launch and expensive to fix after search rankings drop.\n\nThird-party integrations (payment processors, marketing tools, analytics, a CRM) often carry their own setup cost and occasionally licensing fees that aren't the web vendor's to quote but are yours to budget for. And post-launch support — the first few weeks of bug fixes and adjustments after real traffic hits the new site — is worth budgeting for explicitly rather than assuming it's included by default.",
+        image: img("website-redesign-cost-2026", "inline-2", "Content migration, SEO redirects, and integration setup are commonly left out of a first-pass quote."),
+      },
+      {
+        heading: "How to Get an Accurate Quote",
+        body: "Bring a real content and page inventory to the first scoping call rather than a vague description — even a rough sitemap of what exists today changes the quality of the estimate you get back. Be upfront about what's changing versus staying the same: visual design, content structure, functionality, hosting. Ask every vendor you're comparing the same specific questions about what's included, what counts as a change order, and what post-launch support costs, so the quotes you're comparing are actually comparable rather than differing in what's silently excluded.",
+      },
+    ],
+  },
+  {
+    slug: "mobile-app-development-cost-guide-2026",
+    title: "Mobile App Development Cost in 2026: A Complete Pricing Guide",
+    excerpt:
+      "\"What does it cost to build an app\" is one of the first questions every founder asks, and the honest answer depends on decisions most people haven't made yet when they ask it. Here's how to actually estimate your number.",
+    category: "Mobile Development",
+    accent: "mint",
+    tags: ["Mobile Development", "Pricing", "Product Strategy"],
+    author: "Priya Sharma",
+    role: "Head of Engineering",
+    publishedAt: "2026-08-19",
+    readTime: "7 min read",
+    coverImage: cover("mobile-app-development-cost-guide-2026", "Mobile app cost broken down by platform choice, backend complexity, and integration scope rather than a single number."),
+    sections: [
+      {
+        heading: "The Real Answer: It Depends on Scope, Not Just 'App'",
+        body: "\"App\" describes everything from a single-screen utility with no backend to a multi-sided marketplace with real-time matching, payments, and a moderation system. Asking what an app costs without describing which of those you mean is like asking what a building costs without saying whether it's a garden shed or an office tower — the question needs more shape before it has a useful answer.\n\nThe more productive framing is to describe your app in terms of concrete features and integrations, not a category label. \"A booking app\" could be a simple calendar-and-confirmation flow or a complex system with real-time availability across multiple providers, dynamic pricing, and in-app payments — and those two versions of \"a booking app\" are entirely different projects.",
+      },
+      {
+        heading: "What Drives Cost Up or Down",
+        body: "Platform choice matters early: a cross-platform build (one codebase reaching both iOS and Android) is typically less expensive than building native apps for both platforms separately, because the team isn't implementing every feature twice. Backend complexity is usually the single biggest driver — a simple app with static content costs far less than one requiring real-time data sync, a custom API, or complex business logic running server-side.\n\nThird-party integrations add up faster than people expect: payments, maps and geolocation, push notifications, and social login are each individually manageable but collectively add real integration and testing time. Custom design — original illustration, bespoke animation, a fully custom component library — costs more than working from clean, well-established design patterns, which is a legitimate choice to make deliberately for an MVP.",
+        image: img("mobile-app-development-cost-guide-2026", "inline-1", "Platform choice, backend complexity, and integration count are the biggest levers on the final number."),
+      },
+      {
+        heading: "Typical Cost Ranges by App Type",
+        body: "These are general planning ranges, not fixed quotes — every project varies — but they're a reasonable starting point for budgeting conversations. A focused MVP with a handful of core screens, standard authentication, and no complex backend logic sits at the lower end of the range and is usually achievable in a matter of weeks. A mid-complexity app — a marketplace, booking platform, or content app with user accounts, payments, and moderate backend logic — is a meaningfully larger project spanning a couple of months.\n\nA complex app with real-time features (live location tracking, chat, live matching or bidding) sits at the top of the range, both in cost and in the specialized backend and infrastructure work it requires. Where your project actually falls depends far more on the feature list than on which of these three labels sounds closest to what you're building.",
+      },
+      {
+        heading: "Where Budgets Quietly Blow Up",
+        body: "Scope creep is the single most common budget killer — a feature added mid-project because it seemed small in conversation is rarely as small in implementation, especially once it touches the data model or requires new backend logic. App store review cycles add real, sometimes unpredictable time to a launch timeline, particularly for apps in regulated categories or with unusual permission requirements, and budgeting zero slack for review delays or a possible rejection is a common planning mistake.\n\nBackend and infrastructure costs don't stop at launch — hosting, API usage, and third-party service fees scale with real usage, and a founder who only budgeted for the build misses the ongoing operating cost that starts the moment the app has real users. Post-launch iteration — the changes you'll want to make once real users start using the app and surfacing what doesn't work — deserves its own line in the budget, not an assumption that the initial build is the whole project.",
+        image: img("mobile-app-development-cost-guide-2026", "inline-2", "Scope creep, review delays, and post-launch iteration are the costs a build-only budget misses."),
+      },
+      {
+        heading: "How to Budget Realistically",
+        body: "Start by writing down the actual feature list your first version needs, ruthlessly separated from features that would be nice eventually. Get quotes based on that specific list, not a category label, so the numbers you're comparing reflect the same scope. Budget for a phased approach — a focused MVP first, validated with real users, followed by funded iteration — rather than trying to fund every feature you can imagine in a single upfront build. That sequencing usually gets a better product to real users faster, and for less total money spent before you know what's actually worth building next.",
+      },
+    ],
+  },
+  {
+    slug: "how-to-build-an-on-demand-delivery-app",
+    title: "How to Build an On-Demand Delivery App in 2026: A Complete Development Guide",
+    excerpt:
+      "An on-demand delivery app looks like one product from the outside. Underneath, it's three coordinated applications and a real-time matching system — here's the architecture, the must-have features, and a realistic build timeline.",
+    category: "Mobile Development",
+    accent: "mint",
+    tags: ["Mobile Development", "System Architecture", "On-Demand Apps"],
+    author: "Arjun Patel",
+    role: "Cloud Architect Lead",
+    publishedAt: "2026-08-19",
+    readTime: "9 min read",
+    coverImage: cover("how-to-build-an-on-demand-delivery-app", "A delivery platform's live map, connecting a customer app, a courier app, and a dispatch system in real time."),
+    sections: [
+      {
+        heading: "The Three Apps Inside Every Delivery Platform",
+        body: "Every on-demand delivery product, regardless of what it delivers, is really three coordinated applications built on one shared backend. The customer app handles browsing, ordering, tracking, and payment. The courier or driver app handles accepting jobs, navigation, and status updates. The admin and dispatch dashboard handles order monitoring, manual intervention when something goes wrong, and the operational reporting the business runs on.\n\nTeams that plan for \"an app\" instead of these three coordinated surfaces routinely underscope the project — the courier app and the dispatch dashboard are just as much a part of the build as the customer-facing app, and skipping proper planning for either is one of the most common reasons delivery app projects go over budget and over timeline.",
+      },
+      {
+        heading: "Core Features Customers Actually Expect",
+        body: "By now, users have a baseline expectation set by every major delivery platform they've already used, and falling short of it reads as broken rather than minimal. Real-time order tracking with a live map and an accurate, continuously updating ETA is table stakes, not a nice-to-have. In-app payment with saved methods, transparent pricing shown before checkout, and a clear order history are all expected as standard, not advanced features.\n\nPush notifications at each meaningful status change — order confirmed, courier assigned, out for delivery, arriving — keep the customer informed without them needing to open the app and check. A simple, low-friction rating and feedback flow after each delivery closes the loop and feeds the quality signals the platform needs to manage courier performance over time.",
+        image: img("how-to-build-an-on-demand-delivery-app", "inline-1", "The customer app, courier app, and dispatch dashboard, sharing one real-time backend."),
+      },
+      {
+        heading: "The Architecture Underneath: Matching, Routing, and Real-Time Sync",
+        body: "The matching engine — deciding which available courier gets offered which order — is the technical core of the whole system, and it needs to balance several factors at once: proximity, courier capacity, estimated delivery time, and fairness in how jobs get distributed across the available courier pool. A naive \"nearest courier\" algorithm works for a demo and breaks down under real load and real geography.\n\nReal-time location sync between the courier app, the customer's live map, and the dispatch dashboard requires a persistent connection architecture — typically WebSockets or a similar push-based system — rather than the client repeatedly polling for updates, which doesn't scale and introduces noticeable lag. The notification pipeline needs to be reliable enough that a courier assignment or a status change reaches the right app within seconds, consistently, because a five-minute-late notification in a delivery app isn't a minor bug, it's a broken core experience.",
+        image: img("how-to-build-an-on-demand-delivery-app", "inline-2", "A persistent, push-based connection keeps the live map and courier status in sync within seconds, not minutes."),
+      },
+      {
+        heading: "Payments, Payouts, and Trust & Safety",
+        body: "Payments in a delivery platform typically need to handle three legs: charging the customer upfront or on completion, holding funds until the delivery is confirmed, and paying out the courier — often on a schedule separate from the customer transaction. Getting this right usually means building on a payments platform designed for marketplace-style split payments rather than a simple single-merchant checkout integration.\n\nTrust and safety work is easy to underweight in early planning and expensive to retrofit later: identity verification for couriers, basic fraud checks on unusual ordering patterns, and a clear dispute-resolution flow for missing or damaged orders all need to exist before the platform has meaningful volume, not after the first serious incident forces the issue.",
+      },
+      {
+        heading: "A Realistic Build Timeline and Team",
+        body: "A focused MVP — one service area, core ordering and tracking, basic payments, manual fallback for edge cases the matching engine doesn't handle well yet — is a realistic first phase, typically requiring a small cross-functional team: mobile developers for both customer and courier apps, a backend engineer for the matching and real-time infrastructure, and a designer covering both app experiences.\n\nTreat the initial launch as a starting point tuned for one market, not the finished product. Matching algorithm quality, courier supply, and operational tooling all improve fastest with real usage data from a contained launch, and expanding to new service areas or adding features like scheduled orders or multi-stop deliveries is far easier to do well once the core loop is proven than to build speculatively before you have real usage to learn from.",
       },
     ],
   },

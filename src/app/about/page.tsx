@@ -3,6 +3,7 @@ import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { PageHeader } from "@/components/sections/PageHeader";
 import { StoryValues } from "@/components/sections/StoryValues";
+import { CoreValues } from "@/components/sections/CoreValues";
 import { FounderSpotlight } from "@/components/sections/FounderSpotlight";
 import { StatsBar } from "@/components/sections/StatsBar";
 import { MissionVision } from "@/components/sections/MissionVision";
@@ -27,6 +28,7 @@ export default function AboutPage() {
         subtext={aboutPage.subtext}
       />
       <StoryValues />
+      <CoreValues />
       <FounderSpotlight />
       <StatsBar />
       <MissionVision />

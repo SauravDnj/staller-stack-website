@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
+import { Logo } from "@/components/ui/Logo";
 import {
   footerAiLinks,
   footerCompanyLinks,
@@ -55,9 +56,7 @@ export function Footer() {
               height={44}
               className="h-11 w-11"
             />
-            <span className="font-display text-xl font-semibold tracking-wide text-ss-text">
-              StallerStack
-            </span>
+            <Logo className="text-2xl" />
           </Link>
           <p className="max-w-xs text-sm text-ss-muted">
             {siteConfig.description}
@@ -166,13 +165,13 @@ export function Footer() {
       </div>
 
       <Container className="relative flex flex-col items-center justify-center gap-4 border-b border-ss-border py-8 sm:flex-row sm:justify-between">
-        <p className="font-mono text-xs uppercase tracking-wider text-ss-muted">Find Us On</p>
+        <p className="font-mono text-xs uppercase tracking-wider text-ss-muted">Follow Us</p>
         <div className="flex flex-wrap items-center justify-center gap-3">
           <a
             href="https://clutch.co"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center rounded-xl bg-white px-4 py-2.5 transition-transform duration-300 hover:scale-105"
+            className="animate-logo-float flex items-center justify-center rounded-xl bg-white px-4 py-2.5 transition-transform duration-300 hover:scale-110"
           >
             <Image
               src="/images/client/clutch.png"
@@ -186,7 +185,7 @@ export function Footer() {
             href="https://www.upwork.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center rounded-xl bg-white px-4 py-2.5 transition-transform duration-300 hover:scale-105"
+            className="animate-logo-glow flex items-center justify-center rounded-xl bg-white px-4 py-2.5 transition-transform duration-300 hover:scale-110"
           >
             <Image
               src="/images/client/upwork.png"
@@ -200,7 +199,7 @@ export function Footer() {
             href="https://www.fiverr.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center rounded-xl bg-white px-4 py-2.5 transition-transform duration-300 hover:scale-105"
+            className="animate-logo-tilt flex items-center justify-center rounded-xl bg-white px-4 py-2.5 transition-transform duration-300 hover:scale-110"
           >
             <Image
               src="/images/client/fiverr.png"

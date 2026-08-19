@@ -33,12 +33,20 @@ export function Testimonials() {
                   &ldquo;{testimonial.quote}&rdquo;
                 </p>
                 <div className="mt-6">
-                  <p className="font-display text-sm font-semibold text-ss-text">
-                    {testimonial.name}
-                  </p>
-                  <p className="text-xs text-ss-muted">
+                  <div className="flex items-center gap-2">
+                    <span className="text-lg leading-none" aria-hidden>
+                      {testimonial.flag}
+                    </span>
+                    <p className="font-display text-sm font-semibold text-ss-text">
+                      {testimonial.name}
+                    </p>
+                  </div>
+                  <p className="mt-1 text-xs text-ss-muted">
                     {testimonial.title}
                   </p>
+                  <span className="mt-3 inline-flex items-center rounded-full border border-ss-border bg-ss-surface/60 px-3 py-1 font-mono text-[0.65rem] uppercase tracking-wider text-ss-teal">
+                    {testimonial.country}
+                  </span>
                 </div>
               </TiltCard>
             </RevealItem>

@@ -81,7 +81,7 @@ function ProjectStackCard({ project, index, total }: { project: Project; index: 
 
       <Link
         href={`/portfolio/${project.slug}`}
-        className="group relative block overflow-hidden rounded-2xl border border-ss-border"
+        className="group relative block aspect-[4/3] overflow-hidden rounded-2xl border border-ss-border"
       >
         <div
           aria-hidden
@@ -91,16 +91,13 @@ function ProjectStackCard({ project, index, total }: { project: Project; index: 
               "radial-gradient(circle at 30% 20%, color-mix(in srgb, var(--ss-teal) 22%, transparent), transparent 60%), radial-gradient(circle at 80% 80%, color-mix(in srgb, var(--ss-blue) 22%, transparent), transparent 55%)",
           }}
         />
-        <div className="relative flex items-center justify-center p-5 sm:p-8">
-          <Image
-            src={project.image}
-            alt={project.title}
-            width={project.imageWidth}
-            height={project.imageHeight}
-            sizes="(min-width: 1024px) 42vw, 90vw"
-            className="h-auto max-h-[240px] w-auto transition-transform duration-500 group-hover:scale-[1.02] sm:max-h-[320px] lg:max-h-[440px]"
-          />
-        </div>
+        <Image
+          src={project.image}
+          alt={project.title}
+          fill
+          sizes="(min-width: 1024px) 42vw, 90vw"
+          className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+        />
       </Link>
     </div>
   );

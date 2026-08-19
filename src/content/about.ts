@@ -44,6 +44,37 @@ export const aboutPage = {
         "You're never more than one message away from the person who's actually accountable for your project.",
     },
   ],
+  coreValuesHeading: "Here Are Our Core Values",
+  coreValuesSubtext:
+    "Four principles guide every engagement we take on — they're less a poster on the wall and more the actual test we hold our own work against.",
+  coreValuesImage: {
+    src: "/images/about/core-values.jpg",
+    width: 1200,
+    height: 1400,
+    alt: "The Staller Stack team reviewing a project together around a laptop.",
+  },
+  coreValues: [
+    {
+      title: "Honesty",
+      description:
+        "We tell you what's actually happening with your project, not what's easiest to say. That means flagging a slipping timeline the week it slips, not the week before launch, and giving you a real answer when you ask a hard question instead of a comfortable one.",
+    },
+    {
+      title: "Integrity",
+      description:
+        "We hold our own work to a standard whether or not anyone's checking. That shows up in code we're not embarrassed to hand over, recommendations that serve your business even when a bigger scope would serve our invoice, and decisions we can explain in plain language.",
+    },
+    {
+      title: "Transparency",
+      description:
+        "You should never have to ask us for a status update — you should already have one. Budgets, timelines, blockers, and trade-offs stay visible throughout the engagement, so you're making decisions with the same information we have, not a curated version of it.",
+    },
+    {
+      title: "Client Success",
+      description:
+        "We measure our work by what changed for you, not by what we shipped. A project that launches on time but doesn't move the metric it was built for isn't a finished job in our book — it's the reason we stay engaged well past launch day.",
+    },
+  ],
   values: [
     {
       title: "Outcome-Driven",

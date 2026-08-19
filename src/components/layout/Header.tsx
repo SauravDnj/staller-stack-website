@@ -8,6 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import { Logo } from "@/components/ui/Logo";
 import {
   headerCta,
   primaryNav,
@@ -128,9 +129,7 @@ export function Header() {
             priority
             className="h-11 w-11 sm:h-12 sm:w-12"
           />
-          <span className="font-display text-xl font-semibold tracking-wide text-ss-text sm:text-2xl">
-            StallerStack
-          </span>
+          <Logo className="text-2xl sm:text-3xl" />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
