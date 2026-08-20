@@ -18,7 +18,9 @@ export type Project = {
   keyFeatures?: string[];
 };
 
-export const projects: Project[] = [
+// Newest / shipped case studies first. The three legacy showcase entries
+// at the top of this list are moved to the end when exported.
+const allProjects: Project[] = [
   {
     slug: "enterprise-cloud-migration-platform",
     category: "Cloud & DevOps",
@@ -389,6 +391,13 @@ export const projects: Project[] = [
       { label: "Community Posts", value: "500K+" },
     ],
   },
+];
+
+const LEGACY_SHOWCASE_COUNT = 3;
+
+export const projects: Project[] = [
+  ...allProjects.slice(LEGACY_SHOWCASE_COUNT),
+  ...allProjects.slice(0, LEGACY_SHOWCASE_COUNT),
 ];
 
 export function getProjectBySlug(slug: string) {

@@ -48,7 +48,8 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
     setStatus("submitting");
     setErrorMessage("");
 
-    const formData = new FormData(event.currentTarget);
+    const form = event.currentTarget;
+    const formData = new FormData(form);
     if (file) formData.set("file", file);
 
     try {
@@ -56,19 +57,34 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
         method: "POST",
         body: formData,
       });
-      const result = await response.json();
+
+      let result: { ok?: boolean; error?: string } = {};
+      const contentType = response.headers.get("content-type") ?? "";
+      if (contentType.includes("application/json")) {
+        result = await response.json();
+      } else {
+        // Non-JSON usually means the route timed out / failed to compile.
+        await response.text();
+      }
 
       if (response.ok && result.ok) {
         setStatus("success");
-        event.currentTarget.reset();
+        form.reset();
         setFile(null);
       } else {
         setStatus("error");
-        setErrorMessage(result.error || "Something went wrong. Please try again.");
+        setErrorMessage(
+          result.error ||
+            (response.status >= 500
+              ? "Server could not send your message. Please try again in a moment."
+              : "Something went wrong. Please try again.")
+        );
       }
     } catch {
       setStatus("error");
-      setErrorMessage("Something went wrong. Please try again.");
+      setErrorMessage(
+        "Could not reach the server. Please check your connection and try again."
+      );
     }
   }
 

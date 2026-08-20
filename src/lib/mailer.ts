@@ -16,26 +16,49 @@ export type ContactSubmission = {
   attachment?: ContactAttachment;
 };
 
+function env(name: string) {
+  const value = process.env[name]?.trim();
+  return value ? value : undefined;
+}
+
 function readSmtpConfig() {
-  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = process.env;
-  if (!SMTP_HOST || !SMTP_PORT || !SMTP_USER || !SMTP_PASS) return null;
-  return { host: SMTP_HOST, port: Number(SMTP_PORT), user: SMTP_USER, pass: SMTP_PASS };
+  const host = env("SMTP_HOST");
+  const portRaw = env("SMTP_PORT");
+  const user = env("SMTP_USER");
+  const pass = env("SMTP_PASS");
+  if (!host || !portRaw || !user || !pass) return null;
+
+  const port = Number(portRaw);
+  if (!Number.isFinite(port) || port <= 0) return null;
+
+  return { host, port, user, pass };
 }
 
 function getTransporter() {
   const config = readSmtpConfig();
   if (!config) return null;
 
+  // Hostinger & most providers: 465 = implicit TLS, 587 = STARTTLS
+  const secure = config.port === 465;
+
   return nodemailer.createTransport({
     host: config.host,
     port: config.port,
-    secure: config.port === 465,
+    secure,
+    requireTLS: !secure && config.port === 587,
     auth: { user: config.user, pass: config.pass },
+    connectionTimeout: 15_000,
+    greetingTimeout: 15_000,
+    socketTimeout: 30_000,
+    tls: {
+      minVersion: "TLSv1.2",
+      servername: config.host,
+    },
   });
 }
 
 export function isMailerConfigured() {
-  return readSmtpConfig() !== null && !!process.env.CONTACT_TO_EMAIL;
+  return readSmtpConfig() !== null && !!env("CONTACT_TO_EMAIL");
 }
 
 function escapeHtml(input: string) {
@@ -50,7 +73,7 @@ function escapeHtml(input: string) {
 export async function sendContactSubmission(submission: ContactSubmission) {
   const transporter = getTransporter();
   const config = readSmtpConfig();
-  const to = process.env.CONTACT_TO_EMAIL;
+  const to = env("CONTACT_TO_EMAIL");
 
   if (!transporter || !config || !to) {
     throw new Error("Mailer is not configured");
@@ -86,7 +109,7 @@ export async function sendContactSubmission(submission: ContactSubmission) {
   `;
 
   await transporter.sendMail({
-    from: process.env.SMTP_FROM || config.user,
+    from: env("SMTP_FROM") || config.user,
     to,
     replyTo: submission.email,
     subject: `New project inquiry from ${submission.fullName}`,
@@ -115,7 +138,7 @@ export type AiGuideSubmission = {
 export async function sendAiGuideSubmission(submission: AiGuideSubmission) {
   const transporter = getTransporter();
   const config = readSmtpConfig();
-  const to = process.env.CONTACT_TO_EMAIL;
+  const to = env("CONTACT_TO_EMAIL");
 
   if (!transporter || !config || !to) {
     throw new Error("Mailer is not configured");
@@ -157,7 +180,7 @@ export async function sendAiGuideSubmission(submission: AiGuideSubmission) {
   `;
 
   await transporter.sendMail({
-    from: process.env.SMTP_FROM || config.user,
+    from: env("SMTP_FROM") || config.user,
     to,
     replyTo: submission.email,
     subject: `New AI Guide lead (${submission.leadTier}) from ${submission.name}`,

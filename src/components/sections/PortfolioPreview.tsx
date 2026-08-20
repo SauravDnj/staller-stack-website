@@ -5,7 +5,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { ProjectScrollStack } from "@/components/sections/ProjectScrollStack";
 import { projects } from "@/content/portfolio";
 
-const PREVIEW_COUNT = 4;
+const PREVIEW_COUNT = 5;
 
 export function PortfolioPreview() {
   return (
